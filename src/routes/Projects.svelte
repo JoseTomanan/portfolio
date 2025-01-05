@@ -43,6 +43,21 @@
                 techInvolved={ ["Svelte", "Tailwind", "JavaScript", "CSS"] }
             />
             <Article 
+                id="proj0"
+                href="_blank"
+                color="stone-400"
+                title="Shogimon"
+                subtitle="A Pokemon-inspired Shogi game using Python"
+                date="DEC 2024 - JAN 2025"
+                other="
+                    A Model-View-Controller (MVC) structured simple video game created using Python video game package Pygame.
+                    Utilizes industry-ready and collaboration-ready software development practices such as the SOLID principles, the observer pattern, and networking using message passing.
+                    Implements both online (networking using Go as the server connector) and offline (pass-and-play) mode.
+                    Made in compliance for the requirements of course CS 150: Programming Languages.
+                "
+                techInvolved={ ["Python", "Go"] }
+            /> 
+            <Article 
                 id="proj2"
                 href="https://tes-birth-rate.vercel.app"
                 color={"orange-500"}
