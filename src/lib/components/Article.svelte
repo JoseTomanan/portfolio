@@ -1,13 +1,13 @@
 <script>
     export let id;
     export let href;
-    export let color;
+    // export let color;
     export let title;
     export let subtitle;
     export let other = "";
 
-    $: hoverColor = "hover:text-".concat(color);
-    $: bgColor = "bg-".concat(color);
+    // $: hoverColor = "hover:text-".concat(color);
+    // $: bgColor = "bg-".concat(color);
 
     export let date = "AUG 2023 - AUG 2023";
     export let techInvolved = [""];

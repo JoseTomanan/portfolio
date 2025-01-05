@@ -30,7 +30,6 @@
             <Article 
                 id="proj1"
                 href="https://github.com/HoweZae/portfolio"
-                color="sky-500"
                 title="JoseTomanan.io"
                 subtitle="Personal portfolio-resume (i.e., this webpage!)"
                 date="JUL 2024 - PRESENT"
@@ -45,7 +44,6 @@
             <Article 
                 id="proj0"
                 href="_blank"
-                color="stone-400"
                 title="Shogimon"
                 subtitle="A Pokemon-inspired Shogi game using Python"
                 date="DEC 2024 - JAN 2025"
@@ -60,7 +58,6 @@
             <Article 
                 id="proj2"
                 href="https://tes-birth-rate.vercel.app"
-                color={"orange-500"}
                 title="Poverty and Parenting: A Data Science Study"
                 subtitle="Economic analysis of birth rates in the Philippines"
                 date="FEB 2024 - JUN 2024"
@@ -74,7 +71,6 @@
             <Article 
                 id="proj3"
                 href="https://docs.google.com/spreadsheets/d/1Gl8ZSLqoZOfrErq09FKBjBx0lInlYxXj3dCs48e-T_Q/edit?usp=sharing"
-                color="green-600"
                 title="Finances Tracker"
                 subtitle="Personal spreadsheet with Apps Script-powered macros"
                 date="FEB 2023 - PRESENT"
