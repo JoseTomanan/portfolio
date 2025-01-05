@@ -49,7 +49,7 @@
                 date="DEC 2024 - JAN 2025"
                 other="
                     A Model-View-Controller (MVC) structured simple video game created using Python video game package Pygame.
-                    Utilizes collaboration-ready software development practices such as SOLID principles, design patterns, and message passing between components.
+                    Employs collaboration-ready software development practices such as SOLID principles, design patterns, and message passing between components.
                     Implements both online (networking) and offline (pass-and-play) mode.
                     Made in compliance for the requirements of course CS 150: Programming Languages.
                 "
