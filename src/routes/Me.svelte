@@ -27,9 +27,10 @@
     <section class="flex flex-col gap-1.5 rounded-t-none">
         <p>
             When not working, however, I prefer to spend my time away from the keyboard than in front of it.
-            I like to stay active and explore different things, but my favorite ways to spend my free time are with
-            <a href="https://www.instagram.com/stories/highlights/17992555250680811/" class="hoverable-link" target="_blank">weightlifting</a> and
-            <a href="_blank" class="hoverable-link" target="_blank">basketball</a>.
+            I like to stay active and explore different things, but my favorite way to spend my free time is by being physically active: through
+            <a href="https://www.instagram.com/stories/highlights/17992555250680811/" class="hoverable-link" target="_blank">weightlifting</a>,
+            <a href="_blank" class="hoverable-link" target="_blank">running</a> and
+            <a href="_blank" class="hoverable-link" target="_blank">playing basketball</a>.
         </p>
 
         <p>
