@@ -70,14 +70,15 @@
             />
             <Article 
                 id="proj3"
-                href="https://docs.google.com/spreadsheets/d/1Gl8ZSLqoZOfrErq09FKBjBx0lInlYxXj3dCs48e-T_Q/edit?usp=sharing"
+                href="https://github.com/JoseTomanan/money-tracker-appsscript"
                 title="Finances Tracker"
                 subtitle="Personal spreadsheet with Apps Script-powered macros"
                 date="FEB 2023 - PRESENT"
                 other="
                     A Google Docs spreadsheet created for the purpose of tracking college life-related expenses.
                     Uses separate sheets for incoming and outgoing funds, and summarizes all history of expenses and savings in a master sheet.
-                    Utilizes JavaScript (via Google Apps Script) to automate the addition of new entries, separation of each week, and creation of a new sheet for each new month.
+                    Utilizes TypeScript (via Google AppsScript, transpiled by Clasp) to automate the addition of new entries, separation of each week, and creation of a new sheet for each new month.
+                    Implements the SOLID principles and design patterns learned in course CS 150: Programming Languages.
                 "
                 techInvolved={ ["Google Sheets", "JavaScript"] }
             />
