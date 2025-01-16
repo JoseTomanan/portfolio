@@ -70,17 +70,17 @@
             />
             <Article 
                 id="proj3"
-                href="https://github.com/JoseTomanan/money-tracker-appsscript"
-                title="Finances Tracker"
-                subtitle="Personal spreadsheet with Apps Script-powered macros"
+                href="https://github.com/JoseTomanan/finance-tracker-automator"
+                title="Finance Tracker Automator"
+                subtitle="Automation script for Google Sheets using Google AppsScript API"
                 date="FEB 2023 - PRESENT"
                 other="
-                    A Google Docs spreadsheet created for the purpose of tracking college life-related expenses.
-                    Uses separate sheets for incoming and outgoing funds, and summarizes all history of expenses and savings in a master sheet.
-                    Utilizes TypeScript (via Google AppsScript, transpiled by Clasp) to automate the addition of new entries, separation of each week, and creation of a new sheet for each new month.
+                    A scripting project that I use for my personal spreadsheet to track my daily outgoing and incoming funds.
+                    Uses the API to automate the addition of new entries, separation of each week, and creation of a new sheet for each new month.
+                    Written in TypeScript, later transpiled into JavaScript through Clasp (for Google AppsScript).
                     Implements the SOLID principles and design patterns learned in course CS 150: Programming Languages.
                 "
-                techInvolved={ ["Google Sheets", "JavaScript"] }
+                techInvolved={ ["Google Sheets", "Google Apps Script", "TypeScript"] }
             />
         </div>
 
