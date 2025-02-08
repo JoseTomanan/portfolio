@@ -4,9 +4,9 @@ export default {
   content: ["./src/**/*.{html,js,svelte}"],
   theme: {
     fontFamily: {
-      'heading': ["Futura"],
-      'sans': ["Avenir", "sans-serif"],
-      'mono': ["JetBrains Mono NL"],
+      'heading': ["Nunito Sans"],
+      'sans': ["Open Sans", "sans-serif"],
+      'mono': ["JetBrains Mono"],
     },
     extend: {
       colors: {
