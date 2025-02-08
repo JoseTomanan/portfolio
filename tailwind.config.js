@@ -4,8 +4,8 @@ export default {
   content: ["./src/**/*.{html,js,svelte}"],
   theme: {
     fontFamily: {
-      'heading': ["Nunito Sans"],
-      'sans': ["Open Sans", "sans-serif"],
+      'heading': ["Open Sans"],
+      'sans': ["Nunito Sans", "sans-serif"],
       'mono': ["JetBrains Mono"],
     },
     extend: {
