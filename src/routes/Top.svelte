@@ -27,7 +27,7 @@
         <h4>
             Hey! I am Jose, a BS Computer Science junior at the University of the Philippines - Diliman.
             <a
-                id="see-resume" class="hoverable-link" href="./resume-20241231.pdf" target="_blank"
+                id="see-resume" class="hoverable-link" href="./resume.pdf" target="_blank"
             >
                 See my resume!
                 <svg 
