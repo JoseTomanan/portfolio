@@ -1,17 +1,12 @@
-<script>
-  import ClickToCopy from "$lib/components/ClickToCopy.svelte";
-  import { fly } from "svelte/transition";
+<script lang="ts">
+  import ClickToCopy from "$lib/components/ClickToCopy.svelte"
+  import { fly } from "svelte/transition"
   
-  let name = "";
-  let email = "";
-  let message = "";
+  let name = ""
+  let email = ""
+  let message = ""
   
-  /**
-  * @param {string} name
-  * @param {string} email
-  * @param {string} message
-  */
-  function submitForm(name, email, message) {
+  function submitForm(name: string, email: string, message: string) {
     alert(`Submitted ${name}, ${email} with message: ${message}`);
   }
 </script>

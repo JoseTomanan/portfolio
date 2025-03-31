@@ -1,7 +1,7 @@
 <enhanced:img 
-class="object-cover overflow-clip h-[25rem] w-full"
-src="$lib/images/hero.jpg"
-alt="Me"
+  class="object-cover overflow-clip h-[25rem] w-full"
+  src="$lib/images/hero.jpg"
+  alt="Me"
 />
 
 <!-- SOURCE: https://flowbite.com/docs/components/carousel/ -->

@@ -1,16 +1,16 @@
-<script>
-  export let id;
-  export let href;
+<script lang="ts">
+  export let id: string
+  export let href: string
   // export let color;
-  export let title;
-  export let subtitle;
-  export let other = "";
+  export let title: string
+  export let subtitle: string
+  export let other: string = ""
   
   // $: hoverColor = "hover:text-".concat(color);
   // $: bgColor = "bg-".concat(color);
   
-  export let date = "AUG 2023 - AUG 2023";
-  export let techInvolved = [""];
+  export let date: string = "AUG 2023 - AUG 2023"
+  export let techInvolved: string[] = [""]
 </script>
 
 <article class="flex min-h-48 gap-4 items-baseline bg-slate-50 hover:bg-slate-100 py-2 px-3 rounded-lg text-left border border-slate-100 transition ease-linear z-10">

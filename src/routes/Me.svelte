@@ -1,5 +1,5 @@
-<script>
-  import { fly } from "svelte/transition";
+<script lang="ts">
+  import { fly } from "svelte/transition"
 </script>
 
 <page class="h-auto gap-0.5" transition:fly={{ delay: 100, duration: 1000 }}>

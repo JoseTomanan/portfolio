@@ -1,7 +1,7 @@
-<script>
-  import Article from "$lib/components/Article.svelte";
-  import { fly } from "svelte/transition";
-  import { link } from "$lib";
+<script lang="ts">
+  import Article from "$lib/components/Article.svelte"
+  import { fly } from "svelte/transition"
+  import { link } from "$lib"
 </script>
 
 <page class="h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
