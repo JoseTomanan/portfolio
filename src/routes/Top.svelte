@@ -3,7 +3,7 @@
   import { link } from "$lib"
   import { fly } from "svelte/transition"
   
-  const header = [
+  const header: {logo: string, color:string, link:string, handle:string}[] = [
     { logo: "/logo/li.png", color: "hover:from-cyan-100 hover:to-cyan-300", link: link.li, handle: "jedtomanan" },
     { logo: "/logo/gh.svg", color: "hover:from-purple-100 hover:to-purple-300", link: link.gh, handle: "HoweZae" },
     { logo: "/logo/fb.png", color: "hover:from-blue-100 hover:to-blue-300", link: link.fb, handle: "jedtomanan" },
