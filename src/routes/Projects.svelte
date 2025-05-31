@@ -40,7 +40,18 @@
           "
         techInvolved={ ["Svelte", "Tailwind", "JavaScript", "CSS"] }
       />
-      <Article 
+      <!-- <Article 
+        id="proj4"
+        href="_blank"
+        title="Sugarcare"
+        subtitle="Image classification model"
+        date="DEC 2024 - JAN 2025"
+        other="
+            A 
+          "
+        techInvolved={ ["Tensorflow", "Keras"] }
+      />  -->
+      <!-- <Article 
         id="proj0"
         href="_blank"
         title="Shogimon"
@@ -53,7 +64,7 @@
             Made in compliance for the requirements of course CS 150: Programming Languages.
           "
         techInvolved={ ["Python", "Go"] }
-      /> 
+      />  -->
       <Article 
         id="proj2"
         href="https://tes-birth-rate.vercel.app"
