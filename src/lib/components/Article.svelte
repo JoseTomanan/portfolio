@@ -14,7 +14,7 @@
 </script>
 
 <article
-  class="flex gap-4 items-baseline bg-slate-100 hover:bg-slate-50 pt-2 pb-4 px-4 rounded-lg text-left border border-slate-200 transition ease-linear z-10">
+  class="flex gap-4 items-baseline bg-slate-100 hover:bg-slate-50 p-4 rounded-lg text-left border border-slate-200 transition ease-linear z-10">
   <date class="grow text-right text-sm font-mono tracking-tighter text-slate-500 transition ease-out">
     {date}
   </date>
@@ -32,7 +32,7 @@
       </a> 
     </h3>
     <h5>{subtitle}</h5>
-    <p class="text-slate-600 text-sm grow">{other}</p>
+    <p class="text-slate-500 text-sm grow">{other}</p>
     <techs class="flex gap-1 mt-1.5">
       <!-- TODO: justify between, make sure this is at the bottom. mt-1.5 is not it -->
       {#each techInvolved as tech}
