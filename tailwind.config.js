@@ -4,7 +4,7 @@ export default {
   content: ["./src/**/*.{html,js,svelte}"],
   theme: {
     fontFamily: {
-      'heading': ["Merriweather", "sans-serif"],
+      'heading': ["IBM Plex Sans", "sans-serif"],
       'sans': ["Inter", "sans-serif"],
       'mono': ["JetBrains Mono", "monospace"],
     },
