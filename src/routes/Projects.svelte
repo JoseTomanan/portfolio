@@ -12,21 +12,20 @@
     </div>
     
     <div class="flex flex-col gap-2 mx-2">
-      <!-- 
       <Article 
         id="proj0"
-        href="_blank"
-        title="Food"
-        subtitle="Food app"
-        date="AUG 2024 - PRESENT"
+        href="https://github.com/JoseTomanan/cs192-lutong-bahay"
+        title="Lutong Bahay"
+        subtitle="Full-stack app/database for Filipino recipes"
+        date="AUG 2024 - MAY 2025"
         other="
-            ,,,
-            Made in compliance for the requirements of course CS 191 and 192: Software Engineering I and II.
+            A full-stack app that showcases a Filipino recipes database with fully functional search filters/sorting functions, along with user authentication system (i.e. log in function).
+            Also includes an administrator mode for adding/editing recipes and suspending users, accessed through the log in screen.
+            Written using Svelte and Tailwind (frontend), and Django-REST framework (backend), with the database hosted in Supabase.
+            Part of a 5-man, year long project done in compliance for the requirements of course CS 191 and 192: Software Engineering I and II.
           "
-        techInvolved={ ["Svelte", "PHP"] }
-        on:click|once={ () => linkClicked("proj0") }
-      /> 
-      -->
+        techInvolved={ ["Svelte", "Tailwind", "Django-REST Framework"] }
+      />
       <Article 
         id="proj1"
         href="https://github.com/HoweZae/portfolio"
@@ -41,7 +40,18 @@
           "
         techInvolved={ ["Svelte", "Tailwind", "JavaScript", "CSS"] }
       />
-      <Article 
+      <!-- <Article 
+        id="proj4"
+        href="_blank"
+        title="Sugarcare"
+        subtitle="Image classification model"
+        date="DEC 2024 - JAN 2025"
+        other="
+            A 
+          "
+        techInvolved={ ["Tensorflow", "Keras"] }
+      />  -->
+      <!-- <Article 
         id="proj0"
         href="_blank"
         title="Shogimon"
@@ -54,7 +64,7 @@
             Made in compliance for the requirements of course CS 150: Programming Languages.
           "
         techInvolved={ ["Python", "Go"] }
-      /> 
+      />  -->
       <Article 
         id="proj2"
         href="https://tes-birth-rate.vercel.app"
