@@ -10,7 +10,7 @@
       shadow-xl
       border-b-2 border-none"
     >
-  <a class="justify-items-start font-bold italic" href="#top">JoseTomanan.io</a>
+  <a class="justify-items-start font-bold italic font-heading" href="#top">JoseTomanan.io</a>
   <a href="#me">Me</a>
   <a href="#roles">Roles</a>
   <a href="#projects">Projects</a>
