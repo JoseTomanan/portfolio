@@ -14,8 +14,8 @@
   <a href="#me">Me</a>
   <a href="#roles">Roles</a>
   <a href="#projects">Projects</a>
-  <!-- <a href="#hobbies">Hobbies</a> -->
-  <a href="#contact">Contact</a>
+  <a href="./resume.pdf" class="hoverable-special" target="_blank">Resume</a>
+  <!-- <a href="#contact">Contact</a> -->
 </nav>
 
 <premain class="flex justify-center">
@@ -24,7 +24,7 @@
   </main>
 </premain>
 
-<footer class="py-2">
+<footer class="py-2 text-amber-600">
   <h6 class="text-center text-slate-400">
     This page is written with Svelte and Tailwind.
     Feel free to open the codebase to see how I made this!
@@ -34,10 +34,10 @@
 
 <style>
   nav > a {
-    @apply transition ease-out;
+    @apply transition ease-out hover:text-sky-500;
   }
   
-  nav > a:hover {
-    @apply text-sky-500;
+  nav > a.hoverable-special {
+    @apply hover:text-amber-500;
   }
 </style>
