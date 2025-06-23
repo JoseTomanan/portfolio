@@ -19,13 +19,13 @@
 </nav>
 
 <premain class="flex justify-center">
-  <main class="mx-2 min-h-screen max-w-[960px] flex flex-col gap-4">
+  <main class="mx-2 max-w-[840px] flex flex-col gap-4">
     <slot />
   </main>
 </premain>
 
 <footer class="pt-2 pb-16 text-amber-600">
-  <h6 class="text-center text-slate-400">
+  <h6 class="text-center text-slate-500">
     This page is written with Svelte and Tailwind.
     Feel free to open the codebase to see how I made this!
   </h6>
