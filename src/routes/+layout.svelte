@@ -19,7 +19,7 @@
 </nav>
 
 <premain class="flex justify-center">
-  <main class="mx-2 max-w-[840px] flex flex-col gap-4">
+  <main class="mx-2 max-w-[840px] flex flex-col gap-10">
     <slot />
   </main>
 </premain>
