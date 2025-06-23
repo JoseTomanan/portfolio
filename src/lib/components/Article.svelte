@@ -14,14 +14,14 @@
 </script>
 
 <article
-  class="flex gap-4 items-baseline bg-slate-100 hover:bg-slate-50 p-4 rounded-lg text-left border border-slate-200 transition ease-linear z-10">
+  class="flex gap-4 items-baseline bg-slate-100 hover:bg-white p-4 rounded-lg text-left border border-slate-200 transition ease-linear z-10">
   <date class="grow text-right text-sm font-mono tracking-tighter text-slate-500 transition ease-out">
     {date}
   </date>
   
-  <div class="basis-4/5 flex flex-col gap-0.5">
-    <h3 class="text-lg underline-offset-2 flex font-sans font-bold"> 
-      <a class="flex items-baseline clickableLink text-slate-700 hover:text-sky-500 gap-2.5 hover:gap-4 transition-all ease-out" target="_blank" {id} {href} on:click|once>
+  <div class="basis-3/4 flex flex-col">
+    <h3 class="text-lg underline-offset-2 flex font-sans font-bold not-italic"> 
+      <a class="flex items-baseline clickableLink text-slate-700 hover:text-amber-500 gap-2.5 hover:gap-4 transition-all ease-out" target="_blank" {id} {href} on:click|once>
         {title}
         <svg 
         id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" 
@@ -36,9 +36,9 @@
     <techs class="flex gap-1 mt-1.5">
       <!-- TODO: justify between, make sure this is at the bottom. mt-1.5 is not it -->
       {#each techInvolved as tech}
-      <perTech class="bg-slate-300 hover:bg-sky-600 rounded-xl px-2 text-white transition ease-out">
-        {tech}
-      </perTech>
+        <perTech class="bg-slate-300 rounded-xl px-2 text-white transition ease-out">
+          {tech}
+        </perTech>
       {/each}
     </techs>
   </div>
@@ -63,6 +63,10 @@
   }
   
   article:hover perTech {
+    @apply bg-slate-400;
+  }
+
+  article perTech:hover {
     @apply bg-sky-400;
   }
   
