@@ -12,20 +12,20 @@
   ]
 </script>
 
-<page class="mt-16 h-auto gap-0.5 fade-in" transition:fly={{ delay: 100, duration: 1000 }}>
+<page class="mt-16 h-auto gap-0 fade-in" transition:fly={{ delay: 100, duration: 1000 }}>
   <jumpable id="top" />
   <section class="flex flex-col gap-4 items-center justify-between overflow-hidden rounded-t-lg rounded-b-none p-0 pb-4 mt-4">
     <Carousel />
     
-    <div class="flex flex-col gap-0.5 items-center justify-center">
-      <h1 class="text-2xl">Jose Tomanan</h1>
-      <h3 class="text-slate-500">CS major / Web developer / Student leader / Fashionista / Gym rat</h3>
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="text-2xl font-bold">Jose Tomanan</h1>
+      <h3 class="text-slate-600">CS major / Full-stack web developer / Gym rat / Fashionista</h3>
     </div>
   </section>
   
-  <section class="shrink flex flex-col gap-2 rounded-t-none rounded-b-lg items-baseline">
+  <section class="shrink flex flex-col gap-2 items-baseline">
     <h4>
-      Hey! I am Jose, a BS Computer Science junior at the University of the Philippines - Diliman.
+      Hey! I'm Jose, a BS Computer Science junior from UP Diliman.
       <a id="see-resume" class="hoverable-link" href="./resume.pdf" target="_blank">
         <span>See my resume!</span>
         <svg id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -35,9 +35,9 @@
       </a>
     </h4>
 
-    <div class="flex gap-1 w-full px-2">
+    <div class="flex gap-2 w-full">
       {#each header as image}
-        <button type="button" class="grow flex justify-center bg-gradient-to-b from-white to-white {image.color} active:from-slate-100 active:to-slate-100 p-2 rounded-xl transition ease-out hover:scale-110">
+        <button type="button" class="grow flex justify-center bg-gradient-to-b from-white to-white {image.color} active:from-slate-100 active:to-slate-100 p-2 rounded-xl transition-all ease-out border border-slate-100">
           <a href={ image.link } target="_blank">
             <img class="h-8" src={image.logo} alt="Logo" />
           </a>
@@ -49,10 +49,10 @@
 
 <style>
   #see-resume {
-    @apply inline-flex gap-0.5 text-slate-500;
+    @apply inline-flex gap-0.5;
   }
   #see-resume:hover {
-    @apply gap-2 text-sky-500;
+    @apply gap-2 text-amber-500;
   }
   #link {
     opacity: 0;
