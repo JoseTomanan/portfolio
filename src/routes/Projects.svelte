@@ -11,7 +11,7 @@
       <h2>What projects have I made?</h2>
     </div>
     
-    <div class="flex flex-col gap-2 mx-2">
+    <div class="flex flex-col gap-4">
       <Article 
         id="proj0"
         href="https://github.com/JoseTomanan/cs192-lutong-bahay"

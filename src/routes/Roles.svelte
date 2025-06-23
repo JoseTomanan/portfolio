@@ -11,7 +11,7 @@
       <h2>What have I been up to?</h2>
     </div>
     
-    <div class="flex flex-col gap-2 mx-2">
+    <div class="flex flex-col gap-4">
       <Article 
         id="role1"
         href="https://www.linkedin.com/in/jedtomanan/details/experience/"
