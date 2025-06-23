@@ -57,7 +57,7 @@
     
     <h6 class="text-slate-400 text-right">
       // See more of what I've done at
-      <a class="underline underline-offset-2 hover:text-sky-500" href={link.li}>LinkedIn</a>.
+      <a class="underline underline-offset-2 hover:text-amber-500" href={link.li}>LinkedIn</a>.
     </h6>
   </section>
 </page>
