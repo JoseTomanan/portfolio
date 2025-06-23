@@ -21,7 +21,7 @@
   
   <div class="basis-3/4 flex flex-col">
     <h3 class="text-lg underline-offset-2 flex font-sans font-bold not-italic"> 
-      <a class="flex items-baseline clickableLink text-slate-700 hover:text-amber-500 gap-2.5 hover:gap-4 transition-all ease-out" target="_blank" {id} {href} on:click|once>
+      <a class="flex items-baseline clickableLink text-slate-700 hover:text-sky-500 gap-2.5 hover:gap-4 transition-all ease-out" target="_blank" {id} {href} on:click|once>
         {title}
         <svg 
         id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" 
