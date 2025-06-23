@@ -12,9 +12,6 @@ export default {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        bg: colors.slate,
-        main: colors.sky,
-        accent: colors.amber,
         // lucy: {
         //   bg: '#1E1D24',
         //   surface: '#28252C',
