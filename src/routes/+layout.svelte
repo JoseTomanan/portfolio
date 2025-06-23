@@ -24,7 +24,7 @@
   </main>
 </premain>
 
-<footer class="py-2 text-amber-600">
+<footer class="pt-2 pb-16 text-amber-600">
   <h6 class="text-center text-slate-400">
     This page is written with Svelte and Tailwind.
     Feel free to open the codebase to see how I made this!
