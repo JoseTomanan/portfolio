@@ -9,7 +9,7 @@
         scroll-behavior: smooth;
     }
     body {
-        @apply font-sans bg-slate-300;
+        @apply font-sans bg-slate-500;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         position: relative;
@@ -57,7 +57,8 @@
         @apply flex flex-col gap-4 h-[calc(100vh-4rem)];
     }
     section {
-        @apply bg-slate-50 px-6 py-8 grow border-slate-400 rounded-t-xl border-b-[3px];
+        @apply bg-slate-50 px-6 py-8 grow border-slate-300 rounded-t-xl border-b-[3px];
+        /* @apply shadow-lg shadow-slate-400; */
     }
     jumpable {
         @apply h-12 -mt-16 -z-50;
