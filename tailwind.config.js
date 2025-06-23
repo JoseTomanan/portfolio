@@ -12,6 +12,16 @@ export default {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
+        lucy: {
+          bg: '#1E1D24',
+          surface: '#28252C',
+          primary: '#F29CA3',
+          secondary: '#F4C16D',
+          text: '#E5E5E5',
+          muted: '#A49EAC',
+          border: '#3A3740',
+          hover: '#FFBFD0',
+        }
       },
     },
     screens: {
