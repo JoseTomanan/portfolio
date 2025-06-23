@@ -14,17 +14,17 @@
 
 <page class="mt-16 h-auto gap-0 fade-in" transition:fly={{ delay: 100, duration: 1000 }}>
   <jumpable id="top" />
-  <section class="flex flex-col gap-4 items-center justify-between overflow-hidden rounded-t-lg rounded-b-none p-0 pb-4 mt-4">
+  <section class="flex flex-col gap-4 items-center justify-between overflow-hidden p-0 pb-4 mt-4">
     <Carousel />
     
     <div class="flex flex-col items-center justify-center">
       <h1 class="text-2xl font-bold">Jose Tomanan</h1>
-      <h3 class="text-slate-600">CS major / Full-stack web developer / Gym rat / Fashionista</h3>
+      <h3 class="text-slate-600">CS major · Full-stack web developer · Gym rat</h3>
     </div>
   </section>
   
-  <section class="shrink flex flex-col gap-2 items-baseline">
-    <h4>
+  <section class="shrink flex flex-col gap-1.5 items-baseline rounded-t-none pt-3">
+    <h4 class="text-slate-600">
       Hey! I'm Jose, a BS Computer Science junior from UP Diliman.
       <a id="see-resume" class="hoverable-link" href="./resume.pdf" target="_blank">
         <span>See my resume!</span>
@@ -35,7 +35,7 @@
       </a>
     </h4>
 
-    <div class="flex gap-2 w-full">
+    <div class="flex gap-1 w-full">
       {#each header as image}
         <button type="button" class="grow flex justify-center bg-gradient-to-b from-white to-white {image.color} active:from-slate-100 active:to-slate-100 p-2 rounded-xl transition-all ease-out border border-slate-100">
           <a href={ image.link } target="_blank">
