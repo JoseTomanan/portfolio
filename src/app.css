@@ -9,7 +9,7 @@
         scroll-behavior: smooth;
     }
     body {
-        @apply bg-slate-200 font-sans;
+        @apply font-sans bg-slate-300;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         position: relative;
@@ -44,7 +44,7 @@
         }
 
         /* TODO : fix (I just know this isnt the proper implementation of this) */
-        h2  { @apply text-xl }
+        h2  { @apply text-2xl }
         h3  { @apply text-lg }
         h4  { @apply text-lg }
         h6  { @apply text-xs }
@@ -57,7 +57,7 @@
         @apply flex flex-col gap-4 h-[calc(100vh-4rem)];
     }
     section {
-        @apply bg-white p-4 rounded-md shadow-sm grow;
+        @apply bg-slate-50 px-6 py-8 grow border-slate-400 rounded-t-xl border-b-[3px];
     }
     jumpable {
         @apply h-12 -mt-16 -z-50;
@@ -65,7 +65,11 @@
 }
 
 @layer utilities {
-    a.hoverable-link {
+    span.hoverable-link {
         @apply underline underline-offset-2 hover:text-sky-500 transition-all ease-out;
+    }
+
+    a.hoverable-link {
+        @apply underline underline-offset-2 hover:text-amber-500 transition-all ease-out;
     }
 }
