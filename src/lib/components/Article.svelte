@@ -14,7 +14,7 @@
 </script>
 
 <article
-  class="flex gap-4 items-baseline bg-slate-100 hover:bg-white p-4 rounded-lg text-left border border-slate-200 transition ease-linear z-10">
+  class="flex gap-4 items-baseline bg-slate-100 p-4 rounded-lg text-left border border-slate-200 hover:bg-sky-50 hover:border-sky-100 hover:shadow-sky-200 hover:shadow-md transition ease-linear z-10">
   <date class="grow text-right text-sm font-mono tracking-tighter text-slate-500 transition ease-out">
     {date}
   </date>
