@@ -21,7 +21,7 @@
   
   <div class="basis-3/4 flex flex-col">
     <h3 class="text-lg underline-offset-2 flex font-sans font-bold not-italic"> 
-      <a class="flex items-baseline clickableLink text-lucy-fg hover:text-lucy-primary gap-2.5 hover:gap-4 transition-all ease-out" target="_blank" {id} {href} on:click|once>
+      <a class="flex items-baseline clickableLink gap-2 hover:gap-4 transition-all ease-out" target="_blank" {id} {href} on:click|once>
         {title}
         <svg 
         id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" 
@@ -36,7 +36,7 @@
     <techs class="flex gap-1 mt-1.5">
       <!-- TODO: justify between, make sure this is at the bottom. mt-1.5 is not it -->
       {#each techInvolved as tech}
-        <perTech class="bg-lucy-surface-2 rounded-xl px-2 text-lucy-fg transition ease-out">
+        <perTech class="bg-lucy-surface-2 rounded-xl px-2 text-lucy-muted transition ease-out">
           {tech}
         </perTech>
       {/each}
@@ -45,9 +45,13 @@
 </article>
 
 <style>
+  h3 {
+    @apply text-lucy-fg;
+  }
+    
   article:hover h3 {
     /* text-decoration-line: underline; */
-    @apply transition-all duration-150 ease-in-out;
+    @apply transition-all duration-150 ease-in-out text-lucy-primary;
   }
 
   article:hover h5, article:hover date {
@@ -65,7 +69,7 @@
   }
   
   article:hover perTech {
-    @apply bg-lucy-hover;
+    @apply bg-lucy-hover text-lucy-fg;
   }
 
   article perTech:hover {
