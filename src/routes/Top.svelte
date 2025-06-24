@@ -18,7 +18,7 @@
   <section class="flex flex-col gap-4 items-center justify-between overflow-hidden p-0 pb-4 mt-4 border-b-4 border-lucy-bg">
     <Carousel />
     <div class="flex flex-col items-center justify-center">
-      <h1 class="text-2xl font-bold">Jose Tomanan</h1>
+      <h1 class="text-2xl font-bold text-lucy-fg">Jose Tomanan</h1>
       <h3 class="text-lucy-muted">CS major · Full-stack web developer · Gym rat</h3>
     </div>
   </section>
