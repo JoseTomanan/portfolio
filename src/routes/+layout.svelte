@@ -22,8 +22,8 @@
   </main>
 </premain>
 
-<footer class="pt-20 pb-1 text-slate-400">
-  <h6 class="text-center shadow-xs">
+<footer class="pt-20 pb-1 text-lucy-muted">
+  <h6 class="text-center">
     This page is written with Svelte and Tailwind.
     Feel free to open the codebase to see how I made this!
   </h6>
