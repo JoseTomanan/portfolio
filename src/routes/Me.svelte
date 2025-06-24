@@ -32,7 +32,7 @@
 
 <style>
   span#special {
-    @apply font-bold text-sky-500 hover:text-amber-500 transition-colors ease-out;
+    @apply font-bold text-lucy-fg hover:text-lucy-primary transition-colors ease-out;
     /* TODO: WORK IN PROGRESS! */
   }
 </style>
