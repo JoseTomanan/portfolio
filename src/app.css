@@ -9,7 +9,7 @@
         scroll-behavior: smooth;
     }
     body {
-        @apply font-sans bg-slate-500;
+        @apply font-sans bg-slate-400;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         position: relative;
@@ -32,7 +32,7 @@
 
         /* ALL OTHER */
         h1, h2, h3 {
-            @apply font-heading text-slate-800;
+            @apply font-heading text-slate-900;
         }
 
         h4, h5, p, label {
@@ -57,7 +57,7 @@
         @apply flex flex-col gap-4 h-[calc(100vh-4rem)];
     }
     section {
-        @apply bg-slate-50 px-6 py-8 grow border-slate-300 rounded-t-xl border-b-[3px];
+        @apply bg-slate-50 px-6 py-8 grow border-slate-300 rounded-t-xl;
         /* @apply shadow-lg shadow-slate-400; */
     }
     jumpable {
