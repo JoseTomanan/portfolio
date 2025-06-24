@@ -22,7 +22,7 @@
   </main>
 </premain>
 
-<footer class="pt-20 pb-1 text-lucy-muted">
+<footer class="pt-20 pb-4 text-lucy-surface-2">
   <h6 class="text-center">
     This page is written with Svelte and Tailwind.
     Feel free to open the codebase to see how I made this!
