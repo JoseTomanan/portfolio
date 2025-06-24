@@ -19,7 +19,7 @@
     <Carousel />
     <div class="flex flex-col items-center justify-center">
       <h1 class="text-2xl font-bold text-lucy-fg">Jose Tomanan</h1>
-      <h3 class="text-lucy-muted">CS major · Full-stack web developer · Gym rat</h3>
+      <h3 class="text-lucy-muted px-4 text-center">CS major · Full-stack web developer · Gym rat</h3>
     </div>
   </section>
   

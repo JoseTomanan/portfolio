@@ -19,7 +19,7 @@
     {date}
   </date>
   
-  <div class="basis-3/4 flex flex-col">
+  <div class="basis-5/6 md:basis-3/4 flex flex-col">
     <h3 class="text-lg underline-offset-2 flex font-sans font-bold not-italic"> 
       <a class="flex items-baseline clickableLink gap-2 hover:gap-4 transition-all ease-out" target="_blank" {id} {href} on:click|once>
         {title}

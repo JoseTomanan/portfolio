@@ -8,7 +8,7 @@
       fixed w-full max-w-screen p-3 z-50
       bg-lucy-surface backdrop-blur-sm opacity-90
       gap-4 md:gap-16
-      focus:border-none
+      focus:border-none active:border-none
     ">
   <a class="justify-items-start font-bold italic font-heading hoverable-special pr-0 md:pr-4" href="#top">JoseTomanan.io</a>
   <a href="#me">Me</a>
@@ -19,12 +19,15 @@
 </nav>
 
 <premain class="flex justify-center">
-  <main class="mx-2 max-w-[840px] flex flex-col gap-10">
+  <main class="
+    mx-2 flex flex-col gap-10
+    w-screen px-2 md:max-w-[840px] md:px-0
+  ">
     <slot />
   </main>
 </premain>
 
-<footer class="pt-20 pb-4 text-lucy-surface-2">
+<footer>
   <h6 class="text-center">
     This page is written with Svelte and Tailwind.
     Feel free to open the codebase to see how I made this!
