@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito+Sans|Open+Sans|JetBrains+Mono);
+@import url(https://fonts.googleapis.com/css?family=Merriweather|Inter|IBM+Plex+Sans|JetBrains+Mono);
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@
         scroll-behavior: smooth;
     }
     body {
-        @apply bg-slate-200 font-sans;
+        @apply font-sans bg-lucy-bg;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         position: relative;
@@ -32,11 +32,11 @@
 
         /* ALL OTHER */
         h1, h2, h3 {
-            @apply font-heading text-slate-800;
+            @apply font-heading text-lucy-primary;
         }
 
         h4, h5, p, label {
-            @apply font-sans text-slate-500;
+            @apply font-sans text-lucy-muted;
         }
 
         h6 {
@@ -44,7 +44,7 @@
         }
 
         /* TODO : fix (I just know this isnt the proper implementation of this) */
-        h2  { @apply text-xl }
+        h2  { @apply text-2xl }
         h3  { @apply text-lg }
         h4  { @apply text-lg }
         h6  { @apply text-xs }
@@ -57,7 +57,8 @@
         @apply flex flex-col gap-4 h-[calc(100vh-4rem)];
     }
     section {
-        @apply bg-white p-4 rounded-md shadow-sm grow;
+        @apply bg-lucy-surface px-6 py-8 grow border-lucy-border rounded-t-xl;
+        @apply shadow-sm shadow-lucy-muted/50;
     }
     jumpable {
         @apply h-12 -mt-16 -z-50;
@@ -65,7 +66,11 @@
 }
 
 @layer utilities {
+    span.hoverable-link {
+        @apply underline underline-offset-2 hover:text-lucy-tertiary transition-all ease-out;
+    }
+
     a.hoverable-link {
-        @apply underline underline-offset-2 hover:text-sky-500 transition-all ease-out;
+        @apply underline underline-offset-2 hover:text-lucy-secondary transition-all ease-out;
     }
 }

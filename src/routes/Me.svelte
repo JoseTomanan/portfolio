@@ -7,30 +7,19 @@
   <section class="flex flex-col gap-1.5 mt-3.5 rounded-b-none">
     <h2>What do I do?</h2>
     <p>
-      As a CS major, my course has given me the privilege to explore the different options available in the tech industry.
-      This institution has given me the chance to learn about <i>data science</i>, <i>software development</i>, and <i>database systems</i>.
-      While nothing in particular stood out to me personally, I was enjoying the act of learning a new skill by creating something from what I have learned.
+      As a developer, I enjoy <span id="special">full-stack software development.</span>
+      I am experienced in the frontend side &mdash; creating prototypes in Figma and using Svelte to implement this appearance, as well as the backend side &mdash; building APIs with Django and Spring Boot.
+      I feel that I thrive in this field, and I would love the opportunity to do more of this in my career.
     </p>
-    <!-- TODO: something to visualize -->
-    
-    <p class="italic font-bold">It was almost like the journey is part of the destination.</p>
-    <!-- TODO: something to visualize -->
-    
-    <p>
-      Right now, I am currently immersing myself in the field of <i>UI/UX design</i>;
-      I appreciate diving into the psychology behind what drives users into clicking buttons.
-      I long to be able to make a career out of this path that I enjoy.
-    </p>
-    <!-- TODO: something to visualize -->
-  </section>
+  <!-- </section>
   
-  <section class="flex flex-col gap-1.5 rounded-t-none">
+  <section class="flex flex-col gap-1.5 rounded-t-none"> -->
     <p>
-      When not working, however, I prefer to spend my time away from the keyboard than in front of it.
+      Outside of work, I prefer to spend my time away from the keyboard than in front of it.
       I like to stay physically active and explore different things, but my favorite way to spend my free time is through
-      <a href="https://www.instagram.com/stories/highlights/17992555250680811/" class="hoverable-link" target="_blank">weightlifting</a>,
-      <a href="_blank" class="hoverable-link" target="_blank">running</a> and
-      <a href="_blank" class="hoverable-link" target="_blank">playing basketball</a>.
+      <span class="hoverable-link">weightlifting</span>,
+      <span class="hoverable-link">playing chess</span> and
+      <span class="hoverable-link">playing basketball</span>.
     </p>
     
     <p>
@@ -40,3 +29,10 @@
     </p>
   </section>
 </page>
+
+<style>
+  span#special {
+    @apply font-bold text-lucy-fg hover:text-lucy-primary transition-colors ease-out;
+    /* TODO: WORK IN PROGRESS! */
+  }
+</style>

@@ -11,7 +11,7 @@
       <h2>What have I been up to?</h2>
     </div>
     
-    <div class="flex flex-col gap-2 mx-2">
+    <div class="flex flex-col gap-4">
       <Article 
         id="role1"
         href="https://www.linkedin.com/in/jedtomanan/details/experience/"
@@ -55,9 +55,9 @@
       />
     </div>
     
-    <h6 class="text-slate-400 text-right">
+    <h6 class="text-lucy-muted text-right">
       // See more of what I've done at
-      <a class="underline underline-offset-2 hover:text-sky-500" href={link.li}>LinkedIn</a>.
+      <a class="underline underline-offset-2 hover:text-lucy-secondary" href={link.li}>LinkedIn</a>.
     </h6>
   </section>
 </page>

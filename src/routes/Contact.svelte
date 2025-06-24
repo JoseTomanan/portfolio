@@ -2,9 +2,9 @@
   import ClickToCopy from "$lib/components/ClickToCopy.svelte"
   import { fly } from "svelte/transition"
   
-  let name = ""
-  let email = ""
-  let message = ""
+  let name: string = ""
+  let email: string = ""
+  let message: string = ""
   
   function submitForm(name: string, email: string, message: string) {
     alert(`Submitted ${name}, ${email} with message: ${message}`);

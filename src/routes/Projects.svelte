@@ -11,7 +11,7 @@
       <h2>What projects have I made?</h2>
     </div>
     
-    <div class="flex flex-col gap-2 mx-2">
+    <div class="flex flex-col gap-4">
       <Article 
         id="proj0"
         href="https://github.com/JoseTomanan/cs192-lutong-bahay"
@@ -20,7 +20,7 @@
         date="AUG 2024 - MAY 2025"
         other="
             A full-stack app that showcases a Filipino recipes database with fully functional search filters/sorting functions, along with user authentication system (i.e. log in function).
-            Also includes an administrator mode for adding/editing recipes and suspending users, accessed through the log in screen.
+            Also includes an administrator mode for adding/editing recipes and suspending users.
             Written using Svelte and Tailwind (frontend), and Django-REST framework (backend), with the database hosted in Supabase.
             Part of a 5-man, year long project done in compliance for the requirements of course CS 191 and 192: Software Engineering I and II.
           "
@@ -94,9 +94,9 @@
       />
     </div>
     
-    <h6 class="text-slate-400 text-right">
+    <h6 class="text-lucy-muted text-right">
       // See my public repositories, in full detail, at 
-      <a class="underline hover:text-sky-500" href={link.gh}>GitHub</a>.
+      <a class="underline hover:text-lucy-secondary" href={link.gh}>GitHub</a>.
     </h6>
   </section>
 </page>

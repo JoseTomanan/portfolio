@@ -10,7 +10,7 @@
   // import { tweened, spring } from "svelte/motion";
   // import { elasticOut } from "svelte/easing";
   
-  let startPage = false
+  let startPage: boolean = false
   
   onMount(() => {
     startPage = true;
@@ -32,7 +32,7 @@
   <Me />
   <Roles />
   <Projects />
-  <Contact />
+  <!-- <Contact /> -->
 {/if}
 
 <style>
