@@ -94,9 +94,9 @@
       />
     </div>
     
-    <h6 class="text-slate-400 text-right">
+    <h6 class="text-lucy-muted text-right">
       // See my public repositories, in full detail, at 
-      <a class="underline hover:text-amber-500" href={link.gh}>GitHub</a>.
+      <a class="underline hover:text-lucy-secondary" href={link.gh}>GitHub</a>.
     </h6>
   </section>
 </page>

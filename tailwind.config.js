@@ -12,16 +12,18 @@ export default {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        // lucy: {
-        //   bg: '#100f13',
-        //   surface: '#1e1d23',
-        //   fg: '#ded7d0',
-        //   primary: '#f0ce59',
-        //   secondary: '#ffac5c',
-        //   muted: '#A49EAC',
-        //   border: '#686069',
-        //   hover: '#2f2c32',
-        // }
+        lucy: {
+          bg: '#100f13',
+          surface: '#1e1d23',
+          'surface-2': '#2f2c32',
+          fg: '#ded7d0',
+          primary: '#f0ce59',
+          secondary: '#ff7da3',
+          tertiary: '#56c6d5',
+          muted: '#a49eac',
+          border: '#938884',
+          hover: '#686069',
+        },
       },
     },
     screens: {
