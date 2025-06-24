@@ -52,16 +52,18 @@
 </page>
 
 <style>
+  #link {
+    opacity: 0;
+  }
+  /*
   #see-resume {
     @apply inline-flex gap-0.5;
   }
   #see-resume:hover {
     @apply gap-2 text-lucy-secondary;
   }
-  #link {
-    opacity: 0;
-  }
   #see-resume:hover #link {
     opacity: 1;
   }
+  */
 </style>
