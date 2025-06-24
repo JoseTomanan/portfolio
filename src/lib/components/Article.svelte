@@ -14,14 +14,14 @@
 </script>
 
 <article
-  class="flex gap-4 items-baseline bg-slate-100 p-4 rounded-lg text-left border border-slate-200 hover:bg-sky-50 hover:border-sky-100 hover:shadow-sky-200 hover:shadow-md transition ease-linear z-10">
-  <date class="grow text-right text-sm font-mono tracking-tighter text-slate-500 transition ease-out">
+  class="flex gap-4 items-baseline bg-lucy-surface p-4 rounded-lg text-left border border-lucy-border hover:bg-lucy-surface-2 hover:border-lucy-fg hover:shadow-lucy-fg hover:shadow-sm transition ease-linear z-10">
+  <date class="grow text-right text-sm font-mono tracking-tighter text-lucy-muted transition ease-out">
     {date}
   </date>
   
   <div class="basis-3/4 flex flex-col">
     <h3 class="text-lg underline-offset-2 flex font-sans font-bold not-italic"> 
-      <a class="flex items-baseline clickableLink text-slate-700 hover:text-sky-500 gap-2.5 hover:gap-4 transition-all ease-out" target="_blank" {id} {href} on:click|once>
+      <a class="flex items-baseline clickableLink text-lucy-fg hover:text-lucy-primary gap-2.5 hover:gap-4 transition-all ease-out" target="_blank" {id} {href} on:click|once>
         {title}
         <svg 
         id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" 
@@ -36,7 +36,7 @@
     <techs class="flex gap-1 mt-1.5">
       <!-- TODO: justify between, make sure this is at the bottom. mt-1.5 is not it -->
       {#each techInvolved as tech}
-        <perTech class="bg-slate-300 rounded-xl px-2 text-white transition ease-out">
+        <perTech class="bg-lucy-surface-2 rounded-xl px-2 text-lucy-fg transition ease-out">
           {tech}
         </perTech>
       {/each}
@@ -48,6 +48,10 @@
   article:hover h3 {
     /* text-decoration-line: underline; */
     @apply transition-all duration-150 ease-in-out;
+  }
+
+  article:hover h5, article:hover date {
+    @apply text-lucy-fg
   }
   
   #link {
@@ -61,14 +65,10 @@
   }
   
   article:hover perTech {
-    @apply bg-slate-400;
+    @apply bg-lucy-hover;
   }
 
   article perTech:hover {
-    @apply bg-sky-400;
-  }
-  
-  article:hover date {
-    @apply text-slate-600;
+    @apply bg-lucy-tertiary text-lucy-surface-2;
   }
 </style>
