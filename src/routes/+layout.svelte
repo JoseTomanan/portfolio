@@ -6,7 +6,7 @@
   <nav class="
       flex items-center justify-center gap-8
       fixed w-full max-w-screen p-4 z-50
-      bg-white backdrop-blur-sm opacity-90
+      bg-white backdrop-blur-sm opacity-80
       shadow-xl
       border-b-2 border-none"
     >
@@ -24,8 +24,8 @@
   </main>
 </premain>
 
-<footer class="pt-28 pb-2 text-amber-600">
-  <h6 class="text-center text-slate-200 shadow-xs">
+<footer class="pt-20 pb-1 text-slate-400">
+  <h6 class="text-center shadow-xs">
     This page is written with Svelte and Tailwind.
     Feel free to open the codebase to see how I made this!
   </h6>
