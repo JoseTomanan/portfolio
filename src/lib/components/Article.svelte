@@ -32,7 +32,7 @@
       </a> 
     </h3>
     <h5>{subtitle}</h5>
-    <p class="text-slate-500 text-sm grow">{other}</p>
+    <p class="text-sm grow">{other}</p>
     <techs class="flex gap-1 mt-1.5">
       <!-- TODO: justify between, make sure this is at the bottom. mt-1.5 is not it -->
       {#each techInvolved as tech}
@@ -46,10 +46,8 @@
 
 <style>
   article:hover h3 {
-    text-decoration-line: underline;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
+    /* text-decoration-line: underline; */
+    @apply transition-all duration-150 ease-in-out;
   }
   
   #link {
