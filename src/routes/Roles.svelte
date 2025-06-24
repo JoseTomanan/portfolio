@@ -55,9 +55,9 @@
       />
     </div>
     
-    <h6 class="text-slate-400 text-right">
+    <h6 class="text-lucy-muted text-right">
       // See more of what I've done at
-      <a class="underline underline-offset-2 hover:text-amber-500" href={link.li}>LinkedIn</a>.
+      <a class="underline underline-offset-2 hover:text-lucy-secondary" href={link.li}>LinkedIn</a>.
     </h6>
   </section>
 </page>
