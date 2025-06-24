@@ -52,10 +52,10 @@
 </page>
 
 <style>
+  /*
   #link {
     opacity: 0;
   }
-  /*
   #see-resume {
     @apply inline-flex gap-0.5;
   }
