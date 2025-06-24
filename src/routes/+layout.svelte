@@ -4,11 +4,13 @@
 
 <div class="app bg-fixed">
   <nav class="
-      flex items-center justify-center gap-16
+      flex items-center justify-center
       fixed w-full max-w-screen p-3 z-50
-      bg-lucy-surface backdrop-blur-sm opacity-90"
-    >
-  <a class="justify-items-start font-bold italic font-heading hoverable-special pr-4" href="#top">JoseTomanan.io</a>
+      bg-lucy-surface backdrop-blur-sm opacity-90
+      gap-4 md:gap-16
+      focus:border-none
+    ">
+  <a class="justify-items-start font-bold italic font-heading hoverable-special pr-0 md:pr-4" href="#top">JoseTomanan.io</a>
   <a href="#me">Me</a>
   <a href="#roles">Roles</a>
   <a href="#projects">Projects</a>
