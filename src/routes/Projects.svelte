@@ -88,7 +88,7 @@
             A scripting project that I use for my personal spreadsheet to track my daily outgoing and incoming funds.
             Uses the API to automate the addition of new entries, separation of each week, and creation of a new sheet for each new month.
             Written in TypeScript, later transpiled into JavaScript through Clasp (for Google AppsScript).
-            Implements the SOLID principles and design patterns learned in course CS 150: Programming Languages.
+            Implements SOLID principles and design patterns for codebase sustainability and maintainability.
           "
         techInvolved={ ["Google Sheets", "Google Apps Script", "TypeScript"] }
       />
