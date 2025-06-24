@@ -26,6 +26,7 @@
   <section class="shrink flex flex-col gap-1.5 items-baseline rounded-t-none pt-3">
     <h4>
       Hey! I'm Jose, a BS Computer Science junior from UP Diliman.
+      <!--
       <a id="see-resume" class="text-lucy-surface hover:text-lucy-secondary transition-all ease-out" href="./resume.pdf" target="_blank">
         <span>Visit my resume!</span>
         <svg id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -33,6 +34,7 @@
           <polyline points="7 7 17 7 17 17"></polyline>
         </svg>
       </a>
+      -->
     </h4>
 
     <div class="flex gap-1 w-full">
