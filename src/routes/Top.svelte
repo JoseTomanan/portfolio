@@ -19,7 +19,7 @@
     <Carousel />
     <div class="flex flex-col items-center justify-center">
       <h1 class="text-2xl font-bold text-lucy-fg">Jose Tomanan</h1>
-      <h3 class="text-lucy-muted">CS major · Full-stack web developer · Gym rat</h3>
+      <h3 class="text-lucy-muted px-4 text-center">CS major · Full-stack web developer · Gym rat</h3>
     </div>
   </section>
   
@@ -40,7 +40,7 @@
     <div class="flex gap-1 w-full">
       {#each header as image}
         <button type="button" class="
-          grow flex justify-center bg-gradient-to-b bg-lucy-surface-2 hover:bg-lucy-hover active:from-slate-100 active:to-slate-100 p-2 rounded-xl transition-all ease-out
+          grow flex justify-center bg-gradient-to-b bg-lucy-surface-alt hover:bg-lucy-hover active:from-slate-100 active:to-slate-100 p-2 rounded-xl transition-all ease-out
         ">
           <a href={ image.link } target="_blank">
             <img class="h-6" src={image.logo} alt="Logo" />
