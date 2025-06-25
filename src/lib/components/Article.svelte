@@ -30,10 +30,10 @@
           <line x1="7" y1="17" x2="17" y2="7"></line>
           <polyline points="7 7 17 7 17 17"></polyline>
         </svg>
-      </a> 
+      </a>
     </h3>
-    <h5>{subtitle}</h5>
-    <p class="text-sm grow">{other}</p>
+    <h5 class="text-lucy-fg/75">{subtitle}</h5>
+    <p class="text-sm grow tracking-tight">{other}</p>
     <techs class="flex gap-1 mt-1.5">
       <!-- TODO: justify between, make sure this is at the bottom. mt-1.5 is not it -->
       {#each techInvolved as tech}
