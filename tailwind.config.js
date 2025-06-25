@@ -24,8 +24,8 @@ export default {
           tertiary: '#56c6d5',
           muted: '#a49eac',
           border: {
-            DEFAULT: '#3a3f4b',
-            alt: '#938884',
+            DEFAULT: '#2f2c32',
+            alt: '#524b51',
           },
           hover: '#686069',
         },
