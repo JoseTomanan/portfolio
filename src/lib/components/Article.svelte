@@ -14,7 +14,7 @@
 </script>
 
 <article
-  class="flex gap-4 items-baseline bg-lucy-surface p-4 rounded-lg text-left border border-lucy-border hover:bg-lucy-surface-alt hover:border-lucy-border-alt hover:shadow-lucy-fg hover:shadow-sm transition ease-linear z-10
+  class="flex gap-4 items-baseline bg-lucy-surface p-4 rounded-lg text-left border border-lucy-border hover:bg-lucy-surface-alt hover:border-lucy-border-alt hover:shadow-lucy-border-alt hover:shadow-sm transition ease-linear z-10
 ">
   <date class="grow text-right text-sm font-mono tracking-tighter text-lucy-muted transition ease-out">
     {date}
