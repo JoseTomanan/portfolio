@@ -4,9 +4,9 @@ export default {
   content: ["./src/**/*.{html,js,svelte}"],
   theme: {
     fontFamily: {
-      'heading': ["IBM Plex Sans", "sans-serif"],
+      'heading': ["Bricolage Grotesque", "sans-serif"],
       'sans': ["Inter", "sans-serif"],
-      'mono': ["JetBrains Mono", "monospace"],
+      'mono': ["Fira Mono", "monospace"],
     },
     extend: {
       colors: {
