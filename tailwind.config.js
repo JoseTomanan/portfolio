@@ -14,14 +14,19 @@ export default {
         current: 'currentColor',
         lucy: {
           bg: '#100f13',
-          surface: '#1e1d23',
-          'surface-2': '#2f2c32',
+          surface: {
+            DEFAULT: '#1e1d23',
+            alt: '#2f2c32',
+          },
           fg: '#ded7d0',
           primary: '#f0ce59',
           secondary: '#ff7da3',
           tertiary: '#56c6d5',
           muted: '#a49eac',
-          border: '#938884',
+          border: {
+            DEFAULT: '#3a3f4b',
+            alt: '#938884',
+          },
           hover: '#686069',
         },
       },
