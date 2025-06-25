@@ -14,7 +14,8 @@
 </script>
 
 <article
-  class="flex gap-4 items-baseline bg-lucy-surface p-4 rounded-lg text-left border border-lucy-surface-2 hover:bg-lucy-surface-2 hover:border-lucy-fg hover:shadow-lucy-fg hover:shadow-sm transition ease-linear z-10">
+  class="flex gap-4 items-baseline bg-lucy-surface p-4 rounded-lg text-left border border-lucy-border hover:bg-lucy-surface-alt hover:border-lucy-border-alt hover:shadow-lucy-fg hover:shadow-sm transition ease-linear z-10
+">
   <date class="grow text-right text-sm font-mono tracking-tighter text-lucy-muted transition ease-out">
     {date}
   </date>
@@ -36,7 +37,7 @@
     <techs class="flex gap-1 mt-1.5">
       <!-- TODO: justify between, make sure this is at the bottom. mt-1.5 is not it -->
       {#each techInvolved as tech}
-        <perTech class="bg-lucy-surface-2 rounded-xl px-2 text-lucy-muted transition ease-out">
+        <perTech class="bg-lucy-surface-alt rounded-xl px-2 text-lucy-muted transition ease-out">
           {tech}
         </perTech>
       {/each}
@@ -73,6 +74,6 @@
   }
 
   article perTech:hover {
-    @apply bg-lucy-tertiary text-lucy-surface-2;
+    @apply bg-lucy-tertiary text-lucy-surface-alt;
   }
 </style>

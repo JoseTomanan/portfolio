@@ -40,7 +40,7 @@
     <div class="flex gap-1 w-full">
       {#each header as image}
         <button type="button" class="
-          grow flex justify-center bg-gradient-to-b bg-lucy-surface-2 hover:bg-lucy-hover active:from-slate-100 active:to-slate-100 p-2 rounded-xl transition-all ease-out
+          grow flex justify-center bg-gradient-to-b bg-lucy-surface-alt hover:bg-lucy-hover active:from-slate-100 active:to-slate-100 p-2 rounded-xl transition-all ease-out
         ">
           <a href={ image.link } target="_blank">
             <img class="h-6" src={image.logo} alt="Logo" />
