@@ -55,9 +55,9 @@
       />
     </div>
     
-    <h6 class="text-lucy-muted text-right">
+    <h6 class="footnote">
       // See more of what I've done at
-      <a class="underline underline-offset-2 hover:text-lucy-secondary" href={link.li}>LinkedIn</a>.
+      <a href={link.li}>LinkedIn</a>.
     </h6>
   </section>
 </page>

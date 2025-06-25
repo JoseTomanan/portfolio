@@ -76,4 +76,12 @@
     a.hoverable-link {
         @apply underline underline-offset-2 hover:text-lucy-secondary transition-all ease-out;
     }
+
+    h6.footnote {
+        @apply text-lucy-muted text-right;
+    }
+
+    h6.footnote a {
+        @apply underline hover:text-lucy-secondary;
+    }
 }
