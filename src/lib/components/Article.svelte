@@ -32,7 +32,7 @@
         </svg>
       </a>
     </h3>
-    <h5 class="text-lucy-fg/85">{subtitle}</h5>
+    <h5 class="text-lucy-fg/90">{subtitle}</h5>
     <p class="text-sm grow tracking-tight">{other}</p>
     <techs class="flex gap-1 mt-1.5">
       <!-- TODO: justify between, make sure this is at the bottom. mt-1.5 is not it -->
