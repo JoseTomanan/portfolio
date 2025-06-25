@@ -26,7 +26,7 @@
   
   <div class="basis-5/6 md:basis-3/4 flex flex-col gap-0.5">
     <div class="grid">
-      <h3 class="text-lg underline-offset-2 flex font-sans font-semibold hover:font-bold not-italic">
+      <h3 class="text-lg underline-offset-2 flex font-sans font-semibold text-lucy-fg hover:text-lucy-secondary not-italic">
         <a class="flex items-baseline clickableLink gap-2 hover:gap-4 transition-all ease-out" target="_blank" {id} {href} on:click|once>
           {title}
           <svg
@@ -56,13 +56,9 @@
 </article>
 
 <style>
-  h3 {
-    @apply text-lucy-fg;
-  }
-    
   article:hover h3 {
     /* text-decoration-line: underline; */
-    @apply transition-all duration-150 ease-in-out text-lucy-primary;
+    @apply transition-all duration-150 ease-in-out;
   }
 
   article:hover h5, article:hover date {
