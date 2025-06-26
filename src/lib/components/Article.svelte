@@ -41,7 +41,7 @@
       <h5 class="text-lucy-fg/80 mt-0">{subtitle}</h5>
     </div>
 
-    <p class="text-sm grow leading-4">
+    <p class="text-sm grow leading-4 tracking-normal">
       {other}
     </p>
 
