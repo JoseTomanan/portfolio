@@ -1,11 +1,12 @@
 <script lang="ts">
   import "../app.css"
+  import { link } from "$lib"
 </script>
 
 <div class="app bg-fixed">
   <nav class="
       flex items-center justify-center
-      fixed w-full max-w-screen p-3 z-50
+      fixed w-full max-w-screen py-3 z-50
       bg-lucy-surface backdrop-blur-sm opacity-90
       gap-4 md:gap-16
       focus:border-none active:border-none
@@ -14,7 +15,7 @@
   <a href="#me">Me</a>
   <a href="#roles">Roles</a>
   <a href="#projects">Projects</a>
-  <a href="./resume.pdf" target="_blank">Resume</a>
+  <a href={ link.resume } target="_blank">Resume</a>
   <!-- <a href="#contact">Contact</a> -->
 </nav>
 
@@ -37,7 +38,7 @@
 
 <style>
   nav > a {
-    @apply transition ease-out text-lucy-muted hover:text-lucy-primary;
+    @apply transition ease-out text-lucy-muted/100 hover:text-lucy-primary;
   }
   
   nav > a.hoverable-special {
