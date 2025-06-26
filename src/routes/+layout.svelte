@@ -37,7 +37,7 @@
 
 <style>
   nav > a {
-    @apply transition ease-out text-lucy-fg hover:text-lucy-primary;
+    @apply transition ease-out text-lucy-muted hover:text-lucy-primary;
   }
   
   nav > a.hoverable-special {
