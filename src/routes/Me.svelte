@@ -2,24 +2,23 @@
   import { fly } from "svelte/transition"
 </script>
 
-<page class="h-auto gap-0.5" transition:fly={{ delay: 100, duration: 1000 }}>
+<page class="h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <jumpable id="me" />
-  <section class="flex flex-col gap-1.5 mt-3.5 rounded-b-none">
+  <section class="flex flex-col gap-2 pb-4 rounded-b-none">
     <h2>What do I do?</h2>
     <p>
-      As a developer, I enjoy <span id="special">full-stack software development.</span>
-      I am experienced in the frontend side &mdash; creating prototypes in Figma and using Svelte to implement this appearance, as well as the backend side &mdash; building APIs with Django and Spring Boot.
-      I feel that I thrive in this field, and I would love the opportunity to do more of this in my career.
+      As a developer, I appreciate the philosophy of <span class="hoverable-link">code craftsmanship</span>, i.e. the use of sustainable design patterns and tech principles to build maintainable codebases.
+      I've applied this in frontend, creating web designs using Svelte and Tailwind, as well as in backend, building APIs with Django and Spring Boot.
     </p>
-  <!-- </section>
-  
-  <section class="flex flex-col gap-1.5 rounded-t-none"> -->
     <p>
-      Outside of work, I prefer to spend my time away from the keyboard than in front of it.
-      I like to stay physically active and explore different things, but my favorite way to spend my free time is through
-      <span class="hoverable-link">weightlifting</span>,
-      <span class="hoverable-link">playing chess</span> and
-      <span class="hoverable-link">playing basketball</span>.
+      I bring these principles into my projects, as I feel that this is ultimately what makes an application's codebase "timeless": its intuitiveness.
+    </p>
+  </section>
+  
+  <section class="flex flex-col gap-2 rounded-t-none pt-4 ">
+    <p>
+      Outside of work, I prefer to take a break from all the screen time by spending my free time away from the keyboard &mdash;
+      I do this by <span class="hoverable-link">being physically active and keeping fit</span>, usually through weightlifting, playing basketball, or running.
     </p>
     
     <p>
@@ -31,8 +30,5 @@
 </page>
 
 <style>
-  span#special {
-    @apply font-bold text-lucy-fg hover:text-lucy-primary transition-colors ease-out;
-    /* TODO: WORK IN PROGRESS! */
-  }
+
 </style>

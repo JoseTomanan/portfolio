@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather|Inter|IBM+Plex+Sans|JetBrains+Mono);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:wght@400,600,700&family=Inter:wght@400,600,700&family=Fira+Mono:wght@400);
 
 @tailwind base;
 @tailwind components;
@@ -69,11 +69,23 @@
 }
 
 @layer utilities {
+    .hoverable-link {
+        @apply underline underline-offset-1 transition-all ease-out;
+    }
+
     span.hoverable-link {
-        @apply underline underline-offset-2 hover:text-lucy-tertiary transition-all ease-out;
+        @apply hover:text-lucy-tertiary;
     }
 
     a.hoverable-link {
-        @apply underline underline-offset-2 hover:text-lucy-secondary transition-all ease-out;
+        @apply hover:text-lucy-secondary;
+    }
+
+    h6.footnote {
+        @apply text-lucy-muted text-right;
+    }
+
+    h6.footnote a {
+        @apply underline hover:text-lucy-secondary;
     }
 }

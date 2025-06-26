@@ -15,7 +15,7 @@
 <page class="mt-24 h-auto gap-0 fade-in" transition:fly={{ delay: 100, duration: 1000 }}>
   <jumpable id="top" />
 
-  <section class="flex flex-col gap-4 items-center justify-between overflow-hidden p-0 pb-4 mt-4 border-b-4 border-lucy-bg">
+  <section class="flex flex-col gap-4 items-center justify-between overflow-hidden p-0 pb-4">
     <Carousel />
     <div class="flex flex-col items-center justify-center">
       <h1 class="text-2xl font-bold text-lucy-fg">Jose Tomanan</h1>
@@ -23,9 +23,9 @@
     </div>
   </section>
   
-  <section class="shrink flex flex-col gap-1.5 items-baseline rounded-t-none pt-3">
+  <section class="shrink flex flex-col gap-1.5 items-baseline rounded-t-none pt-4">
     <h4>
-      Hey! I'm Jose, a BS Computer Science junior from UP Diliman.
+      Hey! I'm Jose, a <span id="special">full-stack web developer</span> from UP Diliman.
       <!--
       <a id="see-resume" class="text-lucy-surface hover:text-lucy-secondary transition-all ease-out" href="./resume.pdf" target="_blank">
         <span>Visit my resume!</span>
@@ -66,4 +66,9 @@
     opacity: 1;
   }
   */
+
+  span#special {
+    @apply text-lucy-fg hover:text-lucy-tertiary transition-colors ease-out;
+    /* TODO: WORK IN PROGRESS! */
+  }
 </style>

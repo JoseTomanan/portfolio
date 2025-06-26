@@ -6,7 +6,7 @@ export default {
     fontFamily: {
       'heading': ["IBM Plex Sans", "sans-serif"],
       'sans': ["Inter", "sans-serif"],
-      'mono': ["JetBrains Mono", "monospace"],
+      'mono': ["Fira Mono", "monospace"],
     },
     extend: {
       colors: {
