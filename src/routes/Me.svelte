@@ -4,7 +4,7 @@
 
 <page class="h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <jumpable id="me" />
-  <section class="flex flex-col gap-2 pb-4 rounded-b-none">
+  <section class="flex flex-col gap-2 pb-4 rounded-b-none border-b border-lucy-border">
     <h2>What do I do?</h2>
     <p>
       As a developer, I appreciate the philosophy of <span class="hoverable-link">code craftsmanship</span>, i.e. the use of sustainable design patterns and tech principles to build maintainable codebases.

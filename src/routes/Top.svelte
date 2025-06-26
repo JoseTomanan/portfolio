@@ -15,7 +15,7 @@
 <page class="mt-24 h-auto gap-0 fade-in" transition:fly={{ delay: 100, duration: 1000 }}>
   <jumpable id="top" />
 
-  <section class="flex flex-col gap-4 items-center justify-between overflow-hidden p-0 pb-4">
+  <section class="flex flex-col gap-4 items-center justify-between overflow-hidden p-0 pb-4 border-b border-lucy-border">
     <Carousel />
     <div class="flex flex-col items-center justify-center">
       <h1 class="text-2xl font-bold text-lucy-fg">Jose Tomanan</h1>
