@@ -45,7 +45,7 @@
 
         /* TODO : fix (I just know this isnt the proper implementation of this) */
         h2  { @apply text-2xl }
-        h3  { @apply text-lg }
+        h3  { @apply text-xl }
         h4  { @apply text-lg }
         h6  { @apply text-xs }
         p   { @apply text-base }
