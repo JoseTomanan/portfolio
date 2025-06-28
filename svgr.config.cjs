@@ -1,4 +1,5 @@
 module.exports = {
+    serverModuleFormat: 'cjs',
     dimensions: false,
     icon: true,
     svgProps: {
