@@ -7,6 +7,6 @@ export default defineConfig({
 	plugins: [
 		enhancedImages(),
 		sveltekit(),
-		svgr(),
+		svgr({ svgrOptions: require('./svgr.config.js') }),
 	]
 });
