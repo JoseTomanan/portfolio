@@ -13,7 +13,7 @@
     
     <div class="flex flex-col gap-4">
       <Article 
-        id="proj0"
+        id="proj4"
         href="https://github.com/JoseTomanan/cs192-lutong-bahay"
         title="Lutong Bahay"
         subtitle="Full-stack app/database for Filipino recipes"
@@ -27,7 +27,7 @@
         techInvolved={ ["Svelte", "Tailwind", "Django-REST Framework"] }
       />
       <Article 
-        id="proj1"
+        id="proj3"
         href="https://github.com/HoweZae/portfolio"
         title="JoseTomanan.io"
         subtitle="Personal portfolio-resume (i.e., this webpage!)"
@@ -79,7 +79,7 @@
         techInvolved={ ["Python"] }
       />
       <Article 
-        id="proj3"
+        id="proj1"
         href="https://github.com/JoseTomanan/finance-tracker-automator"
         title="Finance Tracker Automator"
         subtitle="Automation script for Google Sheets using Google AppsScript API"

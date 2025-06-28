@@ -13,7 +13,21 @@
     
     <div class="flex flex-col gap-4">
       <Article 
-        id="role1"
+        id="role4"
+        href="https://www.linkedin.com/in/jedtomanan/details/experience/"
+        title="Software Engineer Intern"
+        subtitle="Pointwest Innovations Corporation"
+        date="JUN 2025 - PRESENT"
+        other="
+            Took part in a 200-hour software engineering internship program.
+            Tasked in a 10-man case study for developing an HR-based application for the company.
+            Part of the backend team: built the API endpoints using Spring Boot.
+            Also developed testing suites to assure the quality of the application during the development, refactoring, and maintenance process.
+          "
+        techInvolved={ ["Spring Boot", "Git"] }
+      />
+      <Article 
+        id="role3"
         href="https://www.linkedin.com/in/jedtomanan/details/experience/"
         title="Tackle Junior Head"
         subtitle="UP Association of Computer Science Majors (UP CURSOR)"
@@ -22,7 +36,7 @@
             Co-headed a team of 20 in planning, marketing, and promoting a 4-day hybrid setup tech career fair.
             Lead the Branding & Creatives team to effectively design and market the event.
             Lead the Human Resources to internally disseminate the event.
-            Used Notion workspace to efficiently implement task delegation, resource management, and team oversight.
+            Used Notion workspace to manage the project through task delegation, resource management, and team oversight.
           "
         techInvolved={ ["Notion", "Asana", "Google Sheets", "Canva"] }
       />
@@ -40,7 +54,7 @@
         techInvolved={ ["Typst", "Git"] }
       />
       <Article 
-        id="role3"
+        id="role1"
         href="https://www.linkedin.com/in/jedtomanan/details/experience/"
         title="Member Relations Head"
         subtitle="UP CURSOR"

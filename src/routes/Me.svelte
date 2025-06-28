@@ -30,5 +30,7 @@
 </page>
 
 <style>
-
+  a.hoverable-link {
+    @apply cursor-help;
+  }
 </style>

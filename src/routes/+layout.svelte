@@ -11,7 +11,7 @@
       gap-4 md:gap-16
       focus:border-none active:border-none
     ">
-  <a class="justify-items-start font-bold italic font-heading hoverable-special pr-0 md:pr-4" href="#top">JoseTomanan.io</a>
+  <a id="first" class="justify-items-start font-bold italic font-heading pr-0 md:pr-4" href="#top">JoseTomanan.io</a>
   <a href="#me">Me</a>
   <a href="#roles">Roles</a>
   <a href="#projects">Projects</a>
@@ -41,6 +41,10 @@
     @apply transition ease-out text-lucy-muted/100 hover:text-lucy-primary;
   }
   
+  nav > a#first {
+    @apply hover:text-lucy-primary;
+  }
+
   nav > a.hoverable-special {
     @apply hover:text-lucy-secondary;
   }
