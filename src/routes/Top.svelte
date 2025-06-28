@@ -105,8 +105,8 @@
     </div>
   </section>
   
-  <section class="shrink flex gap-1.5 items-center rounded-t-none pt-4">
-    <h4 class="grow">
+  <section class="shrink flex flex-col md:flex-row gap-1.5 items-center rounded-t-none pt-4">
+    <h4>
       Hey! I'm Jose, a <span id="special">full-stack web developer</span> from UP Diliman.
       <!--
       <a id="see-resume" class="text-lucy-surface hover:text-lucy-secondary transition-all ease-out" href="./resume.pdf" target="_blank">
@@ -119,7 +119,9 @@
       -->
     </h4>
 
-    <div class="flex gap-2">
+    <div class="flex-1" />
+
+    <div class="flex gap-2 justify-end">
       {#each header as image}
         <div class="flex justify-center bg-gradient-to-b rounded-xl transition-all ease-out bg-transparent">
           <a class="h-5" href={ image.link } target="_blank">
