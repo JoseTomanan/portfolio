@@ -4,8 +4,8 @@
   import { link } from "$lib"
 </script>
 
+<jumpable id="projects" />
 <page class="h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
-  <jumpable id="projects" />
   <section class="flex flex-col gap-3">
     <h2>What projects have I made?</h2>
     
