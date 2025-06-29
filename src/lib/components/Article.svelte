@@ -6,9 +6,6 @@
   export let subtitle: string
   export let other: string = ""
   
-  // $: hoverColor = "hover:text-".concat(color);
-  // $: bgColor = "bg-".concat(color);
-  
   export let date: string = "AUG 2023 - AUG 2023"
   export let techInvolved: string[] = [""]
 </script>
@@ -26,7 +23,7 @@
   </date>
   
   <div class="basis-5/6 md:basis-3/4 flex flex-col gap-2">
-    <div class="grid leading-3">
+    <div class="grid leading-4">
       <h3 class="text-lg underline-offset-2 flex font-sans font-semibold not-italic">
         <a class="flex items-baseline gap-2 hover:gap-4 text-lucy-fg/90 hover:text-lucy-secondary transition-all ease-out" target="_blank" {id} {href} on:click|once>
           {title}
@@ -41,7 +38,7 @@
       <h5 class="text-lucy-fg/80 mt-0">{subtitle}</h5>
     </div>
 
-    <p class="text-sm grow leading-4 tracking-normal">
+    <p class="text-sm grow leading-5 tracking-normal">
       {other}
     </p>
 
