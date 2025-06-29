@@ -65,7 +65,7 @@
         @apply h-12 -mt-16 -z-50;
     }
     footer {
-        @apply pt-20 pb-4 text-lucy-surface-alt;
+        @apply py-4 text-lucy-surface-alt;
     }
 }
 

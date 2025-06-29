@@ -31,7 +31,7 @@
 
 <premain class="flex justify-center">
   <main class="
-    mx-2 flex flex-col gap-10
+    flex flex-col gap-0 mx-2 my-24
     w-screen px-2 md:max-w-[840px] md:px-0
   ">
     <slot />
