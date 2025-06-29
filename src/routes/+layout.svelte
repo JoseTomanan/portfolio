@@ -44,8 +44,4 @@
   nav > a#first {
     @apply hover:text-lucy-primary;
   }
-
-  nav > a.hoverable-special {
-    @apply hover:text-lucy-secondary;
-  }
 </style>
