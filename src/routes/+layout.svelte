@@ -48,7 +48,7 @@
 
 <style>
   nav > a {
-    @apply transition ease-out text-lucy-muted/100 hover:text-lucy-primary;
+    @apply transition ease-out text-lucy-muted/100 hover:text-lucy-primary opacity-100;
   }
   
   nav > a#first {
