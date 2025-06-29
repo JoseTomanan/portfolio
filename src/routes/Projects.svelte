@@ -6,10 +6,8 @@
 
 <page class="h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
   <jumpable id="projects" />
-  <section class="basis-1/2 flex flex-col gap-2">
-    <div class="gap-1">
-      <h2>What projects have I made?</h2>
-    </div>
+  <section class="flex flex-col gap-3">
+    <h2>What projects have I made?</h2>
     
     <div class="flex flex-col gap-4">
       <Article 
