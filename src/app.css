@@ -44,7 +44,7 @@
         }
 
         /* TODO : fix (I just know this isnt the proper implementation of this) */
-        h1  { @apply text-2xl font-semibold }
+        h1  { @apply text-2xl }
         h2  { @apply text-2xl }
         h3  { @apply text-xl }
         h4  { @apply text-lg }
