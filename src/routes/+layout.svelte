@@ -1,6 +1,7 @@
 <script lang="ts">
   import "../app.css"
   import { link } from "$lib"
+  import Arrow from "$lib/components/icons/Arrow.svg"
 </script>
 
 <div class="app bg-fixed">
@@ -15,7 +16,16 @@
   <a href="#me">Me</a>
   <a href="#roles">Roles</a>
   <a href="#projects">Projects</a>
-  <a href={ link.resume } target="_blank">Resume</a>
+  <a
+    id="clickable-resume" href={ link.resume } target="_blank"
+    class="flex flex-row items-baseline transition-all duration-150 ease-in-out gap-1"
+    >
+    <span>Resume</span>
+    <svg class="opacity-0" id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="7" y1="17" x2="17" y2="7"></line>
+      <polyline points="7 7 17 7 17 17"></polyline>
+    </svg>
+  </a>
   <!-- <a href="#contact">Contact</a> -->
 </nav>
 
@@ -43,5 +53,9 @@
   
   nav > a#first {
     @apply hover:text-lucy-primary;
+  }
+
+  #clickable-resume:hover > svg {
+    @apply opacity-100;
   }
 </style>
