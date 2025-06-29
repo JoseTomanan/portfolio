@@ -55,7 +55,11 @@
     @apply hover:text-lucy-primary;
   }
 
-  #clickable-resume:hover > svg {
+  /* nav > a#clickable-resume {
+    @apply hover:text-lucy-secondary;
+  } */
+
+  nav > a#clickable-resume:hover > svg {
     @apply opacity-100;
   }
 </style>
