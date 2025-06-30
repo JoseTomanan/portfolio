@@ -7,7 +7,7 @@
 <jumpable id="projects" />
 <page class="h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-3">
-    <h2>What projects have I made?</h2>
+    <h1>What projects have I made?</h1>
     
     <div class="flex flex-col gap-4">
       <Article 

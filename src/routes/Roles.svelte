@@ -7,7 +7,7 @@
 <jumpable id="roles" />
 <page class="h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-3">
-    <h2>What have I been up to?</h2>
+    <h1>What have I been up to?</h1>
     
     <div class="flex flex-col gap-4">
       <Article 
