@@ -33,7 +33,7 @@
   ]
 </script>
 
-<jumpable id="top" />
+<div class="jumpable" id="top" />
 <page class="h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <!-- <div class="h-4" /> -->
 

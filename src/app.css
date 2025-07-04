@@ -61,7 +61,7 @@
         @apply bg-lucy-surface px-6 py-8 grow border-lucy-border rounded-t-xl;
         @apply shadow-sm shadow-lucy-muted/60;
     }
-    jumpable {
+    div.jumpable {
         @apply h-8 -mt-12 -z-50;
     }
     footer {
