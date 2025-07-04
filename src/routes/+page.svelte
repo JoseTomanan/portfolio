@@ -32,7 +32,7 @@
   <Me />
   <Roles />
   <Projects />
-  <!-- <Contact /> -->
+  <Contact />
 {/if}
 
 <style>
