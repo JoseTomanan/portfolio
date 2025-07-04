@@ -5,7 +5,7 @@
 </script>
 
 <div class="jumpable" id="projects" />
-<page class="h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
+<div class="page h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-3">
     <h1>What projects have I made?</h1>
     
@@ -97,4 +97,4 @@
       <a href={link.gh}>GitHub</a>.
     </h6>
   </section>
-</page>
+</div>

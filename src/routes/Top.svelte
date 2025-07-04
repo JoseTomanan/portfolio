@@ -34,7 +34,7 @@
 </script>
 
 <div class="jumpable" id="top" />
-<page class="h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
+<div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <!-- <div class="h-4" /> -->
 
   <section class="flex flex-col gap-4 items-center justify-between overflow-hidden p-0 pb-6 border-b border-lucy-border">
@@ -74,7 +74,7 @@
       {/each}
     </div>
   </section>
-</page>
+</div>
 
 <style>
   /*

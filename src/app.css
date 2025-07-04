@@ -54,7 +54,7 @@
 }
 
 @layer components {
-    page {
+    div.page {
         @apply flex flex-col gap-4 h-[calc(100vh-4rem)];
     }
     section {

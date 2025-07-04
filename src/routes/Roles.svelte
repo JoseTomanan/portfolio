@@ -5,7 +5,7 @@
 </script>
 
 <div class="jumpable" id="roles" />
-<page class="h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
+<div class="page h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-3">
     <h1>What have I been up to?</h1>
     
@@ -72,4 +72,4 @@
       <a href={link.li}>LinkedIn</a>.
     </h6>
   </section>
-</page>
+</div>

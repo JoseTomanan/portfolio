@@ -3,7 +3,7 @@
 </script>
 
 <div class="jumpable" id="me" />
-<page class="h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
+<div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-2 pb-4 rounded-b-none border-b border-lucy-border">
     <h1>Who am I?</h1>
     <p>
@@ -26,7 +26,7 @@
       I'd bet my left leg I know more about Taylor Swift than you!
     </p>
   </section>
-</page>
+</div>
 
 <style>
   span.minor-highlight {
