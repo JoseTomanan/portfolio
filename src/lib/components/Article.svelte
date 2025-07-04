@@ -1,4 +1,6 @@
 <script lang="ts">
+  import ArrowIcon from "$lib/components/icons/ArrowIcon.svelte";
+
   export let id: string
   export let href: string
   // export let color;
@@ -28,8 +30,8 @@
         <a class="flex items-baseline gap-2 hover:gap-4 text-lucy-fg/90 hover:text-lucy-secondary transition-all ease-out" target="_blank" {id} {href} on:click|once>
           {title}
           <svg
-          id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
-          >
+              id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+            >
             <line x1="7" y1="17" x2="17" y2="7"></line>
             <polyline points="7 7 17 7 17 17"></polyline>
           </svg>

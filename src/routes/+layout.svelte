@@ -1,7 +1,7 @@
 <script lang="ts">
   import "../app.css"
   import { link } from "$lib"
-  import Arrow from "$lib/components/icons/Arrow.svg"
+  import ArrowIcon from "$lib/components/icons/ArrowIcon.svelte"
 </script>
 
 <div class="app bg-fixed">
@@ -21,7 +21,9 @@
     class="flex flex-row items-baseline transition-all duration-150 ease-in-out gap-1"
     >
     <span>Resume</span>
-    <svg class="opacity-0" id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+    <svg
+        class="imported-icon" id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+      >
       <line x1="7" y1="17" x2="17" y2="7"></line>
       <polyline points="7 7 17 7 17 17"></polyline>
     </svg>
@@ -55,11 +57,12 @@
     @apply hover:text-lucy-primary;
   }
 
-  /* nav > a#clickable-resume {
-    @apply hover:text-lucy-secondary;
-  } */
+  .imported-icon {
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+  }
 
-  nav > a#clickable-resume:hover > svg {
-    @apply opacity-100;
+  nav > a#clickable-resume:hover .imported-icon {
+    opacity: 1;
   }
 </style>
