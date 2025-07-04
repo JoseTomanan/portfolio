@@ -7,7 +7,7 @@
   <nav class="
       flex items-center justify-center
       fixed w-full max-w-screen py-3 z-50
-      bg-lucy-bg backdrop-blur-sm opacity-90
+      bg-lucy-bg backdrop-blur opacity-80
       gap-4 md:gap-16
       focus:border-none active:border-none
     ">
