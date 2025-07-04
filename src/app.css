@@ -59,7 +59,7 @@
     }
     section {
         @apply bg-lucy-surface px-6 py-8 grow border-lucy-border rounded-xl;
-        @apply shadow-lg shadow-lucy-muted/25;
+        @apply shadow-md shadow-lucy-muted/25;
     }
     span.jumpable {
         @apply h-8 -mt-12 -z-50;
