@@ -58,8 +58,8 @@
         @apply flex flex-col gap-4 h-[calc(100vh-4rem)];
     }
     section {
-        @apply bg-lucy-surface px-6 py-8 grow border-lucy-border rounded-t-xl;
-        @apply shadow-sm shadow-lucy-muted/60;
+        @apply bg-lucy-surface px-6 py-8 grow border-lucy-border rounded-xl;
+        @apply shadow-lg shadow-lucy-muted/25;
     }
     span.jumpable {
         @apply h-8 -mt-12 -z-50;
