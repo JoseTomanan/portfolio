@@ -1,6 +1,4 @@
 <script lang="ts">
-  import ArrowIcon from "$lib/components/icons/ArrowIcon.svelte";
-
   export let id: string
   export let href: string
   // export let color;

@@ -1,7 +1,6 @@
 <script lang="ts">
   import "../app.css"
   import { link } from "$lib"
-  import ArrowIcon from "$lib/components/icons/ArrowIcon.svelte"
 </script>
 
 <div class="app bg-fixed">
