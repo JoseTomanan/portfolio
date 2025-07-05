@@ -22,7 +22,7 @@
             Written using Svelte and Tailwind (frontend), and Django-REST framework (backend), with the database hosted in Supabase.
             Part of a 5-man, year long project done in compliance for the requirements of course CS 191 and 192: Software Engineering I and II.
           "
-        techInvolved={ ["simple-icons:svelte", "simple-icons:tailwindcss", "simple-icons:django"] }
+        techInvolved={ ["simple-icons:svelte", "simple-icons:tailwindcss", "simple-icons:django", "simple-icons:supabase"] }
       />
       <Article 
         id="proj3"
@@ -33,7 +33,8 @@
         other="
             A static single-page website that showcases the relevant skills I have developed throughout my learning journey.
             Also created to demonstrate front-end tech learned and to practice my UI/UX design choices.
-            Written using Svelte and Tailwind, to prioritize the webpage's responsiveness and intuitiveness.
+            Written using Svelte and Tailwind to prioritize the webpage's responsiveness and intuitiveness.
+            Utilizes icon library Iconify to incorporate icons into the UI.
             Used supplementary JavaScript and CSS to add more complex functionality.
           "
         techInvolved={ ["simple-icons:svelte", "simple-icons:tailwindcss", "simple-icons:javascript", "simple-icons:css"] }
