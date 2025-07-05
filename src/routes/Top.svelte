@@ -37,9 +37,9 @@
 <div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <!-- <div class="h-4" /> -->
 
-  <section class="flex flex-col gap-4 items-center justify-between overflow-hidden p-0 pb-8 rounded-b-none border-b border-lucy-border">
+  <section class="flex flex-col gap-8 items-center justify-between overflow-hidden p-0 pb-8 rounded-b-none border-b border-lucy-border">
     <Carousel />
-    <div class="flex flex-col items-center justify-center gap-0.5">
+    <div class="flex flex-col items-center justify-center gap-0">
       <h1 class="font-bold text-lucy-fg tracking-wide">Jose Tomanan</h1>
       <h3 class="font-heading font-medium text-lucy-muted px-4 text-center tracking-tight">
         CS major · Full-stack web developer · Gym rat
@@ -49,7 +49,7 @@
 
   <section class="flex md:flex-row gap-1.5 items-center rounded-t-none px-8 pt-8">
     <h4>
-      Hey! I'm Jose, a <span id="special">full-stack web developer</span> from UP Diliman.
+      Hi! I'm Jose, a <span id="special">full-stack web developer</span> from UP Diliman.
       <!--
       <a id="see-resume" class="text-lucy-surface hover:text-lucy-secondary transition-all ease-out" href="./resume.pdf" target="_blank">
         <span>Visit my resume!</span>
@@ -69,7 +69,7 @@
           <a href={ image.link } target="_blank">
             <Icon
                 icon={ image.iconifyTag }
-                class="h-5 w-5 text-lucy-muted hover:text-lucy-secondary"
+                class="h-5 w-5 text-lucy-muted hover:text-lucy-primary"
               />
           </a>
         </div>
@@ -79,21 +79,6 @@
 </div>
 
 <style>
-  /*
-  #link {
-    opacity: 0;
-  }
-  #see-resume {
-    @apply inline-flex gap-0.5;
-  }
-  #see-resume:hover {
-    @apply gap-2 text-lucy-secondary;
-  }
-  #see-resume:hover #link {
-    opacity: 1;
-  }
-  */
-
   span#special {
     @apply hover:text-lucy-tertiary transition-colors ease-out;
     /* TODO: WORK IN PROGRESS! */
