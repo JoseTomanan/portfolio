@@ -77,7 +77,7 @@
 
     <p class="
         text-base grow leading-5 tracking-tighter text-lucy-muted/50
-        group-hover/whole:text-lucy-muted/80
+        group-hover/whole:text-lucy-muted/100
       ">
       {other}
     </p>
