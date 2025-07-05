@@ -9,7 +9,7 @@
   <section class="flex flex-col gap-3">
     <h1>What projects have I made?</h1>
     
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-6">
       <Article 
         id="proj4"
         href="https://github.com/JoseTomanan/cs192-lutong-bahay"
@@ -22,7 +22,7 @@
             Written using Svelte and Tailwind (frontend), and Django-REST framework (backend), with the database hosted in Supabase.
             Part of a 5-man, year long project done in compliance for the requirements of course CS 191 and 192: Software Engineering I and II.
           "
-        techInvolved={ ["Svelte", "Tailwind", "Django-REST Framework"] }
+        techInvolved={ ["simple-icons:svelte", "simple-icons:tailwindcss", "simple-icons:django"] }
       />
       <Article 
         id="proj3"
@@ -36,7 +36,7 @@
             Written using Svelte and Tailwind, to prioritize the webpage's responsiveness and intuitiveness.
             Used supplementary JavaScript and CSS to add more complex functionality.
           "
-        techInvolved={ ["Svelte", "Tailwind", "JavaScript", "CSS"] }
+        techInvolved={ ["simple-icons:svelte", "simple-icons:tailwindcss", "simple-icons:javascript", "simple-icons:css"] }
       />
       <!-- <Article 
         id="proj4"
@@ -74,7 +74,7 @@
             Uses data science concepts to find an association between registered live births and poverty incidence in each municipality, as well as data visualization techniques to make the results intuitive and easily digestible.
             Conducted in compliance for the requirements of course CS 132: Data Science.
           "
-        techInvolved={ ["Python"] }
+        techInvolved={ ["simple-icons:python"] }
       />
       <Article 
         id="proj1"
@@ -88,7 +88,7 @@
             Written in TypeScript, later transpiled into JavaScript through Clasp (for Google AppsScript).
             Implements SOLID principles and design patterns for codebase sustainability and maintainability.
           "
-        techInvolved={ ["Google Sheets", "Google Apps Script", "TypeScript"] }
+        techInvolved={ ["simple-icons:googleappsscript", "simple-icons:typescript"] }
       />
     </div>
     

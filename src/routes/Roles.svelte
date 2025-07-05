@@ -9,7 +9,7 @@
   <section class="flex flex-col gap-3">
     <h1>What have I been up to?</h1>
     
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-6">
       <Article 
         id="role4"
         href="https://www.linkedin.com/in/jedtomanan/details/experience/"
@@ -22,7 +22,7 @@
             Part of the backend team: built the API endpoints using Spring Boot.
             Also developed testing suites to assure the quality of the application during the development, refactoring, and maintenance process.
           "
-        techInvolved={ ["Spring Boot", "Git"] }
+        techInvolved={ ["simple-icons:spring", "simple-icons:git"] }
       />
       <Article 
         id="role3"
@@ -36,7 +36,7 @@
             Lead the Human Resources to internally disseminate the event.
             Used Notion workspace to manage the project through task delegation, resource management, and team oversight.
           "
-        techInvolved={ ["Notion", "Asana", "Google Sheets", "Canva"] }
+        techInvolved={ ["simple-icons:notion", "simple-icons:asana", "simple-icons:googlesheets", "simple-icons:canva"] }
       />
       <Article 
         id="role2"
@@ -49,7 +49,7 @@
             Used Typst markdown to automate structure, layoutting, and organization of module content.
             Collaborated using Git to streamline team workflow and consolidate collective output.
           "
-        techInvolved={ ["Typst", "Git"] }
+        techInvolved={ ["simple-icons:typst", "simple-icons:git"] }
       />
       <Article 
         id="role1"
@@ -63,7 +63,7 @@
             Published material for Humans of CURSOR to share the experience of members in their respective fields.
             Used Notion workspace to efficiently implement task delegation, resource management, and team oversight.
           "
-        techInvolved={ ["Notion"] }
+        techInvolved={ ["simple-icons:notion"] }
       />
     </div>
     
