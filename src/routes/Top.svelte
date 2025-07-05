@@ -69,7 +69,7 @@
           <a href={ image.link } target="_blank">
             <Icon
                 icon={ image.iconifyTag }
-                class="h-5 w-5 text-lucy-muted hover:text-lucy-fg"
+                class="h-5 w-5 text-lucy-muted hover:text-lucy-secondary"
               />
           </a>
         </div>
