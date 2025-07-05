@@ -37,7 +37,7 @@
 <div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <!-- <div class="h-4" /> -->
 
-  <section class="flex flex-col gap-4 items-center justify-between overflow-hidden p-0 pb-6 rounded-b-none border-b border-lucy-border">
+  <section class="flex flex-col gap-4 items-center justify-between overflow-hidden p-0 pb-8 rounded-b-none border-b border-lucy-border">
     <Carousel />
     <div class="flex flex-col items-center justify-center gap-0.5">
       <h1 class="font-bold text-lucy-fg tracking-wide">Jose Tomanan</h1>
@@ -47,7 +47,7 @@
     </div>
   </section>
 
-  <section class="flex md:flex-row gap-1.5 items-center rounded-t-none pt-6">
+  <section class="flex md:flex-row gap-1.5 items-center rounded-t-none px-8 pt-8">
     <h4>
       Hey! I'm Jose, a <span id="special">full-stack web developer</span> from UP Diliman.
       <!--
