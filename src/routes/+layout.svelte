@@ -23,10 +23,12 @@
       " id="clickable-resume" href={ link.resume } target="_blank"
       >
       <span>Resume</span>
-      <Icon
-          icon="ic:outline-arrow-outward"
-          class="w-4 h-4 opacity-0 group-hover:opacity-100"
-        />
+      <div class="w-4 h-4">
+        <Icon
+            icon="ic:outline-arrow-outward"
+            class="w-4 h-4 opacity-0 group-hover:opacity-100"
+          />
+      </div>
     </a>
     <!-- <a href="#contact">Contact</a> -->
   </nav>
