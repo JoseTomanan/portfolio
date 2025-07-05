@@ -36,7 +36,7 @@
           {title}
           <Icon
               icon="ic:baseline-arrow-outward"
-              class="w-4 h-4 opacity-50 group-hover:opacity-100"
+              class="w-4 h-4 opacity-0 group-hover:opacity-100"
             />
         </a>
       </h3>
