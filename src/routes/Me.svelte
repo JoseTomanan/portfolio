@@ -16,7 +16,7 @@
   
   <section class="flex flex-col gap-2 rounded-t-none">
     <p>
-      Outside of work, I prefer to take a break from all the screen time by spending my breaks away from the keyboard &mdash;
+      Outside of work, I prefer to take a break from all the screen time by spending my breaks away from the keyboard.
       I do this by <span class="minor-highlight">being physically active and keeping fit</span>, usually through weightlifting, playing basketball, or running.
     </p>
     
@@ -29,9 +29,9 @@
 </div>
 
 <style>
-  p {
+  /* p {
     @apply text-lg;
-  }
+  } */
 
   span.minor-highlight {
     @apply font-medium text-lucy-fg hover:text-lucy-tertiary transition ease-linear;
