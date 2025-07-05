@@ -2,10 +2,10 @@
   import { fly } from "svelte/transition"
 </script>
 
-<jumpable id="me" />
-<page class="h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
+<span class="jumpable" id="me" />
+<div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-2 pb-4 rounded-b-none border-b border-lucy-border">
-    <h1>Who am I?</h1>
+    <h1>What do I do?</h1>
     <p>
       As a developer, I thrive in the intersection of frontend and backend.
       I have put myself in both shoes&mdash;creating clean UIs with SvelteKit and building solid APIs with Django and Spring Boot.
@@ -26,7 +26,7 @@
       I'd bet my left leg I know more about Taylor Swift than you!
     </p>
   </section>
-</page>
+</div>
 
 <style>
   span.minor-highlight {
