@@ -20,7 +20,7 @@
     transition ease-linear z-10
   ">
 
-  <div class="basis-1/6 md:basis-1/4 flex flex-col justify-start h-full">
+  <div class="basis-1/6 md:basis-1/4 flex flex-col justify-start h-full gap-0.5">
     <span class="
         text-right text-sm font-mono tracking-tighter transition ease-out
         text-lucy-muted
@@ -29,12 +29,10 @@
       {date}
     </span>
 
-    <div class="flex-1" />
-
-    <div class="flex flex-row justify-end w-full">
+    <div class="flex flex-row justify-end w-full gap-1.5">
       {#each techInvolved as tech}
         <div class="
-            flex items-center transition ease-out p-0.5
+            flex items-center transition ease-out
             text-lucy-muted/80
             group-hover/whole:text-lucy-muted/100
           ">
@@ -49,11 +47,7 @@
   
   <div class="basis-5/6 md:basis-3/4 flex flex-col gap-2">
     <div class="grid leading-4">
-      <h3 class="
-          text-lg underline-offset-2 flex font-sans font-semibold not-italic
-          transition-all ease-in-out
-          group-hover/whole:text-lucy-fg
-        ">
+      <h3 class="text-lg underline-offset-2 flex font-sans font-semibold transition-all ease-in-out group-hover/whole:text-lucy-fg/100">
         <a class="
             group/link flex items-baseline gap-2 hover:gap-4
             text-lucy-fg/90 hover:text-lucy-secondary
