@@ -53,7 +53,7 @@
 
     <div class="flex flex-col items-center justify-center gap-0">
       <h1 class="font-bold text-lucy-fg tracking-wide">Jose Tomanan</h1>
-      <h3 class="font-heading font-medium text-lucy-muted px-4 text-center tracking-tight">
+      <h3 class="font-heading font-semibold text-lucy-muted px-4 text-center tracking-tight">
         CS major · Full-stack web developer · Gym rat
       </h3>
     </div>
@@ -61,7 +61,7 @@
 
   <section class="flex md:flex-row gap-1.5 items-center rounded-t-none px-8 pt-8">
     <h4>
-      Hi! I'm Jose, a <span id="special">full-stack web developer</span> from UP Diliman.
+      Hey! I'm Jose, a <span id="special">full-stack web developer</span> from UP Diliman.
     </h4>
 
     <div class="flex-1" />
