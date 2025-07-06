@@ -13,26 +13,26 @@
     --background: #100F13;
     --foreground: #DED7D0;
     
-    --muted: 220 14.3% 95.9%;
+    --muted: #2F2C32;
     --muted-foreground: #A49EAC;
     
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
     
-    --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
+    --card: #1E1D23;
+    --card-foreground: #A49EAC;
     
     --border: #2F2C32;
     --input: #524B51;
     
     --primary: #F0CE59;
-    --primary-foreground: #F0CE59;
+    --primary-foreground: #1E1D23;
     
     --secondary: #FF7DA3;
-    --secondary-foreground: #FF7DA3;
+    --secondary-foreground: #1E1D23;
     
     --accent: #56C6D5;
-    --accent-foreground: #56C6D5;
+    --accent-foreground: #1E1D23;
     
     --destructive: 0 72.2% 50.6%;
     --destructive-foreground: 210 20% 98%;
