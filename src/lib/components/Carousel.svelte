@@ -4,7 +4,7 @@
 <div class="h-[25rem] w-full overflow-hidden">
   <enhanced:img
     class="object-cover h-full w-full"
-    src="$lib/images/hero.jpg"
+    src="$lib/images/hero/1.jpg"
     alt="Me"
   />
 </div>
