@@ -22,7 +22,7 @@
             Part of the backend team: built the API endpoints using Spring Boot.
             Also developed testing suites to assure the quality of the application during the development, refactoring, and maintenance process.
           "
-        techInvolved={ ["simple-icons:spring", "simple-icons:git"] }
+        techInvolved={ ["simple-icons:spring", "simple-icons:git", "simple-icons:jira"] }
       />
       <Article 
         id="role3"
