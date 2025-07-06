@@ -34,10 +34,13 @@
       {#each techInvolved as tech}
       <Tooltip.Root>
         <Tooltip.Trigger class="items-center transition ease-out text-lucy-muted/80 group-hover/whole:text-lucy-muted/100">
-          <Icon icon={ tech.toLowerCase() } class="h-4 w-4" />
+          <Icon
+            icon={ tech.toLowerCase() }
+            class="h-4 w-4"
+            />
         </Tooltip.Trigger>
         <Tooltip.Content class="bg-lucy-bg/75 text-lucy-fg border-none">
-          { tech.slice(13) }
+          { tech.split(":")[1] }
         </Tooltip.Content>
       </Tooltip.Root>
       {/each}
