@@ -1,5 +1,7 @@
 <script lang="ts">
   import Icon from "@iconify/svelte"
+  import * as Tooltip from "$lib/components/ui/tooltip/index"
+
 
   export let id: string
   export let href: string
@@ -7,7 +9,6 @@
   export let title: string
   export let subtitle: string
   export let other: string = ""
-  
   export let date: string = "AUG 2023 - AUG 2023"
   export let techInvolved: string[] = [""]
 </script>
@@ -24,23 +25,21 @@
     <span class="
         text-right text-sm font-mono tracking-tighter transition ease-out
         text-lucy-muted
-        group-hover/whole:text-lucy-fg/100
+        group-hover/whole:text-lucy-fg/95
       ">
       {date}
     </span>
 
-    <div class="flex flex-row justify-end w-full gap-1.5">
+    <div class="flex flex-row justify-end w-full gap-2">
       {#each techInvolved as tech}
-        <div class="
-            flex items-center transition ease-out
-            text-lucy-muted/80
-            group-hover/whole:text-lucy-muted/100
-          ">
-          <Icon
-              icon={ (tech != "") ? tech : "mdi:question-mark-circle" }
-              class="h-4 w-4"
-            />
-        </div>
+      <Tooltip.Root>
+        <Tooltip.Trigger class="items-center transition ease-out text-lucy-muted/80 group-hover/whole:text-lucy-muted/100">
+          <Icon icon={ tech.toLowerCase() } class="h-4 w-4" />
+        </Tooltip.Trigger>
+        <Tooltip.Content class="bg-lucy-surface/75 text-lucy-fg border-none">
+          { tech.slice(13) }
+        </Tooltip.Content>
+      </Tooltip.Root>
       {/each}
     </div>
   </div>
