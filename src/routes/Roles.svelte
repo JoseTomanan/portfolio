@@ -22,7 +22,7 @@
             Part of the backend team: built the API endpoints using Spring Boot.
             Also developed testing suites to assure the quality of the application during the development, refactoring, and maintenance process.
           "
-        techInvolved={ ["simple-icons:spring", "simple-icons:git", "simple-icons:jira"] }
+        techInvolved={ ["simple-icons:Spring", "simple-icons:Git", "simple-icons:Jira"] }
       />
       <Article 
         id="role3"
@@ -36,7 +36,7 @@
             Lead the Human Resources to internally disseminate the event.
             Used Notion workspace to manage the project through task delegation, resource management, and team oversight.
           "
-        techInvolved={ ["simple-icons:notion", "simple-icons:asana", "simple-icons:googlesheets", "simple-icons:canva"] }
+        techInvolved={ ["simple-icons:Notion", "simple-icons:Asana", "simple-icons:GoogleSheets", "simple-icons:Canva"] }
       />
       <Article 
         id="role2"
@@ -49,7 +49,7 @@
             Used Typst markdown to automate structure, layoutting, and organization of module content.
             Collaborated using Git to streamline team workflow and consolidate collective output.
           "
-        techInvolved={ ["simple-icons:typst", "simple-icons:git"] }
+        techInvolved={ ["simple-icons:Typst", "simple-icons:Git"] }
       />
       <Article 
         id="role1"
@@ -63,7 +63,7 @@
             Published material for Humans of CURSOR to share the experience of members in their respective fields.
             Used Notion workspace to efficiently implement task delegation, resource management, and team oversight.
           "
-        techInvolved={ ["simple-icons:notion"] }
+        techInvolved={ ["simple-icons:Notion"] }
       />
     </div>
     

@@ -22,7 +22,7 @@
             Written using Svelte and Tailwind (frontend), and Django-REST framework (backend), with the database hosted in Supabase.
             Part of a 5-man, year long project done in compliance for the requirements of course CS 191 and 192: Software Engineering I and II.
           "
-        techInvolved={ ["simple-icons:svelte", "simple-icons:tailwindcss", "simple-icons:django", "simple-icons:supabase"] }
+        techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:Django", "simple-icons:Supabase"] }
       />
       <Article 
         id="proj3"
@@ -37,7 +37,7 @@
             Utilizes icon library Iconify to incorporate icons into the UI.
             Used supplementary JavaScript and CSS to add more complex functionality.
           "
-        techInvolved={ ["simple-icons:svelte", "simple-icons:tailwindcss", "simple-icons:javascript", "simple-icons:css"] }
+        techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:JavaScript", "simple-icons:CSS"] }
       />
       <!-- <Article 
         id="proj4"
@@ -75,7 +75,7 @@
             Uses data science concepts to find an association between registered live births and poverty incidence in each municipality, as well as data visualization techniques to make the results intuitive and easily digestible.
             Conducted in compliance for the requirements of course CS 132: Data Science.
           "
-        techInvolved={ ["simple-icons:python"] }
+        techInvolved={ ["simple-icons:Python"] }
       />
       <Article 
         id="proj1"
@@ -89,7 +89,7 @@
             Written in TypeScript, later transpiled into JavaScript through Clasp (for Google AppsScript).
             Implements SOLID principles and design patterns for codebase sustainability and maintainability.
           "
-        techInvolved={ ["simple-icons:googleappsscript", "simple-icons:typescript"] }
+        techInvolved={ ["simple-icons:GoogleAppsScript", "simple-icons:TypeScript"] }
       />
     </div>
     
