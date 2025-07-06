@@ -31,13 +31,13 @@
         subtitle="Personal portfolio-resume (i.e., this webpage!)"
         date="JUL 2024 - PRESENT"
         other="
-            A static single-page website that showcases the relevant skills I have developed throughout my learning journey.
-            Also created to demonstrate front-end tech learned and to practice my UI/UX design choices.
+            A static single-page website that showcases the relevant skills and experiences I have earned throughout my learning journey.
+            Also created to demonstrate frontend tech learned and to practice my UI/UX design choices.
             Written using Svelte and Tailwind to prioritize the webpage's responsiveness and intuitiveness.
-            Utilizes icon library Iconify to incorporate icons into the UI.
-            Used supplementary JavaScript and CSS to add more complex functionality.
+            Utilizes icon library Iconify and component library Shadcn to enhance the UI.
+            Uses supplementary JavaScript and CSS to add more complex functionality.
           "
-        techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:JavaScript", "simple-icons:CSS"] }
+        techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:PostCSS", "simple-icons:JavaScript"] }
       />
       <!-- <Article 
         id="proj4"
