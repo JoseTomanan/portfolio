@@ -1,7 +1,7 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
 
-  import Carousel from "$lib/components/Carousel.svelte"
+  import * as Carousel from "$lib/components/ui/carousel/index"
   import { link } from "$lib"
   import { fly } from "svelte/transition"
 
@@ -37,8 +37,20 @@
 <div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <!-- <div class="h-4" /> -->
 
-  <section class="flex flex-col gap-8 items-center justify-between overflow-hidden p-0 pb-8 rounded-b-none border-b border-lucy-border">
-    <Carousel />
+  <section class="flex flex-col gap-8 items-center justify-between overflow-clip p-0 pb-8 rounded-b-none border-b border-lucy-border">
+    <Carousel.Root
+        class="h-[25rem] relative flex"
+        opts={{ loop: true}}
+      >
+      <Carousel.Content class="h-[25rem] items-center overflow-clip">
+        <Carousel.Item>
+          <enhanced:img src="$lib/images/hero/1.jpg" alt="Me in Las Casas" />
+        </Carousel.Item>
+      </Carousel.Content>
+      <!-- <Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-fg text-lucy-surface"/>
+      <Carousel.Next class="absolute right-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-fg text-lucy-surface"/> -->
+    </Carousel.Root>
+
     <div class="flex flex-col items-center justify-center gap-0">
       <h1 class="font-bold text-lucy-fg tracking-wide">Jose Tomanan</h1>
       <h3 class="font-heading font-medium text-lucy-muted px-4 text-center tracking-tight">
@@ -50,15 +62,6 @@
   <section class="flex md:flex-row gap-1.5 items-center rounded-t-none px-8 pt-8">
     <h4>
       Hi! I'm Jose, a <span id="special">full-stack web developer</span> from UP Diliman.
-      <!--
-      <a id="see-resume" class="text-lucy-surface hover:text-lucy-secondary transition-all ease-out" href="./resume.pdf" target="_blank">
-        <span>Visit my resume!</span>
-        <svg id="link" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="7" y1="17" x2="17" y2="7"></line>
-          <polyline points="7 7 17 7 17 17"></polyline>
-        </svg>
-      </a>
-      -->
     </h4>
 
     <div class="flex-1" />
