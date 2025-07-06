@@ -1,6 +1,13 @@
+import mixins from 'postcss-mixins';
+import stylelint from 'stylelint';
+
 export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
+  plugins: [
+    mixins,
+    stylelint,
+    {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  ],
 }
