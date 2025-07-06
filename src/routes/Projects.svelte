@@ -50,9 +50,9 @@
           "
         techInvolved={ ["Tensorflow", "Keras"] }
       />  -->
-      <!-- <Article 
+      <Article 
         id="proj0"
-        href="_blank"
+        href="https://github.com/JoseTomanan/shogi-pygame"
         title="Shogimon"
         subtitle="A Pokemon-inspired Shogi-esque video game using Python"
         date="DEC 2024 - JAN 2025"
@@ -62,8 +62,8 @@
             Implements both online (networking) and offline (pass-and-play) mode.
             Made in compliance for the requirements of course CS 150: Programming Languages.
           "
-        techInvolved={ ["Python", "Go"] }
-      />  -->
+        techInvolved={ ["simple-icons:Python", "simple-icons:Go"] }
+      />
       <Article 
         id="proj2"
         href="https://tes-birth-rate.vercel.app"
