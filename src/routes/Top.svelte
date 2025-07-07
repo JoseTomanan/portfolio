@@ -42,7 +42,7 @@
   <section class="flex flex-col gap-8 items-center justify-between overflow-clip p-0 pb-8 rounded-b-none border-b border-lucy-border">
     <Carousel.Root
         class="relative flex"
-        opts={{ loop: true }} plugins={[ Autoplay({ delay:2500 }) ]}
+        opts={{ loop: true }} plugins={[ Autoplay({ delay:4000 }) ]}
       >
       <Carousel.Content class="h-[26rem] items-center">
         <Carousel.Item>
