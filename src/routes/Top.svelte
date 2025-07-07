@@ -1,7 +1,9 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
 
+	import Autoplay from "embla-carousel-autoplay"
   import * as Carousel from "$lib/components/ui/carousel/index"
+
   import { link } from "$lib"
   import { fly } from "svelte/transition"
 
@@ -39,12 +41,21 @@
 
   <section class="flex flex-col gap-8 items-center justify-between overflow-clip p-0 pb-8 rounded-b-none border-b border-lucy-border">
     <Carousel.Root
-        class="h-[25rem] relative flex"
-        opts={{ loop: true}}
+        class="relative flex"
+        opts={{ loop: true }} plugins={[ Autoplay({ delay:2500 }) ]}
       >
-      <Carousel.Content class="h-[25rem] items-center overflow-clip">
+      <Carousel.Content class="h-[26rem] items-center">
         <Carousel.Item>
           <enhanced:img src="$lib/images/hero/1.jpg" alt="Me in Las Casas" />
+        </Carousel.Item>
+				<Carousel.Item>
+					<enhanced:img src="$lib/images/hero/4.jpg" alt="Me, cuatro" />
+				</Carousel.Item>
+				<Carousel.Item>
+					<enhanced:img src="$lib/images/hero/2.jpg" alt="Me, dos" />
+        </Carousel.Item>
+				<Carousel.Item>
+					<enhanced:img src="$lib/images/hero/3.jpg" alt="Me, tres" />
         </Carousel.Item>
       </Carousel.Content>
       <!-- <Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-fg text-lucy-surface"/>
