@@ -17,7 +17,7 @@
         subtitle="Full-stack app/database for Filipino recipes"
         date="AUG 2024 - MAY 2025"
         other="
-            A full-stack app that showcases a Filipino recipes database with fully functional search filters/sorting functions, along with user authentication system (i.e. log in function).
+            A database web app with fully functional search filters/sorting functions and user authentication system.
             Also includes an administrator mode for adding/editing recipes and suspending users.
             Written using Svelte and Tailwind (frontend), and Django-REST framework (backend), with the database hosted in Supabase.
             Part of a 5-man, year long project done in compliance for the requirements of course CS 191 and 192: Software Engineering I and II.
