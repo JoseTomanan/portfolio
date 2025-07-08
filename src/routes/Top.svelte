@@ -63,16 +63,20 @@
     </Carousel.Root>
 
     <div class="flex flex-col items-center justify-center gap-0">
-      <h1 class="font-bold text-lucy-fg tracking-wide">Jose Tomanan</h1>
+      <h1 class="hero-text">Jose Tomanan</h1>
       <h3 class="font-heading font-semibold text-lucy-muted px-4 text-center tracking-tight">
-        CS major · Full-stack web developer · Gym rat
+        Tech buff
+				<span class="magic-text">
+					· Full-stack web developer ·
+				</span>
+				Gym rat
       </h3>
     </div>
   </section>
 
-  <section class="flex flex-col md:flex-row gap-1.5 items-center rounded-t-none px-8 pt-8">
-    <h4 class="text-base md:text-lg">
-      Hey! I'm Jose, a <span class="magic-text">full-stack web developer</span> from UP Diliman.
+  <section class="flex flex-col md:flex-row gap-1.5 items-center rounded-t-none p-8">
+    <h4>
+      Hi! I'm Jose, a BS CS student from UP Diliman. Welcome aboard!
     </h4>
 
     <div class="flex-1" />
