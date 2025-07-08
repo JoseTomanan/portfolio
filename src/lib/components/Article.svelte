@@ -14,9 +14,9 @@
 
 <article class="
     group/whole
-    flex gap-4 items-baseline md:p-4 rounded-lg text-left border
-    bg-lucy-surface border-lucy-border
-    hover:bg-lucy-surface-alt hover:border-lucy-border-alt
+    flex gap-4 items-baseline md:p-4 rounded-lg text-left
+		border border-lucy-border
+    hover:bg-lucy-surface hover:border-lucy-border-alt
     transition ease-linear z-10
   ">
 
