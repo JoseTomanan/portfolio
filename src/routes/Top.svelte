@@ -70,8 +70,8 @@
     </div>
   </section>
 
-  <section class="flex md:flex-row gap-1.5 items-center rounded-t-none px-8 pt-8">
-    <h4>
+  <section class="flex flex-col md:flex-row gap-1.5 items-center rounded-t-none px-8 pt-8">
+    <h4 class="text-base md:text-lg">
       Hey! I'm Jose, a <span class="magic-text">full-stack web developer</span> from UP Diliman.
     </h4>
 
@@ -79,14 +79,14 @@
 
     <div class="flex gap-2 justify-end">
       {#each header as image}
-        <div class="flex justify-center bg-gradient-to-b rounded-xl transition-all ease-out bg-transparent">
-          <a href={ image.link } target="_blank">
-            <Icon
-                icon={ image.iconifyTag }
-                class="h-5 w-5 text-lucy-muted hover:text-lucy-fg"
-              />
-          </a>
-        </div>
+			<div class="flex justify-center bg-gradient-to-b rounded-xl bg-transparent">
+				<a href={ image.link } target="_blank">
+					<Icon
+						icon={ image.iconifyTag }
+						class="h-5 w-5 text-lucy-muted hover:text-lucy-fg"
+						/>
+				</a>
+			</div>
       {/each}
     </div>
   </section>
