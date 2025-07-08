@@ -6,7 +6,7 @@
 <nav class="
 		flex items-center justify-center
 		fixed w-full max-w-screen py-2.5 z-50
-		bg-lucy-bg backdrop-blur opacity-80 text-lucy-muted/100
+		bg-lucy-bg opacity-90 text-lucy-muted/100
 		gap-4 md:gap-16
 		focus:border-none active:border-none
 	">
