@@ -72,7 +72,7 @@
 
   <section class="flex md:flex-row gap-1.5 items-center rounded-t-none px-8 pt-8">
     <h4>
-      Hey! I'm Jose, a <span id="special">full-stack web developer</span> from UP Diliman.
+      Hey! I'm Jose, a <span class="magic-text">full-stack web developer</span> from UP Diliman.
     </h4>
 
     <div class="flex-1" />
@@ -83,7 +83,7 @@
           <a href={ image.link } target="_blank">
             <Icon
                 icon={ image.iconifyTag }
-                class="h-5 w-5 text-lucy-muted hover:text-lucy-primary"
+                class="h-5 w-5 text-lucy-muted hover:text-lucy-fg"
               />
           </a>
         </div>
@@ -93,8 +93,7 @@
 </div>
 
 <style>
-  span#special {
-    @apply hover:text-lucy-tertiary transition-colors ease-out;
-    /* TODO: WORK IN PROGRESS! */
-  }
+  /* span.hoverable {
+    @apply text-lucy-muted hover:text-lucy-tertiary transition-colors ease-out;
+  } */
 </style>

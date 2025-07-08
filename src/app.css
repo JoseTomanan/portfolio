@@ -122,3 +122,67 @@
     @apply underline hover:text-lucy-secondary;
   }
 }
+
+.magic-text {
+  animation: background-pan 8s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--foreground),
+    var(--secondary),
+    var(--accent),
+    var(--foreground)
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+/* Background pan */
+@keyframes background-pan {
+	from {
+		background-position: 0% center;
+	}
+	to {
+		background-position: 200% center;
+	}
+}
+
+/* Animated Grain */
+@keyframes animateGrain {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(-5%, -10%);
+	}
+	20% {
+		transform: translate(-15%, -20%);
+	}
+	30% {
+		transform: translate(-5%, -10%);
+	}
+	40% {
+		transform: translate(-15%, -20%);
+	}
+	50% {
+		transform: translate(-5%, -10%);
+	}
+	60% {
+		transform: translate(-15%, -20%);
+	}
+	70% {
+		transform: translate(-5%, -10%);
+	}
+	80% {
+		transform: translate(-15%, -20%);
+	}
+	90% {
+		transform: translate(-5%, -10%);
+	}
+	100% {
+		transform: translate(-15%, -20%);
+	}
+}
