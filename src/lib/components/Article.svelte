@@ -2,7 +2,6 @@
   import Icon from "@iconify/svelte"
   import * as Tooltip from "$lib/components/ui/tooltip/index"
 
-
   export let id: string
   export let href: string
   // export let color;
@@ -33,9 +32,8 @@
     <div class="flex flex-row justify-end w-full gap-2">
       {#each techInvolved as tech}
       <Tooltip.Root>
-        <Tooltip.Trigger class="items-center transition ease-out text-lucy-muted/80 group-hover/whole:text-lucy-muted/100">
-          <Icon
-            icon={ tech.toLowerCase() }
+        <Tooltip.Trigger class="items-center text-lucy-muted/80 group-hover/whole:text-lucy-muted/100">
+          <Icon icon={ tech.toLowerCase() }
             class="h-4 w-4"
             />
         </Tooltip.Trigger>
