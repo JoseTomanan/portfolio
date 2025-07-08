@@ -15,52 +15,57 @@
     
     --muted: #2F2C32;
     --muted-foreground: #A49EAC;
-    
     --popover: #686069;
     --popover-foreground: #DED7D0;
-    
     --card: #1E1D23;
     --card-foreground: #A49EAC;
-    
     --border: #2F2C32;
     --input: #524B51;
     
     --primary: #F0CE59;
     --primary-foreground: #DED7D0;
-    
     --secondary: #FF7DA3;
     --secondary-foreground: #1E1D23;
-    
     --accent: #56C6D5;
     --accent-foreground: #1E1D23;
-    
     --destructive: 0 72.2% 50.6%;
     --destructive-foreground: 210 20% 98%;
     
     --ring: #524B51;
-    
     --radius: 0.5rem;
   }
+
+	::-webkit-scrollbar {
+		width: 6px;
+		height: 3px;
+	}
+	::-webkit-scrollbar-track {
+		background: var(--card);
+	}
+	::-webkit-scrollbar-thumb {
+		background: var(--muted);
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--popover)
+	}
+	::-webkit-scrollbar-corner {
+		background: var(--background);
+	}
 }
 
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply font-sans bg-lucy-bg;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+		transition-property: all;
+		transition-duration: 150ms;
+		transition-timing-function: ease-in-out;
     position: relative;
-    
-    body::before {
-      content: '';
-      position: absolute;
-      top: 0; 
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
     
     /* ALL OTHER */
     h1, h2, h3 {
@@ -98,6 +103,8 @@
   }
   footer {
     @apply py-4 text-lucy-surface-alt;
+		margin-left: auto;
+		margin-right: auto;
   }
 }
 
@@ -113,6 +120,14 @@
   a.hoverable-link {
     @apply hover:text-lucy-secondary;
   }
+	
+	h1.hero-text {
+		@apply text-lucy-fg;
+		font-weight: 700;
+		font-size: 1.75rem;
+		line-height: 2rem;
+		letter-spacing: 0.025rem;
+	}
   
   h6.footnote {
     @apply text-lucy-muted/80 text-right;
@@ -124,7 +139,7 @@
 }
 
 .magic-text {
-  animation: background-pan 8s linear infinite;
+  animation: background-pan 6s linear infinite;
   background: linear-gradient(
     to right,
     var(--foreground),
