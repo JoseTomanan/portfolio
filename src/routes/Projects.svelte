@@ -37,7 +37,7 @@
             Utilizes icon library Iconify and component library Shadcn to enhance the UI.
             Uses supplementary JavaScript and CSS to add more complex functionality.
           "
-        techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:PostCSS", "simple-icons:JavaScript"] }
+        techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:PostCSS"] }
       />
       <!-- <Article 
         id="proj4"
@@ -81,7 +81,7 @@
         id="proj1"
         href="https://github.com/JoseTomanan/finance-tracker-automator"
         title="Finance Tracker Automator"
-        subtitle="Automation script for Google Sheets using Google AppsScript API"
+        subtitle="Automation scripts for Google Sheets using AppsScript"
         date="FEB 2023 - PRESENT"
         other="
             A scripting project that I use for my personal spreadsheet to track my daily outgoing and incoming funds.

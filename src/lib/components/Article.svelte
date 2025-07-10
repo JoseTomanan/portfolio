@@ -32,12 +32,12 @@
     <div class="flex flex-row justify-end w-full gap-2">
       {#each techInvolved as tech}
       <Tooltip.Root>
-        <Tooltip.Trigger class="items-center text-lucy-muted/80 group-hover/whole:text-lucy-muted/100">
+        <Tooltip.Trigger class="items-center">
           <Icon icon={ tech.toLowerCase() }
-            class="h-4 w-4"
+            class="h-4 w-4 text-lucy-muted opacity-80 group-hover/whole:opacity-100"
             />
         </Tooltip.Trigger>
-        <Tooltip.Content class="bg-lucy-bg/75 text-lucy-fg border-none">
+        <Tooltip.Content class="bg-lucy-bg/85 text-lucy-fg border-none">
           { tech.split(":")[1] }
         </Tooltip.Content>
       </Tooltip.Root>
