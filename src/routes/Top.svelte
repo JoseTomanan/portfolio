@@ -42,8 +42,9 @@
   <section class="flex flex-col gap-8 items-center justify-between overflow-clip p-0 pb-8 rounded-b-none border-b border-lucy-border">
     <Carousel.Root
         class="relative flex"
-        opts={{ loop: true }} plugins={[ Autoplay({ delay:4000 }) ]}
-      >
+				opts={{ loop: true }}
+				plugins={[ Autoplay({ delay:8000 }) ]}
+			>
       <Carousel.Content class="h-[26rem] items-center">
         <Carousel.Item>
           <enhanced:img src="$lib/images/hero/1.jpg" alt="Me in Las Casas" />
@@ -58,8 +59,12 @@
 					<enhanced:img src="$lib/images/hero/3.jpg" alt="Me, tres" />
         </Carousel.Item>
       </Carousel.Content>
-      <!-- <Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-fg text-lucy-surface"/>
-      <Carousel.Next class="absolute right-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-fg text-lucy-surface"/> -->
+			<Carousel.Previous
+				class="absolute left-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-muted/50 text-lucy-fg"
+				/>
+      <Carousel.Next
+				class="absolute right-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-muted/50 text-lucy-fg"
+				/>
     </Carousel.Root>
 
     <div class="flex flex-col items-center justify-center gap-0">
