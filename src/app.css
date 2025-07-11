@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400);
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400");
 
 @tailwind base;
 @tailwind components;
@@ -12,7 +12,6 @@
   :root {
     --background: #100F13;
     --foreground: #DED7D0;
-    
     --muted: #2F2C32;
     --muted-foreground: #A49EAC;
     --popover: #686069;
@@ -21,7 +20,6 @@
     --card-foreground: #A49EAC;
     --border: #2F2C32;
     --input: #524B51;
-    
     --primary: #F0CE59;
     --primary-foreground: #DED7D0;
     --secondary: #FF7DA3;
@@ -30,7 +28,6 @@
     --accent-foreground: #1E1D23;
     --destructive: 0 72.2% 50.6%;
     --destructive-foreground: 210 20% 98%;
-    
     --ring: #524B51;
     --radius: 0.5rem;
   }
@@ -39,15 +36,19 @@
 		width: 6px;
 		height: 3px;
 	}
+
 	::-webkit-scrollbar-track {
 		background: var(--card);
 	}
+
 	::-webkit-scrollbar-thumb {
 		background: var(--muted);
 	}
+	
 	::-webkit-scrollbar-thumb:hover {
 		background: var(--popover)
 	}
+	
 	::-webkit-scrollbar-corner {
 		background: var(--background);
 	}
@@ -71,6 +72,7 @@
 
   body {
     @apply font-sans bg-lucy-bg;
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
@@ -95,26 +97,28 @@
       @apply font-mono;
 			@apply tracking-tight;
 			@apply px-4 md:px-0;
+			@apply text-sm;
+			@apply tracking-tighter;
+			@apply opacity-80;
     }
     
     /* TODO : fix (I just know this isnt the proper implementation of this) */
     h1 {
 			@apply text-2xl;
 		}
+
     h2 {
 			@apply text-2xl;
 		}
+    
     h3 {
 			@apply text-xl;
 		}
+    
     h4 {
 			@apply text-lg;
 		}
-    h6 {
-			@apply text-sm;
-			@apply tracking-tighter;
-			@apply opacity-80;
-		}
+
     p {
 			@apply text-base
 		}
@@ -130,6 +134,7 @@
 		@apply shadow-md;
 		@apply shadow-lucy-border;
   }
+
   section {
     @apply bg-lucy-surface/65;
 		@apply px-6;
@@ -137,14 +142,17 @@
 		@apply grow;
 		@apply rounded-xl;
   }
+	
   span.jumpable {
     @apply h-8;
 		@apply -mt-12;
 		@apply -z-50;
   }
+  
   footer {
     @apply py-4;
 		@apply text-lucy-surface-alt;
+
 		margin-left: auto;
 		margin-right: auto;
   }
@@ -165,6 +173,7 @@
 	
 	h1.hero-text {
 		@apply text-lucy-fg;
+		
 		font-weight: 700;
 		font-size: 1.75rem;
 		line-height: 2rem;
@@ -193,7 +202,6 @@
   );
   background-size: 200%;
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
@@ -203,44 +211,54 @@
 	from {
 		background-position: 0% center;
 	}
+	
 	to {
 		background-position: 200% center;
 	}
 }
 
 /* Animated Grain */
-@keyframes animateGrain {
-	0%,
-	100% {
+@keyframes animate-grain {
+	0% {
 		transform: translate(0, 0);
 	}
+
 	10% {
 		transform: translate(-5%, -10%);
 	}
+	
 	20% {
 		transform: translate(-15%, -20%);
 	}
+	
 	30% {
 		transform: translate(-5%, -10%);
 	}
+	
 	40% {
 		transform: translate(-15%, -20%);
 	}
+
 	50% {
 		transform: translate(-5%, -10%);
 	}
+
 	60% {
 		transform: translate(-15%, -20%);
 	}
+
 	70% {
 		transform: translate(-5%, -10%);
 	}
+
 	80% {
 		transform: translate(-15%, -20%);
 	}
+
 	90% {
 		transform: translate(-5%, -10%);
 	}
+
 	100% {
 		transform: translate(-15%, -20%);
 	}
