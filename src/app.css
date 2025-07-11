@@ -56,7 +56,7 @@
 @layer base {
   * {
     @apply border-border;
-		transition-property: all;
+		transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, gap;
 		transition-duration: 150ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
