@@ -79,18 +79,22 @@
     h1,
 		h2,
 		h3 {
-      @apply font-heading text-lucy-primary;
+      @apply font-heading;
+			@apply text-lucy-primary;
     }
     
     h4,
 		h5,
 		p,
 		label {
-      @apply font-sans text-lucy-muted;
+      @apply font-sans;
+			@apply text-lucy-muted;
     }
     
     h6 {
-      @apply font-mono tracking-tight px-4 md:px-0;
+      @apply font-mono;
+			@apply tracking-tight;
+			@apply px-4 md:px-0;
     }
     
     /* TODO : fix (I just know this isnt the proper implementation of this) */
@@ -107,7 +111,9 @@
 			@apply text-lg;
 		}
     h6 {
-			@apply text-sm tracking-tighter opacity-80;
+			@apply text-sm;
+			@apply tracking-tighter;
+			@apply opacity-80;
 		}
     p {
 			@apply text-base
@@ -117,17 +123,28 @@
 
 @layer components {
   .page {
-    @apply flex flex-col gap-4 h-[calc(100vh-4rem)];
-		@apply rounded-xl shadow-md shadow-lucy-border;
+    @apply flex flex-col;
+		@apply gap-4;
+		@apply h-[calc(100vh-4rem)];
+		@apply rounded-xl;
+		@apply shadow-md;
+		@apply shadow-lucy-border;
   }
   section {
-    @apply bg-lucy-surface/65 px-6 py-8 grow rounded-xl;
+    @apply bg-lucy-surface/65;
+		@apply px-6;
+		@apply py-8;
+		@apply grow;
+		@apply rounded-xl;
   }
   span.jumpable {
-    @apply h-8 -mt-12 -z-50;
+    @apply h-8;
+		@apply -mt-12;
+		@apply -z-50;
   }
   footer {
-    @apply py-4 text-lucy-surface-alt;
+    @apply py-4;
+		@apply text-lucy-surface-alt;
 		margin-left: auto;
 		margin-right: auto;
   }
@@ -135,7 +152,7 @@
 
 @layer utilities {
   .hoverable-link {
-    @apply underline underline-offset-1 transition-all ease-out;
+    @apply underline underline-offset-1;
   }
   
   span.hoverable-link {
@@ -155,11 +172,13 @@
 	}
   
   h6.footnote {
-    @apply text-lucy-muted/80 text-right;
+    @apply text-lucy-muted/80;
+		@apply text-right;
   }
   
   h6.footnote a {
-    @apply underline hover:text-lucy-secondary;
+    @apply underline;
+		@apply hover:text-lucy-secondary;
   }
 }
 
