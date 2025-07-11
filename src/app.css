@@ -56,15 +56,15 @@
 @layer base {
   * {
     @apply border-border;
+		transition-property: all;
+		transition-duration: 150ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   body {
     @apply font-sans bg-lucy-bg;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-		transition-property: all;
-		transition-duration: 150ms;
-		transition-timing-function: ease-in-out;
     position: relative;
     
     /* ALL OTHER */
