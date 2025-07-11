@@ -102,7 +102,4 @@
 </div>
 
 <style>
-  /* span.hoverable {
-    @apply text-lucy-muted hover:text-lucy-tertiary transition-colors ease-out;
-  } */
 </style>

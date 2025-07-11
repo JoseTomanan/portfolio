@@ -16,13 +16,12 @@
     group/whole
     flex gap-4 items-baseline md:p-4 rounded-lg text-left
 		border border-lucy-border
-    hover:bg-lucy-surface hover:border-lucy-border-alt
-    transition ease-linear z-10
+    hover:bg-lucy-surface hover:border-lucy-border-alt z-10
   ">
 
   <div class="basis-1/6 md:basis-1/4 flex flex-col justify-start h-full gap-0.5">
     <span class="
-        text-right text-sm font-mono tracking-tighter transition ease-out
+        text-right text-sm font-mono tracking-tighter
         text-lucy-muted
         group-hover/whole:text-lucy-fg/95
       ">
@@ -47,11 +46,10 @@
   
   <div class="basis-5/6 md:basis-3/4 flex flex-col gap-2">
     <div class="grid leading-4">
-      <h3 class="text-lg underline-offset-2 flex font-sans font-semibold transition-all ease-in-out group-hover/whole:text-lucy-fg/100">
+      <h3 class="text-lg underline-offset-2 flex font-sans font-semibold group-hover/whole:text-lucy-fg/100">
         <a class="
             group/link flex items-baseline gap-2 hover:gap-4
             text-lucy-fg/90 hover:text-lucy-secondary
-            transition-all ease-out
           " target="_blank" {id} {href} on:click|once
           >
           {title}

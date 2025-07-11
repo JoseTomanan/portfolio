@@ -50,7 +50,6 @@
             rounded-md py-1 px-4 text-lucy-fg w-fit border
             bg-lucy-surface-alt border-lucy-border-alt
             hover:bg-lucy-hover hover:border-lucy-border
-            transition ease-out
           " on:click={ ()=>{ submitForm(name, email, message) }}
           >
           <Icon icon="mdi:send" class="w-7 h-7"/>
