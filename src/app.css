@@ -5,42 +5,42 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  :root {
-    --background: #100F13;
-    --foreground: #DED7D0;
-    --muted: #2F2C32;
-    --muted-foreground: #A49EAC;
-    --popover: #686069;
-    --popover-foreground: #DED7D0;
-    --card: #1E1D23;
-    --card-foreground: #A49EAC;
-    --border: #2F2C32;
-    --input: #524B51;
-    --primary: #F0CE59;
-    --primary-foreground: #DED7D0;
-    --secondary: #FF7DA3;
-    --secondary-foreground: #1E1D23;
-    --accent: #56C6D5;
-    --accent-foreground: #1E1D23;
-    --destructive: 0 72.2% 50.6%;
-    --destructive-foreground: 210 20% 98%;
-    --ring: #524B51;
-    --radius: 0.5rem;
-  }
-
+	html {
+		scroll-behavior: smooth;
+	}
+	
+	:root {
+		--background: #100F13;
+		--foreground: #DED7D0;
+		--muted: #2F2C32;
+		--muted-foreground: #A49EAC;
+		--popover: #686069;
+		--popover-foreground: #DED7D0;
+		--card: #1E1D23;
+		--card-foreground: #A49EAC;
+		--border: #2F2C32;
+		--input: #524B51;
+		--primary: #F0CE59;
+		--primary-foreground: #DED7D0;
+		--secondary: #FF7DA3;
+		--secondary-foreground: #1E1D23;
+		--accent: #56C6D5;
+		--accent-foreground: #1E1D23;
+		--destructive: 0 72.2% 50.6%;
+		--destructive-foreground: 210 20% 98%;
+		--ring: #524B51;
+		--radius: 0.5rem;
+	}
+	
 	::-webkit-scrollbar {
 		width: 6px;
 		height: 3px;
 	}
-
+	
 	::-webkit-scrollbar-track {
 		background: var(--card);
 	}
-
+	
 	::-webkit-scrollbar-thumb {
 		background: var(--muted);
 	}
@@ -56,10 +56,10 @@
 
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
+	* {
+		@apply border-border;
+	}
+	
 	button,
 	a,
 	input,
@@ -69,16 +69,16 @@
 		transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, gap;
 		transition-duration: 150ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  body {
-    @apply font-sans bg-lucy-bg;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-  }
-
+	}
+	
+	body {
+		@apply font-sans bg-lucy-bg;
+		
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		position: relative;
+	}
+	
 	/* ALL OTHER */
 	h1,
 	h2,
@@ -108,7 +108,7 @@
 	h1 {
 		@apply text-2xl;
 	}
-
+	
 	h2 {
 		@apply text-2xl;
 	}
@@ -120,56 +120,56 @@
 	h4 {
 		@apply text-lg;
 	}
-
+	
 	p {
 		@apply text-base
 	}
-
+	
 	.page {
-    @apply flex flex-col;
+		@apply flex flex-col;
 		@apply gap-4;
 		@apply h-[calc(100vh-4rem)];
 		@apply rounded-xl;
 		@apply shadow-md;
 		@apply shadow-lucy-border;
-  }
-
-  section {
-    @apply bg-lucy-surface/65;
+	}
+	
+	section {
+		@apply bg-lucy-surface/65;
 		@apply px-6;
 		@apply py-8;
 		@apply grow;
 		@apply rounded-xl;
-  }
+	}
 	
-  span.jumpable {
-    @apply h-8;
+	span.jumpable {
+		@apply h-8;
 		@apply -mt-12;
 		@apply -z-50;
-  }
-  
-  footer {
-    @apply py-4;
+	}
+	
+	footer {
+		@apply py-4;
 		@apply text-lucy-surface-alt;
-
+		
 		margin-left: auto;
 		margin-right: auto;
-  }
+	}
 }
 
 
 @layer components {
 	.hoverable-link {
-    @apply underline underline-offset-1;
+		@apply underline underline-offset-1;
 		
 		span& {
 			@apply hover:text-lucy-tertiary;
 		}
-
+		
 		a& {
 			@apply hover:text-lucy-secondary;
 		}
-  }
+	}
 	
 	h1.hero-text {
 		@apply text-lucy-fg;
@@ -179,16 +179,16 @@
 		line-height: 2rem;
 		letter-spacing: 0.025rem;
 	}
-  
-  h6.footnote {
-    @apply text-lucy-muted/80;
+	
+	h6.footnote {
+		@apply text-lucy-muted/80;
 		@apply text-right;
 		
 		a {
 			@apply underline;
 			@apply hover:text-lucy-secondary;
 		}
-  }
+	}
 }
 
 
@@ -196,11 +196,11 @@
 	.magic-text {
 		animation: background-pan 6s linear infinite;
 		background: linear-gradient(
-			to right,
-			var(--foreground),
-			var(--secondary),
-			var(--accent),
-			var(--foreground)
+		to right,
+		var(--foreground),
+		var(--secondary),
+		var(--accent),
+		var(--foreground)
 		);
 		background-size: 200%;
 		background-clip: text;
@@ -225,7 +225,7 @@
 	0% {
 		transform: translate(0, 0);
 	}
-
+	
 	10% {
 		transform: translate(-5%, -10%);
 	}
@@ -241,27 +241,27 @@
 	40% {
 		transform: translate(-15%, -20%);
 	}
-
+	
 	50% {
 		transform: translate(-5%, -10%);
 	}
-
+	
 	60% {
 		transform: translate(-15%, -20%);
 	}
-
+	
 	70% {
 		transform: translate(-5%, -10%);
 	}
-
+	
 	80% {
 		transform: translate(-15%, -20%);
 	}
-
+	
 	90% {
 		transform: translate(-5%, -10%);
 	}
-
+	
 	100% {
 		transform: translate(-15%, -20%);
 	}
