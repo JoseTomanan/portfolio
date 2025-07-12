@@ -71,6 +71,14 @@
 	* {
 		@apply border-border;
 	}
+
+	body {
+		@apply font-sans bg-lucy-bg;
+		
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		position: relative;
+	}
 	
 	button,
 	a,
@@ -81,14 +89,6 @@
 		transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, gap;
 		transition-duration: 150ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	
-	body {
-		@apply font-sans bg-lucy-bg;
-		
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		position: relative;
 	}
 	
 	/* ALL OTHER */
@@ -208,11 +208,11 @@
 	.magic-text {
 		animation: background-pan 6s linear infinite;
 		background: linear-gradient(
-		to right,
-		var(--foreground),
-		var(--secondary),
-		var(--tertiary),
-		var(--foreground)
+			to right,
+			var(--foreground),
+			var(--secondary),
+			var(--tertiary),
+			var(--foreground)
 		);
 		background-size: 200%;
 		background-clip: text;
