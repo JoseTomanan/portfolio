@@ -54,6 +54,7 @@
 	}
 }
 
+
 @layer base {
   * {
     @apply border-border;
@@ -76,57 +77,55 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    
-    /* ALL OTHER */
-    h1,
-		h2,
-		h3 {
-      @apply font-heading;
-			@apply text-lucy-primary;
-    }
-    
-    h4,
-		h5,
-		p,
-		label {
-      @apply font-sans;
-			@apply text-lucy-muted;
-    }
-    
-    h6 {
-      @apply font-mono;
-			@apply tracking-tight;
-			@apply px-4 md:px-0;
-			@apply text-sm;
-			@apply tracking-tighter;
-			@apply opacity-80;
-    }
-    
-    /* TODO : fix (I just know this isnt the proper implementation of this) */
-    h1 {
-			@apply text-2xl;
-		}
-
-    h2 {
-			@apply text-2xl;
-		}
-    
-    h3 {
-			@apply text-xl;
-		}
-    
-    h4 {
-			@apply text-lg;
-		}
-
-    p {
-			@apply text-base
-		}
   }
-}
 
-@layer components {
-  .page {
+	/* ALL OTHER */
+	h1,
+	h2,
+	h3 {
+		@apply font-heading;
+		@apply text-lucy-primary;
+	}
+	
+	h4,
+	h5,
+	p,
+	label {
+		@apply font-sans;
+		@apply text-lucy-muted;
+	}
+	
+	h6 {
+		@apply font-mono;
+		@apply tracking-tight;
+		@apply px-4 md:px-0;
+		@apply text-sm;
+		@apply tracking-tighter;
+		@apply opacity-80;
+	}
+	
+	/* TODO : fix (I just know this isnt the proper implementation of this) */
+	h1 {
+		@apply text-2xl;
+	}
+
+	h2 {
+		@apply text-2xl;
+	}
+	
+	h3 {
+		@apply text-xl;
+	}
+	
+	h4 {
+		@apply text-lg;
+	}
+
+	p {
+		@apply text-base
+	}
+
+	.page {
     @apply flex flex-col;
 		@apply gap-4;
 		@apply h-[calc(100vh-4rem)];
@@ -158,17 +157,18 @@
   }
 }
 
-@layer utilities {
-  .hoverable-link {
+
+@layer components {
+	.hoverable-link {
     @apply underline underline-offset-1;
-  }
-  
-  span.hoverable-link {
-    @apply hover:text-lucy-tertiary;
-  }
-  
-  a.hoverable-link {
-    @apply hover:text-lucy-secondary;
+		
+		span& {
+			@apply hover:text-lucy-tertiary;
+		}
+
+		a& {
+			@apply hover:text-lucy-secondary;
+		}
   }
 	
 	h1.hero-text {
@@ -183,30 +183,33 @@
   h6.footnote {
     @apply text-lucy-muted/80;
 		@apply text-right;
-  }
-  
-  h6.footnote a {
-    @apply underline;
-		@apply hover:text-lucy-secondary;
+		
+		a {
+			@apply underline;
+			@apply hover:text-lucy-secondary;
+		}
   }
 }
 
-.magic-text {
-  animation: background-pan 6s linear infinite;
-  background: linear-gradient(
-    to right,
-    var(--foreground),
-    var(--secondary),
-    var(--accent),
-    var(--foreground)
-  );
-  background-size: 200%;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
+
+@layer utilities {
+	.magic-text {
+		animation: background-pan 6s linear infinite;
+		background: linear-gradient(
+			to right,
+			var(--foreground),
+			var(--secondary),
+			var(--accent),
+			var(--foreground)
+		);
+		background-size: 200%;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		white-space: nowrap;
+	}
 }
 
-/* Background pan */
+
 @keyframes background-pan {
 	from {
 		background-position: 0% center;
@@ -217,7 +220,7 @@
 	}
 }
 
-/* Animated Grain */
+
 @keyframes animate-grain {
 	0% {
 		transform: translate(0, 0);
