@@ -134,7 +134,9 @@
 	}
 	
 	p {
-		@apply text-base
+		@apply text-base;
+
+		text-wrap: pretty;
 	}
 	
 	.page {
