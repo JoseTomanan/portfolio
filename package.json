@@ -21,6 +21,8 @@
 		"bits-ui": "^0.22.0",
 		"embla-carousel-svelte": "^8.6.0",
 		"lucide-svelte": "^0.525.0",
+		"postcss-nested": "^7.0.2",
+		"postcss-simple-vars": "^7.0.1",
 		"postcss-syntax": "^0.36.2",
 		"stylelint": "^16.21.1",
 		"stylelint-config-standard": "^38.0.0",
