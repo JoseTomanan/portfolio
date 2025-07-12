@@ -211,7 +211,7 @@
 		to right,
 		var(--foreground),
 		var(--secondary),
-		var(--accent),
+		var(--tertiary),
 		var(--foreground)
 		);
 		background-size: 200%;
