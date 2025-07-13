@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* ------------------------- BASE ------------------------- */
 @layer base {
 	html {
 		scroll-behavior: smooth;
@@ -64,10 +66,7 @@
 	::-webkit-scrollbar-corner {
 		background: var(--background);
 	}
-}
 
-
-@layer base {
 	* {
 		@apply border-border;
 	}
@@ -181,6 +180,7 @@
 }
 
 
+/* ------------------------- COMPONENTS ------------------------- */
 @layer components {
 	.hoverable-link {
 		@apply underline underline-offset-1;
@@ -224,6 +224,7 @@
 }
 
 
+/* ------------------------- UTILITIES ------------------------- */
 @layer utilities {
 	.magic-text {
 		animation: background-pan 6s linear infinite;
@@ -243,6 +244,7 @@
 }
 
 
+/* ------------------------- OTHER ------------------------- */
 @keyframes background-pan {
 	from {
 		background-position: 0% center;
