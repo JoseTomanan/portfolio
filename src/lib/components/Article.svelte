@@ -28,7 +28,7 @@
       {date}
     </span>
 
-    <div class="flex flex-row justify-end w-full gap-2">
+    <div class="flex flex-row justify-end w-full gap-1 md:gap-2.5">
       {#each techInvolved as tech}
       <Tooltip.Root>
         <Tooltip.Trigger class="items-center">
