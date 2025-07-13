@@ -116,7 +116,6 @@
 		@apply opacity-80;
 	}
 	
-	/* TODO : fix (I just know this isnt the proper implementation of this) */
 	h1 {
 		@apply text-2xl;
 	}
@@ -186,12 +185,12 @@
 	.hoverable-link {
 		@apply underline underline-offset-1;
 		
-		span& {
-			@apply hover:text-lucy-tertiary;
+		span&:hover {
+			@apply text-lucy-tertiary;
 		}
 		
-		a& {
-			@apply hover:text-lucy-secondary;
+		a&:hover {
+			@apply text-lucy-secondary;
 		}
 	}
 	
@@ -213,6 +212,15 @@
 			@apply hover:text-lucy-secondary;
 		}
 	}
+
+	.non-link-highlight {
+			@apply font-medium;
+			@apply text-lucy-fg;
+
+			&:hover {
+				@apply text-lucy-tertiary;
+			}
+	}
 }
 
 
@@ -231,6 +239,7 @@
 		-webkit-text-fill-color: transparent;
 		white-space: nowrap;
 	}
+
 }
 
 
