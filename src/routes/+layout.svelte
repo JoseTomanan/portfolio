@@ -7,16 +7,13 @@
   <Navbar />
 
   <premain class="flex justify-center">
-    <main class="
-        flex flex-col gap-10 mx-2 my-12
-        w-screen px-2 md:max-w-[840px] md:px-0
-      ">
+    <main>
       <slot />
     </main>
   </premain>
 
   <footer>
-    <h6 class="text-center">
+    <h6>
       This page is written with Svelte and Tailwind.
       Feel free to open the codebase to see how I made this!
     </h6>
