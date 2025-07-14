@@ -216,19 +216,22 @@
 		@apply text-lucy-muted/80;
 		@apply text-right;
 		
-		a {
+		& > a {
 			@apply underline;
-			@apply hover:text-lucy-secondary;
+
+			&:hover {
+				@apply text-lucy-secondary;
+			}
 		}
 	}
 
 	.non-link-highlight {
-			@apply font-medium;
-			@apply text-lucy-fg;
+		@apply font-medium;
+		@apply text-lucy-fg;
 
-			&:hover {
-				@apply text-lucy-tertiary;
-			}
+		&:hover {
+			@apply text-lucy-tertiary;
+		}
 	}
 }
 
