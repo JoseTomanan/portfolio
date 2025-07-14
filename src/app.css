@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 
+/* ------------------------- THEME ------------------------- */
+
+
+
 /* ------------------------- BASE ------------------------- */
 @layer base {
 	html {
@@ -91,21 +95,35 @@
 	}
 	
 	/* ALL OTHER */
-	h1,
-	h2,
-	h3 {
+	h1 {
+		@apply text-2xl;
 		@apply font-heading;
 		@apply text-lucy-primary;
 	}
 	
-	h4,
-	h5,
-	p,
-	label {
+	h2 {
+		@apply text-2xl;
+		@apply font-heading;
+		@apply text-lucy-primary;
+	}
+	
+	h3 {
+		@apply text-xl;
+		@apply font-heading;
+		@apply text-lucy-primary;
+	}
+	
+	h4 {
+		@apply text-lg;
 		@apply font-sans;
 		@apply text-lucy-muted;
 	}
-	
+
+	h5 {
+		@apply font-sans;
+		@apply text-lucy-muted;
+	}
+
 	h6 {
 		@apply font-mono;
 		@apply tracking-tight;
@@ -115,26 +133,17 @@
 		@apply opacity-80;
 	}
 	
-	h1 {
-		@apply text-2xl;
-	}
-	
-	h2 {
-		@apply text-2xl;
-	}
-	
-	h3 {
-		@apply text-xl;
-	}
-	
-	h4 {
-		@apply text-lg;
-	}
-	
 	p {
 		@apply text-base;
+		@apply font-sans;
+		@apply text-lucy-muted;
 
 		text-wrap: pretty;
+	}
+
+	label {
+		@apply font-sans;
+		@apply text-lucy-muted;
 	}
 
 	main {
