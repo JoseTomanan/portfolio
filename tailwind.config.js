@@ -32,6 +32,7 @@ export default {
 						alt: '#524B51',
 					},
 					hover: '#686069',
+					card: '#16151A',
 				},
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",

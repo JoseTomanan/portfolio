@@ -6,48 +6,46 @@
 
 
 /* ------------------------- THEME ------------------------- */
+:root {
+	--background: #100F13;  /* lucy bg */
+	--foreground: #DED7D0;  /* for heading; lucy fg */
+	--foreground-alt:  /* for body; lucy muted */
 
+	--muted: #2F2C32;  /* lucy surface alt */
+	--muted-foreground: #A49EAC;  /* lucy muted */
+	
+	--popover: #1E1D23;  /*  lucy surface */
+	--popover-foreground: #DED7D0;  /* lucy fg */
+	
+	--card: #16151A;  /* lucy muted-65 */
+	--card-foreground: #A49EAC;  /* lucy muted */
+	
+	--border: #2F2C32;  /* lucy border */
+	--input: #524B51;  /* lucy border alt */
+	
+	--primary: #F0CE59;  /* lucy primary */
+	--primary-foreground: #16151A;  /* lucy muted-65 */
+	
+	--secondary: #FF7DA3;  /* lucy secondary */
+	--secondary-foreground: #16151A;  /* lucy muted-65 */
+
+	--tertiary: #56C6D5;  /* lucy tertiary */
+	
+	--accent: #686069;  /* lucy hover */
+	--accent-foreground: #1E1D23;  /* lucy muted-65 */
+	
+	--destructive: 0 72.2% 50.6%;
+	--destructive-foreground: 210 20% 98%;
+	
+	--ring: #524B51;
+	--radius: 0.5rem;
+}
 
 
 /* ------------------------- BASE ------------------------- */
 @layer base {
 	html {
 		scroll-behavior: smooth;
-	}
-	
-	:root {
-		--background: #100F13;  /* lucy bg */
-		--foreground: #DED7D0;  /* for heading; lucy fg */
-		--foreground-alt:  /* for body; lucy muted */
-
-		--muted: #2F2C32;  /* lucy surface alt */
-		--muted-foreground: #A49EAC;  /* lucy muted */
-		
-		--popover: #1E1D23;  /*  lucy surface */
-		--popover-foreground: #DED7D0;  /* lucy fg */
-		
-		--card: #16151A;  /* lucy muted-65 */
-		--card-foreground: #A49EAC;  /* lucy muted */
-		
-		--border: #2F2C32;  /* lucy border */
-		--input: #524B51;  /* lucy border alt */
-		
-		--primary: #F0CE59;  /* lucy primary */
-		--primary-foreground: #16151A;  /* lucy muted-65 */
-		
-		--secondary: #FF7DA3;  /* lucy secondary */
-		--secondary-foreground: #16151A;  /* lucy muted-65 */
-
-		--tertiary: #56C6D5;  /* lucy tertiary */
-		
-		--accent: #686069;  /* lucy hover */
-		--accent-foreground: #1E1D23;  /* lucy muted-65 */
-		
-		--destructive: 0 72.2% 50.6%;
-		--destructive-foreground: 210 20% 98%;
-		
-		--ring: #524B51;
-		--radius: 0.5rem;
 	}
 	
 	::-webkit-scrollbar {
@@ -77,6 +75,9 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		position: relative;
+		/* @apply bg-gradient-radial;
+		@apply from-lucy-card via-75% to-lucy-bg; */
+		background-attachment: fixed;
 	}
 	
 	button,
@@ -176,11 +177,11 @@
 	
 	footer {
 		@apply py-4;
-		@apply text-lucy-muted;
+		@apply text-lucy-muted/40;
 		@apply mx-auto;
 
 		& h6 {
-			@apply text-right;
+			@apply text-center;
 		}
 	}
 }
