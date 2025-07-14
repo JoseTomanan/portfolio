@@ -6,9 +6,9 @@ export default {
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 	theme: {
 		fontFamily: {
-			'heading': ["IBM Plex Sans", "sans-serif"],
-			'sans': ["Inter", "sans-serif"],
-			'mono': ["JetBrains Mono", "monospace"],
+			heading: "var(--font-heading)",
+			sans: "var(--font-sans)",
+			mono: "var(--font-mono)",
 		},
 		container: {
 			center: true,

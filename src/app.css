@@ -7,6 +7,10 @@
 
 /* ------------------------- THEME ------------------------- */
 :root {
+	--font-heading: "IBM Plex Sans";
+	--font-sans: "Inter";
+	--font-mono: "JetBrains Mono";
+
 	--background: #100F13;  /* lucy bg */
 	--foreground: #DED7D0;  /* for heading; lucy fg */
 	--foreground-alt:  /* for body; lucy muted */
