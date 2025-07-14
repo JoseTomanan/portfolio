@@ -54,19 +54,15 @@
 		width: 6px;
 		height: 3px;
 	}
-	
 	::-webkit-scrollbar-track {
 		background: var(--card);
 	}
-	
 	::-webkit-scrollbar-thumb {
 		background: var(--border);
 	}
-	
 	::-webkit-scrollbar-thumb:hover {
 		background: var(--input)
 	}
-	
 	::-webkit-scrollbar-corner {
 		background: var(--background);
 	}
@@ -164,7 +160,8 @@
 	}
 	
 	section {
-		@apply bg-lucy-surface/65;
+		background: var(--card);
+
 		@apply px-6;
 		@apply py-8;
 		@apply grow;
@@ -179,7 +176,7 @@
 	
 	footer {
 		@apply py-4;
-		@apply text-lucy-surface-alt;
+		@apply text-lucy-muted;
 		@apply mx-auto;
 
 		& h6 {
