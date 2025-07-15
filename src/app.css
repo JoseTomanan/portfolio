@@ -45,6 +45,69 @@
 	--radius: 0.5rem;
 }
 
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container,
+  footer,
+  nav,
+  main {
+    max-width: 640px;
+  }
+  a,
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container,
+  footer
+  nav,
+  main {
+    width: 100%;
+  }
+  a,
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container,
+  footer
+  nav,
+  main {
+    width: 100%;
+  }
+  a,
+  p {
+    font-size: 0.9rem;
+  }
+}
+
 
 /* ------------------------- BASE ------------------------- */
 @layer base {
@@ -150,7 +213,6 @@
 	main {
 		@apply flex flex-col;
 		@apply gap-12;
-		@apply mx-2;
 		@apply my-12;
 		@apply px-2 md:px-0;
 		@apply w-screen md:max-w-[840px];
