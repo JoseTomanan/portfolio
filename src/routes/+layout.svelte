@@ -6,7 +6,7 @@
 <div class="app bg-fixed">
   <Navbar />
 
-  <premain class="flex justify-center">
+  <premain class="flex container justify-center">
     <main>
       <slot />
     </main>
