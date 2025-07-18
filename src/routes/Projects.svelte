@@ -24,6 +24,21 @@
           "
         techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:Django", "simple-icons:Supabase"] }
       />
+			<Article 
+        id="proj4"
+        href="https://potterdex.vercel.app"
+        title="PotterDex"
+        subtitle="React-based Harry Potter database interface"
+        date="DEC 2024 - JAN 2025"
+        other="
+            A Harry Potter lore database interface made in React and Tailwind.
+						Fetches from the unofficial PotterDB API for all relevant information.
+						Utilizes Axios to implement request handling and data management.
+						Uses routing library React Router for slug routing and context keeping, and component library Shadcn to speed up the designing process.
+						Uses supplementary JavaScript and CSS to implement additional functionality and animation not covered by external libraries.
+          "
+        techInvolved={ ["simple-icons:React", "simple-icons:Axios", "simple-icons:TailwindCSS"] }
+      /> 
       <Article 
         id="proj3"
         href="https://github.com/HoweZae/portfolio"
@@ -35,21 +50,9 @@
             Also created to demonstrate frontend tech learned and to practice my UI/UX design choices.
             Written using Svelte and Tailwind to prioritize the webpage's responsiveness and intuitiveness.
             Utilizes icon library Iconify and component library Shadcn to enhance the UI.
-            Uses supplementary JavaScript and CSS to add more complex functionality.
           "
         techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:PostCSS"] }
       />
-      <!-- <Article 
-        id="proj4"
-        href="_blank"
-        title="Sugarcare"
-        subtitle="Image classification model"
-        date="DEC 2024 - JAN 2025"
-        other="
-            A 
-          "
-        techInvolved={ ["Tensorflow", "Keras"] }
-      />  -->
       <Article 
         id="proj0"
         href="https://github.com/JoseTomanan/shogi-pygame"
@@ -77,7 +80,7 @@
           "
         techInvolved={ ["simple-icons:Python"] }
       />
-      <Article 
+      <!-- <Article 
         id="proj1"
         href="https://github.com/JoseTomanan/finance-tracker-automator"
         title="Finance Tracker Automator"
@@ -90,7 +93,7 @@
             Implements SOLID principles and design patterns for codebase sustainability and maintainability.
           "
         techInvolved={ ["simple-icons:GoogleAppsScript", "simple-icons:TypeScript"] }
-      />
+      /> -->
     </div>
     
     <h6 class="footnote">
