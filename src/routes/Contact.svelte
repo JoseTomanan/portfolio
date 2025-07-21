@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Icon from "@iconify/svelte"
-  import { fly } from "svelte/transition"
+  import Icon from "@iconify/svelte";
+  import { fly } from "svelte/transition";
   
-  let name: string = ""
-  let email: string = ""
-  let message: string = ""
+  let name: string = "";
+  let email: string = "";
+  let message: string = "";
   
   function submitForm(name: string, email: string, message: string) {
     alert(`Submitted ${name}, ${email} with message: ${message}`);

@@ -1,16 +1,16 @@
 <script lang="ts">
-  import Top from "./Top.svelte"
-  import Me from "./Me.svelte"
-  import Roles from "./Roles.svelte"
-  import Projects from "./Projects.svelte"
-  import Contact from "./Contact.svelte"
+  import Top from "./Top.svelte";
+  import Me from "./Me.svelte";
+  import Roles from "./Roles.svelte";
+  import Projects from "./Projects.svelte";
+  import Contact from "./Contact.svelte";
   
-  import { onMount } from "svelte"
+  import { onMount } from "svelte";
   // import { fade } from "svelte/transition";
   // import { tweened, spring } from "svelte/motion";
   // import { elasticOut } from "svelte/easing";
   
-  let startPage: boolean = false
+  let startPage: boolean = false;
   
   onMount(() => {
     startPage = true;

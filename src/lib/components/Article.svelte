@@ -1,15 +1,15 @@
 <script lang="ts">
-  import Icon from "@iconify/svelte"
-  import * as Tooltip from "$lib/components/ui/tooltip/index"
+  import Icon from "@iconify/svelte";
+  import * as Tooltip from "$lib/components/ui/tooltip/index";
 
-  export let id: string
-  export let href: string
+  export let id: string;
+  export let href: string;
   // export let color;
-  export let title: string
-  export let subtitle: string
-  export let other: string = ""
-  export let date: string = "AUG 2023 - AUG 2023"
-  export let techInvolved: string[] = [""]
+  export let title: string;
+  export let subtitle: string;
+  export let other: string = "";
+  export let date: string = "AUG 2023 - AUG 2023";
+  export let techInvolved: string[] = [""];
 </script>
 
 <article class="group/whole flex flex-col md:flex-row gap-4 items-baseline p-4 rounded-lg text-left

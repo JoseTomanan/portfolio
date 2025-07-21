@@ -1,7 +1,7 @@
 <script lang='ts'>
-  import Article from "$lib/components/Article.svelte"
-  import { fly } from "svelte/transition"
-  import { link } from "$lib"
+  import Article from "$lib/components/Article.svelte";
+  import { fly } from "svelte/transition";
+  import { link } from "$lib";
 </script>
 
 <span class="jumpable" id="roles" />
