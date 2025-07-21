@@ -1,11 +1,11 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
 
-	import Autoplay from "embla-carousel-autoplay"
-  import * as Carousel from "$lib/components/ui/carousel/index"
+	import Autoplay from "embla-carousel-autoplay";
+  import * as Carousel from "$lib/components/ui/carousel/index";
 
-  import { link } from "$lib"
-  import { fly } from "svelte/transition"
+  import { link } from "$lib";
+  import { fly } from "svelte/transition";
 
   const header: {iconifyTag: string, color: string, link: string, handle: string}[] = [
     {
@@ -32,39 +32,47 @@
       link: link.ig,
       handle: "jose.tmnn"
     },
-  ]
+  ];
 </script>
 
 <span class="jumpable" id="top" />
 <div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <!-- <div class="h-4" /> -->
 
-  <section class="flex flex-col gap-8 items-center justify-between overflow-clip p-0 pb-8 rounded-b-none border-b border-lucy-border">
+  <section class="flex flex-col gap-8 items-center justify-between overflow-clip
+				p-0 pb-8 rounded-b-none border-b border-lucy-border">
     <Carousel.Root
-        class="relative flex"
-				opts={{ loop: true }}
-				plugins={[ Autoplay({ delay:8000 }) ]}
-			>
+					class="relative flex"
+					opts={{ loop: true }}
+					plugins={[ Autoplay({ delay:8000 }) ]}>
       <Carousel.Content class="h-[26rem] items-center">
-        <Carousel.Item>
-          <enhanced:img src="$lib/images/hero/1.jpg" alt="Me in Las Casas" />
-        </Carousel.Item>
-				<Carousel.Item>
-					<enhanced:img src="$lib/images/hero/4.jpg" alt="Me, cuatro" />
+				<Carousel.Item class="h-full overflow-clip">
+					<enhanced:img
+								class="h-full object-cover"
+								src="$lib/images/hero/1.jpg"
+								alt="Me uno" />
 				</Carousel.Item>
-				<Carousel.Item>
-					<enhanced:img src="$lib/images/hero/2.jpg" alt="Me, dos" />
-        </Carousel.Item>
-				<Carousel.Item>
-					<enhanced:img src="$lib/images/hero/3.jpg" alt="Me, tres" />
-        </Carousel.Item>
+				<Carousel.Item class="h-full overflow-clip">
+					<enhanced:img
+								class="h-full object-cover"
+								src="$lib/images/hero/4.jpg"
+								alt="Me cuatro" />
+				</Carousel.Item>
+				<Carousel.Item class="h-full overflow-clip">
+					<enhanced:img
+								class="h-full object-cover"
+								src="$lib/images/hero/2.jpg"
+								alt="Me dos" />
+				</Carousel.Item>
+				<Carousel.Item class="h-full overflow-clip">
+					<enhanced:img
+								class="h-full object-cover"
+								src="$lib/images/hero/3.jpg"
+								alt="Me tres" />
+				</Carousel.Item>
       </Carousel.Content>
-			<Carousel.Previous
-				class="absolute left-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-muted/50 text-lucy-fg"
-				/>
-      <Carousel.Next
-				class="absolute right-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-muted/50 text-lucy-fg"
-				/>
+			<Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-muted/50 text-lucy-fg" />
+      <Carousel.Next class="absolute right-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-muted/50 text-lucy-fg" />
     </Carousel.Root>
 
     <div class="flex flex-col items-center justify-center gap-0">
@@ -88,14 +96,12 @@
 
     <div class="flex gap-2 justify-end">
       {#each header as image}
-			<div class="flex justify-center bg-gradient-to-b rounded-xl bg-transparent">
-				<a href={ image.link } target="_blank">
-					<Icon
-						icon={ image.iconifyTag }
-						class="h-5 w-5 text-lucy-muted hover:text-lucy-fg"
-						/>
-				</a>
-			</div>
+				<div class="flex justify-center bg-gradient-to-b rounded-xl bg-transparent">
+					<a href={image.link} target="_blank">
+						<Icon icon={image.iconifyTag}
+									class="h-5 w-5 text-lucy-muted hover:text-lucy-fg" />
+					</a>
+				</div>
       {/each}
     </div>
   </section>
