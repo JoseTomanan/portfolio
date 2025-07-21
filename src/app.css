@@ -64,6 +64,9 @@
   .container {
     max-width: 768px;
   }
+	nav {
+		position: relative;
+	}
 }
 
 /* md */
@@ -74,7 +77,7 @@
   main {
     max-width: 640px;
   }
-  a,
+  p.a,
   p {
     font-size: 1rem;
   }
@@ -88,7 +91,7 @@
   main {
     width: 100%;
   }
-  a,
+  p.a,
   p {
     font-size: 0.9rem;
   }
@@ -102,7 +105,7 @@
   main {
     width: 100%;
   }
-  a,
+  p.a,
   p {
     font-size: 0.9rem;
   }

@@ -35,7 +35,8 @@
 						Fetches from the unofficial PotterDB API for all relevant information.
 						Utilizes Axios to implement request handling and data management.
 						Uses routing library React Router for slug routing and context keeping, and component library Shadcn to speed up the designing process.
-						Uses supplementary JavaScript and CSS to implement additional functionality and animation not covered by external libraries.
+						Utilizes CSS to implement mobile-responsiveness.
+						Uses JavaScript to implement additional functionality and animation not covered by external libraries.
           "
         techInvolved={ ["simple-icons:React", "simple-icons:Axios", "simple-icons:TailwindCSS"] }
       /> 
