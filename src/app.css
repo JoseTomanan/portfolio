@@ -154,18 +154,21 @@
 		@apply text-2xl;
 		@apply font-heading;
 		@apply text-lucy-primary;
+		text-wrap: balance;
 	}
 	
 	h2 {
 		@apply text-2xl;
 		@apply font-heading;
 		@apply text-lucy-primary;
+		text-wrap: balance;
 	}
 	
 	h3 {
 		@apply text-xl;
 		@apply font-heading;
 		@apply text-lucy-primary;
+		text-wrap: balance;
 	}
 	
 	h4 {
@@ -206,7 +209,7 @@
 		@apply gap-12;
 		@apply my-12;
 		@apply px-2 md:px-0;
-		@apply w-screen md:max-w-[840px];
+		@apply w-screen max-w-[840px];
 	}
 	
 	.page {
@@ -220,7 +223,7 @@
 	section {
 		background: var(--card);
 
-		@apply px-6;
+		@apply px-4;
 		@apply py-8;
 		@apply grow;
 		@apply rounded-xl;
