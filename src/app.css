@@ -77,10 +77,6 @@
   main {
     max-width: 640px;
   }
-  p.a,
-  p {
-    font-size: 1rem;
-  }
 }
 
 /* sm */
@@ -91,10 +87,6 @@
   main {
     width: 100%;
   }
-  p.a,
-  p {
-    font-size: 0.9rem;
-  }
 }
 
 /* xs */
@@ -104,10 +96,6 @@
   nav,
   main {
     width: 100%;
-  }
-  p.a,
-  p {
-    font-size: 0.9rem;
   }
 }
 
