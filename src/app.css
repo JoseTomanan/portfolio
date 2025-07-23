@@ -129,9 +129,6 @@
 
 	body {
 		@apply font-sans bg-lucy-bg;
-		
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
 		position: relative;
 		/* @apply bg-gradient-radial;
 		@apply from-lucy-card via-75% to-lucy-bg; */
@@ -213,7 +210,7 @@
 
 	main {
 		@apply flex flex-col;
-		@apply gap-12;
+		@apply gap-10;
 		@apply my-12;
 		@apply px-2 md:px-0;
 		@apply w-screen max-w-[840px];

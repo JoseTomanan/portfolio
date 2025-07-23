@@ -5,7 +5,7 @@
 <span class="jumpable" id="me" />
 <div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-4 rounded-b-none border-b border-lucy-border">
-    <h1>What do I do?</h1>
+    <h2>What do I do?</h2>
     <p>
       As a developer, I thrive in the intersection of frontend and backend.
       I have put myself in both shoes&mdash;creating clean UIs with SvelteKit and building solid APIs with Django and Spring Boot.
