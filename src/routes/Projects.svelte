@@ -31,9 +31,8 @@
 								A Harry Potter lore database interface made in React and Tailwind.
 								Fetches from the unofficial PotterDB API for all relevant information.
 								Utilizes Axios to implement request handling and data management.
-								Uses routing library React Router for slug routing and context keeping, and component library Shadcn to speed up the designing process.
-								Utilizes CSS to implement mobile-responsiveness.
-								Uses JavaScript to implement additional functionality and animation not covered by external libraries."
+								Makes use of routing library React Router for slug routing and context keeping, and component library Shadcn to speed up the designing process.
+								Uses CSS for mobile-responsiveness and fancy animations, and JavaScript for functionality not covered by external libraries."
 						techInvolved={ ["simple-icons:React", "simple-icons:Axios", "simple-icons:TailwindCSS"] }
 					/>
       <Article title="JoseTomanan.io"
