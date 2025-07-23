@@ -9,7 +9,7 @@
   <section class="flex flex-col gap-3">
     <h1>What have I been up to?</h1>
     
-    <div class="flex flex-col gap-6">
+    <div class="projects-roles">
       <Article 
 						id="role-195"
 						title="Software Engineer Intern"

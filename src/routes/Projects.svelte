@@ -9,7 +9,7 @@
   <section class="flex flex-col gap-3">
     <h1>What projects have I made?</h1>
     
-    <div class="flex flex-col gap-6">
+    <div class="projects-roles">
       <Article title="Lutong Bahay"
 						id="proj-192"
 						href="https://github.com/JoseTomanan/cs192-lutong-bahay"
@@ -25,10 +25,10 @@
 			<Article title="Potterdex"
 						id="proj-potterdex"
 						href="https://potterdex.vercel.app"
-						subtitle="React-based Harry Potter database interface"
+						subtitle="React-based Harry Potter database UI"
 						date="DEC 2024 - JAN 2025"
 						other="
-								A Harry Potter lore database interface made in React and Tailwind.
+								A Harry Potter lore database frontend interface made in React and Tailwind.
 								Fetches from the unofficial PotterDB API for all relevant information.
 								Utilizes Axios to implement request handling and data management.
 								Makes use of routing library React Router for slug routing and context keeping, and component library Shadcn to speed up the designing process.
