@@ -205,6 +205,12 @@
 		@apply text-lucy-muted;
 	}
 
+	nav {
+		background: var(--background);
+		@apply text-lucy-muted/100;
+		opacity: 90;
+	}
+
 	main {
 		@apply flex flex-col;
 		@apply gap-12;
