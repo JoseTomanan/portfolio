@@ -50,12 +50,12 @@
               class="w-4 h-4 opacity-0 group-hover/whole:opacity-100 hidden md:inline"/>
         </a>
       </h4>
-      <h5 class="leading-4 mt-0 text-lucy-fg/75 group-hover/whole:text-lucy-fg/100">
-        { subtitle }
-      </h5>
+      <h4 class="leading-4 mt-0 text-lucy-fg/75 group-hover/whole:text-lucy-fg/100">
+        {subtitle}
+      </h4>
     </div>
 
-    <p class="text-base grow leading-5 tracking-tighter
+    <p class="grow leading-5 tracking-tighter
 					text-lucy-muted/50 group-hover/whole:text-lucy-muted/100">
       {other}
     </p>
