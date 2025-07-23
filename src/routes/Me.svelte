@@ -27,6 +27,3 @@
     </p>
   </section>
 </div>
-
-<style>
-</style>

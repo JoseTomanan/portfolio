@@ -6,11 +6,11 @@
 <div class="app bg-fixed">
   <Navbar />
 
-  <premain class="flex container justify-center px-0">
+  <div class="flex container justify-center px-0">
     <main>
       <slot />
     </main>
-  </premain>
+  </div>
 
   <footer>
     <h6>

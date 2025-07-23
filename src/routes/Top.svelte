@@ -37,8 +37,6 @@
 
 <span class="jumpable" id="top" />
 <div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
-  <!-- <div class="h-4" /> -->
-
   <section class="flex flex-col gap-8 items-center justify-between overflow-clip
 				p-0 pb-8 rounded-b-none border-b border-lucy-border">
     <Carousel.Root
@@ -80,20 +78,17 @@
       <h3 class="font-heading font-semibold text-lucy-muted px-4 text-center tracking-tight">
         Tech buff
 				<span class="magic-text">
-					· Full-stack web developer ·
+					&middot; Full-stack web developer &middot;
 				</span>
 				Gym rat
       </h3>
     </div>
   </section>
 
-  <section class="flex flex-col md:flex-row gap-1.5 items-center rounded-t-none p-8">
+  <section class="flex flex-col md:flex-row gap-1.5 justify-between items-center rounded-t-none p-8">
     <h4>
       Hi! I'm Jose, a BS CS student from UP Diliman. Welcome aboard!
     </h4>
-
-    <div class="flex-1" />
-
     <div class="flex gap-2 justify-end">
       {#each header as image}
 				<div class="flex justify-center bg-gradient-to-b rounded-xl bg-transparent">
@@ -106,6 +101,3 @@
     </div>
   </section>
 </div>
-
-<style>
-</style>
