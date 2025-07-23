@@ -151,7 +151,7 @@
 	
 	/* ALL OTHER */
 	h1 {
-		@apply text-2xl;
+		@apply text-3xl;
 		@apply font-heading;
 		@apply text-lucy-primary;
 		text-wrap: balance;
@@ -178,6 +178,7 @@
 	}
 
 	h5 {
+		@apply text-sm;
 		@apply font-sans;
 		@apply text-lucy-muted;
 	}
@@ -186,7 +187,7 @@
 		@apply font-mono;
 		@apply tracking-tight;
 		@apply px-4 md:px-0;
-		@apply text-sm;
+		@apply text-xs;
 		@apply tracking-tighter;
 		@apply opacity-80;
 	}
@@ -228,6 +229,11 @@
 		@apply grow;
 		@apply rounded-xl;
 	}
+
+	.projects-roles {
+		@apply flex flex-col;
+		@apply gap-4;
+	}
 	
 	span.jumpable {
 		@apply h-8;
@@ -265,8 +271,6 @@
 		@apply text-lucy-fg;
 		
 		font-weight: 700;
-		font-size: 1.75rem;
-		line-height: 2rem;
 		letter-spacing: 0.025rem;
 	}
 	
