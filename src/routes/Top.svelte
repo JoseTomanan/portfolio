@@ -9,25 +9,25 @@
 
   const header: {iconifyTag: string, color: string, link: string, handle: string}[] = [
     {
-      iconifyTag: "bi:linkedin",
+      iconifyTag: "fa-brands:linkedin",
       color: "hover:from-sky-200 hover:to-sky-300",
       link: link.li,
       handle: "jedtomanan"
     },
     {
-      iconifyTag: "bi:github",
+      iconifyTag: "fa-brands:github",
       color: "hover:from-purple-200 hover:to-purple-300",
       link: link.gh,
       handle: "HoweZae"
     },
     {
-      iconifyTag: "bi:facebook",
+      iconifyTag: "fa-brands:facebook",
       color: "hover:from-blue-200 hover:to-blue-300",
       link: link.fb,
       handle: "jedtomanan"
     },
     {
-      iconifyTag: "bi:instagram",
+      iconifyTag: "fa-brands:instagram",
       color: "hover:from-red-100 hover:to-red-200",
       link: link.ig,
       handle: "jose.tmnn"
