@@ -64,16 +64,16 @@
   .container {
     max-width: 768px;
   }
-	nav {
+	/* nav {
 		position: relative;
-	}
+	} */
 }
 
 /* md (Tablets) */
 @media (max-width: 768px) {
   .container,
   footer,
-  nav,
+  /* nav, */
   main {
     max-width: 640px;
   }
@@ -83,7 +83,7 @@
 @media (max-width: 640px) {
   .container,
   footer
-  nav,
+  /* nav, */
   main {
     width: 100%;
   }
@@ -93,7 +93,7 @@
 @media (max-width: 475px) {
   .container,
   footer
-  nav,
+  /* nav, */
   main {
     width: 100%;
   }
