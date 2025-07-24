@@ -3,26 +3,23 @@
 	import Icon from "@iconify/svelte";
 </script>
 
-<nav class="flex items-center justify-center
-			fixed w-full max-w-screen py-2.5 z-50
-			gap-4 md:gap-16
+<nav class="flex flex-row items-center justify-center align-middle
+			fixed w-screen mx-auto py-2.5 z-50 gap-[min(10%,4em)]
 			focus:border-none active:border-none">
 	<a href="#top" id="first"
-				class="justify-items-start font-bold italic font-heading px-0 md:px-4">
+				class="justify-items-start font-bold italic font-heading hidden sm:inline">
 		JoseTomanan.io
 	</a>
 	<a href="#me">Me</a>
 	<a href="#roles">Roles</a>
 	<a href="#projects">Projects</a>
 	<a id="clickable-resume" href={ link.resume } target="_blank"
-		class="group flex flex-row items-baseline gap-1">
+				class="relative group/resume flex flex-row items-baseline gap-1 w-fit">
 		<span>Resume</span>
-		<div class="size-4">
-			<Icon icon="ic:outline-arrow-outward"
-						class="size-4 opacity-0 group-hover:opacity-100" />
-		</div>
+		<Icon icon="ic:outline-arrow-outward"
+					class="absolute top-0.5 -translate-1/2 -right-5 size-4 opacity-0 group-hover/resume:opacity-100" />
 	</a>
-	<!-- <a href="#contact">Contact</a> -->
+		<!-- <a href="#contact">Contact</a> -->
 </nav>
 
 <style>
