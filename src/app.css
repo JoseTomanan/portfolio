@@ -203,9 +203,8 @@
 	}
 
 	nav {
-		background: var(--background);
+		@apply bg-lucy-bg/85;
 		@apply text-lucy-muted/100;
-		opacity: 90;
 	}
 
 	main {
