@@ -15,11 +15,11 @@
 						title="Software Engineer Intern"
 						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						subtitle="Pointwest Innovations Corporation"
-						date="JUN 2025 - PRESENT"
+						date="JUN 2025 - JUL 2025"
 						other="
 								Took part in a 200-hour software engineering internship program.
 								Tasked in a 10-man case study for developing an HR-based application for the company.
-								Part of the backend team: built the API endpoints using Spring Boot.
+								Part of the backend team: built API services and controllers using Spring Boot.
 								Also developed testing suites to assure the quality of the application during the development, refactoring, and maintenance process.
 							"
 						techInvolved={ ["simple-icons:Spring", "simple-icons:Git", "simple-icons:Jira"] }
