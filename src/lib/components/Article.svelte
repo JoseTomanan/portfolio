@@ -14,14 +14,14 @@
 
 <article class="group/whole flex flex-col md:flex-row gap-4 items-baseline p-4 rounded-lg text-left
 			border border-lucy-border hover:bg-lucy-surface hover:border-lucy-border-alt z-10">
-  <div class="flex flex-row w-full justify-start gap-0.5
+  <div class="flex flex-row w-full justify-between gap-0.5
 				md:basis-1/4 md:flex-col">
     <span class="text-left md:text-right text-sm font-mono tracking-tighter w-full
 					text-lucy-muted group-hover/whole:text-lucy-fg/95">
       {date}
     </span>
 
-    <div class="flex flex-row justify-end w-full gap-2">
+    <div class="flex flex-row justify-end gap-2">
       {#each techInvolved as tech}
 				{@const actualTag = tech.toLowerCase()}
 				{@const displayableName = tech.split(":")[1]}
