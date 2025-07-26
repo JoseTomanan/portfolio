@@ -17,11 +17,10 @@
 						subtitle="Pointwest Innovations Corporation"
 						date="JUN 2025 - JUL 2025"
 						other="
-								Took part in a 200-hour software engineering internship program.
-								Tasked in a 10-man case study for developing an HR-based application for the company.
-								Part of the backend team: built API services and controllers using Spring Boot.
-								Also developed testing suites to assure the quality of the application during the development, refactoring, and maintenance process.
-							"
+								Completed a 200-hour internship as part of a 10-member team developing an HR-focused application for a partner company.
+								Contributed to the backend team by building API services and controllers using Spring Boot.
+								Developed and maintained automated testing suites to ensure code quality during development, refactoring, and maintenance phases.
+								Gained hands-on experience in collaborative software development within a real-world engineering workflow."
 						techInvolved={ ["simple-icons:Spring", "simple-icons:Git", "simple-icons:Jira"] }
 					/>
       <Article 
@@ -31,11 +30,10 @@
 						subtitle="UP Association of Computer Science Majors (UP CURSOR)"
 						date="SEP 2023 - MAR 2024"
 						other="
-								Co-headed a team of 20 in planning, marketing, and promoting a 4-day hybrid setup tech career fair.
-								Lead the Branding & Creatives team to effectively design and market the event.
-								Lead the Human Resources to internally disseminate the event.
-								Used Notion workspace to manage the project through task delegation, resource management, and team oversight.
-							"
+								Co-led a team of 20 in organizing and executing a 4-day hybrid-format technology career fair.
+								Directed the Branding & Creatives team to design and promote event visuals and marketing materials.
+								Led the Human Resources team to manage internal communications and volunteer coordination.
+								Utilized Notion for task delegation, resource tracking, and cross-team project management"
 						techInvolved={ ["simple-icons:Notion", "simple-icons:Asana", "simple-icons:GoogleSheets", "simple-icons:Canva"] }
 					/>
       <Article 
@@ -45,10 +43,9 @@
 						subtitle="UP Center for Student Innovations (UP CSI)"
 						date="SEP 2023 - NOV 2023"
 						other="
-								Wrote web development modules and exercises designed for 50+ UP CSI applicants, for app process 2324B.
-								Used Typst markdown to automate structure, layoutting, and organization of module content.
-								Collaborated using Git to streamline team workflow and consolidate collective output.
-							"
+								Authored learning modules and exercises in web development for 50+ UP CSI applicants.
+								Utilized Typst markdown to automate content structure, layout, and formatting.
+								Collaborated with team members via Git to streamline workflow and integrate contributions efficiently."
 						techInvolved={ ["simple-icons:Typst", "simple-icons:Git"] }
 					/>
       <Article 
