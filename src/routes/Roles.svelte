@@ -8,13 +8,12 @@
 <div class="page h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-3">
     <h2>What have I been up to?</h2>
-    
     <div class="projects-roles">
       <Article 
 						id="role-195"
 						title="Software Engineer Intern"
-						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						subtitle="Pointwest Innovations Corporation"
+						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="JUN 2025 - JUL 2025"
 						other="
 								Completed a 200-hour internship as part of a 10-member team developing an HR-focused application for a partner company.
@@ -25,12 +24,12 @@
 					/>
       <Article 
 						id="role-cursor1"
-						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
-						title="Tackle Junior Head"
+						title="Event Co-Head"
 						subtitle="UP Association of Computer Science Majors (UP CURSOR)"
+						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="SEP 2023 - MAR 2024"
 						other="
-								Co-led a team of 20 in organizing and executing a 4-day hybrid-format technology career fair.
+								Co-led a team of 20 in organizing and executing Tackle 2024, a 4-day hybrid-format technology career fair.
 								Directed the Branding & Creatives team to design and promote event visuals and marketing materials.
 								Led the Human Resources team to manage internal communications and volunteer coordination.
 								Utilized Notion for task delegation, resource tracking, and cross-team project management"
@@ -38,9 +37,9 @@
 					/>
       <Article 
 						id="role-csi"
-						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
-						title="Dev Training Program Contributor"
+						title="Web development module writer"
 						subtitle="UP Center for Student Innovations (UP CSI)"
+						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="SEP 2023 - NOV 2023"
 						other="
 								Authored learning modules and exercises in web development for 50+ UP CSI applicants.
@@ -50,9 +49,9 @@
 					/>
       <Article 
 						id="role-cursor2"
-						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						title="Member Relations Head"
 						subtitle="UP CURSOR"
+						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="FEB 2023 - MAY 2023"
 						other="
 								Headed a team of 6 in assuring and maintaining member involvement & motivation of an organization with 100+ active members.

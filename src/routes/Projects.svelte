@@ -8,12 +8,11 @@
 <div class="page h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-3">
     <h2>What projects have I made?</h2>
-    
     <div class="projects-roles">
       <Article title="Lutong Bahay"
 						id="proj-192"
 						href="https://github.com/JoseTomanan/cs192-lutong-bahay"
-						subtitle="Full-stack app/database for Filipino recipes"
+						subtitle="Filipino recipes database web app"
 						date="AUG 2024 - MAY 2025"
 						other="
 								Developed a full-stack web application with advanced filtering, sorting, and user authentication features.
@@ -51,7 +50,7 @@
       <Article title="Shogimon"
 						id="proj-150"
 						href="https://github.com/JoseTomanan/shogi-pygame"
-						subtitle="A Pokemon-inspired Shogi-esque video game using Python"
+						subtitle="Python-based multiplayer video game (MVC Architecture)"
 						date="DEC 2024 - JAN 2025"
 						other="
 								Designed and developed a simple video game using Python and Pygame, following the Model-View-Controller (MVC) design pattern.
@@ -72,16 +71,16 @@
 								Completed as a final project for CS 132: Data Science"
 						techInvolved={ ["simple-icons:Python"] }
 					/>
-      <!-- <Article title="Finance Tracker Automator"
+			<!-- <Article title="Finance Tracker Automator"
 						id="proj-finances"
 						href="https://github.com/JoseTomanan/finance-tracker-automator"
 						subtitle="Automation scripts for Google Sheets using AppsScript"
 						date="FEB 2023 - PRESENT"
 						other="
-								A scripting project that I use for my personal spreadsheet to track my daily outgoing and incoming funds.
-								Uses the API to automate the addition of new entries, separation of each week, and creation of a new sheet for each new month.
-								Written in TypeScript, later transpiled into JavaScript through Clasp (for Google AppsScript).
-								Implements SOLID principles and design patterns for codebase sustainability and maintainability.
+								Built a custom Google Sheets automation script to manage daily income and expenses.
+								Automates entry logging, weekly segmentation, and monthly sheet creation via the Sheets API.
+								Written in TypeScript, transpiled to JavaScript using Clasp for deployment to Google Apps Script.
+								Structured using SOLID principles and design patterns for long-term maintainability.
 							"
 						techInvolved={ ["simple-icons:GoogleAppsScript", "simple-icons:TypeScript"] }
 					/> -->
