@@ -4,5 +4,6 @@ export const link = {
     fb: "https://www.facebook.com/jedtomanan/",
     ig: "https://www.instagram.com/jose.tmnn/",
     twt: "https://x.com/howe_zae",
-    resume: "./resume.pdf"
+    resume: "./documents/resume.pdf",
+    cv: "./documents/cv.pdf",
 }
