@@ -3,9 +3,9 @@
 	import Icon from "@iconify/svelte";
 </script>
 
-<nav class="flex flex-row items-center justify-center align-middle
-			fixed w-screen mx-auto py-2.5 z-50 gap-[min(10%,4em)]
-			focus:border-none active:border-none">
+<nav aria-label="Main navigation"
+		class="flex flex-row items-center justify-center align-middle
+			fixed w-full mx-auto py-2.5 z-50 gap-[min(10%,4em)]">
 	<a href="#top" id="first"
 				class="justify-items-start font-bold italic font-heading hidden sm:inline">
 		JoseTomanan.io
@@ -24,6 +24,7 @@
 
 <style>
   nav > a {
-    @apply hover:text-lucy-primary;
+    @apply hover:text-lucy-primary focus-visible:text-lucy-primary focus-visible:underline;
+    @apply py-2;
   }
 </style>

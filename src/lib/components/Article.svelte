@@ -26,7 +26,7 @@
 				{@const actualTag = tech.toLowerCase()}
 				{@const displayableName = tech.split(":")[1]}
 				<Tooltip.Root>
-					<Tooltip.Trigger class="items-center">
+					<Tooltip.Trigger class="items-center" aria-label={displayableName}>
 						<Icon icon={actualTag}
 									class="h-4 w-4 text-lucy-muted opacity-80 group-hover/whole:opacity-100 cursor-default" />
 					</Tooltip.Trigger>
@@ -55,7 +55,7 @@
     </div>
 
     <p class="grow leading-5 tracking-tighter
-					text-lucy-muted/50 group-hover/whole:text-lucy-muted/100">
+					text-lucy-muted/75 group-hover/whole:text-lucy-muted/100">
       {other}
     </p>
   </div>

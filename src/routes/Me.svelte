@@ -23,7 +23,7 @@
     
     <p>
       I am also an 
-      <a href={link.ig_swiftie} class="hoverable-link cursor-help" target="_blank" rel="noopener noreferrer">avid Swiftie</a>: 
+      <a href={link.ig_swiftie} class="hoverable-link" target="_blank" rel="noopener noreferrer">avid Swiftie</a>: 
       I'd bet my left leg I know more about Taylor Swift than you!
     </p>
   </section>

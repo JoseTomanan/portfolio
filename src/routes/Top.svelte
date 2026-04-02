@@ -38,7 +38,7 @@
     <Carousel.Root
 					class="relative flex"
 					opts={{ loop: true }}
-					plugins={[ Autoplay({ delay:8000 }) ]}>
+					plugins={[ Autoplay({ delay: 8000, stopOnInteraction: true, stopOnMouseEnter: true }) ]}>
       <Carousel.Content class="h-[18rem] sm:h-[22rem] md:h-[26rem] items-center">
 				<Carousel.Item class="h-full overflow-clip">
 					<enhanced:img
@@ -89,7 +89,7 @@
     <h4>
       Hi! I'm Jose, a BS CS student from UP Diliman. Welcome aboard!
     </h4>
-    <div class="flex gap-1 justify-end">
+    <div class="flex gap-2 justify-end">
       {#each header as social}
 				<a href={social.link} target="_blank" rel="noopener noreferrer"
 					aria-label={social.label}

@@ -13,10 +13,10 @@
   </div>
 
   <footer>
-    <h6>
+    <p>
       This page is written with Svelte and Tailwind.
       Feel free to open the codebase to see how I made this!
-    </h6>
+    </p>
   </footer>
 </div>
 
