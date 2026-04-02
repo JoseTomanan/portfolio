@@ -59,7 +59,7 @@
   </section>
 </div>
 
-<style>
+<style lang="postcss">
   .input-sm, textarea {
     @apply block w-full font-sans rounded-sm border-0 ring-1 ring-inset px-2 focus:outline-none;
     @apply bg-lucy-surface-alt text-lucy-fg ring-lucy-border caret-lucy-primary;
