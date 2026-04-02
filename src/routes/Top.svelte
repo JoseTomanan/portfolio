@@ -7,30 +7,26 @@
   import { link } from "$lib";
   import { fly } from "svelte/transition";
 
-  const header: {iconifyTag: string, color: string, link: string, handle: string}[] = [
+  const header: {iconifyTag: string, label: string, link: string}[] = [
     {
       iconifyTag: "fa-brands:linkedin",
-      color: "hover:from-sky-200 hover:to-sky-300",
+      label: "LinkedIn",
       link: link.li,
-      handle: "jedtomanan"
     },
     {
       iconifyTag: "fa-brands:github",
-      color: "hover:from-purple-200 hover:to-purple-300",
+      label: "GitHub",
       link: link.gh,
-      handle: "HoweZae"
     },
     {
       iconifyTag: "fa-brands:facebook",
-      color: "hover:from-blue-200 hover:to-blue-300",
+      label: "Facebook",
       link: link.fb,
-      handle: "jedtomanan"
     },
     {
       iconifyTag: "fa-brands:instagram",
-      color: "hover:from-red-100 hover:to-red-200",
+      label: "Instagram",
       link: link.ig,
-      handle: "jose.tmnn"
     },
   ];
 </script>
@@ -43,30 +39,34 @@
 					class="relative flex"
 					opts={{ loop: true }}
 					plugins={[ Autoplay({ delay:8000 }) ]}>
-      <Carousel.Content class="h-[26rem] items-center">
+      <Carousel.Content class="h-[18rem] sm:h-[22rem] md:h-[26rem] items-center">
 				<Carousel.Item class="h-full overflow-clip">
 					<enhanced:img
 								class="h-full object-cover"
 								src="$lib/images/hero/1.jpg"
-								alt="Me uno" />
+								alt=""
+								aria-hidden="true" />
 				</Carousel.Item>
 				<Carousel.Item class="h-full overflow-clip">
 					<enhanced:img
 								class="h-full object-cover"
 								src="$lib/images/hero/4.jpg"
-								alt="Me cuatro" />
+								alt=""
+								aria-hidden="true" />
 				</Carousel.Item>
 				<Carousel.Item class="h-full overflow-clip">
 					<enhanced:img
 								class="h-full object-cover"
 								src="$lib/images/hero/2.jpg"
-								alt="Me dos" />
+								alt=""
+								aria-hidden="true" />
 				</Carousel.Item>
 				<Carousel.Item class="h-full overflow-clip">
 					<enhanced:img
 								class="h-full object-cover"
 								src="$lib/images/hero/3.jpg"
-								alt="Me tres" />
+								alt=""
+								aria-hidden="true" />
 				</Carousel.Item>
       </Carousel.Content>
 			<Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-muted/50 text-lucy-fg" />
@@ -89,14 +89,13 @@
     <h4>
       Hi! I'm Jose, a BS CS student from UP Diliman. Welcome aboard!
     </h4>
-    <div class="flex gap-2 justify-end">
-      {#each header as image}
-				<div class="flex justify-center bg-gradient-to-b rounded-xl bg-transparent">
-					<a href={image.link} target="_blank">
-						<Icon icon={image.iconifyTag}
-									class="h-5 w-5 text-lucy-muted hover:text-lucy-fg" />
-					</a>
-				</div>
+    <div class="flex gap-1 justify-end">
+      {#each header as social}
+				<a href={social.link} target="_blank" rel="noopener noreferrer"
+					aria-label={social.label}
+					class="p-2 rounded-lg text-lucy-muted hover:text-lucy-fg hover:bg-lucy-surface">
+					<Icon icon={social.iconifyTag} class="h-6 w-6" />
+				</a>
       {/each}
     </div>
   </section>

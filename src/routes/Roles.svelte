@@ -5,7 +5,7 @@
 </script>
 
 <span class="jumpable" id="roles" />
-<div class="page h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
+<div class="page h-auto" transition:fly={{ delay: 200, duration: 1000 }}>
   <section class="flex flex-col gap-3">
     <h2>What have I been up to?</h2>
     <div class="projects-roles">
@@ -64,7 +64,7 @@
     
     <h6 class="footnote">
       // See more of what I've done at
-      <a href={link.li}>LinkedIn</a>.
+      <a href={link.li} target="_blank" rel="noopener noreferrer">LinkedIn</a>.
     </h6>
   </section>
 </div>

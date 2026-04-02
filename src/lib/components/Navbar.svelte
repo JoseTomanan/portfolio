@@ -13,7 +13,7 @@
 	<a href="#me">Me</a>
 	<a href="#roles">Roles</a>
 	<a href="#projects">Projects</a>
-	<a id="clickable-resume" href={ link.cv } target="_blank"
+	<a id="clickable-resume" href={ link.cv } target="_blank" rel="noopener noreferrer"
 				class="relative group/resume flex flex-row items-baseline gap-1 w-fit">
 		<span>CV</span>
 		<Icon icon="ic:outline-arrow-outward"

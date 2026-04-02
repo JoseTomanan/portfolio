@@ -13,11 +13,9 @@
 
 	--background: #100F13;  /* lucy bg */
 	--foreground: #DED7D0;  /* for heading; lucy fg */
-	--foreground-alt:  /* for body; lucy muted */
 
 	--muted: #2F2C32;  /* lucy surface alt */
 	--muted-foreground: #A49EAC;  /* lucy muted */
-	
 	--popover: #1E1D23;  /*  lucy surface */
 	--popover-foreground: #DED7D0;  /* lucy fg */
 	
@@ -148,28 +146,28 @@
 	
 	/* ALL OTHER */
 	h1 {
-		@apply text-3xl;
-		@apply font-heading;
-		@apply text-lucy-primary;
-		text-wrap: balance;
-	}
-	
-	h2 {
 		@apply text-2xl;
 		@apply font-heading;
 		@apply text-lucy-primary;
 		text-wrap: balance;
 	}
 	
-	h3 {
+	h2 {
 		@apply text-xl;
 		@apply font-heading;
 		@apply text-lucy-primary;
 		text-wrap: balance;
 	}
 	
-	h4 {
+	h3 {
 		@apply text-lg;
+		@apply font-heading;
+		@apply text-lucy-primary;
+		text-wrap: balance;
+	}
+	
+	h4 {
+		@apply text-base;
 		@apply font-sans;
 		@apply text-lucy-muted;
 	}
@@ -217,7 +215,6 @@
 	
 	.page {
 		@apply flex flex-col;
-		@apply h-[calc(100vh-4rem)];
 		@apply rounded-xl;
 		@apply shadow-md;
 		@apply shadow-lucy-border;

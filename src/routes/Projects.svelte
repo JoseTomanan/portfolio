@@ -5,23 +5,36 @@
 </script>
 
 <span class="jumpable" id="projects" />
-<div class="page h-auto" transition:fly={{ delay: 100, duration: 1000 }}>
+<div class="page h-auto" transition:fly={{ delay: 400, duration: 1000 }}>
   <section class="flex flex-col gap-3">
     <h2>What projects have I made?</h2>
     <div class="projects-roles">
-      <Article title="Lutong Bahay"
-						id="proj-192"
-						href="https://github.com/JoseTomanan/cs192-lutong-bahay"
+      <Article title="SIPAT.MATH: AI-powered grading tool for early-level Mathematics"
+						id="proj-199"
+						href="https://github.com/JoseTomanan/S3LAB-ai-grading"
 						subtitle="Filipino recipes database web app"
-						date="AUG 2024 - MAY 2025"
+						date="SEP 2025 - PRESENT"
 						other="
-								Developed a full-stack web application with advanced filtering, sorting, and user authentication features.
-								Built with Svelte and Tailwind CSS (frontend), Django REST Framework (backend), and Supabase (database).
-								Implemented an admin dashboard for recipe management and user moderation.
-								Collaborated in a 5-member team over a year-long capstone project for CS 191/192: Software Engineering I & II."
-						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:Django", "simple-icons:Supabase"] }
+								Leading a 2-man capstone project in designing, developing, and evaluating a VLM-based tool that automates the assessment early-level Mathematics questions based on rubrics and answer keys.
+                Designed a wireframe using Figma to demonstrate basic user flow of the proposed application.
+                Constructed a prototype using Google Gemini API and Python.
+                Taking charge of frontend development using Svelte and component libraries Shadcn and Iconify."
+						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:FastAPI", "simple-icons:SQLite"] }
 					/>
-			<Article title="Potterdex"
+      <Article title="Svelte-based Pokédex"
+						id="proj-svelte-pokedex"
+						href="https://oaks-assistant.vercel.app"
+						subtitle="Svelte-based Pokédex frontend interface"
+						date="MAR 2026"
+						other="
+								Built a production-ready, responsive Pokédex-style single-page application using Svelte 5 and Tailwind v4.
+                Integrates the official PokéAPI to fetch name-ID pairs of all 1025 Pokémon species for lazy-loading.
+                Uses SvelteKit 2 to handle request handling and data management.
+                Implements sorting and filtering functionality using TypeScript and the Svelte 5 runes system.
+                Utilized skeleton animations, lazy hydration, and auto-fill grid for responsiveness across all platforms & devices."
+						techInvolved={ ["simple-icons:Svelte", "simple-icons:TypeScript", "simple-icons:TailwindCSS"] }
+					/>
+          <Article title="Potterdex"
 						id="proj-potterdex"
 						href="https://potterdex.vercel.app"
 						subtitle="React-based Harry Potter database UI"
@@ -37,7 +50,7 @@
 					/>
       <Article title="JoseTomanan.io"
 						id="proj-portfolio"
-						href="https://github.com/HoweZae/portfolio"
+						href="https://github.com/JoseTomanan/portfolio"
 						subtitle="Personal portfolio-resume (i.e., this webpage!)"
 						date="JUL 2024 - PRESENT"
 						other="

@@ -1,9 +1,10 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
+  import { link } from "$lib";
 </script>
 
 <span class="jumpable" id="me" />
-<div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
+<div class="page h-auto gap-0" transition:fly={{ delay: 0, duration: 1000 }}>
   <section class="flex flex-col gap-4 rounded-b-none border-b border-lucy-border">
     <h2>What do I do?</h2>
     <p>
@@ -22,7 +23,7 @@
     
     <p>
       I am also an 
-      <a href="https://www.instagram.com/p/B6p4rR_hoUC/" class="hoverable-link cursor-help" target="_blank">avid Swiftie</a>: 
+      <a href={link.ig_swiftie} class="hoverable-link cursor-help" target="_blank" rel="noopener noreferrer">avid Swiftie</a>: 
       I'd bet my left leg I know more about Taylor Swift than you!
     </p>
   </section>

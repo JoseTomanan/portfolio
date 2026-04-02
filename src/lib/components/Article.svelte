@@ -43,7 +43,7 @@
       <h4 class="underline-offset-2 flex font-sans font-semibold group-hover/whole:text-lucy-fg/100">
         <a class="group/link flex items-baseline leading-5 gap-2 hover:gap-4
 							text-lucy-fg/90 hover:text-lucy-secondary"
-							target="_blank" {id} {href} on:click|once>
+							target="_blank" rel="noopener noreferrer" {id} {href} on:click|once>
           {title}
           <Icon icon="ic:baseline-arrow-outward"
               class="w-4 h-4 opacity-0 group-hover/whole:opacity-100 hidden md:inline"/>
