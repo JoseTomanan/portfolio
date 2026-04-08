@@ -3,47 +3,36 @@
 	--font-sans: "Inter";
 	--font-mono: "JetBrains Mono";
 
-	--background: #080808;  /* lucy bg */
-	--foreground: #DED7D0;  /* for heading; lucy fg */
+	/* ---- BASE PALETTE ---- */
+	--background:        16  15  19;   /* #100F13 */
+	--foreground:       222 215 208;   /* #DED7D0 */
 
-	--muted: #282828;  /* lucy surface alt */
-	--muted-foreground: #A49EAC;  /* lucy muted */
-	--popover: #202020;  /*  lucy surface */
-	--popover-foreground: #DED7D0;  /* lucy fg */
+	--muted:             30  29  35;   /* #1E1D23 */
+	--muted-foreground: 164 158 172;   /* #A49EAC */
 
-	--card: #161616;  /* lucy muted-65 */
-	--card-foreground: #A49EAC;  /* lucy muted */
+	--card:              22  21  26;   /* #16151A */
 
-	--border: #2F2C32;  /* lucy border */
-	--input: #524B51;  /* lucy border alt */
+	--border:            47  44  50;   /* #2F2C32 */
+	--popover:           47  44  50;   /* #2F2C32  (elevated surface for inputs) */
 
-	--primary: #F0CE59;  /* lucy primary */
-	--primary-foreground: #16151A;  /* lucy muted-65 */
+	--input:             82  75  81;   /* #524B51 */
 
-	--secondary: #FF7DA3;  /* lucy secondary */
-	--secondary-foreground: #16151A;  /* lucy muted-65 */
+	--primary:          240 206  89;   /* #F0CE59 */
+	--secondary:        255 125 163;   /* #FF7DA3 */
+	--tertiary:          86 198 213;   /* #56C6D5 */
 
-	--tertiary: #56C6D5;  /* lucy tertiary */
+	--accent:           104  96 105;   /* #686069 */
 
-	--accent: #686069;  /* lucy hover */
-	--accent-foreground: #1E1D23;  /* lucy muted-65 */
+	--destructive:      220  38  38;   /* #DC2626 */
 
-	--destructive: 0 72.2% 50.6%;
-	--destructive-foreground: 210 20% 98%;
+	/* ---- SHADCN ALIASES (same values as above, kept for component compat) ---- */
+	--popover-foreground:    222 215 208;   /* = --foreground */
+	--card-foreground:       164 158 172;   /* = --muted-foreground */
+	--primary-foreground:     22  21  26;   /* = --card */
+	--secondary-foreground:   22  21  26;   /* = --card */
+	--accent-foreground:      22  21  26;   /* = --card */
+	--ring:                   82  75  81;   /* = --input */
+	--destructive-foreground: 248 250 252;  /* #F8FAFC */
 
-	--ring: #524B51;
 	--radius: 0.5rem;
-
-	--lucy-bg: #100F13;
-	--lucy-fg: #DED7D0;
-	--lucy-primary: #F0CE59;
-	--lucy-secondary: #FF7DA3;
-	--lucy-tertiary: #56C6D5;
-	--lucy-muted: #A49EAC;
-	--lucy-surface: #1E1D23;
-	--lucy-surface-alt: #2F2C32;
-	--lucy-border: #2F2C32;
-	--lucy-border-alt: #524B51;
-	--lucy-hover: #686069;
-	--lucy-card: #16151A;
 }

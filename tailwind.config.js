@@ -16,59 +16,41 @@ export default {
 		},
 		extend: {
 			colors: {
-				lucy: {
-					bg: '#100F13',
-					surface: {
-						DEFAULT: '#1E1D23',
-						alt: '#2F2C32',
-					},
-					fg: '#DED7D0',
-					primary: '#F0CE59',
-					secondary: '#FF7DA3',
-					tertiary: '#56C6D5',
-					muted: '#A49EAC',
-					border: {
-						DEFAULT: '#2F2C32',
-						alt: '#524B51',
-					},
-					hover: '#686069',
-					card: '#16151A',
-				},
-				border: "hsl(var(--border) / <alpha-value>)",
-				input: "hsl(var(--input) / <alpha-value>)",
-				ring: "hsl(var(--ring) / <alpha-value>)",
-				background: "hsl(var(--background) / <alpha-value>)",
-				foreground: "hsl(var(--foreground) / <alpha-value>)",
+				border: "rgb(var(--border) / <alpha-value>)",
+				input: "rgb(var(--input) / <alpha-value>)",
+				ring: "rgb(var(--ring) / <alpha-value>)",
+				background: "rgb(var(--background) / <alpha-value>)",
+				foreground: "rgb(var(--foreground) / <alpha-value>)",
 				primary: {
-					DEFAULT: "hsl(var(--primary) / <alpha-value>)",
-					foreground: "hsl(var(--primary-foreground) / <alpha-value>)"
+					DEFAULT: "rgb(var(--primary) / <alpha-value>)",
+					foreground: "rgb(var(--primary-foreground) / <alpha-value>)"
 				},
 				secondary: {
-					DEFAULT: "hsl(var(--secondary) / <alpha-value>)",
-					foreground: "hsl(var(--secondary-foreground) / <alpha-value>)"
+					DEFAULT: "rgb(var(--secondary) / <alpha-value>)",
+					foreground: "rgb(var(--secondary-foreground) / <alpha-value>)"
 				},
 				destructive: {
-					DEFAULT: "hsl(var(--destructive) / <alpha-value>)",
-					foreground: "hsl(var(--destructive-foreground) / <alpha-value>)"
+					DEFAULT: "rgb(var(--destructive) / <alpha-value>)",
+					foreground: "rgb(var(--destructive-foreground) / <alpha-value>)"
 				},
 				muted: {
-					DEFAULT: "hsl(var(--muted) / <alpha-value>)",
-					foreground: "hsl(var(--muted-foreground) / <alpha-value>)"
+					DEFAULT: "rgb(var(--muted) / <alpha-value>)",
+					foreground: "rgb(var(--muted-foreground) / <alpha-value>)"
 				},
 				accent: {
-					DEFAULT: "hsl(var(--accent) / <alpha-value>)",
-					foreground: "hsl(var(--accent-foreground) / <alpha-value>)"
+					DEFAULT: "rgb(var(--accent) / <alpha-value>)",
+					foreground: "rgb(var(--accent-foreground) / <alpha-value>)"
 				},
 				popover: {
-					DEFAULT: "hsl(var(--popover) / <alpha-value>)",
-					foreground: "hsl(var(--popover-foreground) / <alpha-value>)"
+					DEFAULT: "rgb(var(--popover) / <alpha-value>)",
+					foreground: "rgb(var(--popover-foreground) / <alpha-value>)"
 				},
 				card: {
-					DEFAULT: "hsl(var(--card) / <alpha-value>)",
-					foreground: "hsl(var(--card-foreground) / <alpha-value>)"
+					DEFAULT: "rgb(var(--card) / <alpha-value>)",
+					foreground: "rgb(var(--card-foreground) / <alpha-value>)"
 				},
 				tertiary: {
-					DEFAULT: "hsl(var(--tertiary) / <alpha-value>)",
+					DEFAULT: "rgb(var(--tertiary) / <alpha-value>)",
 				}
 			},
 			borderRadius: {
