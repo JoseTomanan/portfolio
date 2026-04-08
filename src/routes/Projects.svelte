@@ -5,8 +5,8 @@
 </script>
 
 <span class="jumpable" id="projects" />
-<div class="page h-auto" transition:fly={{ delay: 400, duration: 1000 }}>
-  <section class="flex flex-col gap-3">
+<div class="page" transition:fly={{ delay: 400, duration: 1000 }}>
+  <section class="section-body">
     <h2>What projects have I made?</h2>
     <div class="projects-roles">
       <Article title="SIPAT.MATH: AI-powered grading tool for early-level Mathematics"

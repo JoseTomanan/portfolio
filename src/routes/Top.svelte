@@ -32,7 +32,7 @@
 </script>
 
 <span class="jumpable" id="top" />
-<div class="page h-auto gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
+<div class="page gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-8 items-center justify-between overflow-clip
 				p-0 pb-8 rounded-b-none border-b border-lucy-border">
     <Carousel.Root
@@ -40,37 +40,21 @@
 					opts={{ loop: true }}
 					plugins={[ Autoplay({ delay: 8000, stopOnInteraction: true, stopOnMouseEnter: true }) ]}>
       <Carousel.Content class="h-[18rem] sm:h-[22rem] md:h-[26rem] items-center">
-				<Carousel.Item class="h-full overflow-clip">
-					<enhanced:img
-								class="h-full object-cover"
-								src="$lib/images/hero/1.jpg"
-								alt=""
-								aria-hidden="true" />
+				<Carousel.Item class="carousel-slide">
+					<enhanced:img src="$lib/images/hero/1.jpg" alt="" aria-hidden="true" />
 				</Carousel.Item>
-				<Carousel.Item class="h-full overflow-clip">
-					<enhanced:img
-								class="h-full object-cover"
-								src="$lib/images/hero/4.jpg"
-								alt=""
-								aria-hidden="true" />
+				<Carousel.Item class="carousel-slide">
+					<enhanced:img src="$lib/images/hero/4.jpg" alt="" aria-hidden="true" />
 				</Carousel.Item>
-				<Carousel.Item class="h-full overflow-clip">
-					<enhanced:img
-								class="h-full object-cover"
-								src="$lib/images/hero/2.jpg"
-								alt=""
-								aria-hidden="true" />
+				<Carousel.Item class="carousel-slide">
+					<enhanced:img src="$lib/images/hero/2.jpg" alt="" aria-hidden="true" />
 				</Carousel.Item>
-				<Carousel.Item class="h-full overflow-clip">
-					<enhanced:img
-								class="h-full object-cover"
-								src="$lib/images/hero/3.jpg"
-								alt=""
-								aria-hidden="true" />
+				<Carousel.Item class="carousel-slide">
+					<enhanced:img src="$lib/images/hero/3.jpg" alt="" aria-hidden="true" />
 				</Carousel.Item>
       </Carousel.Content>
-			<Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-muted/50 text-lucy-fg" />
-      <Carousel.Next class="absolute right-4 top-1/2 -translate-y-1/2 z-2 bg-lucy-muted/50 text-lucy-fg" />
+			<Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-lucy-muted/50 text-lucy-fg" />
+      <Carousel.Next class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-lucy-muted/50 text-lucy-fg" />
     </Carousel.Root>
 
     <div class="flex flex-col items-center justify-center gap-0">
@@ -89,7 +73,7 @@
     <h4>
       Hi! I'm Jose, a BS CS student from UP Diliman. Welcome aboard!
     </h4>
-    <div class="flex gap-2 justify-end">
+    <div class="flex gap-2 justify-end h-12">
       {#each header as social}
 				<a href={social.link} target="_blank" rel="noopener noreferrer"
 					aria-label={social.label}

@@ -5,8 +5,8 @@
 </script>
 
 <span class="jumpable" id="roles" />
-<div class="page h-auto" transition:fly={{ delay: 200, duration: 1000 }}>
-  <section class="flex flex-col gap-3">
+<div class="page" transition:fly={{ delay: 200, duration: 1000 }}>
+  <section class="section-body">
     <h2>What have I been up to?</h2>
     <div class="projects-roles">
       <Article 
