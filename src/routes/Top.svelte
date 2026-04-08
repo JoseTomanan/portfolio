@@ -34,7 +34,7 @@
 <span class="jumpable" id="top" />
 <div class="page gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-8 items-center justify-between overflow-clip
-				p-0 pb-8 rounded-b-none border-b border-lucy-border">
+				p-0 pb-8 rounded-b-none border-b border-border">
     <Carousel.Root
 					class="relative flex"
 					opts={{ loop: true }}
@@ -53,13 +53,13 @@
 					<enhanced:img src="$lib/images/hero/3.jpg" alt="" aria-hidden="true" />
 				</Carousel.Item>
       </Carousel.Content>
-			<Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-lucy-muted/50 text-lucy-fg" />
-      <Carousel.Next class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-lucy-muted/50 text-lucy-fg" />
+			<Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-muted-foreground/50 text-foreground" />
+      <Carousel.Next class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-muted-foreground/50 text-foreground" />
     </Carousel.Root>
 
     <div class="flex flex-col items-center justify-center gap-0">
       <h1 class="hero-text">Jose Tomanan</h1>
-      <h3 class="font-heading font-semibold text-lucy-muted px-4 text-center tracking-tight">
+      <h3 class="font-heading font-semibold text-muted-foreground px-4 text-center tracking-tight">
         Tech buff
 				<span class="magic-text">
 					&middot; Full-stack web developer &middot;
@@ -77,7 +77,7 @@
       {#each header as social}
 				<a href={social.link} target="_blank" rel="noopener noreferrer"
 					aria-label={social.label}
-					class="p-2 rounded-lg text-lucy-muted hover:text-lucy-fg hover:bg-lucy-surface">
+					class="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted">
 					<Icon icon={social.iconifyTag} class="h-6 w-6" />
 				</a>
       {/each}

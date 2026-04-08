@@ -47,9 +47,9 @@
   
       <div class="flex justify-end">
         <button class="
-            rounded-md py-1 px-4 text-lucy-fg w-fit border
-            bg-lucy-surface-alt border-lucy-border-alt
-            hover:bg-lucy-hover hover:border-lucy-border
+            rounded-md py-1 px-4 text-foreground w-fit border
+            bg-popover border-input
+            hover:bg-accent hover:border-border
           " on:click={ ()=>{ submitForm(name, email, message) }}
           >
           <Icon icon="mdi:send" class="w-7 h-7"/>
@@ -62,9 +62,9 @@
 <style lang="postcss">
   .input-sm, textarea {
     @apply block w-full font-sans rounded-sm border-0 ring-1 ring-inset px-2 focus:outline-none;
-    @apply bg-lucy-surface-alt text-lucy-fg ring-lucy-border caret-lucy-primary;
+    @apply bg-popover text-foreground ring-border caret-primary;
   }
   .input-sm::placeholder, textarea::placeholder {
-    @apply text-lucy-muted/80;
+    @apply text-muted-foreground/80;
   }
 </style>

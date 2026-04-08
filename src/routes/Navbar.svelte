@@ -24,7 +24,7 @@
 
 <style lang="postcss">
   nav > a {
-    @apply hover:text-lucy-primary focus-visible:text-lucy-primary focus-visible:underline;
+    @apply hover:text-primary focus-visible:text-primary focus-visible:underline;
     @apply py-2;
   }
 </style>

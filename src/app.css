@@ -76,16 +76,16 @@
 		height: 3px;
 	}
 	::-webkit-scrollbar-track {
-		background: var(--card);
+		background: rgb(var(--card));
 	}
 	::-webkit-scrollbar-thumb {
-		background: var(--border);
+		background: rgb(var(--border));
 	}
 	::-webkit-scrollbar-thumb:hover {
-		background: var(--input)
+		background: rgb(var(--input));
 	}
 	::-webkit-scrollbar-corner {
-		background: var(--background);
+		background: rgb(var(--background));
 	}
 
 	* {
@@ -94,10 +94,8 @@
 
 	body {
 		font-family: var(--font-sans);
-		background-color: var(--lucy-bg);
+		background-color: rgb(var(--background));
 		position: relative;
-		/* @apply bg-gradient-radial;
-		@apply from-lucy-card via-75% to-lucy-bg; */
 		background-attachment: fixed;
 	}
 
@@ -116,34 +114,34 @@
 	h1 {
 		@apply text-2xl md:text-3xl;
 		font-family: var(--font-heading);
-		color: var(--lucy-primary);
+		color: rgb(var(--primary));
 		text-wrap: balance;
 	}
 
 	h2 {
 		@apply text-xl md:text-2xl;
 		font-family: var(--font-heading);
-		color: var(--lucy-primary);
+		color: rgb(var(--primary));
 		text-wrap: balance;
 	}
 
 	h3 {
 		@apply text-lg;
 		font-family: var(--font-heading);
-		color: var(--lucy-primary);
+		color: rgb(var(--primary));
 		text-wrap: balance;
 	}
 
 	h4 {
 		@apply text-base;
 		font-family: var(--font-sans);
-		color: var(--lucy-muted);
+		color: rgb(var(--muted-foreground));
 	}
 
 	h5 {
 		@apply text-base;
 		font-family: var(--font-sans);
-		color: var(--lucy-muted);
+		color: rgb(var(--muted-foreground));
 	}
 
 	h6 {
@@ -151,26 +149,26 @@
 		letter-spacing: -0.025em;
 		@apply px-4 md:px-0;
 		@apply text-sm;
-		@apply text-lucy-fg/80;
+		@apply text-foreground/80;
 		letter-spacing: -0.05em;
 	}
 
 	p {
 		@apply text-base;
 		font-family: var(--font-sans);
-		color: var(--lucy-muted);
+		color: rgb(var(--muted-foreground));
 
 		text-wrap: pretty;
 	}
 
 	label {
 		font-family: var(--font-sans);
-		color: var(--lucy-muted);
+		color: rgb(var(--muted-foreground));
 	}
 
 	nav {
-		@apply bg-lucy-card/85;
-		color: var(--lucy-muted);
+		@apply bg-card/85;
+		color: rgb(var(--muted-foreground));
 	}
 
 	main {
@@ -188,7 +186,7 @@
 		flex-direction: column;
 		height: auto;
 		border-radius: 0.75rem;
-		border: 1px solid var(--border);
+		border: 1px solid rgb(var(--border));
 	}
 
 	.carousel-slide {
@@ -208,7 +206,7 @@
 	}
 
 	section {
-		background: var(--card);
+		background: rgb(var(--card));
 
 		@apply px-4;
 		@apply py-8;
@@ -229,7 +227,7 @@
 	}
 
 	footer {
-    @apply text-lucy-muted/60;
+    @apply text-muted-foreground/60;
 		@apply py-4;
 		@apply mx-auto;
 
@@ -247,40 +245,40 @@
 		text-underline-offset: 1px;
 
 		span&:hover {
-			color: var(--lucy-tertiary);
+			color: rgb(var(--tertiary));
 		}
 
 		a&:hover {
-			color: var(--lucy-secondary);
+			color: rgb(var(--secondary));
 		}
 	}
 
 	h1.hero-text {
-		color: var(--lucy-fg);
+		color: rgb(var(--foreground));
 
 		font-weight: 700;
 		letter-spacing: 0.025rem;
 	}
 
 	h6.footnote {
-		color: rgb(164 158 172 / 0.8);
+		color: rgb(var(--muted-foreground) / 0.8);
 		text-align: right;
 
 		& > a {
 			text-decoration-line: underline;
 
 			&:hover {
-				color: var(--lucy-secondary);
+				color: rgb(var(--secondary));
 			}
 		}
 	}
 
 	.non-link-highlight {
 		font-weight: 500;
-		color: var(--lucy-fg);
+		color: rgb(var(--foreground));
 
 		&:hover {
-			color: var(--lucy-tertiary);
+			color: rgb(var(--tertiary));
 		}
 	}
 }
@@ -292,10 +290,10 @@
 		animation: background-pan 6s linear infinite;
 		background: linear-gradient(
 			to right,
-			var(--foreground),
-			var(--secondary),
-			var(--tertiary),
-			var(--foreground)
+			rgb(var(--foreground)),
+			rgb(var(--secondary)),
+			rgb(var(--tertiary)),
+			rgb(var(--foreground))
 		);
 		background-size: 200%;
 		background-clip: text;
