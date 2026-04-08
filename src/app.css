@@ -151,8 +151,8 @@
 		letter-spacing: -0.025em;
 		@apply px-4 md:px-0;
 		@apply text-sm;
+		@apply text-lucy-fg/80;
 		letter-spacing: -0.05em;
-		color: rgb(222 215 208 / 0.8);
 	}
 
 	p {
@@ -169,8 +169,8 @@
 	}
 
 	nav {
-		background-color: rgb(16 15 19 / 0.85);
-		color: rgb(164 158 172 / 1);
+		@apply bg-lucy-card/85;
+		color: var(--lucy-muted);
 	}
 
 	main {
@@ -188,8 +188,7 @@
 		flex-direction: column;
 		height: auto;
 		border-radius: 0.75rem;
-		@apply shadow-md;
-		@apply shadow-lucy-border;
+		border: 1px solid var(--border);
 	}
 
 	.carousel-slide {
@@ -230,8 +229,8 @@
 	}
 
 	footer {
+    @apply text-lucy-muted/60;
 		@apply py-4;
-		color: rgb(164 158 172 / 0.6);
 		@apply mx-auto;
 
 		& p {
