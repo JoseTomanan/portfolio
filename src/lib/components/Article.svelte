@@ -14,7 +14,7 @@
 
 <article class="group/whole
       flex flex-col md:flex-row gap-4 items-baseline p-4 rounded-lg text-left
-      bg-muted/30 hover:bg-muted z-10
+      bg-card/30 hover:bg-card z-10
       border border-border/10">
   <div class="flex flex-row w-full justify-between gap-0.5
         md:basis-1/4 md:flex-col">

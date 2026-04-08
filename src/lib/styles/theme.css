@@ -1,38 +1,38 @@
 :root {
-	--font-heading: "IBM Plex Sans";
-	--font-sans: "Inter";
-	--font-mono: "JetBrains Mono";
+  --font-heading: "IBM Plex Sans";
+  --font-sans: "Inter";
+  --font-mono: "JetBrains Mono";
 
-	/* ---- BASE PALETTE ---- */
-	--background:        16  15  19;   /* #100F13 */
-	--foreground:       222 215 208;   /* #DED7D0 */
+  /* ---- BASE PALETTE ---- */
+  --background:        16  15  19;   /* #100F13 */
+  --foreground:       222 215 208;   /* #DED7D0 */
 
-	--muted:             30  29  35;   /* #1E1D23 */
-	--muted-foreground: 164 158 172;   /* #A49EAC */
+  --muted:             22  21  26;   /* #16151A  (subdued section/nav surfaces) */
+  --muted-foreground: 164 158 172;   /* #A49EAC */
 
-	--card:              22  21  26;   /* #16151A */
+  --card:              30  29  35;        /* #1E1D23  (card surfaces) */
+  --card-foreground:       164 158 172;   /* = --muted-foreground */
+  
+  --border:            47  44  50;        /* #2F2C32 */
+  --ring:                   82  75  81;   /* = --input */
 
-	--border:            47  44  50;   /* #2F2C32 */
-	--popover:           47  44  50;   /* #2F2C32  (elevated surface for inputs) */
+  --popover:           47  44  50;        /* #2F2C32  (elevated surface for inputs) */
+  --popover-foreground:    222 215 208;   /* = --foreground */
 
-	--input:             82  75  81;   /* #524B51 */
+  --input:             82  75  81;        /* #524B51 */
 
-	--primary:          240 206  89;   /* #F0CE59 */
-	--secondary:        255 125 163;   /* #FF7DA3 */
-	--tertiary:          86 198 213;   /* #56C6D5 */
+  --primary:          240 206  89;        /* #F0CE59 */
+  --primary-foreground:     22  21  26;   /* = --muted */
+  --secondary:        255 125 163;        /* #FF7DA3 */
+  --secondary-foreground:   22  21  26;   /* = --muted */
+  
+  --tertiary:          86 198 213;        /* #56C6D5 */
+  
+  --accent:           104  96 105;        /* #686069 */
+  --accent-foreground:      22  21  26;   /* = --muted */
 
-	--accent:           104  96 105;   /* #686069 */
+  --destructive:      220  38  38;        /* #DC2626 */
+  --destructive-foreground: 248 250 252;  /* #F8FAFC */
 
-	--destructive:      220  38  38;   /* #DC2626 */
-
-	/* ---- SHADCN ALIASES (same values as above, kept for component compat) ---- */
-	--popover-foreground:    222 215 208;   /* = --foreground */
-	--card-foreground:       164 158 172;   /* = --muted-foreground */
-	--primary-foreground:     22  21  26;   /* = --card */
-	--secondary-foreground:   22  21  26;   /* = --card */
-	--accent-foreground:      22  21  26;   /* = --card */
-	--ring:                   82  75  81;   /* = --input */
-	--destructive-foreground: 248 250 252;  /* #F8FAFC */
-
-	--radius: 0.5rem;
+  --radius: 0.5rem;
 }

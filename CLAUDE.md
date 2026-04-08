@@ -27,7 +27,7 @@ Single-page SvelteKit portfolio. All visible content lives on one route (`src/ro
 
 ## Styling
 
-The design system uses a custom "lucy" color palette defined in `tailwind.config.js` and mapped to CSS variables in `src/app.css`. Always use `lucy-*` Tailwind tokens (e.g. `text-lucy-primary`, `bg-lucy-surface`, `border-lucy-border`) rather than raw hex or generic Tailwind color classes.
+The design system uses CSS custom properties (raw RGB triplets) defined in `src/lib/styles/theme.css` and mapped to Tailwind utility classes in `tailwind.config.js`. Always use semantic token names (e.g. `bg-muted`, `bg-card`, `text-foreground`, `border-border`) rather than raw hex or generic Tailwind color classes. Token names follow shadcn-ui conventions: `--muted` for subdued section/nav surfaces, `--card` for card surfaces, `--popover` for elevated/floating surfaces (tooltips, inputs).
 
 Typography is set globally in `src/app.css` via `@layer base` — `h1`–`h6`, `p`, and `section` all have opinionated defaults. Avoid overriding font families inline; use the `font-heading`, `font-sans`, `font-mono` theme tokens.
 

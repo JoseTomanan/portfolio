@@ -78,7 +78,7 @@
             rel="noopener noreferrer"
             aria-label={social.label}
             class="p-2 rounded-lg text-muted-foreground h-12
-                    hover:text-foreground hover:bg-muted">
+                    hover:text-foreground hover:bg-card">
           <Icon icon={social.iconifyTag} class="size-6 my-auto" />
         </a>
       {/each}
