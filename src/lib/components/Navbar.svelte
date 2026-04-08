@@ -17,7 +17,7 @@
 				class="relative group/resume flex flex-row items-baseline gap-1 w-fit">
 		<span>CV</span>
 		<Icon icon="ic:outline-arrow-outward"
-					class="absolute top-0.5 -translate-1/2 -right-5 size-4 opacity-0 group-hover/resume:opacity-100" />
+					class="absolute top-0.5 -translate-x-1/2 -right-5 size-4 opacity-0 group-hover/resume:opacity-100" />
 	</a>
 		<!-- <a href="#contact">Contact</a> -->
 </nav>
