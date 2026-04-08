@@ -1,0 +1,49 @@
+:root {
+	--font-heading: "IBM Plex Sans";
+	--font-sans: "Inter";
+	--font-mono: "JetBrains Mono";
+
+	--background: #080808;  /* lucy bg */
+	--foreground: #DED7D0;  /* for heading; lucy fg */
+
+	--muted: #282828;  /* lucy surface alt */
+	--muted-foreground: #A49EAC;  /* lucy muted */
+	--popover: #202020;  /*  lucy surface */
+	--popover-foreground: #DED7D0;  /* lucy fg */
+
+	--card: #161616;  /* lucy muted-65 */
+	--card-foreground: #A49EAC;  /* lucy muted */
+
+	--border: #2F2C32;  /* lucy border */
+	--input: #524B51;  /* lucy border alt */
+
+	--primary: #F0CE59;  /* lucy primary */
+	--primary-foreground: #16151A;  /* lucy muted-65 */
+
+	--secondary: #FF7DA3;  /* lucy secondary */
+	--secondary-foreground: #16151A;  /* lucy muted-65 */
+
+	--tertiary: #56C6D5;  /* lucy tertiary */
+
+	--accent: #686069;  /* lucy hover */
+	--accent-foreground: #1E1D23;  /* lucy muted-65 */
+
+	--destructive: 0 72.2% 50.6%;
+	--destructive-foreground: 210 20% 98%;
+
+	--ring: #524B51;
+	--radius: 0.5rem;
+
+	--lucy-bg: #100F13;
+	--lucy-fg: #DED7D0;
+	--lucy-primary: #F0CE59;
+	--lucy-secondary: #FF7DA3;
+	--lucy-tertiary: #56C6D5;
+	--lucy-muted: #A49EAC;
+	--lucy-surface: #1E1D23;
+	--lucy-surface-alt: #2F2C32;
+	--lucy-border: #2F2C32;
+	--lucy-border-alt: #524B51;
+	--lucy-hover: #686069;
+	--lucy-card: #16151A;
+}
