@@ -70,16 +70,17 @@
   </section>
 
   <section class="flex flex-col md:flex-row gap-1.5 justify-between items-center rounded-t-none p-8">
-    <h4>
-      Hi! I'm Jose, a BS CS student from UP Diliman. Welcome aboard!
-    </h4>
-    <div class="flex gap-2 justify-end h-12">
+    <h4>Hi! I'm Jose, a BS CS student from UP Diliman. Welcome aboard!</h4>
+    <div class="inline-flex gap-x-2 justify-end">
       {#each header as social}
-				<a href={social.link} target="_blank" rel="noopener noreferrer"
-					aria-label={social.label}
-					class="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted">
-					<Icon icon={social.iconifyTag} class="h-6 w-6" />
-				</a>
+        <a href={social.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={social.label}
+            class="p-2 rounded-lg text-muted-foreground h-12
+                    hover:text-foreground hover:bg-muted">
+          <Icon icon={social.iconifyTag} class="size-6 my-auto" />
+        </a>
       {/each}
     </div>
   </section>
