@@ -1,99 +1,43 @@
 <script lang="ts">
-	import { writable } from "svelte/store";
-	import { onDestroy } from "svelte";
-	import { type CarouselAPI, type CarouselProps, setEmblaContext } from "./context.js";
-	import { cn } from "$lib/utils.js";
+  import { setContext, untrack } from "svelte";
+  import type { EmblaOptionsType, EmblaPluginType } from "embla-carousel";
+  import type { EmblaCarouselType } from "embla-carousel";
+  import type { Snippet } from "svelte";
 
-	type $$Props = CarouselProps;
+  let {
+    class: className = "",
+    opts = {} as EmblaOptionsType,
+    plugins = [] as EmblaPluginType[],
+    orientation = "horizontal" as "horizontal" | "vertical",
+    children,
+    ...restProps
+  }: {
+    class?: string;
+    opts?: EmblaOptionsType;
+    plugins?: EmblaPluginType[];
+    orientation?: "horizontal" | "vertical";
+    children?: Snippet;
+    [key: string]: unknown;
+  } = $props();
 
-	export let opts = {};
-	export let plugins: NonNullable<$$Props["plugins"]> = [];
-	export let api: $$Props["api"] = undefined;
-	export let orientation: NonNullable<$$Props["orientation"]> = "horizontal";
+  // Separate mutable state from static config to avoid state_referenced_locally warning
+  const state = $state({
+    api: undefined as EmblaCarouselType | undefined,
+    canScrollPrev: false,
+    canScrollNext: true,
+  });
 
-	let className: $$Props["class"] = undefined;
-	export { className as class };
+  // Static config from props — intentionally one-time read, opts don't change after init
+  const config = untrack(() => ({ orientation, opts, plugins }));
 
-	const apiStore = writable<CarouselAPI | undefined>(undefined);
-	const orientationStore = writable(orientation);
-	const canScrollPrev = writable(false);
-	const canScrollNext = writable(false);
-	const optionsStore = writable(opts);
-	const pluginStore = writable(plugins);
-	const scrollSnapsStore = writable<number[]>([]);
-	const selectedIndexStore = writable(0);
-
-	$: orientationStore.set(orientation);
-	$: pluginStore.set(plugins);
-	$: optionsStore.set(opts);
-
-	function scrollPrev() {
-		api?.scrollPrev();
-	}
-	function scrollNext() {
-		api?.scrollNext();
-	}
-	function scrollTo(index: number, jump?: boolean) {
-		api?.scrollTo(index, jump);
-	}
-
-	function onSelect(api: CarouselAPI) {
-		if (!api) return;
-		canScrollPrev.set(api.canScrollPrev());
-		canScrollNext.set(api.canScrollNext());
-		selectedIndexStore.set(api.selectedScrollSnap());
-	}
-
-	$: if (api) {
-		onSelect(api);
-		api.on("select", onSelect);
-		api.on("reInit", onSelect);
-	}
-
-	function handleKeyDown(e: KeyboardEvent) {
-		if (e.key === "ArrowLeft") {
-			e.preventDefault();
-			scrollPrev();
-		} else if (e.key === "ArrowRight") {
-			e.preventDefault();
-			scrollNext();
-		}
-	}
-
-	setEmblaContext({
-		api: apiStore,
-		scrollPrev,
-		scrollNext,
-		orientation: orientationStore,
-		canScrollNext,
-		canScrollPrev,
-		handleKeyDown,
-		options: optionsStore,
-		plugins: pluginStore,
-		onInit,
-		scrollSnaps: scrollSnapsStore,
-		selectedIndex: selectedIndexStore,
-		scrollTo,
-	});
-
-	function onInit(event: CustomEvent<CarouselAPI>) {
-		api = event.detail;
-		apiStore.set(api);
-		scrollSnapsStore.set(api.scrollSnapList());
-	}
-
-	onDestroy(() => {
-		api?.off("select", onSelect);
-	});
+  setContext("carousel", { state, config });
 </script>
 
 <div
-	class={cn("relative", className)}
-	on:mouseenter
-	on:mouseleave
-	role="region"
-	aria-roledescription="carousel"
-	{...$$restProps}
+  class="relative {className}"
+  role="region"
+  aria-roledescription="carousel"
+  {...restProps}
 >
-	<slot />
+  {@render children?.()}
 </div>

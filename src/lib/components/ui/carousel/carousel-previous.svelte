@@ -1,40 +1,37 @@
 <script lang="ts">
-	import ArrowLeft from "lucide-svelte/icons/arrow-left";
-	import type { VariantProps } from "tailwind-variants";
-	import { getEmblaContext } from "./context.js";
-	import { cn } from "$lib/utils.js";
-	import {
-		Button,
-		type Props,
-		type buttonVariants,
-	} from "$lib/components/ui/button/index.js";
+  import { getContext } from "svelte";
+  import { cn } from "$lib/utils.js";
 
-	type $$Props = Props;
+  let {
+    class: className = "",
+    ...restProps
+  }: {
+    class?: string;
+    [key: string]: unknown;
+  } = $props();
 
-	let className: $$Props["class"] = undefined;
-	export { className as class };
-	export let variant: VariantProps<typeof buttonVariants>["variant"] = "outline";
-	export let size: VariantProps<typeof buttonVariants>["size"] = "icon";
-
-	const { orientation, canScrollPrev, scrollPrev, handleKeyDown } =
-		getEmblaContext("<Carousel.Previous/>");
+  const { state } = getContext<{
+    state: {
+      api: import("embla-carousel").EmblaCarouselType | undefined;
+      canScrollPrev: boolean;
+    };
+  }>("carousel");
 </script>
 
-<Button
-	{variant}
-	{size}
-	class={cn(
-		"absolute h-8 w-8 touch-manipulation rounded-full",
-		$orientation === "horizontal"
-			? "-left-12 top-1/2 -translate-y-1/2"
-			: "-top-12 left-1/2 -translate-x-1/2 rotate-90",
-		className
-	)}
-	disabled={!$canScrollPrev}
-	on:click={scrollPrev}
-	on:keydown={handleKeyDown}
-	{...$$restProps}
+<button
+  class={cn(
+    "inline-flex items-center justify-center rounded-full border border-input bg-background p-2 shadow-sm",
+    "hover:bg-accent hover:text-accent-foreground",
+    "disabled:pointer-events-none disabled:opacity-50",
+    className
+  )}
+  disabled={!state.canScrollPrev}
+  onclick={() => state.api?.scrollPrev()}
+  aria-label="Previous slide"
+  {...restProps}
 >
-	<ArrowLeft class="h-4 w-4" />
-	<span class="sr-only">Previous slide</span>
-</Button>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m15 18-6-6 6-6" />
+  </svg>
+</button>

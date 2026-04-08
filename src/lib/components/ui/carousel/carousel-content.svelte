@@ -1,35 +1,58 @@
 <script lang="ts">
-	import type { HTMLAttributes } from "svelte/elements";
-	import emblaCarouselSvelte from "embla-carousel-svelte";
-	import { getEmblaContext } from "./context.js";
-	import { cn } from "$lib/utils.js";
+  import { getContext } from "svelte";
+  import emblaCarouselSvelte from "embla-carousel-svelte";
+  import type { Snippet } from "svelte";
+  import { cn } from "$lib/utils.js";
 
-	type $$Props = HTMLAttributes<HTMLDivElement>;
+  let {
+    class: className = "",
+    children,
+    ...restProps
+  }: {
+    class?: string;
+    children?: Snippet;
+    [key: string]: unknown;
+  } = $props();
 
-	let className: string | undefined | null = undefined;
-	export { className as class };
+  const { state, config } = getContext<{
+    state: {
+      api: import("embla-carousel").EmblaCarouselType | undefined;
+      canScrollPrev: boolean;
+      canScrollNext: boolean;
+    };
+    config: {
+      orientation: "horizontal" | "vertical";
+      opts: import("embla-carousel").EmblaOptionsType;
+      plugins: import("embla-carousel").EmblaPluginType[];
+    };
+  }>("carousel");
 
-	const { orientation, options, plugins, onInit } = getEmblaContext("<Carousel.Content/>");
+  function handleInit(e: CustomEvent<import("embla-carousel").EmblaCarouselType>) {
+    state.api = e.detail;
+    state.canScrollPrev = state.api.canScrollPrev();
+    state.canScrollNext = state.api.canScrollNext();
+    state.api.on("select", () => {
+      state.canScrollPrev = state.api!.canScrollPrev();
+      state.canScrollNext = state.api!.canScrollNext();
+    });
+    state.api.on("reInit", () => {
+      state.canScrollPrev = state.api!.canScrollPrev();
+      state.canScrollNext = state.api!.canScrollNext();
+    });
+  }
 </script>
 
-<div
-	class="overflow-hidden"
-	use:emblaCarouselSvelte={{
-		options: {
-			container: "[data-embla-container]",
-			slides: "[data-embla-slide]",
-			...$options,
-			axis: $orientation === "horizontal" ? "x" : "y",
-		},
-		plugins: $plugins,
-	}}
-	on:emblaInit={onInit}
->
-	<div
-		class={cn("flex", $orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col", className)}
-		data-embla-container=""
-		{...$$restProps}
-	>
-		<slot />
-	</div>
+<div class="overflow-hidden">
+  <div
+    use:emblaCarouselSvelte={{ options: config.opts, plugins: config.plugins }}
+    onemblaInit={handleInit}
+    class={cn(
+      "flex",
+      config.orientation === "vertical" ? "flex-col" : "-ml-4",
+      className
+    )}
+    {...restProps}
+  >
+    {@render children?.()}
+  </div>
 </div>
