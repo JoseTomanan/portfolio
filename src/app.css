@@ -102,10 +102,12 @@
 @layer base {
 	html {
 		scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+    overflow-y: scroll !important;
 	}
 	
 	::-webkit-scrollbar {
-		width: 6px;
+		width: 8px;
 		height: 3px;
 	}
 	::-webkit-scrollbar-track {
@@ -184,7 +186,7 @@
 		@apply px-4 md:px-0;
 		@apply text-sm;
 		@apply tracking-tighter;
-		@apply opacity-80;
+		@apply text-lucy-fg/80;
 	}
 	
 	p {
@@ -215,9 +217,22 @@
 	
 	.page {
 		@apply flex flex-col;
+		@apply h-auto;
 		@apply rounded-xl;
 		@apply shadow-md;
 		@apply shadow-lucy-border;
+	}
+
+	.carousel-slide {
+		@apply h-full overflow-clip;
+
+		& img {
+			@apply h-full object-cover;
+		}
+	}
+
+	.section-body {
+		@apply flex flex-col gap-3;
 	}
 	
 	section {

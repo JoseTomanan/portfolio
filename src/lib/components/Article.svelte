@@ -28,7 +28,7 @@
 				<Tooltip.Root>
 					<Tooltip.Trigger class="items-center" aria-label={displayableName}>
 						<Icon icon={actualTag}
-									class="h-4 w-4 text-lucy-muted opacity-80 group-hover/whole:opacity-100 cursor-default" />
+									class="h-4 w-4 text-lucy-muted/80 group-hover/whole:text-lucy-muted cursor-default" />
 					</Tooltip.Trigger>
 					<Tooltip.Content class="bg-lucy-bg/85 text-lucy-fg border-none">
 						{displayableName}
