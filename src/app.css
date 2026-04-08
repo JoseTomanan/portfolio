@@ -11,34 +11,34 @@
 	--font-sans: "Inter";
 	--font-mono: "JetBrains Mono";
 
-	--background: #100F13;  /* lucy bg */
+	--background: #080808;  /* lucy bg */
 	--foreground: #DED7D0;  /* for heading; lucy fg */
 
-	--muted: #2F2C32;  /* lucy surface alt */
+	--muted: #282828;  /* lucy surface alt */
 	--muted-foreground: #A49EAC;  /* lucy muted */
-	--popover: #1E1D23;  /*  lucy surface */
+	--popover: #202020;  /*  lucy surface */
 	--popover-foreground: #DED7D0;  /* lucy fg */
-	
-	--card: #16151A;  /* lucy muted-65 */
+
+	--card: #161616;  /* lucy muted-65 */
 	--card-foreground: #A49EAC;  /* lucy muted */
-	
+
 	--border: #2F2C32;  /* lucy border */
 	--input: #524B51;  /* lucy border alt */
-	
+
 	--primary: #F0CE59;  /* lucy primary */
 	--primary-foreground: #16151A;  /* lucy muted-65 */
-	
+
 	--secondary: #FF7DA3;  /* lucy secondary */
 	--secondary-foreground: #16151A;  /* lucy muted-65 */
 
 	--tertiary: #56C6D5;  /* lucy tertiary */
-	
+
 	--accent: #686069;  /* lucy hover */
 	--accent-foreground: #1E1D23;  /* lucy muted-65 */
-	
+
 	--destructive: 0 72.2% 50.6%;
 	--destructive-foreground: 210 20% 98%;
-	
+
 	--ring: #524B51;
 	--radius: 0.5rem;
 }
@@ -105,7 +105,7 @@
     scrollbar-gutter: stable;
     overflow-y: scroll !important;
 	}
-	
+
 	::-webkit-scrollbar {
 		width: 8px;
 		height: 3px;
@@ -128,13 +128,14 @@
 	}
 
 	body {
-		@apply font-sans bg-lucy-bg;
+		font-family: var(--font-sans);
+		background-color: var(--lucy-bg);
 		position: relative;
 		/* @apply bg-gradient-radial;
 		@apply from-lucy-card via-75% to-lucy-bg; */
 		background-attachment: fixed;
 	}
-	
+
 	button,
 	a,
 	input,
@@ -145,119 +146,127 @@
 		transition-duration: 150ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	}
-	
+
 	/* ALL OTHER */
 	h1 {
 		@apply text-2xl md:text-3xl;
-		@apply font-heading;
-		@apply text-lucy-primary;
+		font-family: var(--font-heading);
+		color: var(--lucy-primary);
 		text-wrap: balance;
 	}
 
 	h2 {
 		@apply text-xl md:text-2xl;
-		@apply font-heading;
-		@apply text-lucy-primary;
+		font-family: var(--font-heading);
+		color: var(--lucy-primary);
 		text-wrap: balance;
 	}
-	
+
 	h3 {
 		@apply text-lg;
-		@apply font-heading;
-		@apply text-lucy-primary;
+		font-family: var(--font-heading);
+		color: var(--lucy-primary);
 		text-wrap: balance;
 	}
-	
+
 	h4 {
 		@apply text-base;
-		@apply font-sans;
-		@apply text-lucy-muted;
+		font-family: var(--font-sans);
+		color: var(--lucy-muted);
 	}
 
 	h5 {
 		@apply text-base;
-		@apply font-sans;
-		@apply text-lucy-muted;
+		font-family: var(--font-sans);
+		color: var(--lucy-muted);
 	}
 
 	h6 {
-		@apply font-mono;
-		@apply tracking-tight;
+		font-family: var(--font-mono);
+		letter-spacing: -0.025em;
 		@apply px-4 md:px-0;
 		@apply text-sm;
-		@apply tracking-tighter;
-		@apply text-lucy-fg/80;
+		letter-spacing: -0.05em;
+		color: rgb(222 215 208 / 0.8);
 	}
-	
+
 	p {
 		@apply text-base;
-		@apply font-sans;
-		@apply text-lucy-muted;
+		font-family: var(--font-sans);
+		color: var(--lucy-muted);
 
 		text-wrap: pretty;
 	}
 
 	label {
-		@apply font-sans;
-		@apply text-lucy-muted;
+		font-family: var(--font-sans);
+		color: var(--lucy-muted);
 	}
 
 	nav {
-		@apply bg-lucy-bg/85;
-		@apply text-lucy-muted/100;
+		background-color: rgb(16 15 19 / 0.85);
+		color: rgb(164 158 172 / 1);
 	}
 
 	main {
-		@apply flex flex-col;
-		@apply gap-10;
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
 		@apply my-12;
 		@apply px-2 md:px-0;
-		@apply w-full max-w-[840px];
+		width: 100%;
+		max-width: 840px;
 	}
-	
+
 	.page {
-		@apply flex flex-col;
-		@apply h-auto;
-		@apply rounded-xl;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		border-radius: 0.75rem;
 		@apply shadow-md;
 		@apply shadow-lucy-border;
 	}
 
 	.carousel-slide {
-		@apply h-full overflow-clip;
+		height: 100%;
+		overflow: clip;
 
 		& img {
-			@apply h-full object-cover;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 
 	.section-body {
-		@apply flex flex-col gap-3;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
 	}
-	
+
 	section {
 		background: var(--card);
 
 		@apply px-4;
 		@apply py-8;
-		@apply grow;
-		@apply rounded-xl;
+		flex-grow: 1;
+		border-radius: 0.75rem;
 	}
 
 	.projects-roles {
-		@apply flex flex-col;
-		@apply gap-4;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 	}
-	
+
 	span.jumpable {
-		@apply h-8;
-		@apply -mt-12;
-		@apply -z-50;
+		height: 2rem;
+		margin-top: -3rem;
+		z-index: -50;
 	}
-	
+
 	footer {
 		@apply py-4;
-		@apply text-lucy-muted/60;
+		color: rgb(164 158 172 / 0.6);
 		@apply mx-auto;
 
 		& p {
@@ -270,43 +279,44 @@
 /* ------------------------- COMPONENTS ------------------------- */
 @layer components {
 	.hoverable-link {
-		@apply underline underline-offset-1;
-		
+		text-decoration-line: underline;
+		text-underline-offset: 1px;
+
 		span&:hover {
-			@apply text-lucy-tertiary;
+			color: var(--lucy-tertiary);
 		}
-		
+
 		a&:hover {
-			@apply text-lucy-secondary;
+			color: var(--lucy-secondary);
 		}
 	}
-	
+
 	h1.hero-text {
-		@apply text-lucy-fg;
-		
+		color: var(--lucy-fg);
+
 		font-weight: 700;
 		letter-spacing: 0.025rem;
 	}
-	
+
 	h6.footnote {
-		@apply text-lucy-muted/80;
-		@apply text-right;
-		
+		color: rgb(164 158 172 / 0.8);
+		text-align: right;
+
 		& > a {
-			@apply underline;
+			text-decoration-line: underline;
 
 			&:hover {
-				@apply text-lucy-secondary;
+				color: var(--lucy-secondary);
 			}
 		}
 	}
 
 	.non-link-highlight {
-		@apply font-medium;
-		@apply text-lucy-fg;
+		font-weight: 500;
+		color: var(--lucy-fg);
 
 		&:hover {
-			@apply text-lucy-tertiary;
+			color: var(--lucy-tertiary);
 		}
 	}
 }
@@ -337,7 +347,7 @@
 	from {
 		background-position: 0% center;
 	}
-	
+
 	to {
 		background-position: 200% center;
 	}
@@ -349,43 +359,43 @@
 	100% {
 		transform: translate(0, 0);
 	}
-	
+
 	10% {
 		transform: translate(-5%, -10%);
 	}
-	
+
 	20% {
 		transform: translate(-15%, -20%);
 	}
-	
+
 	30% {
 		transform: translate(-5%, -10%);
 	}
-	
+
 	40% {
 		transform: translate(-15%, -20%);
 	}
-	
+
 	50% {
 		transform: translate(-5%, -10%);
 	}
-	
+
 	60% {
 		transform: translate(-15%, -20%);
 	}
-	
+
 	70% {
 		transform: translate(-5%, -10%);
 	}
-	
+
 	80% {
 		transform: translate(-15%, -20%);
 	}
-	
+
 	90% {
 		transform: translate(-5%, -10%);
 	}
-	
+
 	/* stylelint-disable-next-line keyframe-block-no-duplicate-selectors */
 	100% {
 		transform: translate(-15%, -20%);
