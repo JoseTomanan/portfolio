@@ -2,8 +2,6 @@
   import Top from "./Top.svelte";
   import Roles from "./Roles.svelte";
   import Projects from "./Projects.svelte";
-  import Contact from "./Contact.svelte";
-  
   import { onMount } from "svelte";
   import { fly } from "svelte/transition";
   import { link } from "$lib";
@@ -15,6 +13,7 @@
   })
 </script>
 
+
 <svelte:head>
   <title>JoseTomanan.io</title>
   <meta name="description" content="Jose's portfolio" />
@@ -24,6 +23,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 </svelte:head>
+
 
 <Top />
 
@@ -55,8 +55,15 @@
   </div>
   
   <Roles />
+  
   <Projects />
-  <!-- <Contact /> -->
+
+  <footer>
+    <p>
+      This page is written with Svelte and Tailwind.
+      Feel free to open the codebase to see how I made this!
+    </p>
+  </footer>
 {/if}
 
 <style>

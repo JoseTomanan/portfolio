@@ -11,14 +11,4 @@
       <slot />
     </main>
   </div>
-
-  <footer>
-    <p>
-      This page is written with Svelte and Tailwind.
-      Feel free to open the codebase to see how I made this!
-    </p>
-  </footer>
 </div>
-
-<style>
-</style>
