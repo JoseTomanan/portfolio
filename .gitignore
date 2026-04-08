@@ -32,3 +32,4 @@ src/output.css
 
 # ?? basta
 **/*.backup.*
+.claude
