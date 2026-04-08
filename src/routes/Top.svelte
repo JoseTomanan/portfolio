@@ -53,8 +53,8 @@
 					<enhanced:img src="$lib/images/hero/3.jpg" alt="" aria-hidden="true" />
 				</Carousel.Item>
       </Carousel.Content>
-			<Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-muted-foreground/50 text-foreground" />
-      <Carousel.Next class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-muted-foreground/50 text-foreground" />
+			<Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-accent text-foreground" />
+      <Carousel.Next class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-accent text-foreground" />
     </Carousel.Root>
 
     <div class="flex flex-col items-center justify-center gap-0">

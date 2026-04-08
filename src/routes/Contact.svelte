@@ -48,7 +48,7 @@
       <div class="flex justify-end">
         <button class="
             rounded-md py-1 px-4 text-foreground w-fit border
-            bg-popover border-input
+            bg-muted border-input
             hover:bg-accent hover:border-border
           " on:click={ ()=>{ submitForm(name, email, message) }}
           >
@@ -62,7 +62,7 @@
 <style lang="postcss">
   .input-sm, textarea {
     @apply block w-full font-sans rounded-sm border-0 ring-1 ring-inset px-2 focus:outline-none;
-    @apply bg-popover text-foreground ring-border caret-primary;
+    @apply bg-muted text-foreground ring-ring caret-primary;
   }
   .input-sm::placeholder, textarea::placeholder {
     @apply text-muted-foreground/80;

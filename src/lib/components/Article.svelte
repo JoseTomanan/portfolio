@@ -32,7 +32,7 @@
             <Icon icon={actualTag}
                   class="h-4 w-4 text-muted-foreground/80 group-hover/whole:text-muted-foreground cursor-default" />
           </Tooltip.Trigger>
-          <Tooltip.Content class="bg-background/85 text-foreground border-none">
+          <Tooltip.Content class="bg-popover text-popover-foreground border-none">
             {displayableName}
           </Tooltip.Content>
         </Tooltip.Root>
