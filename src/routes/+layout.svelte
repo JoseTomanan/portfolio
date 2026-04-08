@@ -1,6 +1,9 @@
 <script lang="ts">
   import "../app.css";
-	import Navbar from "./Navbar.svelte";
+  import Navbar from "./Navbar.svelte";
+  import type { Snippet } from "svelte";
+
+  let { children }: { children: Snippet } = $props();
 </script>
 
 <div class="app bg-fixed">
@@ -8,7 +11,7 @@
 
   <div class="flex container justify-center px-0">
     <main>
-      <slot />
+      {@render children()}
     </main>
   </div>
 </div>

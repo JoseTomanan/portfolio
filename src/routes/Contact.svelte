@@ -2,16 +2,16 @@
   import Icon from "@iconify/svelte";
   import { fly } from "svelte/transition";
   
-  let name: string = "";
-  let email: string = "";
-  let message: string = "";
+  let name: string = $state("");
+  let email: string = $state("");
+  let message: string = $state("");
   
   function submitForm(name: string, email: string, message: string) {
     alert(`Submitted ${name}, ${email} with message: ${message}`);
   }
 </script>
 
-<span class="jumpable" id="contact" />
+<span class="jumpable" id="contact"></span>
 <div class="page h-auto flex flex-col" transition:fly={{ delay: 100, duration: 1000 }}>
   <section>
     <h2 class="mb-3">
@@ -50,7 +50,7 @@
             rounded-md py-1 px-4 text-foreground w-fit border
             bg-muted border-input
             hover:bg-accent hover:border-border
-          " on:click={ ()=>{ submitForm(name, email, message) }}
+          " onclick={() => submitForm(name, email, message)}
           >
           <Icon icon="mdi:send" class="w-7 h-7"/>
         </button>

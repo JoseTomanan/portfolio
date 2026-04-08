@@ -4,7 +4,7 @@
   import { link } from "$lib";
 </script>
 
-<span class="jumpable" id="projects" />
+<span class="jumpable" id="projects"></span>
 <div class="page" transition:fly={{ delay: 400, duration: 1000 }}>
   <section class="section-body">
     <h2>What projects have I made?</h2>

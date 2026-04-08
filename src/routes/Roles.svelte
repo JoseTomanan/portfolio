@@ -4,7 +4,7 @@
   import { link } from "$lib";
 </script>
 
-<span class="jumpable" id="roles" />
+<span class="jumpable" id="roles"></span>
 <div class="page" transition:fly={{ delay: 200, duration: 1000 }}>
   <section class="section-body">
     <h2>What have I been up to?</h2>

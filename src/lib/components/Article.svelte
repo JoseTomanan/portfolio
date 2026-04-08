@@ -2,14 +2,23 @@
   import Icon from "@iconify/svelte";
   import * as Tooltip from "$lib/components/ui/tooltip/index";
 
-  export let id: string;
-  export let href: string;
-  // export let color;
-  export let title: string;
-  export let subtitle: string;
-  export let other: string = "";
-  export let date: string = "AUG 2023 - AUG 2023";
-  export let techInvolved: string[] = [""];
+  let {
+    id,
+    href,
+    title,
+    subtitle,
+    other = "",
+    date = "AUG 2023 - AUG 2023",
+    techInvolved = [""],
+  }: {
+    id: string;
+    href: string;
+    title: string;
+    subtitle: string;
+    other?: string;
+    date?: string;
+    techInvolved?: string[];
+  } = $props();
 </script>
 
 <article class="group/whole
@@ -45,7 +54,7 @@
       <h4 class="underline-offset-2 flex font-sans font-semibold group-hover/whole:text-foreground/100">
         <a class="group/link flex items-baseline leading-5 gap-2 hover:gap-4
               text-foreground/90 hover:text-secondary"
-              target="_blank" rel="noopener noreferrer" {id} {href} on:click|once>
+              target="_blank" rel="noopener noreferrer" {id} {href}>
           {title}
           <Icon icon="ic:baseline-arrow-outward"
               class="w-4 h-4 opacity-0 group-hover/whole:opacity-100 hidden md:inline"/>

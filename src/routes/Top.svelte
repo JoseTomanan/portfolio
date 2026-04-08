@@ -31,7 +31,7 @@
   ];
 </script>
 
-<span class="jumpable" id="top" />
+<span class="jumpable" id="top"></span>
 <div class="page gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-8 items-center justify-between overflow-clip
 				p-0 pb-8 rounded-b-none border-b border-border">

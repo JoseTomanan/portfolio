@@ -6,7 +6,7 @@
   import { fly } from "svelte/transition";
   import { link } from "$lib";
 
-  let startPage: boolean = false;
+  let startPage: boolean = $state(false);
   
   onMount(() => {
     startPage = true;
