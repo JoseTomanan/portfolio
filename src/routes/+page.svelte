@@ -29,7 +29,8 @@
 
 {#if startPage}
   <span class="jumpable" id="me"></span>
-  <div class="page gap-0" transition:fly={{ delay: 0, duration: 1000 }}>
+  <div class="page gap-0"
+        transition:fly={{ delay: 0, duration: 1000 }}>
     <section class="flex flex-col gap-4 rounded-b-none border-b border-border">
       <h2>What do I do?</h2>
       <p>
