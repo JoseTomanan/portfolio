@@ -1,6 +1,6 @@
 <script lang="ts">
   import "../app.css";
-	import Navbar from "$lib/components/Navbar.svelte";
+	import Navbar from "./Navbar.svelte";
 </script>
 
 <div class="app bg-fixed">

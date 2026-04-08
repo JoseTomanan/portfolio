@@ -4,7 +4,7 @@
 </script>
 
 <nav aria-label="Main navigation"
-		class="flex flex-row items-center justify-center align-middle
+		class="flex flex-row items-center justify-center align-middle backdrop-blur-sm
 			fixed w-full mx-auto py-2.5 z-50 gap-[min(10%,4em)]">
 	<a href="#top" id="first"
 				class="justify-items-start font-bold italic font-heading hidden sm:inline">
