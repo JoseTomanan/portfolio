@@ -1,38 +1,51 @@
-:root {
+@theme {
+  /* ---- BREAKPOINTS (replace defaults) ---- */
+  --breakpoint-*: initial;
+  --breakpoint-xs: 475px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1536px;
+
+  /* ---- FONTS ---- */
   --font-heading: "IBM Plex Sans";
   --font-sans: "Inter";
   --font-mono: "JetBrains Mono";
 
-  /* ---- BASE PALETTE ---- */
-  --background:        16  15  19;   /* #100F13 */
-  --foreground:       222 215 208;   /* #DED7D0 */
+  /* ---- BORDER RADIUS ---- */
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
 
-  --muted:             22  21  26;   /* #16151A  (subdued section/nav surfaces) */
-  --muted-foreground: 164 158 172;   /* #A49EAC */
+  /* ---- COLORS ---- */
+  --color-background:              rgb(16, 15, 19);    /* #100F13 */
+  --color-foreground:              rgb(222, 215, 208); /* #DED7D0 */
 
-  --card:              30  29  35;        /* #1E1D23  (card surfaces) */
-  --card-foreground:       164 158 172;   /* = --muted-foreground */
-  
-  --border:            47  44  50;        /* #2F2C32 */
-  --ring:                   82  75  81;   /* = --input */
+  --color-muted:                   rgb(22, 21, 26);    /* #16151A  (subdued section/nav surfaces) */
+  --color-muted-foreground:        rgb(164, 158, 172); /* #A49EAC */
 
-  --popover:           47  44  50;        /* #2F2C32  (elevated surface for inputs) */
-  --popover-foreground:    222 215 208;   /* = --foreground */
+  --color-card:                    rgb(30, 29, 35);    /* #1E1D23  (card surfaces) */
+  --color-card-foreground:         rgb(164, 158, 172); /* = --color-muted-foreground */
 
-  --input:             82  75  81;        /* #524B51 */
+  --color-border:                  rgb(47, 44, 50);    /* #2F2C32 */
+  --color-ring:                    rgb(82, 75, 81);    /* = --color-input */
 
-  --primary:          240 206  89;        /* #F0CE59 */
-  --primary-foreground:     22  21  26;   /* = --muted */
-  --secondary:        255 125 163;        /* #FF7DA3 */
-  --secondary-foreground:   22  21  26;   /* = --muted */
-  
-  --tertiary:          86 198 213;        /* #56C6D5 */
-  
-  --accent:           104  96 105;        /* #686069 */
-  --accent-foreground:      22  21  26;   /* = --muted */
+  --color-popover:                 rgb(47, 44, 50);    /* #2F2C32  (elevated surface for inputs) */
+  --color-popover-foreground:      rgb(222, 215, 208); /* = --color-foreground */
 
-  --destructive:      220  38  38;        /* #DC2626 */
-  --destructive-foreground: 248 250 252;  /* #F8FAFC */
+  --color-input:                   rgb(82, 75, 81);    /* #524B51 */
 
-  --radius: 0.5rem;
+  --color-primary:                 rgb(240, 206, 89);  /* #F0CE59 */
+  --color-primary-foreground:      rgb(22, 21, 26);    /* = --color-muted */
+  --color-secondary:               rgb(255, 125, 163); /* #FF7DA3 */
+  --color-secondary-foreground:    rgb(22, 21, 26);    /* = --color-muted */
+
+  --color-tertiary:                rgb(86, 198, 213);  /* #56C6D5 */
+
+  --color-accent:                  rgb(104, 96, 105);  /* #686069 */
+  --color-accent-foreground:       rgb(22, 21, 26);    /* = --color-muted */
+
+  --color-destructive:             rgb(220, 38, 38);   /* #DC2626 */
+  --color-destructive-foreground:  rgb(248, 250, 252); /* #F8FAFC */
 }

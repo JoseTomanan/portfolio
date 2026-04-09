@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400");
 
 /* ------------------------- THEME ------------------------- */
+@import "tailwindcss";
 @import "./lib/styles/theme.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* ------------------------- RESPONSIVENESS ------------------------- */
+.container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
 /* 2xl (Widescreen monitors) */
 @media (max-width: 1536px) {
   .container {
@@ -76,16 +78,16 @@
 		height: 3px;
 	}
 	::-webkit-scrollbar-track {
-		background: rgb(var(--muted));
+		background: var(--color-muted);
 	}
 	::-webkit-scrollbar-thumb {
-		background: rgb(var(--border));
+		background: var(--color-border);
 	}
 	::-webkit-scrollbar-thumb:hover {
-		background: rgb(var(--input));
+		background: var(--color-input);
 	}
 	::-webkit-scrollbar-corner {
-		background: rgb(var(--background));
+		background: var(--color-background);
 	}
 
 	* {
@@ -94,7 +96,7 @@
 
 	body {
 		font-family: var(--font-sans);
-		background-color: rgb(var(--background));
+		background-color: var(--color-background);
 		position: relative;
 		background-attachment: fixed;
 	}
@@ -114,34 +116,34 @@
 	h1 {
 		@apply text-2xl md:text-3xl;
 		font-family: var(--font-heading);
-		color: rgb(var(--primary));
+		color: var(--color-primary);
 		text-wrap: balance;
 	}
 
 	h2 {
 		@apply text-xl md:text-2xl;
 		font-family: var(--font-heading);
-		color: rgb(var(--primary));
+		color: var(--color-primary);
 		text-wrap: balance;
 	}
 
 	h3 {
 		@apply text-lg;
 		font-family: var(--font-heading);
-		color: rgb(var(--primary));
+		color: var(--color-primary);
 		text-wrap: balance;
 	}
 
 	h4 {
 		@apply text-base;
 		font-family: var(--font-sans);
-		color: rgb(var(--muted-foreground));
+		color: var(--color-muted-foreground);
 	}
 
 	h5 {
 		@apply text-base;
 		font-family: var(--font-sans);
-		color: rgb(var(--muted-foreground));
+		color: var(--color-muted-foreground);
 	}
 
 	h6 {
@@ -155,19 +157,19 @@
 	p {
 		@apply text-base;
 		font-family: var(--font-sans);
-		color: rgb(var(--muted-foreground));
+		color: var(--color-muted-foreground);
 
 		text-wrap: pretty;
 	}
 
 	label {
 		font-family: var(--font-sans);
-		color: rgb(var(--muted-foreground));
+		color: var(--color-muted-foreground);
 	}
 
 	nav {
 		@apply bg-muted/85;
-		color: rgb(var(--muted-foreground));
+		color: var(--color-muted-foreground);
 	}
 
 	main {
@@ -185,7 +187,7 @@
 		flex-direction: column;
 		height: auto;
 		border-radius: 0.75rem;
-		border: 1px solid rgb(var(--border));
+		border: 1px solid var(--color-border);
 	}
 
 	.carousel-slide {
@@ -205,7 +207,7 @@
 	}
 
 	section {
-		background: rgb(var(--muted));
+		background: var(--color-muted);
 
 		@apply px-4;
 		@apply py-6;
@@ -238,68 +240,63 @@
 
 
 /* ------------------------- COMPONENTS ------------------------- */
-@layer components {
-	.hoverable-link {
+.hoverable-link {
+	text-decoration-line: underline;
+	text-underline-offset: 1px;
+
+	span&:hover {
+		color: var(--color-tertiary);
+	}
+
+	a&:hover {
+		color: var(--color-secondary);
+	}
+}
+
+h1.hero-text {
+	color: var(--color-foreground);
+
+	font-weight: 700;
+	letter-spacing: 0.025rem;
+}
+
+h6.footnote {
+	color: color-mix(in srgb, var(--color-muted-foreground) 80%, transparent);
+	text-align: right;
+
+	& > a {
 		text-decoration-line: underline;
-		text-underline-offset: 1px;
-
-		span&:hover {
-			color: rgb(var(--tertiary));
-		}
-
-		a&:hover {
-			color: rgb(var(--secondary));
-		}
-	}
-
-	h1.hero-text {
-		color: rgb(var(--foreground));
-
-		font-weight: 700;
-		letter-spacing: 0.025rem;
-	}
-
-	h6.footnote {
-		color: rgb(var(--muted-foreground) / 0.8);
-		text-align: right;
-
-		& > a {
-			text-decoration-line: underline;
-
-			&:hover {
-				color: rgb(var(--secondary));
-			}
-		}
-	}
-
-	.non-link-highlight {
-		font-weight: 500;
-		color: rgb(var(--foreground));
 
 		&:hover {
-			color: rgb(var(--tertiary));
+			color: var(--color-secondary);
 		}
+	}
+}
+
+.non-link-highlight {
+	font-weight: 500;
+	color: var(--color-foreground);
+
+	&:hover {
+		color: var(--color-tertiary);
 	}
 }
 
 
 /* ------------------------- UTILITIES ------------------------- */
-@layer utilities {
-	.magic-text {
-		animation: background-pan 6s linear infinite;
-		background: linear-gradient(
-			to right,
-			rgb(var(--foreground)),
-			rgb(var(--secondary)),
-			rgb(var(--tertiary)),
-			rgb(var(--foreground))
-		);
-		background-size: 200%;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		white-space: normal;
-	}
-
+@utility magic-text {
+	animation: background-pan 6s linear infinite;
+	background: linear-gradient(
+		to right,
+		var(--color-foreground),
+		var(--color-secondary),
+		var(--color-tertiary),
+		var(--color-foreground)
+	);
+	background-size: 200%;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	white-space: normal;
 }
 
 
