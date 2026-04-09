@@ -13,7 +13,7 @@
   <span class="jumpable h-6" id="top"></span>
   <div class="page gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
     <section class="flex flex-col gap-8 items-center justify-between overflow-clip
-                    p-0 pb-8 rounded-b-none border-b border-border">
+                    p-0 pb-8">
       <Top/>
 
       <div class="flex flex-col items-center justify-center gap-0">
@@ -26,25 +26,9 @@
           &middot; Gym rat
         </h3>
       </div>
-    </section>
-
-    <section class="flex flex-col md:flex-row gap-1.5 justify-between items-center rounded-t-none p-8">
-      <h4>Hi! I'm Jose, a BS CS student from UP Diliman. Welcome aboard!</h4>
-      <div class="inline-flex gap-x-2 justify-end items-center h-12
-                  *:p-2 *:rounded-lg *:text-muted-foreground *:h-fit *:hover:text-foreground *:hover:bg-card">
-        <a href={link.li} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <Icon icon="fa-brands:linkedin" class="size-6 my-auto" />
-        </a>
-        <a href={link.gh} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <Icon icon="fa-brands:github" class="size-6 my-auto" />
-        </a>
-        <a href={link.fb} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <Icon icon="fa-brands:facebook" class="size-6 my-auto" />
-        </a>
-        <a href={link.ig} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <Icon icon="fa-brands:instagram" class="size-6 my-auto" />
-        </a>
-      </div>
+      <h4 class="text-center">
+        Hello there! I'm Jose, a BS CS student from UP Diliman. Thank you for visiting!
+      </h4>
     </section>
   </div>
 
@@ -79,11 +63,26 @@
   
   <Projects />
 
-  <footer class="inline-flex py-4 w-full justify-between items-center
+  <footer class="flex flex-wrap py-4 w-full items-center
                 *:text-muted-foreground/40 *:text-sm">
-    <p class="text-center px-4 md:px-0">
+    <p class="text-center px-0">
       Written with Svelte and Tailwind &hearts;
     </p>
-    <a href="#top" class="hoverable-link">Back to top</a>
+    <a href="#top" class="hoverable-link ml-auto">Back to top</a>
+    <div class="inline-flex justify-end items-center ml-auto
+                  *:p-2 *:rounded-lg *:text-muted-foreground *:h-fit *:hover:text-foreground *:hover:bg-card">
+      <a href={link.li} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <Icon icon="fa-brands:linkedin" class="size-4 my-auto" />
+      </a>
+      <a href={link.gh} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <Icon icon="fa-brands:github" class="size-4 my-auto" />
+      </a>
+      <a href={link.fb} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <Icon icon="fa-brands:facebook" class="size-4 my-auto" />
+      </a>
+      <a href={link.ig} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <Icon icon="fa-brands:instagram" class="size-4 my-auto" />
+      </a>
+    </div>
   </footer>
 </main-div>
