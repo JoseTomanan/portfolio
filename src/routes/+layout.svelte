@@ -18,10 +18,5 @@
 
 <div class="app bg-fixed">
   <Navbar />
-
-  <div class="flex container justify-center">
-    <main>
-      {@render children()}
-    </main>
-  </div>
+  {@render children()}
 </div>

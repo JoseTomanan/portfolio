@@ -37,9 +37,7 @@
 /* md (Tablets) */
 @media (max-width: 768px) {
   .container,
-  footer,
-  /* nav, */
-  main {
+  footer {
     max-width: 640px;
   }
 }
@@ -47,9 +45,7 @@
 /* sm (Big phones, mini-tablets) */
 @media (max-width: 640px) {
   .container,
-  footer,
-  /* nav, */
-  main {
+  footer {
     width: 100%;
   }
 }
@@ -57,9 +53,7 @@
 /* xs (Phones) */
 @media (max-width: 475px) {
   .container,
-  footer,
-  /* nav, */
-  main {
+  footer {
     width: 100%;
   }
 }
@@ -165,7 +159,7 @@
 		color: var(--color-muted-foreground);
 	}
 
-	main {
+	main-div {
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
@@ -173,6 +167,7 @@
 		@apply px-0;
 		width: 100%;
 		max-width: 840px;
+		margin-inline: auto;
 	}
 
 	.page {
