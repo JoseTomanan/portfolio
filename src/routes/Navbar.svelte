@@ -22,7 +22,9 @@
 		<!-- <a href="#contact">Contact</a> -->
 </nav>
 
-<style lang="postcss">
+<style>
+  @reference "../app.css";
+
   nav > a {
     @apply hover:text-primary focus-visible:text-primary focus-visible:underline;
     @apply py-2;
