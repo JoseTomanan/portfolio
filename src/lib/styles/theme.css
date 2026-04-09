@@ -19,8 +19,8 @@
   --radius-sm: calc(0.5rem - 4px);
 
   /* ---- COLORS ---- */
-  --color-background:              rgb(0, 0, 0);       /* #000000 */
-  --color-foreground:              rgb(222, 215, 208); /* #DED7D0 */
+  --color-background:              rgb(0, 0, 0);
+  --color-foreground:              rgb(213, 211, 209);
 
   --color-muted:                   rgb(16, 16, 16);    /* #101010  (subdued section/nav surfaces) */
   --color-muted-foreground:        rgb(164, 158, 172); /* #A49EAC */
