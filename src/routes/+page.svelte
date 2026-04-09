@@ -7,6 +7,7 @@
   import { onMount } from "svelte";
   import { fly } from "svelte/transition";
   import { link } from "$lib";
+  import Separator from "$lib/components/ui/Separator.svelte";
 
   let startPage: boolean = $state(false);
   
@@ -87,8 +88,12 @@
   
   <Projects />
 
-  <footer>
-    <p>Written with Svelte and Tailwind &hearts;</p>
+  <footer class="inline-flex py-4 w-full justify-between items-center
+                  *:text-muted-foreground/40 *:text-sm">
+    <p class="text-center px-4 md:px-0">
+      Written with Svelte and Tailwind &hearts;
+    </p>
+    <a href="#top" class="hoverable-link">Back to top</a>
   </footer>
 {/if}
 
