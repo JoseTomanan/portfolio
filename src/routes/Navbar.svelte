@@ -7,7 +7,7 @@
 <nav aria-label="Main navigation"
       class="bg-background/50 text-muted-foreground
               flex flex-row items-center justify-center align-middle backdrop-blur-sm
-              fixed w-full mx-auto z-50 gap-[min(10%,4em)]
+              fixed top-0 w-full mx-auto z-50 gap-[min(10%,4em)]
               *:py-2
               *:hover:text-primary
               *:focus-visible:text-primary *:focus-visible:underline
