@@ -19,19 +19,19 @@
   --radius-sm: calc(0.5rem - 4px);
 
   /* ---- COLORS ---- */
-  --color-background:              rgb(16, 15, 19);    /* #100F13 */
+  --color-background:              rgb(0, 0, 0);       /* #000000 */
   --color-foreground:              rgb(222, 215, 208); /* #DED7D0 */
 
-  --color-muted:                   rgb(22, 21, 26);    /* #16151A  (subdued section/nav surfaces) */
+  --color-muted:                   rgb(16, 15, 19);    /* #100F13  (subdued section/nav surfaces) */
   --color-muted-foreground:        rgb(164, 158, 172); /* #A49EAC */
 
-  --color-card:                    rgb(30, 29, 35);    /* #1E1D23  (card surfaces) */
+  --color-card:                    rgb(22, 21, 26);    /* #16151A  (card surfaces) */
   --color-card-foreground:         rgb(164, 158, 172); /* = --color-muted-foreground */
 
   --color-border:                  rgb(47, 44, 50);    /* #2F2C32 */
   --color-ring:                    rgb(82, 75, 81);    /* = --color-input */
 
-  --color-popover:                 rgb(47, 44, 50);    /* #2F2C32  (elevated surface for inputs) */
+  --color-popover:                 rgb(30, 29, 35);    /* #1E1D23  (elevated surface for inputs) */
   --color-popover-foreground:      rgb(222, 215, 208); /* = --color-foreground */
 
   --color-input:                   rgb(82, 75, 81);    /* #524B51 */
