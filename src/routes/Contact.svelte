@@ -38,11 +38,11 @@
   
       <div class="flex pb-2 gap-2 items-baseline">
         <label for="message">Message:</label>
-        <textarea 
+        <textarea
             class="py-1 resize-none"
             rows=3 name="message" placeholder="Say something..."
             bind:value={ message }
-          />
+          ></textarea>
       </div>
   
       <div class="flex justify-end">
@@ -59,7 +59,7 @@
   </section>
 </div>
 
-<style>
+<style lang="postcss">
   @reference "../app.css";
 
   .input-sm, textarea {
