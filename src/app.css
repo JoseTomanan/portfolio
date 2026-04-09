@@ -147,7 +147,6 @@
 	}
 
 	h6 {
-		font-family: var(--font-mono);
 		@apply px-4 md:px-0;
 		@apply text-sm;
 		@apply text-foreground/80;
@@ -228,12 +227,12 @@
 	}
 
 	footer {
-    @apply text-muted-foreground/60;
+    @apply text-muted-foreground/40;
 		@apply py-4;
 		@apply mx-auto;
 
 		& p {
-			@apply font-mono text-sm tracking-tighter text-center px-4 md:px-0;
+			@apply text-sm tracking-tighter text-center px-4 md:px-0;
 		}
 	}
 }
@@ -261,8 +260,9 @@ h1.hero-text {
 }
 
 h6.footnote {
-	color: color-mix(in srgb, var(--color-muted-foreground) 80%, transparent);
-	text-align: right;
+  @apply text-muted-foreground/35;
+  text-align: right;
+  @apply text-sm;
 
 	& > a {
 		text-decoration-line: underline;
