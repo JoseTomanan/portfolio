@@ -164,7 +164,7 @@
 		flex-direction: column;
 		gap: 1.5rem;
 		@apply mt-12;
-		@apply px-0;
+		@apply px-2;
 		width: 100%;
 		max-width: 840px;
 		margin-inline: auto;
