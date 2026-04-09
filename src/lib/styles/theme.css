@@ -23,29 +23,29 @@
   --color-foreground:              rgb(213, 211, 209);
 
   --color-muted:                   rgb(16, 16, 16);    /* #101010  (subdued section/nav surfaces) */
-  --color-muted-foreground:        rgb(164, 158, 172); /* #A49EAC */
+  --color-muted-foreground:        rgb(164, 161, 168); /* #A4A1A8 */
 
   --color-card:                    rgb(22, 22, 22);    /* #161616  (card surfaces) */
-  --color-card-foreground:         rgb(164, 158, 172); /* = --color-muted-foreground */
+  --color-card-foreground:         rgb(164, 161, 168); /* = --color-muted-foreground */
 
   --color-border:                  rgb(47, 44, 50);    /* #2F2C32 */
   --color-ring:                    rgb(82, 75, 81);    /* = --color-input */
 
   --color-popover:                 rgb(30, 30, 30);    /* #1D1D1D  (elevated surface for inputs) */
-  --color-popover-foreground:      rgb(222, 215, 208); /* = --color-foreground */
+  --color-popover-foreground:      rgb(213, 211, 209);
 
   --color-input:                   rgb(82, 75, 81);    /* #524B51 */
 
   --color-primary:                 rgb(240, 206, 89);  /* #F0CE59 */
-  --color-primary-foreground:      rgb(22, 21, 26);    /* = --color-muted */
+  --color-primary-foreground:      rgb(22, 22, 22);    /* = --color-muted */
   --color-secondary:               rgb(255, 125, 163); /* #FF7DA3 */
-  --color-secondary-foreground:    rgb(22, 21, 26);    /* = --color-muted */
+  --color-secondary-foreground:    rgb(22, 22, 22);    /* = --color-muted */
 
-  --color-tertiary:                rgb(86, 198, 213);  /* #56C6D5 */
+  --color-tertiary:                rgb(120, 179, 187); /* #78B3BB */
 
   --color-accent:                  rgb(104, 96, 105);  /* #686069 */
-  --color-accent-foreground:       rgb(22, 21, 26);    /* = --color-muted */
+  --color-accent-foreground:       rgb(22, 22, 22);    /* #161616 */
 
   --color-destructive:             rgb(220, 38, 38);   /* #DC2626 */
-  --color-destructive-foreground:  rgb(248, 250, 252); /* #F8FAFC */
+  --color-destructive-foreground:  rgb(249, 249, 249); /* #F9F9F9 */
 }
