@@ -60,7 +60,7 @@
   <Projects />
 
   <footer>
-    <p>
+    <p class="text-sm text-muted-foreground/40">
       This page is written with Svelte and Tailwind.
       Feel free to open the codebase to see how I made this!
     </p>
