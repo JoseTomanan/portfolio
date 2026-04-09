@@ -7,7 +7,6 @@
   import { onMount } from "svelte";
   import { fly } from "svelte/transition";
   import { link } from "$lib";
-  import Separator from "$lib/components/ui/Separator.svelte";
 
   let startPage: boolean = $state(false);
   
@@ -18,7 +17,7 @@
 
 
 
-<span class="jumpable h-10" id="top"></span>
+<span class="jumpable h-6" id="top"></span>
 <div class="page gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
   <section class="flex flex-col gap-8 items-center justify-between overflow-clip
                   p-0 pb-8 rounded-b-none border-b border-border">
@@ -96,6 +95,3 @@
     <a href="#top" class="hoverable-link">Back to top</a>
   </footer>
 {/if}
-
-<style>
-</style>
