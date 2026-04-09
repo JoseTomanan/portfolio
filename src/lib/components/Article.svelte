@@ -66,8 +66,7 @@
       </h5>
     </div>
 
-    <p class="grow leading-5 text-sm
-          text-muted-foreground/60 group-hover/whole:text-muted-foreground/80">
+    <p class="grow leading-5 text-sm text-muted-foreground/60">
       {other}
     </p>
   </div>

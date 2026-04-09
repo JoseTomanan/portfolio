@@ -150,7 +150,6 @@
 		@apply px-4 md:px-0;
 		@apply text-sm;
 		@apply text-foreground/80;
-		letter-spacing: -0.05em;
 	}
 
 	p {
@@ -225,16 +224,6 @@
 		margin-top: -3rem;
 		z-index: -50;
 	}
-
-	footer {
-    @apply text-muted-foreground/40;
-		@apply py-4;
-		@apply mx-auto;
-
-		& p {
-			@apply text-sm tracking-tighter text-center px-4 md:px-0;
-		}
-	}
 }
 
 
@@ -256,7 +245,6 @@ h1.hero-text {
 	color: var(--color-foreground);
 
 	font-weight: 700;
-	letter-spacing: 0.025rem;
 }
 
 h6.footnote {
