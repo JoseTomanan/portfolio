@@ -22,7 +22,7 @@
 		<!-- <a href="#contact">Contact</a> -->
 </nav>
 
-<style>
+<style lang="postcss">
   @reference "../app.css";
 
   nav > a {
