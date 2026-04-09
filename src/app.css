@@ -165,11 +165,6 @@
 		color: var(--color-muted-foreground);
 	}
 
-	nav {
-		@apply bg-muted/85;
-		color: var(--color-muted-foreground);
-	}
-
 	main {
 		display: flex;
 		flex-direction: column;
