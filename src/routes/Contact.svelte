@@ -13,7 +13,7 @@
 
 <span class="jumpable" id="contact"></span>
 <div class="page h-auto flex flex-col" transition:fly={{ delay: 100, duration: 1000 }}>
-  <section>
+  <section class="section-body">
     <h2 class="mb-3">
       Reach out to me!
     </h2>

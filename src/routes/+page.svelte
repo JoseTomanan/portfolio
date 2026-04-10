@@ -9,10 +9,10 @@
 </script>
 
 
-<main-div>
+<main-div class="flex flex-col gap-6 mt-12 px-2 w-full max-w-[840px] mx-auto">
   <span class="jumpable h-6" id="top"></span>
   <div class="page gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
-    <section class="flex flex-col gap-8 items-center justify-between overflow-clip
+    <section class="section-body gap-8 items-center justify-between overflow-clip
                     p-0 pb-8">
       <Top/>
 
@@ -35,7 +35,7 @@
   <span class="jumpable" id="me"></span>
   <div class="page gap-0"
         transition:fly={{ delay: 0, duration: 1000 }}>
-    <section class="flex flex-col gap-4 rounded-b-none border-b border-border">
+    <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>What do I do?</h2>
       <p>
         As a developer, I thrive in the intersection of frontend and backend.
@@ -45,7 +45,7 @@
       </p>
     </section>
     
-    <section class="flex flex-col gap-2 rounded-t-none">
+    <section class="section-body gap-2 rounded-t-none">
       <p>
         Outside of work, I like to play competitive FPS games like Valorant and CS2, where I can unwind and get my mind off of work.
         I also choose to take a break from all the screen time by
