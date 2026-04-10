@@ -206,19 +206,6 @@
     z-index: -50;
   }
 
-  .hoverable-link {
-    text-decoration-line: underline;
-    text-underline-offset: 1px;
-  
-    span&:hover {
-      color: var(--color-tertiary);
-    }
-  
-    a&:hover {
-      color: var(--color-secondary);
-    }
-  }
-  
   h1.hero-text {
     color: var(--color-foreground);
   
@@ -246,6 +233,21 @@
     &:hover {
       color: var(--color-tertiary);
     }
+  }
+}
+
+
+/* hoverable-link intentionally outside any @layer so it beats Tailwind utilities */
+.hoverable-link {
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+
+  span&:hover {
+    color: var(--color-tertiary);
+  }
+
+  a&:hover {
+    color: var(--color-primary);
   }
 }
 
