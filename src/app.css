@@ -178,7 +178,7 @@
 		}
 	}
 
-	.section-body {
+	section.section-body {
 		display: flex;
 		flex-direction: column;
 		gap: 0.75rem;
@@ -188,10 +188,6 @@
 		@apply py-6;
 		flex-grow: 1;
 		border-radius: 0.75rem;
-	}
-
-	section {
-		/* Keep native section behavior untouched; visual section layout lives in .section-body. */
 	}
 
 	.projects-roles {
