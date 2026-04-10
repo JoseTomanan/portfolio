@@ -14,33 +14,33 @@
   --radius-sm: calc(0.5rem - 4px);
 
   /* ---- COLORS ---- */
-  --color-background:              rgb(0, 0, 0);
-  --color-foreground:              rgb(213, 211, 209);
+  --color-background:              #000000;
+  --color-foreground:              #D5D3D1;
 
-  --color-muted:                   rgb(16, 16, 16);    /* #101010  (subdued section/nav surfaces) */
-  --color-muted-foreground:        rgb(164, 161, 168); /* #A4A1A8 */
+  --color-muted:                   #101010;           /* subdued section/nav surfaces */
+  --color-muted-foreground:        #A4A1A8;
 
-  --color-card:                    rgb(22, 22, 22);    /* #161616  (card surfaces) */
-  --color-card-foreground:         rgb(164, 161, 168); /* = --color-muted-foreground */
+  --color-card:                    #161616;           /* card surfaces */
+  --color-card-foreground:         var(--color-muted-foreground);
 
-  --color-border:                  rgb(47, 44, 50);    /* #2F2C32 */
-  --color-ring:                    rgb(82, 75, 81);    /* = --color-input */
+  --color-border:                  #2F2C32;
+  --color-ring:                    var(--color-input);
 
-  --color-popover:                 rgb(30, 30, 30);    /* #1D1D1D  (elevated surface for inputs) */
-  --color-popover-foreground:      rgb(213, 211, 209);
+  --color-popover:                 #1E1E1E;           /* elevated surface for inputs */
+  --color-popover-foreground:      var(--color-foreground);
 
-  --color-input:                   rgb(82, 75, 81);    /* #524B51 */
+  --color-input:                   #524B51;
 
-  --color-primary:                 rgb(240, 206, 89);  /* #F0CE59 */
-  --color-primary-foreground:      rgb(22, 22, 22);    /* = --color-muted */
-  --color-secondary:               rgb(255, 125, 163); /* #FF7DA3 */
-  --color-secondary-foreground:    rgb(22, 22, 22);    /* = --color-muted */
+  --color-primary:                 #F0CE59;
+  --color-primary-foreground:      var(--color-muted);
+  --color-secondary:               #FF7DA3;
+  --color-secondary-foreground:    var(--color-muted);
 
-  --color-tertiary:                rgb(120, 179, 187); /* #78B3BB */
+  --color-tertiary:                #78B3BB;
 
-  --color-accent:                  rgb(104, 96, 105);  /* #686069 */
-  --color-accent-foreground:       rgb(22, 22, 22);    /* #161616 */
+  --color-accent:                  #686069;
+  --color-accent-foreground:       var(--color-muted);
 
-  --color-destructive:             rgb(220, 38, 38);   /* #DC2626 */
-  --color-destructive-foreground:  rgb(249, 249, 249); /* #F9F9F9 */
+  --color-destructive:             #DC2626;
+  --color-destructive-foreground:  #F9F9F9;
 }
