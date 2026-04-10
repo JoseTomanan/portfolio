@@ -9,25 +9,6 @@
   import Projects from "./Projects.svelte";
   import { fly } from "svelte/transition";
   import { link } from "$lib";
-  import { onMount, onDestroy } from "svelte";
-  import { activeSection } from "$lib/utils";
-
-  function updateActiveSection() {
-    const threshold = window.innerHeight * 0.4;
-    let current: string | null = null;
-    for (const el of document.querySelectorAll<HTMLElement>("div.page[data-section]")) {
-      if (el.getBoundingClientRect().top <= threshold)
-        current = el.dataset.section!;
-    }
-    activeSection.set(current);
-  }
-
-  onMount(() => {
-    window.addEventListener('scroll', updateActiveSection, { passive: true });
-    updateActiveSection();
-  });
-
-  onDestroy(() => window.removeEventListener('scroll', updateActiveSection));
 </script>
 
 

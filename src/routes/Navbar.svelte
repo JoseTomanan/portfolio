@@ -1,7 +1,6 @@
 <script lang="ts">
   import { link } from "$lib";
   import IcOutlineArrowOutward from '~icons/ic/outline-arrow-outward';
-  import { activeSection } from "$lib/utils";
 
   let scrollY = 0;
 
@@ -24,13 +23,12 @@
           "
 >
   <a href="#top" id="first"
-        class="justify-items-start font-bold italic font-heading hidden sm:inline"
-        class:nav-glow={$activeSection === 'top'}>
+        class="justify-items-start font-bold italic font-heading hidden sm:inline">
     JoseTomanan.io
   </a>
-  <a href="#me" class:nav-glow={$activeSection === 'me'}>Me</a>
-  <a href="#roles" class:nav-glow={$activeSection === 'roles'}>Roles</a>
-  <a href="#projects" class:nav-glow={$activeSection === 'projects'}>Projects</a>
+  <a href="#me">Me</a>
+  <a href="#roles">Roles</a>
+  <a href="#projects">Projects</a>
   <a id="clickable-resume"
       href={ link.cv }
       target="_blank"
@@ -42,10 +40,3 @@
   </a>
     <!-- <a href="#contact">Contact</a> -->
 </nav>
-
-<style>
-  .nav-glow {
-    color: var(--color-primary);
-    text-shadow: 0 0 8px var(--color-primary);
-  }
-</style>
