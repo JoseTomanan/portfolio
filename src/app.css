@@ -192,6 +192,10 @@
     @apply py-6;
     flex-grow: 1;
     border-radius: 0.75rem;
+
+    & > h2 {
+      text-align: center;
+    }
   }
   
   .projects-roles {

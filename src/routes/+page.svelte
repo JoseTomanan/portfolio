@@ -30,7 +30,7 @@
         </h3>
       </div>
       <h4 class="text-center">
-        Hello there! I'm Jose, a BS CS student from UP Diliman. Thank you for visiting!
+        Hello there 👋 I'm Jose, a BS CS student from UP Diliman!
       </h4>
     </section>
   </div>
