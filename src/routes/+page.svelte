@@ -47,8 +47,9 @@
     
     <section class="flex flex-col gap-2 rounded-t-none">
       <p>
-        Outside of work, I prefer to take a break from all the screen time by spending my breaks away from the keyboard.
-        I do this by <span class="non-link-highlight">being physically active and keeping fit</span>, usually through weightlifting, playing basketball, or running.
+        Outside of work, I like to play competitive FPS games like Valorant and CS2, where I can unwind and get my mind off of work.
+        I also choose to take a break from all the screen time by
+        <span class="non-link-highlight">being physically active and keeping fit</span>, usually through running, weightlifting, or playing basketball.
       </p>
       
       <p>
