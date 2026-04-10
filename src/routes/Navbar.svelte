@@ -5,9 +5,11 @@
 
 
 <nav aria-label="Main navigation"
-      class="bg-background/50 text-muted-foreground
+      class="bg-card/80 text-card-foreground
               flex flex-row items-center justify-center align-middle backdrop-blur-sm
-              fixed top-0 w-full mx-auto z-50 gap-[min(10%,4em)]
+              fixed top-4 left-1/2 -translate-x-1/2 w-fit z-50 gap-6 sm:gap-10
+              px-8 rounded-full ring ring-border/50
+              shadow shadow-border/50
               *:py-2
               *:hover:text-primary
               *:focus-visible:text-primary *:focus-visible:underline
