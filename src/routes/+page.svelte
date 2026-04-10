@@ -41,18 +41,17 @@
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>What do I do?</h2>
       <p>
-        Full-stack developer comfortable on both ends&mdash;clean UIs with SvelteKit, solid APIs with Django and Spring Boot.
-        Detail-driven; code that's <span class="non-link-highlight">as thoughtful as it is functional</span>.
+        Full-stack developer comfortable on both ends &mdash; clean UIs with SvelteKit, solid APIs with Django and Spring Boot.
+        Detail-driven; code that is <span class="non-link-highlight">as thoughtful as it is functional</span>.
       </p>
     </section>
     
     <section class="section-body gap-2 rounded-t-none">
       <p>
-        Off the clock: competitive FPS (Valorant, CS2),
-        <span class="non-link-highlight">running, weightlifting</span>, basketball.
-      </p>
-      
-      <p>
+        Off the clock: competitive FPS (Valorant, CS2), and
+        <span class="non-link-highlight">physical activity:</span>
+        running, weightlifting, basketball.
+        <br>
         I am also an 
         <a href={link.ig_swiftie} class="hoverable-link" target="_blank" rel="noopener noreferrer">avid Swiftie</a>: 
         I'd bet my left leg I know more about Taylor Swift than you!

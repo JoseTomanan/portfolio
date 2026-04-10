@@ -67,8 +67,8 @@
       </h5>
     </div>
 
-    <p class="grow leading-5 font-light text-muted-foreground/60">
+    <span class="grow leading-5 text-base font-light text-muted-foreground/60">
       {other}
-    </p>
+    </span>
   </div>
 </article>
