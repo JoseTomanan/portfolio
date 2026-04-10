@@ -8,11 +8,6 @@
   --breakpoint-xl: 1280px;
   --breakpoint-xxl: 1536px;
 
-  /* ---- FONTS ---- */
-  --font-heading: "IBM Plex Sans";
-  --font-sans: "Inter";
-  --font-mono: "JetBrains Mono";
-
   /* ---- BORDER RADIUS ---- */
   --radius-lg: 0.5rem;
   --radius-md: calc(0.5rem - 2px);
