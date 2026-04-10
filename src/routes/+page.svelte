@@ -6,6 +6,29 @@
   import Projects from "./Projects.svelte";
   import { fly } from "svelte/transition";
   import { link } from "$lib";
+  import { onMount, onDestroy } from "svelte";
+  import { activeSection } from "$lib/stores/activeSection";
+
+  let observer: IntersectionObserver;
+
+  onMount(() => {
+    observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            activeSection.set(entry.target.id);
+          }
+        }
+      },
+      { rootMargin: "-20% 0px -60% 0px" }
+    );
+
+    document.querySelectorAll("span.jumpable[id]").forEach((el) => {
+      observer.observe(el);
+    });
+  });
+
+  onDestroy(() => observer?.disconnect());
 </script>
 
 
@@ -69,7 +92,9 @@
     <p class="text-center px-0">
       Written with Svelte and Tailwind &hearts;
     </p>
-    <a href="#top" class="hoverable-link ml-auto">Back to top</a>
+    <a href="#top" class="hoverable-link ml-auto">
+      Back to top
+    </a>
     <div class="inline-flex justify-end items-center ml-auto
                   *:p-2 *:rounded-lg *:text-muted-foreground *:h-fit *:hover:text-foreground *:hover:bg-card">
       <a href={link.li} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

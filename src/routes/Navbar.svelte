@@ -1,26 +1,36 @@
 <script lang="ts">
   import { link } from "$lib";
   import Icon from "@iconify/svelte";
+  import { activeSection } from "$lib/stores/activeSection";
+
+  let scrollY = 0;
+
+  // top-4 = 16px, top-2 = 8px. Lerp over the first 80px of scroll.
+  $: navTop = Math.max(8, 16 - (scrollY / 80) * 8);
 </script>
 
+<svelte:window bind:scrollY />
 
 <nav aria-label="Main navigation"
+      style="top: {navTop}px;"
       class="bg-card/80 text-card-foreground
               flex flex-row items-center justify-center align-middle backdrop-blur-sm
-              fixed top-4 left-1/2 -translate-x-1/2 w-fit z-50 gap-6 sm:gap-10
-              px-8 rounded-full ring ring-border/50
+              fixed left-1/2 -translate-x-1/2 w-fit z-50 gap-6 sm:gap-10
+              px-8 rounded-full ring ring-border/20
               shadow shadow-border/50
               *:py-2
               *:hover:text-primary
               *:focus-visible:text-primary *:focus-visible:underline
-          ">
+          "
+>
   <a href="#top" id="first"
-        class="justify-items-start font-bold italic font-heading hidden sm:inline">
+        class="justify-items-start font-bold italic font-heading hidden sm:inline"
+        class:nav-glow={$activeSection === 'top'}>
     JoseTomanan.io
   </a>
-  <a href="#me">Me</a>
-  <a href="#roles">Roles</a>
-  <a href="#projects">Projects</a>
+  <a href="#me" class:nav-glow={$activeSection === 'me'}>Me</a>
+  <a href="#roles" class:nav-glow={$activeSection === 'roles'}>Roles</a>
+  <a href="#projects" class:nav-glow={$activeSection === 'projects'}>Projects</a>
   <a id="clickable-resume"
       href={ link.cv }
       target="_blank"
@@ -32,3 +42,10 @@
   </a>
     <!-- <a href="#contact">Contact</a> -->
 </nav>
+
+<style>
+  .nav-glow {
+    color: var(--color-primary);
+    text-shadow: 0 0 8px var(--color-primary);
+  }
+</style>
