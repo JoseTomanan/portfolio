@@ -1,7 +1,7 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
 
-  import Top from "./CarouselContent.svelte";
+  import CarouselContent from "./CarouselContent.svelte";
   import Roles from "./Roles.svelte";
   import Projects from "./Projects.svelte";
   import { fly } from "svelte/transition";
@@ -14,7 +14,7 @@
   <div class="page gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
     <section class="section-body gap-8 items-center justify-between overflow-clip
                     p-0 pb-8">
-      <Top/>
+      <CarouselContent/>
 
       <div class="flex flex-col items-center justify-center gap-0">
         <h1 class="hero-text">Jose Tomanan</h1>

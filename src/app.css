@@ -159,92 +159,94 @@
 		font-family: var(--font-sans);
 		color: var(--color-muted-foreground);
 	}
-
-	.page {
-		display: flex;
-		flex-direction: column;
-		height: auto;
-		border-radius: 0.75rem;
-		border: 1px solid var(--color-border);
-	}
-
-	.carousel-slide {
-		height: 100%;
-		overflow: clip;
-
-		& img {
-			height: 100%;
-			object-fit: cover;
-		}
-	}
-
-	section.section-body {
-		display: flex;
-		flex-direction: column;
-		gap: 0.75rem;
-		background: var(--color-muted);
-
-		@apply px-4;
-		@apply py-6;
-		flex-grow: 1;
-		border-radius: 0.75rem;
-	}
-
-	.projects-roles {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-	}
-
-	span.jumpable {
-		height: 2rem;
-		margin-top: -3rem;
-		z-index: -50;
-	}
 }
 
 
 /* ------------------------- COMPONENTS ------------------------- */
-.hoverable-link {
-	text-decoration-line: underline;
-	text-underline-offset: 1px;
+@layer components {
+  .page {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-border);
+  }
+  
+  .carousel-slide {
+    height: 100%;
+    overflow: clip;
+  
+    & img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  section.section-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: var(--color-muted);
+  
+    @apply px-4;
+    @apply py-6;
+    flex-grow: 1;
+    border-radius: 0.75rem;
+  }
+  
+  .projects-roles {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  span.jumpable {
+    height: 2rem;
+    margin-top: -3rem;
+    z-index: -50;
+  }
 
-	span&:hover {
-		color: var(--color-tertiary);
-	}
-
-	a&:hover {
-		color: var(--color-secondary);
-	}
-}
-
-h1.hero-text {
-	color: var(--color-foreground);
-
-	font-weight: 700;
-}
-
-h6.footnote {
-  @apply text-muted-foreground/35;
-  text-align: right;
-  @apply text-sm;
-
-	& > a {
-		text-decoration-line: underline;
-
-		&:hover {
-			color: var(--color-secondary);
-		}
-	}
-}
-
-.non-link-highlight {
-	font-weight: 500;
-	color: var(--color-foreground);
-
-	&:hover {
-		color: var(--color-tertiary);
-	}
+  .hoverable-link {
+    text-decoration-line: underline;
+    text-underline-offset: 1px;
+  
+    span&:hover {
+      color: var(--color-tertiary);
+    }
+  
+    a&:hover {
+      color: var(--color-secondary);
+    }
+  }
+  
+  h1.hero-text {
+    color: var(--color-foreground);
+  
+    font-weight: 700;
+  }
+  
+  h6.footnote {
+    @apply text-muted-foreground/35;
+    text-align: right;
+    @apply text-sm;
+  
+    & > a {
+      text-decoration-line: underline;
+  
+      &:hover {
+        color: var(--color-secondary);
+      }
+    }
+  }
+  
+  .non-link-highlight {
+    font-weight: 500;
+    color: var(--color-foreground);
+  
+    &:hover {
+      color: var(--color-tertiary);
+    }
+  }
 }
 
 
