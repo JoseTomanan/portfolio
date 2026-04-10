@@ -12,32 +12,28 @@
   import { onMount, onDestroy } from "svelte";
   import { activeSection } from "$lib/utils";
 
-  let observer: IntersectionObserver;
+  function updateActiveSection() {
+    const threshold = window.innerHeight * 0.4;
+    let current: string | null = null;
+    for (const el of document.querySelectorAll<HTMLElement>("div.page[data-section]")) {
+      if (el.getBoundingClientRect().top <= threshold)
+        current = el.dataset.section!;
+    }
+    activeSection.set(current);
+  }
 
   onMount(() => {
-    observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            activeSection.set(entry.target.id);
-          }
-        }
-      },
-      { rootMargin: "-20% 0px -60% 0px" }
-    );
-
-    document.querySelectorAll("span.jumpable[id]").forEach((el) => {
-      observer.observe(el);
-    });
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
+    updateActiveSection();
   });
 
-  onDestroy(() => observer?.disconnect());
+  onDestroy(() => window.removeEventListener('scroll', updateActiveSection));
 </script>
 
 
 <main-div class="flex flex-col gap-6 mt-12 px-2 w-full max-w-[840px] mx-auto">
   <span class="jumpable h-6" id="top"></span>
-  <div class="page gap-0" transition:fly={{ delay: 100, duration: 1000 }}>
+  <div class="page gap-0" data-section="top" transition:fly={{ delay: 100, duration: 1000 }}>
     <section class="section-body gap-8 items-center justify-between overflow-clip
                     p-0 pb-8">
       <CarouselContent/>
@@ -59,7 +55,7 @@
   </div>
 
   <span class="jumpable" id="me"></span>
-  <div class="page gap-0"
+  <div class="page gap-0" data-section="me"
         transition:fly={{ delay: 0, duration: 1000 }}>
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>What do I do?</h2>
