@@ -90,7 +90,7 @@
   <footer class="flex flex-wrap py-4 w-full items-center
                 *:text-muted-foreground/40 *:text-sm">
     <p class="text-center px-0">
-      Written with Svelte and Tailwind &hearts;
+      Written in Svelte and Tailwind, with love &hearts;
     </p>
     <a href="#top" class="hoverable-link ml-auto">
       Back to top
