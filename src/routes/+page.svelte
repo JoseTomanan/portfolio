@@ -41,17 +41,15 @@
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>What do I do?</h2>
       <p>
-        As a developer, I thrive at the intersection of frontend and backend&mdash;creating clean UIs with SvelteKit and building solid APIs with Django and Spring Boot.
-        These experiences have shaped a detail-driven approach, yielding codebases that are
-        <span class="non-link-highlight">as thoughtful as they are functional</span>.
+        Full-stack developer comfortable on both ends&mdash;clean UIs with SvelteKit, solid APIs with Django and Spring Boot.
+        Detail-driven; code that's <span class="non-link-highlight">as thoughtful as it is functional</span>.
       </p>
     </section>
     
     <section class="section-body gap-2 rounded-t-none">
       <p>
-        Outside of work, I enjoy competitive FPS games like Valorant and CS2 to unwind.
-        I also balance screen time by
-        <span class="non-link-highlight">staying physically active</span> through running, weightlifting, or basketball.
+        Off the clock: competitive FPS (Valorant, CS2),
+        <span class="non-link-highlight">running, weightlifting</span>, basketball.
       </p>
       
       <p>

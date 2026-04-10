@@ -16,9 +16,7 @@
 						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="JUN 2025 - JUL 2025"
 						other="
-								Completed a 200-hour internship on a 10-member team building an HR-focused application for a partner company.
-								Built API services and controllers using Spring Boot; developed and maintained automated testing suites to ensure code quality.
-								Gained hands-on experience in collaborative software development within a real-world engineering workflow."
+								200-hour internship on a 10-member team building an HR application; contributed Spring Boot API services and maintained automated test suites."
 						techInvolved={ ["simple-icons:Spring", "simple-icons:Git", "simple-icons:Jira"] }
 					/>
       <Article 
@@ -28,9 +26,8 @@
 						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="SEP 2023 - MAR 2024"
 						other="
-								Co-led a team of 20 in organizing Tackle 2024, a 4-day hybrid technology career fair.
-								Directed Branding & Creatives to design event visuals and led HR to manage communications and volunteer coordination.
-								Utilized Notion for task delegation, resource tracking, and cross-team project management."
+								Co-led 20 people organizing Tackle 2024, a 4-day hybrid tech career fair.
+								Headed Branding and HR sub-teams; used Notion for cross-team coordination."
 						techInvolved={ ["simple-icons:Notion", "simple-icons:Asana", "simple-icons:GoogleSheets", "simple-icons:Canva"] }
 					/>
       <Article 
@@ -40,8 +37,7 @@
 						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="SEP 2023 - NOV 2023"
 						other="
-								Authored web development learning modules and exercises for 50+ UP CSI applicants.
-								Used Typst to automate content structure and formatting; collaborated via Git to integrate contributions efficiently."
+								Authored web dev learning modules for 50+ applicants using Typst; collaborated via Git."
 						techInvolved={ ["simple-icons:Typst", "simple-icons:Git"] }
 					/>
       <Article 
@@ -51,9 +47,7 @@
 						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="FEB 2023 - MAY 2023"
 						other="
-								Headed a team of 6 to maintain member involvement and motivation for an organization with 100+ active members.
-								Created publication materials for CURSOR Cares and Humans of CURSOR to encourage interaction and share member experiences.
-								Used Notion for task delegation, resource management, and team oversight."
+								Led a team of 6 managing engagement for 100+ members; produced CURSOR Cares and Humans of CURSOR publications."
 						techInvolved={ ["simple-icons:Notion"] }
 					/>
     </div>

@@ -15,10 +15,9 @@
 						subtitle="Filipino recipes database web app"
 						date="SEP 2025 - PRESENT"
 						other="
-								Leading a 2-man capstone project developing a VLM-based tool that automates assessment of early-level Mathematics questions using rubrics and answer keys.
-                Designed a Figma wireframe to demonstrate the proposed application's user flow.
-                Constructed a prototype using Google Gemini API and Python.
-                Leading frontend development using Svelte, Shadcn, and Iconify."
+								2-man capstone: VLM-based tool automating assessment of early-level Math using rubrics and answer keys.
+                Python + Gemini API prototype; leading frontend in Svelte and Shadcn.
+                CS199 final project."
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:FastAPI", "simple-icons:SQLite"] }
 					/>
       <Article title="Svelte-based Pokédex"
@@ -27,10 +26,8 @@
 						subtitle="Svelte-based Pokédex frontend interface"
 						date="MAR 2026"
 						other="
-								Built a production-ready, responsive Pokédex SPA using Svelte 5 and Tailwind v4.
-                Integrates the official PokéAPI to lazy-load all 1025 Pokémon species; uses SvelteKit 2 for data management.
-                Implements sorting and filtering via TypeScript and the Svelte 5 runes system.
-                Utilized skeleton animations, lazy hydration, and auto-fill grid for cross-device responsiveness."
+								Responsive Pokédex SPA in Svelte 5 + Tailwind v4; lazy-loads all 1025 Pokémon via PokéAPI.
+                Sorting, filtering, skeleton animations, and lazy hydration for full cross-device responsiveness."
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TypeScript", "simple-icons:TailwindCSS"] }
 					/>
           <Article title="Potterdex"
@@ -39,10 +36,8 @@
 						subtitle="React-based Harry Potter database UI"
 						date="DEC 2024 - JAN 2025"
 						other="
-								Built a responsive React and Tailwind CSS frontend interfacing with the unofficial PotterDB API for Harry Potter lore.
-								Integrated Axios for data fetching and React Router for dynamic slug-based routing with persistent context.
-								Used Shadcn for consistent UI components and custom CSS for mobile responsiveness and animations.
-								Added JavaScript logic for enhanced interactivity beyond library capabilities."
+								React + Tailwind frontend for the unofficial PotterDB API; Axios for fetching, React Router for slug-based routing.
+								Shadcn components, custom CSS animations, and JS for interactivity beyond library defaults."
 						techInvolved={ ["simple-icons:React", "simple-icons:Axios", "simple-icons:TailwindCSS"] }
 					/>
       <Article title="JoseTomanan.io"
@@ -51,8 +46,7 @@
 						subtitle="Personal portfolio-resume (i.e., this webpage!)"
 						date="JUL 2024 - PRESENT"
 						other="
-								Developed a static SPA portfolio showcasing skills and experiences while demonstrating frontend proficiency and design sensibility.
-								Built with Svelte and Tailwind CSS; applied UI/UX design principles and integrated Iconify and Shadcn for icons and components."
+								Static SPA built with Svelte and Tailwind; designed with UI/UX principles in mind."
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:PostCSS"] }
 					/>
       <Article title="Shogimon"
@@ -61,9 +55,7 @@
 						subtitle="Python-based multiplayer video game (MVC Architecture)"
 						date="DEC 2024 - JAN 2025"
 						other="
-								Designed and developed a video game in Python and Pygame following the MVC design pattern.
-								Applied SOLID principles and design patterns for maintainable, collaboration-ready code.
-								Supported online multiplayer and offline pass-and-play modes; completed as the CS 150 final project."
+								Python + Pygame game built on MVC and SOLID principles; online multiplayer and local pass-and-play. CS 150 final project."
 						techInvolved={ ["simple-icons:Python", "simple-icons:Go"] }
 					/>
       <Article title="Poverty and Parenting: A Data Science Study"
@@ -72,8 +64,7 @@
 						subtitle="Economic analysis of birth rates in the Philippines"
 						date="FEB 2024 - JUN 2024"
 						other="
-								Conducted a data-driven study using Pandas, Seaborn, and GeoPandas to explore correlations between live births and poverty incidence across municipalities.
-								Applied data cleaning, analysis, and visualization to generate and present insights clearly; completed as the CS 132: Data Science final project."
+								Data study (Pandas, Seaborn, GeoPandas) correlating live births with poverty incidence across Philippine municipalities. CS 132 final project."
 						techInvolved={ ["simple-icons:Python"] }
 					/>
 			<!-- <Article title="Finance Tracker Automator"
