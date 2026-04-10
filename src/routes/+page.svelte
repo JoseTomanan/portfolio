@@ -1,5 +1,8 @@
 <script lang="ts">
-  import Icon from "@iconify/svelte";
+  import FaBrandsLinkedin from '~icons/fa-brands/linkedin';
+  import FaBrandsGithub from '~icons/fa-brands/github';
+  import FaBrandsFacebook from '~icons/fa-brands/facebook';
+  import FaBrandsInstagram from '~icons/fa-brands/instagram';
 
   import CarouselContent from "./CarouselContent.svelte";
   import Roles from "./Roles.svelte";
@@ -7,7 +10,7 @@
   import { fly } from "svelte/transition";
   import { link } from "$lib";
   import { onMount, onDestroy } from "svelte";
-  import { activeSection } from "$lib/stores/activeSection";
+  import { activeSection } from "$lib/utils";
 
   let observer: IntersectionObserver;
 
@@ -98,16 +101,16 @@
     <div class="inline-flex justify-end items-center ml-auto
                   *:p-2 *:rounded-lg *:text-muted-foreground *:h-fit *:hover:text-foreground *:hover:bg-card">
       <a href={link.li} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <Icon icon="fa-brands:linkedin" class="size-4 my-auto" />
+        <FaBrandsLinkedin class="size-4 my-auto" />
       </a>
       <a href={link.gh} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <Icon icon="fa-brands:github" class="size-4 my-auto" />
+        <FaBrandsGithub class="size-4 my-auto" />
       </a>
       <a href={link.fb} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-        <Icon icon="fa-brands:facebook" class="size-4 my-auto" />
+        <FaBrandsFacebook class="size-4 my-auto" />
       </a>
       <a href={link.ig} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <Icon icon="fa-brands:instagram" class="size-4 my-auto" />
+        <FaBrandsInstagram class="size-4 my-auto" />
       </a>
     </div>
   </footer>

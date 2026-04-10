@@ -1,7 +1,7 @@
 <script lang="ts">
   import { link } from "$lib";
-  import Icon from "@iconify/svelte";
-  import { activeSection } from "$lib/stores/activeSection";
+  import IcOutlineArrowOutward from '~icons/ic/outline-arrow-outward';
+  import { activeSection } from "$lib/utils";
 
   let scrollY = 0;
 
@@ -37,7 +37,7 @@
       rel="noopener noreferrer"
       class="relative group/resume flex flex-row items-baseline gap-1 w-fit">
     <span>CV</span>
-    <Icon icon="ic:outline-arrow-outward"
+    <IcOutlineArrowOutward
           class="absolute top-2.5 -right-5 size-4 opacity-0 group-hover/resume:opacity-100" />
   </a>
     <!-- <a href="#contact">Contact</a> -->

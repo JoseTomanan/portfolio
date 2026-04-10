@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Icon from "@iconify/svelte";
+  import { iconMap } from "$lib/iconMap";
+  import IcBaselineArrowOutward from '~icons/ic/baseline-arrow-outward';
   import * as Tooltip from "$lib/components/ui/tooltip/index";
 
   let {
@@ -36,10 +37,10 @@
       {#each techInvolved as tech}
         {@const actualTag = tech.toLowerCase()}
         {@const displayableName = tech.split(":")[1]}
+        {@const TechIcon = iconMap[actualTag]}
         <Tooltip.Root>
           <Tooltip.Trigger class="items-center" aria-label={displayableName}>
-            <Icon icon={actualTag}
-                  class="h-4 w-4 text-muted-foreground/80 group-hover/whole:text-muted-foreground cursor-default" />
+            <TechIcon class="h-4 w-4 text-muted-foreground/80 group-hover/whole:text-muted-foreground cursor-default" />
           </Tooltip.Trigger>
           <Tooltip.Content class="bg-popover text-popover-foreground border-none">
             {displayableName}
@@ -57,7 +58,7 @@
               text-foreground/90 hover:text-secondary"
               target="_blank" rel="noopener noreferrer" {id} {href}>
           {title}
-          <Icon icon="ic:baseline-arrow-outward"
+          <IcBaselineArrowOutward
               class="w-4 h-4 opacity-0 group-hover/whole:opacity-100 hidden md:inline"/>
         </a>
       </h4>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from "@iconify/svelte";
+  import MdiSend from '~icons/mdi/send';
   import { fly } from "svelte/transition";
   
   let name: string = $state("");
@@ -52,7 +52,7 @@
             hover:bg-accent hover:border-border
           " onclick={() => submitForm(name, email, message)}
           >
-          <Icon icon="mdi:send" class="w-7 h-7"/>
+          <MdiSend class="w-7 h-7"/>
         </button>
       </div>
     </form>
