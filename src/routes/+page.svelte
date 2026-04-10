@@ -41,18 +41,17 @@
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>What do I do?</h2>
       <p>
-        As a developer, I thrive in the intersection of frontend and backend.
-        I have put myself in both shoes&mdash;creating clean UIs with SvelteKit and building solid APIs with Django and Spring Boot.
-        These experiences have taught me to aim for detail-driven solutions, resulting in products with codebases that are
+        As a developer, I thrive at the intersection of frontend and backend&mdash;creating clean UIs with SvelteKit and building solid APIs with Django and Spring Boot.
+        These experiences have shaped a detail-driven approach, yielding codebases that are
         <span class="non-link-highlight">as thoughtful as they are functional</span>.
       </p>
     </section>
     
     <section class="section-body gap-2 rounded-t-none">
       <p>
-        Outside of work, I like to play competitive FPS games like Valorant and CS2, where I can unwind and get my mind off of work.
-        I also choose to take a break from all the screen time by
-        <span class="non-link-highlight">being physically active and keeping fit</span>, usually through running, weightlifting, or playing basketball.
+        Outside of work, I enjoy competitive FPS games like Valorant and CS2 to unwind.
+        I also balance screen time by
+        <span class="non-link-highlight">staying physically active</span> through running, weightlifting, or basketball.
       </p>
       
       <p>

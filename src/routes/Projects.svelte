@@ -15,10 +15,10 @@
 						subtitle="Filipino recipes database web app"
 						date="SEP 2025 - PRESENT"
 						other="
-								Leading a 2-man capstone project in designing, developing, and evaluating a VLM-based tool that automates the assessment early-level Mathematics questions based on rubrics and answer keys.
-                Designed a wireframe using Figma to demonstrate basic user flow of the proposed application.
+								Leading a 2-man capstone project developing a VLM-based tool that automates assessment of early-level Mathematics questions using rubrics and answer keys.
+                Designed a Figma wireframe to demonstrate the proposed application's user flow.
                 Constructed a prototype using Google Gemini API and Python.
-                Taking charge of frontend development using Svelte and component libraries Shadcn and Iconify."
+                Leading frontend development using Svelte, Shadcn, and Iconify."
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:FastAPI", "simple-icons:SQLite"] }
 					/>
       <Article title="Svelte-based Pokédex"
@@ -27,11 +27,10 @@
 						subtitle="Svelte-based Pokédex frontend interface"
 						date="MAR 2026"
 						other="
-								Built a production-ready, responsive Pokédex-style single-page application using Svelte 5 and Tailwind v4.
-                Integrates the official PokéAPI to fetch name-ID pairs of all 1025 Pokémon species for lazy-loading.
-                Uses SvelteKit 2 to handle request handling and data management.
-                Implements sorting and filtering functionality using TypeScript and the Svelte 5 runes system.
-                Utilized skeleton animations, lazy hydration, and auto-fill grid for responsiveness across all platforms & devices."
+								Built a production-ready, responsive Pokédex SPA using Svelte 5 and Tailwind v4.
+                Integrates the official PokéAPI to lazy-load all 1025 Pokémon species; uses SvelteKit 2 for data management.
+                Implements sorting and filtering via TypeScript and the Svelte 5 runes system.
+                Utilized skeleton animations, lazy hydration, and auto-fill grid for cross-device responsiveness."
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TypeScript", "simple-icons:TailwindCSS"] }
 					/>
           <Article title="Potterdex"
@@ -40,11 +39,9 @@
 						subtitle="React-based Harry Potter database UI"
 						date="DEC 2024 - JAN 2025"
 						other="
-								Built a responsive frontend in React and Tailwind CSS that interfaces with the unofficial PotterDB API to display detailed Harry Potter lore.
-								Integrated Axios for efficient data fetching and request handling.
-								Used React Router for dynamic slug-based routing and persistent context.
-								Uses component library Shadcn for fast, consistent UI component styling.
-								Applied custom CSS for mobile responsiveness and smooth animations.
+								Built a responsive React and Tailwind CSS frontend interfacing with the unofficial PotterDB API for Harry Potter lore.
+								Integrated Axios for data fetching and React Router for dynamic slug-based routing with persistent context.
+								Used Shadcn for consistent UI components and custom CSS for mobile responsiveness and animations.
 								Added JavaScript logic for enhanced interactivity beyond library capabilities."
 						techInvolved={ ["simple-icons:React", "simple-icons:Axios", "simple-icons:TailwindCSS"] }
 					/>
@@ -54,10 +51,8 @@
 						subtitle="Personal portfolio-resume (i.e., this webpage!)"
 						date="JUL 2024 - PRESENT"
 						other="
-								Developed a static single-page portfolio to showcase relevant skills and experiences while demonstrating frontend proficiency and design sense.
-								Built with Svelte and Tailwind CSS for a responsive and intuitive UI.
-								Applied UI/UX design principles to highlight content clearly and effectively.
-								Integrated Iconify for scalable icons and Shadcn for reusable components."
+								Developed a static SPA portfolio showcasing skills and experiences while demonstrating frontend proficiency and design sensibility.
+								Built with Svelte and Tailwind CSS; applied UI/UX design principles and integrated Iconify and Shadcn for icons and components."
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:PostCSS"] }
 					/>
       <Article title="Shogimon"
@@ -66,10 +61,9 @@
 						subtitle="Python-based multiplayer video game (MVC Architecture)"
 						date="DEC 2024 - JAN 2025"
 						other="
-								Designed and developed a simple video game using Python and Pygame, following the Model-View-Controller (MVC) design pattern.
-								Applied SOLID principles, design patterns, and message passing for maintainable, collaboration-ready code.
-								Supported both online multiplayer (networked) and offline pass-and-play modes.
-								Completed as a final project for CS 150: Programming Languages."
+								Designed and developed a video game in Python and Pygame following the MVC design pattern.
+								Applied SOLID principles and design patterns for maintainable, collaboration-ready code.
+								Supported online multiplayer and offline pass-and-play modes; completed as the CS 150 final project."
 						techInvolved={ ["simple-icons:Python", "simple-icons:Go"] }
 					/>
       <Article title="Poverty and Parenting: A Data Science Study"
@@ -78,10 +72,8 @@
 						subtitle="Economic analysis of birth rates in the Philippines"
 						date="FEB 2024 - JUN 2024"
 						other="
-								Conducted a data-driven study using Pandas, Seaborn, and GeoPandas to explore correlations between registered live births and poverty incidence across municipalities.
-								Applied core data science concepts for data cleaning, analysis, and insight generation.
-								Used data visualization techniques to present findings in a clear, intuitive format.
-								Completed as a final project for CS 132: Data Science"
+								Conducted a data-driven study using Pandas, Seaborn, and GeoPandas to explore correlations between live births and poverty incidence across municipalities.
+								Applied data cleaning, analysis, and visualization to generate and present insights clearly; completed as the CS 132: Data Science final project."
 						techInvolved={ ["simple-icons:Python"] }
 					/>
 			<!-- <Article title="Finance Tracker Automator"

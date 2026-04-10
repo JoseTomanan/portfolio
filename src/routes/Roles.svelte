@@ -16,9 +16,8 @@
 						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="JUN 2025 - JUL 2025"
 						other="
-								Completed a 200-hour internship as part of a 10-member team developing an HR-focused application for a partner company.
-								Contributed to the backend team by building API services and controllers using Spring Boot.
-								Developed and maintained automated testing suites to ensure code quality during development, refactoring, and maintenance phases.
+								Completed a 200-hour internship on a 10-member team building an HR-focused application for a partner company.
+								Built API services and controllers using Spring Boot; developed and maintained automated testing suites to ensure code quality.
 								Gained hands-on experience in collaborative software development within a real-world engineering workflow."
 						techInvolved={ ["simple-icons:Spring", "simple-icons:Git", "simple-icons:Jira"] }
 					/>
@@ -29,10 +28,9 @@
 						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="SEP 2023 - MAR 2024"
 						other="
-								Co-led a team of 20 in organizing and executing Tackle 2024, a 4-day hybrid-format technology career fair.
-								Directed the Branding & Creatives team to design and promote event visuals and marketing materials.
-								Led the Human Resources team to manage internal communications and volunteer coordination.
-								Utilized Notion for task delegation, resource tracking, and cross-team project management"
+								Co-led a team of 20 in organizing Tackle 2024, a 4-day hybrid technology career fair.
+								Directed Branding & Creatives to design event visuals and led HR to manage communications and volunteer coordination.
+								Utilized Notion for task delegation, resource tracking, and cross-team project management."
 						techInvolved={ ["simple-icons:Notion", "simple-icons:Asana", "simple-icons:GoogleSheets", "simple-icons:Canva"] }
 					/>
       <Article 
@@ -42,9 +40,8 @@
 						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="SEP 2023 - NOV 2023"
 						other="
-								Authored learning modules and exercises in web development for 50+ UP CSI applicants.
-								Utilized Typst markdown to automate content structure, layout, and formatting.
-								Collaborated with team members via Git to streamline workflow and integrate contributions efficiently."
+								Authored web development learning modules and exercises for 50+ UP CSI applicants.
+								Used Typst to automate content structure and formatting; collaborated via Git to integrate contributions efficiently."
 						techInvolved={ ["simple-icons:Typst", "simple-icons:Git"] }
 					/>
       <Article 
@@ -54,10 +51,9 @@
 						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
 						date="FEB 2023 - MAY 2023"
 						other="
-								Headed a team of 6 in assuring and maintaining member involvement & motivation of an organization with 100+ active members.
-								Created publication material for CURSOR Cares, to encourage organization interaction.
-								Published material for Humans of CURSOR to share the experience of members in their respective fields.
-								Used Notion workspace to efficiently implement task delegation, resource management, and team oversight."
+								Headed a team of 6 to maintain member involvement and motivation for an organization with 100+ active members.
+								Created publication materials for CURSOR Cares and Humans of CURSOR to encourage interaction and share member experiences.
+								Used Notion for task delegation, resource management, and team oversight."
 						techInvolved={ ["simple-icons:Notion"] }
 					/>
     </div>
