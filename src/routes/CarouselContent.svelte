@@ -12,7 +12,7 @@
 
 
 <Carousel.Root
-        class="relative flex"
+        class="relative flex -mx-8 overflow-visible"
         opts={{ loop: true }}
         plugins={[ Autoplay({ delay: 8000, stopOnInteraction: true, stopOnMouseEnter: true }) ]}>
   <Carousel.Content class="h-[18rem] sm:h-[22rem] md:h-[26rem] items-center">

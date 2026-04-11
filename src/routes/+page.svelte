@@ -42,10 +42,14 @@
 
       <div class="flex flex-col items-center justify-center gap-0">
         <h1 class="font-extrabold">Jose Tomanan</h1>
-        <h2 class="font-heading font-semibold text-foreground px-4 text-center tracking-tight">
-          Tech buff &middot;
-          <span class="magic-text">Full-stack web developer</span>
-          &middot; Gym rat
+        <h2 class="flex flex-wrap font-heading font-semibold text-foreground px-4 justify-center text-center tracking-tight">
+          <span>Tech buff</span>
+          <span class="magic-text">
+            &ThickSpace;&middot;
+            Full-stack web developer
+            &middot;&ThickSpace;
+          </span>
+          <span>Gym rat</span>
         </h2>
       </div>
       <h3 class="text-center">

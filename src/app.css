@@ -175,7 +175,7 @@
   }
 
   .page.section-active {
-    @apply shadow-[0_0_15px_var(--color-muted-foreground)];
+    box-shadow: 0 0 15px color-mix(in srgb, var(--color-muted-foreground) 80%, transparent);
   }
   
   section.section-body {
