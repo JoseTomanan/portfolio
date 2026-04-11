@@ -37,7 +37,8 @@
         transition:fly={{ delay: 100, duration: 1000 }}>
     <section class="section-body bg-transparent
                     flex flex-col-reverse sm:flex-row
-                    items-center gap-y-8 overflow-clip py-16 sm:py-40">
+                    items-center gap-y-8 overflow-clip
+                    -mt-4 py-16 sm:py-40">
       <div class="flex-1 flex flex-col items-center gap-y-4
                   *:w-full *:text-center *:sm:text-left">
         <h1 class="font-bold">Jose Tomanan</h1>
