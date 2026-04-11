@@ -11,7 +11,7 @@
       transition:fly={{ delay: 400, duration: 1000 }}
       class:section-active={$activeSection === 'projects'}>
   <section class="section-body">
-    <h2>What projects have I made?</h2>
+    <h2>My projects</h2>
     <div class="projects-roles">
       <Article title="SIPAT.MATH: AI-powered grading tool for early-level Mathematics"
 						id="proj-199"

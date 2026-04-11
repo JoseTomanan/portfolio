@@ -11,7 +11,7 @@
       transition:fly={{ delay: 200, duration: 1000 }}
       class:section-active={$activeSection === 'roles'}>
   <section class="section-body">
-    <h2>What have I been up to?</h2>
+    <h2>My roles</h2>
     <div class="projects-roles">
       <Article 
 						id="role-195"

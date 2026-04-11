@@ -61,7 +61,7 @@
         transition:fly={{ delay: 0, duration: 1000 }}
         class:section-active={$activeSection === 'me'}>
     <section class="section-body gap-4 rounded-b-none border-b border-border">
-      <h2>What do I do?</h2>
+      <h2>About me</h2>
       <p>
         Full-stack developer comfortable on both ends &mdash; clean UIs with SvelteKit, solid APIs with Django and Spring Boot.
         Detail-driven; code that is <span class="non-link-highlight">as thoughtful as it is functional</span>.
