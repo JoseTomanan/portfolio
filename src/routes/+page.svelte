@@ -91,11 +91,14 @@
   <Projects />
   <Roles />
 
-  <footer class="flex flex-wrap py-4 w-full items-center
-                gap-x-4
-                border-t border-border mt-2
+</main-div>
+
+<div class="container">
+  <footer class="flex flex-wrap w-full items-end gap-x-4 gap-y-0
+                h-32
+                border-t border-border mt-10 mb-4
                 *:text-muted-foreground/40 *:text-sm">
-    <p class="text-center px-0">
+    <p class="text-center">
       Written in Svelte and Tailwind &hearts;
     </p>
     <a href="#top" class="hoverable-link ml-auto">
@@ -118,4 +121,4 @@
       </a>
     </div>
   </footer>
-</main-div>
+</div>
