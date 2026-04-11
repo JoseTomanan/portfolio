@@ -1,6 +1,6 @@
 <script lang="ts">
   import { iconMap } from "$lib/iconMap";
-  import IcBaselineArrowOutward from '~icons/ic/baseline-arrow-outward';
+  import IcBaselineArrowOutward from '~icons/ic/baseline-arrow-forward';
   import * as Tooltip from "$lib/components/ui/tooltip/index";
 
   let {
@@ -56,9 +56,7 @@
     </div>
   </div>
 
-  <div class="basis-5/6 md:basis-3/4
-              flex flex-col gap-2
-            ">
+  <div class="basis-5/6 flex flex-col gap-2">
     <div class="md:grid space-y-1">
       <h4 class="underline-offset-2 flex font-sans font-semibold
                   group-hover/whole:text-foreground/100">
@@ -70,12 +68,12 @@
               class="w-4 h-4 opacity-0 group-hover/whole:opacity-100 hidden md:inline"/>
         </a>
       </h4>
-      <h5 class="leading-4 mt-0
+      <h4 class="leading-4 mt-0
                   text-foreground/80
                   group-hover/whole:text-foreground/100
                 ">
         {subtitle}
-      </h5>
+      </h4>
     </div>
 
     <span class="grow leading-5 text-base font-light text-muted-foreground/60">
