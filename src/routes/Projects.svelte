@@ -48,20 +48,21 @@
       <Article title="JoseTomanan.io"
 						id="proj-portfolio"
 						href="https://github.com/JoseTomanan/portfolio"
-						subtitle="Personal portfolio-resume (i.e., this webpage!)"
+						subtitle="Personal portfolio-resume"
 						date="JUL 2024 - PRESENT"
 						other="
-								Static SPA built with Svelte and Tailwind; designed for mobile-first responsiveness and accessibility.
+								This webpage.
+                Static SPA built with Svelte and Tailwind; designed for mobile-first responsiveness and accessibility.
                 Features scroll-based section highlighting."
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:PostCSS"] }
 					/>
       <Article title="Shogimon"
 						id="proj-150"
 						href="https://github.com/JoseTomanan/shogi-pygame"
-						subtitle="Python-based multiplayer video game (MVC Architecture)"
+						subtitle="Python-based multiplayer video game"
 						date="DEC 2024 - JAN 2025"
 						other="
-								Python + Pygame game built on MVC and SOLID principles; online multiplayer and local pass-and-play. CS 150 final project."
+								Python + Pygame game built on MVC and SOLID principles; allows for online multiplayer and local pass-and-play. CS 150 final project."
 						techInvolved={ ["simple-icons:Python", "simple-icons:Go"] }
 					/>
       <Article title="Poverty and Parenting: A Data Science Study"
