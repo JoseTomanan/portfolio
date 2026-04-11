@@ -13,7 +13,7 @@
   <section class="section-body">
     <h2>My projects</h2>
     <div class="projects-roles">
-      <Article title="SIPAT.MATH: AI-powered grading tool for early-level Mathematics"
+      <Article title="SIPAT.MATH: LLM grading tool for early Math"
 						id="proj-199"
 						href="https://github.com/JoseTomanan/S3LAB-ai-grading"
 						subtitle="Filipino recipes database web app"
