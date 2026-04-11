@@ -2,10 +2,14 @@
   import Article from "$lib/components/Article.svelte";
   import { fly } from "svelte/transition";
   import { link } from "$lib";
+  import { activeSection } from "$lib/utils";
 </script>
 
 <span class="jumpable" id="roles"></span>
-<div class="page" data-section="roles" transition:fly={{ delay: 200, duration: 1000 }}>
+<div class="page"
+      data-section="roles"
+      transition:fly={{ delay: 200, duration: 1000 }}
+      class:section-active={$activeSection === 'roles'}>
   <section class="section-body">
     <h2>What have I been up to?</h2>
     <div class="projects-roles">

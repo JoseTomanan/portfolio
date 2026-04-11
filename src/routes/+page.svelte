@@ -9,12 +9,33 @@
   import Projects from "./Projects.svelte";
   import { fly } from "svelte/transition";
   import { link } from "$lib";
+  import { onMount } from "svelte";
+  import { activeSection } from "$lib/utils";
+
+  function updateActiveSection() {
+    const threshold = window.innerHeight * 0.35;
+    let current: string | null = null;
+    for (const el of document.querySelectorAll<HTMLElement>("div.page[data-section]")) {
+      if (el.getBoundingClientRect().top <= threshold)
+        current = el.dataset.section!;
+    }
+    activeSection.set(current);
+  }
+
+  onMount(() => {
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
+    updateActiveSection();
+    return () => window.removeEventListener('scroll', updateActiveSection);
+  });
 </script>
 
 
-<main-div class="flex flex-col gap-6 mt-12 px-2 w-full max-w-[840px] mx-auto">
+<main-div class="flex flex-col gap-y-6 mt-12 px-2 w-full max-w-[840px] mx-auto">
   <span class="jumpable h-6" id="top"></span>
-  <div class="page gap-0" data-section="top" transition:fly={{ delay: 100, duration: 1000 }}>
+  <div class="page gap-0"
+        data-section="top"
+        transition:fly={{ delay: 100, duration: 1000 }}
+        class:section-active={$activeSection === 'top'}>
     <section class="section-body gap-8 items-center justify-between overflow-clip
                     p-0 pb-8">
       <CarouselContent/>
@@ -37,7 +58,8 @@
 
   <span class="jumpable" id="me"></span>
   <div class="page gap-0" data-section="me"
-        transition:fly={{ delay: 0, duration: 1000 }}>
+        transition:fly={{ delay: 0, duration: 1000 }}
+        class:section-active={$activeSection === 'me'}>
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>What do I do?</h2>
       <p>
