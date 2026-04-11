@@ -50,7 +50,8 @@
 						subtitle="Personal portfolio-resume (i.e., this webpage!)"
 						date="JUL 2024 - PRESENT"
 						other="
-								Static SPA built with Svelte and Tailwind; designed with UI/UX principles in mind."
+								Static SPA built with Svelte and Tailwind; designed for mobile-first responsiveness and accessibility.
+                Features scroll-based section highlighting."
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:PostCSS"] }
 					/>
       <Article title="Shogimon"
