@@ -10,7 +10,7 @@
   const slides = [hero1, hero4, hero2, hero3];
 </script>
 
-<div class="relative shrink-0 size-44 sm:size-56 md:size-64">
+<div class="relative shrink-0 size-64 sm:size-72 md:size-80">
   <Carousel.Root
       class="size-full rounded-full overflow-hidden"
       opts={{ loop: true }}

@@ -12,9 +12,9 @@
 
 <div style="top: {navTop}px;"
       class="fixed left-1/2 -translate-x-1/2 z-50 flex flex-row items-center gap-x-px
-          [&>nav]:bg-background/50 [&>nav]:text-foreground [&>nav]:backdrop-blur-sm
-          [&>nav]:ring [&>nav]:ring-border/20 [&>nav]:w-fit
-          [&>nav]:shadow [&>nav]:shadow-border/50
+          [&>nav]:bg-card/50 [&>nav]:text-foreground [&>nav]:backdrop-blur-sm
+          [&>nav]:ring [&>nav]:ring-border/60
+          [&>nav]:w-fit
           [&>nav]:flex [&>nav]:flex-row [&>nav]:items-center [&>nav]:align-middle
           [&>nav]:font-medium
           [&>nav>*]:py-2
@@ -26,7 +26,7 @@
               *:hover:text-primary
               *:focus-visible:text-primary *:focus-visible:underline
             ">
-    <a href="#top">Me</a>
+    <a href="#me">Me</a>
     <a href="#projects">Projects</a>
     <a href="#roles">Roles</a>
     <!-- <a href="#contact">Contact</a> -->
