@@ -117,7 +117,7 @@
 	}
 
 	h2 {
-		@apply text-xl md:text-2xl;
+		@apply text-2xl;
 		font-family: var(--font-heading);
 		color: var(--color-foreground);
 		text-wrap: balance;

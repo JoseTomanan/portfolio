@@ -51,8 +51,9 @@
           </span>
           <span>Fitness junkie</span>
         </h2>
-        <h3 class="mt-2">
-          Hi 👋 I'm Jose, a CS student from UP Diliman!
+        <h3 class="px-2 sm:px-0">
+          Hi 👋
+          I'm Jose, a CS student from UP Diliman!
         </h3>
       </div>
 
