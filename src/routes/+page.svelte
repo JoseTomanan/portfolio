@@ -41,7 +41,7 @@
       <CarouselContent/>
 
       <div class="flex flex-col items-center justify-center gap-0">
-        <h1 class="font-extrabold">Jose Tomanan</h1>
+        <h1 class="font-bold">Jose Tomanan</h1>
         <h2 class="flex flex-wrap font-heading font-semibold text-foreground px-4 justify-center text-center tracking-tight">
           <span>Tech buff</span>
           <span class="magic-text">
