@@ -41,18 +41,16 @@
       <CarouselContent/>
 
       <div class="flex flex-col items-center justify-center gap-0">
-        <h1 class="hero-text">Jose Tomanan</h1>
-        <h3 class="font-heading font-semibold text-muted-foreground px-4 text-center tracking-tight">
+        <h1 class="font-extrabold">Jose Tomanan</h1>
+        <h2 class="font-heading font-semibold text-foreground px-4 text-center tracking-tight">
           Tech buff &middot;
-          <span class="magic-text">
-            Full-stack web developer
-          </span>
+          <span class="magic-text">Full-stack web developer</span>
           &middot; Gym rat
-        </h3>
+        </h2>
       </div>
-      <h4 class="text-center">
-        Hello there 👋 I'm Jose, a BS CS student from UP Diliman!
-      </h4>
+      <h3 class="text-center">
+        Hello! I'm Jose, a CS student from UP Diliman 👋
+      </h3>
     </section>
   </div>
 

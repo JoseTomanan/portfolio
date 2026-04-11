@@ -17,7 +17,8 @@
         plugins={[ Autoplay({ delay: 8000, stopOnInteraction: true, stopOnMouseEnter: true }) ]}>
   <Carousel.Content class="h-[18rem] sm:h-[22rem] md:h-[26rem] items-center">
     {#each slides as src}
-      <Carousel.Item class="carousel-slide">
+      <Carousel.Item class="h-full overflow-clip
+                            *:h-full *:object-cover">
         <enhanced:img {src} alt="" aria-hidden="true" />
       </Carousel.Item>
     {/each}
