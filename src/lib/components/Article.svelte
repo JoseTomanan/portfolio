@@ -21,16 +21,36 @@
     date?: string;
     techInvolved?: string[];
   } = $props();
+
+  let itemRef = $state<HTMLElement | null>(null);
+  let isOpen: boolean = $state(false);
+
+  $effect(() => {
+    if (!itemRef) return;
+    isOpen = itemRef.dataset.state === 'open';
+    const observer = new MutationObserver(() => {
+      isOpen = itemRef?.dataset.state === 'open';
+    });
+    observer.observe(itemRef, { attributes: true, attributeFilter: ['data-state'] });
+    return () => observer.disconnect();
+  });
 </script>
 
-<article class="group/whole rounded-lg text-left bg-card z-10 shadow shadow-border/50">
-  <Accordion.Item value={id} class="border-none">
+
+
+<article class="group/whole rounded-lg text-left bg-card z-10 shadow shadow-border/50
+         hover:ring hover:ring-border"
+         data-open={isOpen}
+         class:ring={isOpen}
+         class:ring-border={isOpen}>
+  <Accordion.Item bind:ref={itemRef} value={id} class="border-none">
     <Accordion.Trigger class="w-full px-4 hover:no-underline flex-wrap">
       <div class="flex flex-row w-full justify-between gap-0.5
             md:w-auto md:basis-1/4 md:flex-col">
         <span class="text-left md:text-right text-sm font-mono font-normal tracking-tighter w-full
               text-muted-foreground/60
-              group-hover/whole:text-foreground/100">
+              group-hover/whole:text-foreground/100
+              group-data-[open=true]/whole:text-foreground/100">
           {date}
         </span>
 
@@ -45,6 +65,7 @@
                       cursor-default
                       text-muted-foreground/60
                       group-hover/whole:text-muted-foreground/100
+                      group-data-[open=true]/whole:text-muted-foreground/100
                     "/>
             </Tooltip.Trigger>
             <Tooltip.Content class="bg-popover text-popover-foreground border-none">
@@ -58,21 +79,24 @@
       <div class="flex-1 flex flex-col gap-2 text-left">
         <div class="md:grid space-y-1">
           <h4 class="underline-offset-2 flex font-sans font-semibold
-                      group-hover/whole:text-foreground/100">
+                      group-hover/whole:text-foreground/100
+                      group-data-[open=true]/whole:text-foreground/100">
             <a class="group/link flex items-baseline leading-5 gap-2 hover:gap-4
                   text-foreground/80
                   group-hover/whole:text-foreground/100
+                  group-data-[open=true]/whole:text-foreground/100
                   hover:text-secondary"
                   target="_blank" rel="noopener noreferrer" {id} {href}
                   onclick={(e) => e.stopPropagation()}>
               {title}
               <IcBaselineArrowOutward
-                  class="w-4 h-4 opacity-0 group-hover/whole:opacity-100 hidden md:inline"/>
+                  class="w-4 h-4 opacity-0 group-hover/whole:opacity-100 group-data-[open=true]/whole:opacity-100 hidden md:inline"/>
             </a>
           </h4>
           <h4 class="leading-4 mt-0 font-normal
                       text-foreground/50
-                      group-hover/whole:text-foreground/80">
+                      group-hover/whole:text-foreground/80
+                      group-data-[open=true]/whole:text-foreground/80">
             {subtitle}
           </h4>
         </div>
