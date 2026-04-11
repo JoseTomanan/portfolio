@@ -130,7 +130,7 @@
 	}
 
 	h4 {
-		@apply text-base;
+		@apply text-lg;
 		font-family: var(--font-sans);
 		color: var(--color-muted-foreground);
 	}
@@ -142,13 +142,13 @@
 	}
 
 	h6 {
-		@apply px-4 md:px-0;
 		@apply text-sm;
+		@apply px-4 md:px-0;
 		@apply text-foreground/80;
 	}
 
 	p {
-		@apply text-base;
+		@apply text-lg;
 		font-family: var(--font-sans);
 		color: var(--color-muted-foreground);
 
@@ -191,7 +191,7 @@
     & > h2 {
       text-align: left;
       color: var(--color-primary);
-      margin-left: 8px;
+      margin-left: 10px;
       padding-left: 20px;
       @apply border-l-3 border-muted-foreground;
     }
