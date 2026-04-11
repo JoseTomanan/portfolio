@@ -1,8 +1,9 @@
 <script lang='ts'>
   import Article from "$lib/components/Article.svelte";
   import { fly } from "svelte/transition";
-  import { link } from "$lib";
   import { activeSection } from "$lib/utils";
+
+  const defaultLink = "https://www.linkedin.com/in/jedtomanan/details/experience/"
 </script>
 
 <span class="jumpable" id="roles"></span>
@@ -17,7 +18,7 @@
 						id="role-195"
 						title="Software Engineer Intern"
 						subtitle="Pointwest Innovations Corporation"
-						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
+						href={defaultLink}
 						date="JUN 2025 - JUL 2025"
 						other="
 								200-hour internship on a 10-member team building an HR application; contributed Spring Boot API services and maintained automated test suites."
@@ -27,7 +28,7 @@
 						id="role-cursor1"
 						title="Event Co-Head"
 						subtitle="UP Association of Computer Science Majors (UP CURSOR)"
-						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
+						href={defaultLink}
 						date="SEP 2023 - MAR 2024"
 						other="
 								Co-led 20 people organizing Tackle 2024, a 4-day hybrid tech career fair.
@@ -38,7 +39,7 @@
 						id="role-csi"
 						title="Web development module writer"
 						subtitle="UP Center for Student Innovations (UP CSI)"
-						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
+						href={defaultLink}
 						date="SEP 2023 - NOV 2023"
 						other="
 								Authored web dev learning modules for 50+ applicants using Typst; collaborated via Git."
@@ -48,7 +49,7 @@
 						id="role-cursor2"
 						title="Member Relations Head"
 						subtitle="UP CURSOR"
-						href="https://www.linkedin.com/in/jedtomanan/details/experience/"
+						href={defaultLink}
 						date="FEB 2023 - MAY 2023"
 						other="
 								Led a team of 6 managing engagement for 100+ members; produced CURSOR Cares and Humans of CURSOR publications."
@@ -58,7 +59,7 @@
     
     <h6 class="footnote">
       // See more of what I've done at
-      <a href={link.li} target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+      <a href={defaultLink} target="_blank" rel="noopener noreferrer">LinkedIn</a>.
     </h6>
   </section>
 </div>
