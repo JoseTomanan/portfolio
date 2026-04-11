@@ -42,10 +42,12 @@
   }
 </script>
 
-<div class="overflow-hidden h-full">
+<div
+  use:emblaCarouselSvelte={{ options: config.opts, plugins: config.plugins }}
+  onemblaInit={handleInit}
+  class="overflow-hidden h-full"
+>
   <div
-    use:emblaCarouselSvelte={{ options: config.opts, plugins: config.plugins }}
-    onemblaInit={handleInit}
     class={cn(
       "flex",
       config.orientation === "vertical" ? "flex-col" : "-ml-4",

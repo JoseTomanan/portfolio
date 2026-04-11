@@ -38,23 +38,23 @@
         class:section-active={$activeSection === 'top'}>
     <section class="section-body flex-row gap-6 sm:gap-8 items-center overflow-clip
                     px-6 py-8">
-      <CarouselContent/>
-
-      <div class="flex flex-col gap-1">
+      <div class="flex-1 flex flex-col gap-y-4">
         <h1 class="font-bold">Jose Tomanan</h1>
-        <h2 class="flex flex-wrap font-heading font-semibold text-foreground tracking-tight">
-          <span>Tech buff</span>
+        <h2 class="flex flex-col font-heading font-semibold text-muted-foreground tracking-tight">
+          <span>Tech enthusiast</span>
           <span class="magic-text">
-            &ThickSpace;&middot;
+            <!-- &ThickSpace;&middot; -->
             Full-stack web developer
-            &middot;&ThickSpace;
+            <!-- &middot;&ThickSpace; -->
           </span>
-          <span>Gym rat</span>
+          <span>Fitness junkie</span>
         </h2>
         <h3 class="mt-2">
           Hi! I'm Jose, a CS student from UP Diliman 👋
         </h3>
       </div>
+
+      <CarouselContent/>
     </section>
   </div>
 
