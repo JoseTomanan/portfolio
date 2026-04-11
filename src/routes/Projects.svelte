@@ -1,5 +1,6 @@
 <script lang="ts">
   import Article from "$lib/components/Article.svelte";
+  import * as Accordion from "$lib/components/ui/accordion/index";
   import { fly } from "svelte/transition";
   import { link } from "$lib";
   import { activeSection } from "$lib/utils";
@@ -12,7 +13,7 @@
       class:section-active={$activeSection === 'projects'}>
   <section class="section-body">
     <h2>My projects</h2>
-    <div class="projects-roles">
+    <Accordion.Root type="single" class="projects-roles">
       <Article title="SIPAT.MATH: LLM grading tool for early Math"
 						id="proj-199"
 						href="https://github.com/JoseTomanan/S3LAB-ai-grading"
@@ -85,7 +86,7 @@
 							"
 						techInvolved={ ["simple-icons:GoogleAppsScript", "simple-icons:TypeScript"] }
 					/> -->
-    </div>
+    </Accordion.Root>
     
     <h6 class="footnote">
       // See my public repositories, in full detail, at 

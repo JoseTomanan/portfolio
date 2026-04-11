@@ -1,5 +1,6 @@
 <script lang='ts'>
   import Article from "$lib/components/Article.svelte";
+  import * as Accordion from "$lib/components/ui/accordion/index";
   import { fly } from "svelte/transition";
   import { activeSection } from "$lib/utils";
 
@@ -13,7 +14,7 @@
       class:section-active={$activeSection === 'roles'}>
   <section class="section-body">
     <h2>My roles</h2>
-    <div class="projects-roles">
+    <Accordion.Root type="single" class="projects-roles">
       <Article 
 						id="role-195"
 						title="Software Engineer Intern"
@@ -55,7 +56,7 @@
 								Led a team of 6 managing engagement for 100+ members; produced CURSOR Cares and Humans of CURSOR publications."
 						techInvolved={ ["simple-icons:Notion"] }
 					/>
-    </div>
+    </Accordion.Root>
     
     <h6 class="footnote">
       // See more of what I've done at
