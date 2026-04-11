@@ -12,12 +12,12 @@
 
 <div class="relative shrink-0 size-44 sm:size-56 md:size-64">
   <Carousel.Root
-      class="size-full rounded-full overflow-hidden ring-2 ring-border"
+      class="size-full rounded-full overflow-hidden"
       opts={{ loop: true }}
-      plugins={[ Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: false }) ]}>
-    <Carousel.Content class="size-full m-0">
+      plugins={[ Autoplay({ delay: 4000, stopOnInteraction: true, stopOnMouseEnter: true }) ]}>
+    <Carousel.Content class="h-full m-0">
       {#each slides as src}
-        <Carousel.Item class="size-full p-0">
+        <Carousel.Item class="h-full p-0">
           <enhanced:img {src}
                         alt=""
                         aria-hidden="true"
@@ -27,5 +27,6 @@
       {/each}
     </Carousel.Content>
   </Carousel.Root>
-  <span class="absolute left-[85%] top-[85%] -translate-x-1/2 -translate-y-1/2 size-4 rounded-full bg-green-500 ring-[3px] ring-muted"></span>
+  <span class="absolute left-[86%] top-[86%] -translate-x-1/2 -translate-y-1/2 size-4
+                rounded-full bg-green-500 ring-[3px] ring-muted"></span>
 </div>
