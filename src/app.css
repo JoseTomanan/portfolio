@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 
+
 /* ------------------------- THEME ------------------------- */
 @import "./lib/styles/font.css";
 @import "./lib/styles/theme.css";
+
 
 /* ------------------------- RESPONSIVENESS ------------------------- */
 .container {
@@ -37,8 +39,7 @@
 
 /* md (Tablets) */
 @media (max-width: 768px) {
-  .container,
-  footer {
+  .container {
     max-width: 640px;
   }
 }

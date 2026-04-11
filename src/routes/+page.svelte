@@ -86,15 +86,18 @@
   <Projects />
 
   <footer class="flex flex-wrap py-4 w-full items-center
+                gap-x-4
+                border-t border-border mt-2
                 *:text-muted-foreground/40 *:text-sm">
     <p class="text-center px-0">
-      Written in Svelte and Tailwind, with love &hearts;
+      Written in Svelte and Tailwind &hearts;
     </p>
     <a href="#top" class="hoverable-link ml-auto">
       Back to top
     </a>
     <div class="inline-flex justify-end items-center ml-auto
-                  *:p-2 *:rounded-lg *:text-muted-foreground *:h-fit *:hover:text-foreground *:hover:bg-card">
+                  *:p-2 *:rounded-lg *:text-muted-foreground *:h-fit
+                  *:hover:text-foreground *:hover:bg-card">
       <a href={link.li} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <FaBrandsLinkedin class="size-4 my-auto" />
       </a>
