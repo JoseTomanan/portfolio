@@ -7,3 +7,6 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const activeSection = writable<string | null>('me');
+
+export type WithoutChild<T> = T extends { child?: any } ? Omit<T, "child"> : T;
+export type WithElementRef<T, U extends HTMLElement = HTMLElement> = T & { ref?: U | null };

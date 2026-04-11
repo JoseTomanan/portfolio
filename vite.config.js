@@ -11,5 +11,8 @@ export default defineConfig({
   ],
   server: {
     port: 1234
+  },
+  ssr: {
+    noExternal: ['@lucide/svelte']
   }
 });
