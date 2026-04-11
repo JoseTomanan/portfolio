@@ -81,9 +81,8 @@
     </section>
   </div>
   
-  <Roles />
-  
   <Projects />
+  <Roles />
 
   <footer class="flex flex-wrap py-4 w-full items-center
                 gap-x-4

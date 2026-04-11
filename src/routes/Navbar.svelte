@@ -27,8 +27,8 @@
               *:focus-visible:text-primary *:focus-visible:underline
             ">
     <a href="#top">Me</a>
-    <a href="#roles">Roles</a>
     <a href="#projects">Projects</a>
+    <a href="#roles">Roles</a>
     <!-- <a href="#contact">Contact</a> -->
   </nav>
 
