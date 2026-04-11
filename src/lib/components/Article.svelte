@@ -29,7 +29,9 @@
   <div class="flex flex-row w-full justify-between gap-0.5
         md:basis-1/4 md:flex-col">
     <span class="text-left md:text-right text-sm font-mono tracking-tighter w-full
-          text-muted-foreground group-hover/whole:text-foreground/95">
+          text-muted-foreground/60
+          group-hover/whole:text-foreground/100
+          ">
       {date}
     </span>
 
@@ -40,7 +42,11 @@
         {@const TechIcon = iconMap[actualTag]}
         <Tooltip.Root>
           <Tooltip.Trigger class="items-center" aria-label={displayableName}>
-            <TechIcon class="h-4 w-4 text-muted-foreground/80 group-hover/whole:text-muted-foreground cursor-default" />
+            <TechIcon class="h-4 w-4
+                    cursor-default
+                    text-muted-foreground/60
+                    group-hover/whole:text-muted-foreground/100
+                  "/>
           </Tooltip.Trigger>
           <Tooltip.Content class="bg-popover text-popover-foreground border-none">
             {displayableName}
@@ -50,7 +56,9 @@
     </div>
   </div>
 
-  <div class="basis-5/6 md:basis-3/4 flex flex-col gap-2">
+  <div class="basis-5/6 md:basis-3/4
+              flex flex-col gap-2
+            ">
     <div class="md:grid space-y-1">
       <h4 class="underline-offset-2 flex font-sans font-semibold
                   group-hover/whole:text-foreground/100">
@@ -62,7 +70,10 @@
               class="w-4 h-4 opacity-0 group-hover/whole:opacity-100 hidden md:inline"/>
         </a>
       </h4>
-      <h5 class="leading-4 mt-0 text-foreground/75 group-hover/whole:text-foreground/100">
+      <h5 class="leading-4 mt-0
+                  text-foreground/80
+                  group-hover/whole:text-foreground/100
+                ">
         {subtitle}
       </h5>
     </div>
