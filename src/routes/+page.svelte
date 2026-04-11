@@ -36,13 +36,13 @@
         data-section="top"
         transition:fly={{ delay: 100, duration: 1000 }}
         class:section-active={$activeSection === 'top'}>
-    <section class="section-body gap-8 items-center justify-between overflow-clip
-                    px-4 pt-0 pb-8">
+    <section class="section-body flex-row gap-6 sm:gap-8 items-center overflow-clip
+                    px-6 py-8">
       <CarouselContent/>
 
-      <div class="flex flex-col items-center justify-center gap-0">
+      <div class="flex flex-col gap-1">
         <h1 class="font-bold">Jose Tomanan</h1>
-        <h2 class="flex flex-wrap font-heading font-semibold text-foreground px-4 justify-center text-center tracking-tight">
+        <h2 class="flex flex-wrap font-heading font-semibold text-foreground tracking-tight">
           <span>Tech buff</span>
           <span class="magic-text">
             &ThickSpace;&middot;
@@ -51,10 +51,10 @@
           </span>
           <span>Gym rat</span>
         </h2>
+        <h3 class="mt-2">
+          Hi! I'm Jose, a CS student from UP Diliman 👋
+        </h3>
       </div>
-      <h3 class="text-center">
-        Hi! I'm Jose, a CS student from UP Diliman 👋
-      </h3>
     </section>
   </div>
 

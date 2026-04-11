@@ -42,7 +42,7 @@
   }
 </script>
 
-<div class="overflow-hidden">
+<div class="overflow-hidden h-full">
   <div
     use:emblaCarouselSvelte={{ options: config.opts, plugins: config.plugins }}
     onemblaInit={handleInit}

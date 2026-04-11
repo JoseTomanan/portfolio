@@ -10,22 +10,22 @@
   const slides = [hero1, hero4, hero2, hero3];
 </script>
 
-
-<Carousel.Root
-        class="relative flex -mx-8 overflow-visible"
-        opts={{ loop: true }}
-        plugins={[ Autoplay({ delay: 8000, stopOnInteraction: true, stopOnMouseEnter: true }) ]}>
-  <Carousel.Content class="h-[18rem] sm:h-[22rem] md:h-[26rem] items-center">
-    {#each slides as src}
-      <Carousel.Item class="h-full overflow-clip">
-        <enhanced:img {src}
-                    alt=""
-                    aria-hidden="true"
-                    class="h-full object-cover"
-                  />
-      </Carousel.Item>
-    {/each}
-  </Carousel.Content>
-  <Carousel.Previous class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-accent text-foreground" />
-  <Carousel.Next class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-accent text-foreground" />
-</Carousel.Root>
+<div class="relative shrink-0 size-44 sm:size-56 md:size-64">
+  <Carousel.Root
+      class="size-full rounded-full overflow-hidden ring-2 ring-border"
+      opts={{ loop: true }}
+      plugins={[ Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: false }) ]}>
+    <Carousel.Content class="size-full m-0">
+      {#each slides as src}
+        <Carousel.Item class="size-full p-0">
+          <enhanced:img {src}
+                        alt=""
+                        aria-hidden="true"
+                        class="size-full object-cover"
+                      />
+        </Carousel.Item>
+      {/each}
+    </Carousel.Content>
+  </Carousel.Root>
+  <span class="absolute left-[85%] top-[85%] -translate-x-1/2 -translate-y-1/2 size-4 rounded-full bg-green-500 ring-[3px] ring-muted"></span>
+</div>
