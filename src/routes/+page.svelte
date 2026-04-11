@@ -37,7 +37,7 @@
         transition:fly={{ delay: 100, duration: 1000 }}
         class:section-active={$activeSection === 'top'}>
     <section class="section-body gap-8 items-center justify-between overflow-clip
-                    p-0 pb-8">
+                    px-4 pt-0 pb-8">
       <CarouselContent/>
 
       <div class="flex flex-col items-center justify-center gap-0">
@@ -49,7 +49,7 @@
         </h2>
       </div>
       <h3 class="text-center">
-        Hello! I'm Jose, a CS student from UP Diliman 👋
+        Hi! I'm Jose, a CS student from UP Diliman 👋
       </h3>
     </section>
   </div>
