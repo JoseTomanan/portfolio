@@ -32,29 +32,30 @@
 
 <main-div class="flex flex-col gap-y-6 mt-12 px-2 w-full max-w-[840px] mx-auto">
   <span class="jumpable h-6" id="top"></span>
-  <div class="page gap-0"
+  <div class="page border-0 gap-0"
         data-section="top"
-        transition:fly={{ delay: 100, duration: 1000 }}
-        class:section-active={$activeSection === 'top'}>
-    <section class="section-body flex-row gap-6 sm:gap-8 items-center overflow-clip
-                    px-6 py-8">
-      <CarouselContent/>
-
-      <div class="flex flex-col gap-1">
+        transition:fly={{ delay: 100, duration: 1000 }}>
+    <section class="section-body bg-transparent
+                    flex flex-col-reverse sm:flex-row
+                    items-center gap-y-8 overflow-clip py-16 sm:py-40">
+      <div class="flex-1 flex flex-col items-center gap-y-4
+                  *:w-full *:text-center *:sm:text-left">
         <h1 class="font-bold">Jose Tomanan</h1>
-        <h2 class="flex flex-wrap font-heading font-semibold text-foreground tracking-tight">
-          <span>Tech buff</span>
+        <h2 class="flex flex-col font-heading font-semibold text-muted-foreground tracking-tight">
+          <span>Tech enthusiast</span>
           <span class="magic-text">
-            &ThickSpace;&middot;
+            <!-- &ThickSpace;&middot; -->
             Full-stack web developer
-            &middot;&ThickSpace;
+            <!-- &middot;&ThickSpace; -->
           </span>
-          <span>Gym rat</span>
+          <span>Fitness junkie</span>
         </h2>
         <h3 class="mt-2">
-          Hi! I'm Jose, a CS student from UP Diliman 👋
+          Hi 👋 I'm Jose, a CS student from UP Diliman!
         </h3>
       </div>
+
+      <CarouselContent/>
     </section>
   </div>
 
