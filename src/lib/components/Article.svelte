@@ -1,5 +1,6 @@
 <script lang="ts">
   import { iconMap } from "$lib/iconMap";
+  import { cn } from "$lib/utils";
   import IcBaselineArrowOutward from '~icons/ic/baseline-arrow-forward';
   import * as Accordion from "$lib/components/ui/accordion/index";
   import * as Tooltip from "$lib/components/ui/tooltip/index";
@@ -38,11 +39,10 @@
 
 
 
-<article class="group/whole rounded-lg text-left bg-card z-10 shadow shadow-border/50
-         hover:ring hover:ring-border"
-         data-open={isOpen}
-         class:ring={isOpen}
-         class:ring-border={isOpen}>
+<article class={cn("group/whole rounded-lg text-left bg-card z-10",
+              "shadow shadow-border/50", 
+              isOpen ? 'ring-2 ring-muted-foreground/40' : 'hover:ring hover:ring-border')}
+          data-open={isOpen}>
   <Accordion.Item bind:ref={itemRef} value={id} class="border-none">
     <Accordion.Trigger class="w-full px-4 hover:no-underline flex-wrap">
       <div class="flex flex-row w-full justify-between gap-0.5
