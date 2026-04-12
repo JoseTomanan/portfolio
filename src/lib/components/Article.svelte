@@ -49,7 +49,7 @@
   <Accordion.Item bind:ref={itemRef} value={id} class="border-none">
     <Accordion.Trigger class="w-full px-4 hover:no-underline flex-wrap">
       <div class="flex flex-row w-full justify-between gap-0.5
-            md:w-auto md:basis-[24%] md:flex-col">
+            md:w-auto md:basis-1/3 lg:basis-[24%] md:flex-col">
         <span class="text-left md:text-right text-base font-mono font-normal 
               tracking-tight w-full
               text-muted-foreground/60
@@ -108,7 +108,7 @@
     </Accordion.Trigger>
 
     <Accordion.Content class="flex flex-row gap-x-4 px-4">
-      <div class="hidden md:block md:basis-[24%] shrink-0"></div>
+      <div class="hidden md:block md:basis-1/3 lg:basis-[24%] shrink-0"></div>
       <span class="leading-5 text-lg font-normal text-muted-foreground/60">
         {other}
       </span>

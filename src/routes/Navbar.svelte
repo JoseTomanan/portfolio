@@ -19,13 +19,12 @@
           [&>nav]:shadow [&>nav]:shadow-border/50
           [&>nav]:px-8 [&>nav]:w-fit
           [&>nav]:flex [&>nav]:flex-row [&>nav]:items-center [&>nav]:align-middle
-          [&>nav]:font-medium
-          [&>nav>*]:py-2
+          [&>nav>*]:py-1.5
         ">
   <nav aria-label="Main navigation"
         style="padding-block: {navVerticalPadding}px;"
-        class="justify-center gap-10
-              rounded-l-full
+        class="justify-center gap-10 rounded-l-full
+              font-medium
               *:hover:text-primary
               *:focus-visible:text-primary *:focus-visible:underline
             ">
@@ -37,7 +36,7 @@
 
   <nav aria-label="Resume navigation"
         style="padding-block: {navVerticalPadding}px;"
-        class="rounded-r-full">
+        class="rounded-r-full font-bold">
     <a id="clickable-resume"
         href={link.cv}
         target="_blank"
