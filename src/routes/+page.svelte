@@ -110,18 +110,19 @@
     </a>
     <div class="inline-flex gap-x-3 justify-end items-center
                   *:rounded-lg *:text-muted-foreground *:h-fit
-                  *:hover:text-foreground *:hover:bg-card">
+                  *:hover:text-foreground *:hover:bg-card
+                  [&>a>*]:size-4 [&>a>*]:my-auto">
       <a href={link.li} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <FaBrandsLinkedin class="size-4 my-auto" />
+        <FaBrandsLinkedin/>
       </a>
       <a href={link.gh} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <FaBrandsGithub class="size-4 my-auto" />
+        <FaBrandsGithub/>
       </a>
       <a href={link.fb} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-        <FaBrandsFacebook class="size-4 my-auto" />
+        <FaBrandsFacebook/>
       </a>
       <a href={link.ig} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <FaBrandsInstagram class="size-4 my-auto" />
+        <FaBrandsInstagram/>
       </a>
     </div>
   </footer>
