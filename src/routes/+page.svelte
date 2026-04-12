@@ -3,8 +3,11 @@
   import FaBrandsGithub from '~icons/fa-brands/github';
   import FaBrandsFacebook from '~icons/fa-brands/facebook';
   import FaBrandsInstagram from '~icons/fa-brands/instagram';
-  import IconArrow from '~icons/ic/baseline-arrow-forward';
 
+  import IconArrow from '~icons/ic/baseline-arrow-forward';
+  import IconEmail from '~icons/ic/baseline-email';
+  import IconPhone from '~icons/ic/baseline-phone';
+  
   import CarouselContent from "./CarouselContent.svelte";
   import Roles from "./Roles.svelte";
   import Projects from "./Projects.svelte";
@@ -110,18 +113,28 @@
 
 </main>
 
-<footer class="px-2">
-  <div class="flex flex-wrap w-full justify-between items-end gap-x-4 gap-y-0
-              h-32 mx-auto px-2
-              border-t border-border mt-10 mb-4
-              *:text-muted-foreground/40 *:text-base">
-    <p class="text-center hidden sm:inline">
-      Written in Svelte and Tailwind &hearts;
-    </p>
-    <a href="#top" class="hoverable-link">
+<footer class="bg-muted/75 text-muted-foreground/75
+              flex flex-row w-full justify-between items-end
+              gap-y-2 h-52 mx-auto px-8 py-4 mt-16
+            ">
+  <div class="flex-2 flex flex-col leading-none *:text-muted-foreground/75">
+    <h4 class="font-bold">
+      Jose Tomanan
+    </h4>
+    <span class="inline-flex gap-x-2 items-center">
+      <IconEmail/> jdtomanan@up.edu.ph
+    </span>
+    <span class="inline-flex gap-x-2 items-center">
+      <IconPhone/> +63 947 301 3664
+    </span>
+  </div>
+  <div class="flex-3 flex flex-col sm:flex-row">
+    <a href="#top"
+        class="hoverable-link flex-1 w-full text-right sm:text-center">
       Back to top
     </a>
-    <div class="inline-flex gap-x-3 justify-end items-center
+    <div class="flex-1 inline-flex justify-end items-center
+                  gap-x-3 py-1
                   *:rounded-lg *:text-muted-foreground *:h-fit
                   *:hover:text-foreground *:hover:bg-card
                   [&>a>*]:size-4 [&>a>*]:my-auto">
