@@ -67,7 +67,7 @@
   </div>
 
   <span class="jumpable" id="me"></span>
-  <div class="page gap-0"
+  <div class="page gap-0 z-5"
         data-section="me"
         transition:fly={{ delay: 0, duration: 1000 }}
         class:section-active={$activeSection === 'me'}>
