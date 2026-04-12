@@ -39,18 +39,18 @@
 <main-div class="max-w-[840px] flex flex-col
                   gap-y-6 px-2 w-full mx-auto">
   <span class="jumpable h-6" id="top"></span>
-  <div class="page border-0 gap-0 overflow-visible -z-50"
+  <div class="page border-0 gap-0 overflow-visible"
         data-section="top"
         transition:fly={{ delay: 100, duration: 1000 }}>
     <section style="transform: translateY({parallaxY}px);"
               class="section-body
                     bg-transparent -mt-4 h-[90dvh]
                     flex flex-col-reverse sm:flex-row
-                    justify-center items-center gap-y-8 overflow-clip
+                    justify-center items-center gap-y-8
                   ">
       <div class="sm:flex-1 flex flex-col items-center gap-y-4
                   *:w-full *:text-center *:sm:text-left">
-        <h1 class="font-bold">Jose Tomanan</h1>
+        <h1 class="font-extrabold">Jose Tomanan</h1>
         <h2 class="flex flex-col font-heading font-semibold text-muted-foreground tracking-tight">
           <span>Tech enthusiast</span>
           <span>Fitness junkie</span>
