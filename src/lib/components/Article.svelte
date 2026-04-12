@@ -47,7 +47,7 @@
     <Accordion.Trigger class="w-full px-4 hover:no-underline flex-wrap">
       <div class="flex flex-row w-full justify-between gap-0.5
             md:w-auto md:basis-1/4 md:flex-col">
-        <span class="text-left md:text-right text-sm font-mono font-normal tracking-tighter w-full
+        <span class="text-left md:text-right text-base font-mono font-normal tracking-tighter w-full
               text-muted-foreground/60
               group-hover/whole:text-foreground/100
               group-data-[open=true]/whole:text-foreground/100">
@@ -105,7 +105,7 @@
 
     <Accordion.Content class="flex flex-row gap-x-4 px-4">
       <div class="hidden md:block md:basis-[25%] shrink-0"></div>
-      <span class="leading-5 text-base font-light text-muted-foreground/60">
+      <span class="leading-5 text-lg font-light text-muted-foreground/60">
         {other}
       </span>
     </Accordion.Content>

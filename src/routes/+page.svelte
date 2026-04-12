@@ -36,7 +36,7 @@
 
 <svelte:window bind:scrollY />
 
-<main-div class="max-w-[840px] flex flex-col
+<main-div class="max-w-[960px] flex flex-col
                   gap-y-6 px-2 w-full mx-auto">
   <span class="jumpable h-6" id="top"></span>
   <div class="page border-0 gap-0 overflow-visible"
@@ -101,7 +101,7 @@
   <footer class="flex flex-wrap w-full justify-between items-end gap-x-4 gap-y-0
                 h-32
                 border-t border-border mt-10 mb-4
-                *:text-muted-foreground/40 *:text-sm">
+                *:text-muted-foreground/40 *:text-base">
     <p class="text-center hidden sm:inline">
       Written in Svelte and Tailwind &hearts;
     </p>
