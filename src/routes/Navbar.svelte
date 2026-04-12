@@ -3,25 +3,27 @@
 
   let scrollY = $state(0);
 
-  const navTop: number = $derived(Math.max(6, 16 - (scrollY / 80) * 8));
-  const navVerticalPadding: number = $derived(Math.max(0, 2 - (scrollY / 80) * 8));
+  const navTop: number = $derived(Math.max(4, 16 - (scrollY / 80) * 4));
+  const navVerticalPadding: number = $derived(Math.max(0, 4 - (scrollY / 80) * 4));
 </script>
 
 
 <svelte:window bind:scrollY />
 
 <div style="top: {navTop}px;"
-      class="fixed left-1/2 -translate-x-1/2 z-50 flex flex-row items-center gap-x-px
+      class="fixed left-1/2 -translate-x-1/2 z-50
+          flex flex-row items-center gap-x-0.5
           [&>nav]:bg-card/50 [&>nav]:text-foreground [&>nav]:backdrop-blur-sm
-          [&>nav]:ring [&>nav]:ring-border/60
-          [&>nav]:w-fit
+          [&>nav]:ring [&>nav]:ring-border
+          [&>nav]:shadow [&>nav]:shadow-border/50
+          [&>nav]:px-8 [&>nav]:w-fit
           [&>nav]:flex [&>nav]:flex-row [&>nav]:items-center [&>nav]:align-middle
           [&>nav]:font-medium
           [&>nav>*]:py-2
         ">
   <nav aria-label="Main navigation"
         style="padding-block: {navVerticalPadding}px;"
-        class="justify-center gap-6 px-8 sm:gap-10
+        class="justify-center gap-10
               rounded-l-full
               *:hover:text-primary
               *:focus-visible:text-primary *:focus-visible:underline
@@ -34,7 +36,7 @@
 
   <nav aria-label="Resume navigation"
         style="padding-block: {navVerticalPadding}px;"
-        class="px-6 rounded-r-full">
+        class="rounded-r-full">
     <a id="clickable-resume"
         href={link.cv}
         target="_blank"
