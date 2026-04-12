@@ -12,8 +12,11 @@
   import { onMount } from "svelte";
   import { activeSection } from "$lib/utils";
 
+  let scrollY = $state(0);
+  const parallaxY: number = $derived(scrollY * 0.50);
+
   function updateActiveSection() {
-    const threshold = window.innerHeight * 0.35;
+    const threshold = window.innerHeight * 0.45;
     let current: string | null = null;
     for (const el of document.querySelectorAll<HTMLElement>("div.page[data-section]")) {
       if (el.getBoundingClientRect().top <= threshold)
@@ -30,12 +33,17 @@
 </script>
 
 
-<main-div class="flex flex-col gap-y-6 mt-12 px-2 w-full max-w-[840px] mx-auto">
+
+<svelte:window bind:scrollY />
+
+<main-div class="max-w-[840px] flex flex-col
+                  gap-y-6 px-2 w-full mx-auto">
   <span class="jumpable h-6" id="top"></span>
-  <div class="page border-0 gap-0"
+  <div class="page border-0 gap-0 overflow-visible -z-50"
         data-section="top"
         transition:fly={{ delay: 100, duration: 1000 }}>
-    <section class="section-body
+    <section style="transform: translateY({parallaxY}px);"
+              class="section-body
                     bg-transparent -mt-4 h-[90dvh]
                     flex flex-col-reverse sm:flex-row
                     justify-center items-center gap-y-8 overflow-clip
@@ -45,17 +53,13 @@
         <h1 class="font-bold">Jose Tomanan</h1>
         <h2 class="flex flex-col font-heading font-semibold text-muted-foreground tracking-tight">
           <span>Tech enthusiast</span>
+          <span>Fitness junkie</span>
           <span class="magic-text">
             <!-- &ThickSpace;&middot; -->
             Full-stack web developer
             <!-- &middot;&ThickSpace; -->
           </span>
-          <span>Fitness junkie</span>
         </h2>
-        <h3 class="px-2 sm:px-0">
-          Hi 👋
-          I'm Jose, a CS student from UP Diliman!
-        </h3>
       </div>
 
       <CarouselContent/>
@@ -70,7 +74,7 @@
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>About me</h2>
       <p>
-        I am a full-stack developer comfortable on both ends &mdash; clean UIs with SvelteKit, solid APIs with Django &amp; Spring Boot.
+        Hello! I am Jose, a <span class="non-link-highlight">CS student from UP Diliman</span> and a full-stack developer comfortable on both ends &mdash; clean UIs with Svelte5 &amp; React, bugless APIs with Django &amp; Spring Boot.
         I am detail-driven; I write code that is
         <span class="non-link-highlight">as thoughtful as it is functional.</span>
       </p>
@@ -78,10 +82,9 @@
     
     <section class="section-body gap-2 rounded-t-none">
       <p>
-        Off the clock: competitive FPS (Valorant, CS2), and
+        Off the clock, I play competitive FPS (Valorant, CS2), and
         <span class="non-link-highlight">physical activity:</span>
-        running, weightlifting, basketball.
-        <br>
+        running, lifting, basketball.
         I am also an 
         <a href={link.ig_swiftie} class="hoverable-link" target="_blank" rel="noopener noreferrer">avid Swiftie</a>: 
         I'd bet my left leg I know more about Taylor Swift than you!
@@ -95,18 +98,18 @@
 </main-div>
 
 <div class="container">
-  <footer class="flex flex-wrap w-full items-end gap-x-4 gap-y-0
+  <footer class="flex flex-wrap w-full justify-between items-end gap-x-4 gap-y-0
                 h-32
                 border-t border-border mt-10 mb-4
                 *:text-muted-foreground/40 *:text-sm">
-    <p class="text-center">
+    <p class="text-center hidden sm:inline">
       Written in Svelte and Tailwind &hearts;
     </p>
-    <a href="#top" class="hoverable-link ml-auto">
+    <a href="#top" class="hoverable-link">
       Back to top
     </a>
-    <div class="inline-flex justify-end items-center ml-auto
-                  *:p-2 *:rounded-lg *:text-muted-foreground *:h-fit
+    <div class="inline-flex gap-x-3 justify-end items-center
+                  *:rounded-lg *:text-muted-foreground *:h-fit
                   *:hover:text-foreground *:hover:bg-card">
       <a href={link.li} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <FaBrandsLinkedin class="size-4 my-auto" />
