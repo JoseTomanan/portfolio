@@ -17,7 +17,7 @@
   const parallaxY: number = $derived(scrollY * 0.50);
 
   function updateActiveSection() {
-    const threshold = window.innerHeight * 0.45;
+    const threshold = window.innerHeight * 0.40;
     let current: string | null = null;
     for (const el of document.querySelectorAll<HTMLElement>("div.page[data-section]")) {
       if (el.getBoundingClientRect().top <= threshold)
@@ -37,22 +37,22 @@
 
 <svelte:window bind:scrollY />
 
-<main-div class="max-w-[960px] flex flex-col
-                  gap-y-6 px-2 w-full mx-auto">
-  <span class="jumpable h-6" id="top"></span>
-  <div class="page border-0 gap-0 overflow-visible"
-        data-section="top"
-        transition:fly={{ delay: 100, duration: 1000 }}>
+<main class="max-w-[960px] flex flex-col
+              gap-y-6 px-2 w-full mx-auto">
+  <span class="jumpable" id="top"></span>
+  <header class="page h-[92dvh] border-0 gap-0 overflow-visible"
+          data-section="top"
+          transition:fly={{ delay: 100, duration: 1000 }}>
     <section style="transform: translateY({parallaxY}px);"
               class="section-body
-                    bg-transparent -mt-4 h-[90dvh]
+                    bg-transparent pt-16
                     flex flex-col-reverse sm:flex-row
                     justify-center items-center gap-y-8
                   ">
-      <div class="flex flex-col items-center gap-y-6
-                  sm:flex-1 sm:items-start sm:gap-y-16
+      <div class="flex flex-col items-center gap-y-10
+                  sm:flex-1 sm:items-start sm:gap-y-20
                   *:text-center *:sm:text-left">
-        <div class="space-y-8">
+        <div class="space-y-6 sm:space-y-10">
           <h1 class="font-extrabold">Jose Tomanan</h1>
           <h2 class="flex flex-col font-heading font-semibold text-muted-foreground tracking-tight">
             <span>Tech enthusiast</span>
@@ -66,7 +66,7 @@
                   font-heading text-xl font-semibold
                   gap-x-4 py-4 px-6
                   rounded-3xl
-                  ring ring-foreground hover:ring-primary
+                  ring-2 ring-foreground hover:ring-primary
                   hover:bg-primary hover:text-primary-foreground
                 ">
           <span>Connect with me</span>
@@ -77,7 +77,7 @@
 
       <CarouselContent/>
     </section>
-  </div>
+  </header>
 
   <span class="jumpable" id="me"></span>
   <div class="page gap-0 z-5"
@@ -86,35 +86,35 @@
         class:section-active={$activeSection === 'me'}>
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>About me</h2>
-      <p>
+      <h4>
         Hello! I am Jose, a <span class="non-link-highlight">CS student from UP Diliman</span> and a full-stack developer comfortable on both ends &mdash; clean UIs with Svelte5 &amp; React, bugless APIs with Django &amp; Spring Boot.
         I am detail-driven; I write code that is
         <span class="non-link-highlight">as thoughtful as it is functional.</span>
-      </p>
+      </h4>
     </section>
     
     <section class="section-body gap-2 rounded-t-none">
-      <p>
+      <h4>
         Off the clock, I play competitive FPS (Valorant, CS2), and
         <span class="non-link-highlight">physical activity:</span>
         running, lifting, basketball.
         I am also an 
         <a href={link.ig_swiftie} class="hoverable-link" target="_blank" rel="noopener noreferrer">avid Swiftie</a>: 
         I'd bet my left leg I know more about Taylor Swift than you!
-      </p>
+      </h4>
     </section>
   </div>
   
   <Projects />
   <Roles />
 
-</main-div>
+</main>
 
-<div class="container">
-  <footer class="flex flex-wrap w-full justify-between items-end gap-x-4 gap-y-0
-                h-32
-                border-t border-border mt-10 mb-4
-                *:text-muted-foreground/40 *:text-base">
+<footer class="px-2">
+  <div class="flex flex-wrap w-full justify-between items-end gap-x-4 gap-y-0
+              h-32 mx-auto px-2
+              border-t border-border mt-10 mb-4
+              *:text-muted-foreground/40 *:text-base">
     <p class="text-center hidden sm:inline">
       Written in Svelte and Tailwind &hearts;
     </p>
@@ -138,5 +138,5 @@
         <FaBrandsInstagram/>
       </a>
     </div>
-  </footer>
-</div>
+  </div>
+</footer>
