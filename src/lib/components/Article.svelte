@@ -11,7 +11,7 @@
     title,
     subtitle,
     other = "",
-    date = "AUG 2023 - AUG 2023",
+    date = "AUG 2024 - AUG 2024",
     techInvolved = [""],
   }: {
     id: string;
@@ -39,15 +39,19 @@
 
 
 
-<article class={cn("group/whole rounded-lg text-left bg-card z-10",
-              "shadow shadow-border/50", 
-              isOpen ? 'ring-2 ring-muted-foreground/40' : 'hover:ring hover:ring-border')}
+<article class={cn("group/whole first:rounded-t-lg last:rounded-b-lg",
+                "text-left bg-card z-10",
+                isOpen
+                  ? 'ring-2 ring-muted-foreground/35'
+                  : 'hover:ring hover:ring-border'
+                )}
           data-open={isOpen}>
   <Accordion.Item bind:ref={itemRef} value={id} class="border-none">
     <Accordion.Trigger class="w-full px-4 hover:no-underline flex-wrap">
       <div class="flex flex-row w-full justify-between gap-0.5
-            md:w-auto md:basis-1/4 md:flex-col">
-        <span class="text-left md:text-right text-base font-mono font-normal tracking-tighter w-full
+            md:w-auto md:basis-[24%] md:flex-col">
+        <span class="text-left md:text-right text-base font-mono font-normal 
+              tracking-tight w-full
               text-muted-foreground/60
               group-hover/whole:text-foreground/100
               group-data-[open=true]/whole:text-foreground/100">
@@ -104,8 +108,8 @@
     </Accordion.Trigger>
 
     <Accordion.Content class="flex flex-row gap-x-4 px-4">
-      <div class="hidden md:block md:basis-[25%] shrink-0"></div>
-      <span class="leading-5 text-lg font-light text-muted-foreground/60">
+      <div class="hidden md:block md:basis-[24%] shrink-0"></div>
+      <span class="leading-5 text-lg font-normal text-muted-foreground/60">
         {other}
       </span>
     </Accordion.Content>

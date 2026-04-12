@@ -20,7 +20,7 @@
   --color-muted:                   #101010;           /* subdued section/nav surfaces */
   --color-muted-foreground:        #A4A1A8;
 
-  --color-card:                    #161616;           /* card surfaces */
+  --color-card:                    #181818;           /* card surfaces */
   --color-card-foreground:         var(--color-muted-foreground);
 
   --color-border:                  #2F2C32;
