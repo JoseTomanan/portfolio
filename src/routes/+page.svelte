@@ -64,7 +64,7 @@
             class="group inline-flex items-center
                   bg-transparent text-foreground
                   font-heading text-xl font-semibold
-                  gap-x-4 py-4 px-6
+                  gap-x-4 py-4 px-6 -ml-1.5
                   rounded-3xl
                   ring-2 ring-foreground hover:ring-primary
                   hover:bg-primary hover:text-primary-foreground
