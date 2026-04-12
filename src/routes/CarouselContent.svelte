@@ -14,7 +14,7 @@
   <Carousel.Root
       class="size-full rounded-full overflow-hidden"
       opts={{ loop: true }}
-      plugins={[ Autoplay({ delay: 4000, stopOnInteraction: true, stopOnMouseEnter: true }) ]}>
+      plugins={[ Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: false }) ]}>
     <Carousel.Content class="h-full m-0">
       {#each slides as src}
         <Carousel.Item class="h-full p-0">
