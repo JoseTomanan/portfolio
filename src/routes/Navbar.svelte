@@ -13,7 +13,7 @@
 <div style="top: {navTop}px;"
       class="fixed left-1/2 -translate-x-1/2 z-50
           flex flex-row items-center gap-x-0.5
-          text-lg
+          text-base sm:text-lg
           [&>nav]:bg-card/50 [&>nav]:text-foreground [&>nav]:backdrop-blur-sm
           [&>nav]:ring [&>nav]:ring-border
           [&>nav]:shadow [&>nav]:shadow-border/50
