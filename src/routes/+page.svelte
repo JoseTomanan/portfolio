@@ -3,6 +3,7 @@
   import FaBrandsGithub from '~icons/fa-brands/github';
   import FaBrandsFacebook from '~icons/fa-brands/facebook';
   import FaBrandsInstagram from '~icons/fa-brands/instagram';
+  import IconArrow from '~icons/ic/baseline-arrow-forward';
 
   import CarouselContent from "./CarouselContent.svelte";
   import Roles from "./Roles.svelte";
@@ -48,18 +49,30 @@
                     flex flex-col-reverse sm:flex-row
                     justify-center items-center gap-y-8
                   ">
-      <div class="sm:flex-1 flex flex-col items-center gap-y-4
-                  *:w-full *:text-center *:sm:text-left">
-        <h1 class="font-extrabold">Jose Tomanan</h1>
-        <h2 class="flex flex-col font-heading font-semibold text-muted-foreground tracking-tight">
-          <span>Tech enthusiast</span>
-          <span>Fitness junkie</span>
-          <span class="magic-text">
-            <!-- &ThickSpace;&middot; -->
-            Full-stack web developer
-            <!-- &middot;&ThickSpace; -->
-          </span>
-        </h2>
+      <div class="flex flex-col items-center gap-y-6
+                  sm:flex-1 sm:items-start sm:gap-y-16
+                  *:text-center *:sm:text-left">
+        <div class="space-y-8">
+          <h1 class="font-extrabold">Jose Tomanan</h1>
+          <h2 class="flex flex-col font-heading font-semibold text-muted-foreground tracking-tight">
+            <span>Tech enthusiast</span>
+            <span>Fitness junkie</span>
+            <span class="magic-text">Full-stack web developer</span>
+          </h2>
+        </div>
+        <a href={link.li} target="_blank" rel="noopener noreferrer"
+            class="group inline-flex items-center
+                  bg-transparent text-foreground
+                  font-heading text-xl font-semibold
+                  gap-x-4 py-4 px-6
+                  rounded-3xl
+                  ring ring-foreground hover:ring-primary
+                  hover:bg-primary hover:text-primary-foreground
+                ">
+          <span>Connect with me</span>
+          <IconArrow class="size-5 group-hover:-rotate-45
+                            transition-transform duration-200"/>
+        </a>
       </div>
 
       <CarouselContent/>
