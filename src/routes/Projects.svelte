@@ -14,10 +14,10 @@
   <section class="section-body">
     <h2>My projects</h2>
     <Accordion.Root type="single" class="projects-roles">
-      <Article title="SIPAT.MATH: LLM grading tool for early Math"
+      <Article title="SIPAT.MATH"
 						id="proj-199"
 						href="https://github.com/JoseTomanan/S3LAB-ai-grading"
-						subtitle="Filipino recipes database web app"
+						subtitle="LLM-powered grading tool for early Mathematics"
 						date="SEP 2025 - PRESENT"
 						other="
 								2-man capstone: VLM-based tool automating assessment of early-level Math using rubrics and answer keys.
@@ -65,7 +65,7 @@
 								Python + Pygame game built on MVC and SOLID principles; allows for online multiplayer and local pass-and-play. CS 150 final project."
 						techInvolved={ ["simple-icons:Python", "simple-icons:Go"] }
 					/>
-      <Article title="Poverty and Parenting: A Data Science Study"
+      <Article title="Poverty & Parenting: A Data Science Study"
 						id="proj-132"
 						href="https://tes-birth-rate.vercel.app"
 						subtitle="Economic analysis of birth rates in the Philippines"
