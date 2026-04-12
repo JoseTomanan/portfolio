@@ -124,7 +124,7 @@
 	}
 
 	h3 {
-		@apply text-2xl;
+		@apply text-xl md:text-2xl;
 		font-family: var(--font-sans);
 		color: var(--color-muted-foreground);
 		text-wrap: balance;
