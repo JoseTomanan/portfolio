@@ -180,8 +180,8 @@
     z-index: 1;
     /* box-shadow: 0 0 15px color-mix(in srgb, var(--color-muted-foreground) 80%, transparent); */
     box-shadow:
-      0 0 20px var(--color-muted-foreground),
-      0 0 32px color-mix(in srgb, var(--color-muted-foreground) 50%, transparent);
+      0 0 12px 4px var(--color-muted-foreground),
+      0 0 18px 8px color-mix(in srgb, var(--color-muted-foreground) 30%, transparent);
   }
   
   section.section-body {
