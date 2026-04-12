@@ -35,11 +35,12 @@
   <div class="page border-0 gap-0"
         data-section="top"
         transition:fly={{ delay: 100, duration: 1000 }}>
-    <section class="section-body bg-transparent
+    <section class="section-body
+                    bg-transparent -mt-4 h-[90dvh]
                     flex flex-col-reverse sm:flex-row
-                    items-center gap-y-8 overflow-clip
-                    -mt-4 py-16 sm:py-40">
-      <div class="flex-1 flex flex-col items-center gap-y-4
+                    justify-center items-center gap-y-8 overflow-clip
+                  ">
+      <div class="sm:flex-1 flex flex-col items-center gap-y-4
                   *:w-full *:text-center *:sm:text-left">
         <h1 class="font-bold">Jose Tomanan</h1>
         <h2 class="flex flex-col font-heading font-semibold text-muted-foreground tracking-tight">
