@@ -5,6 +5,7 @@
   import { activeSection } from "$lib/utils";
 
   const defaultLink = "https://www.linkedin.com/in/jedtomanan/details/experience/"
+  let openValue = $state<string | undefined>(undefined);
 </script>
 
 <span class="jumpable" id="roles"></span>
@@ -14,8 +15,8 @@
       class:section-active={$activeSection === 'roles'}>
   <section class="section-body">
     <h2>My roles</h2>
-    <Accordion.Root type="single" class="projects-roles">
-      <Article 
+    <Accordion.Root type="single" class="projects-roles" bind:value={openValue}>
+      <Article
 						id="role-195"
 						title="Software Engineer Intern"
 						subtitle="Pointwest Innovations Corporation"
@@ -24,8 +25,9 @@
 						other="
 								200-hour internship on a 10-member team building an HR application; contributed Spring Boot API services and maintained automated test suites."
 						techInvolved={ ["simple-icons:Spring", "simple-icons:Git", "simple-icons:Jira"] }
+						{openValue}
 					/>
-      <Article 
+      <Article
 						id="role-cursor1"
 						title="Event Co-Head"
 						subtitle="UP Association of Computer Science Majors (UP CURSOR)"
@@ -35,8 +37,9 @@
 								Co-led 20 people organizing Tackle 2024, a 4-day hybrid tech career fair.
 								Headed Branding and HR sub-teams; used Notion for cross-team coordination."
 						techInvolved={ ["simple-icons:Notion", "simple-icons:Asana", "simple-icons:GoogleSheets", "simple-icons:Canva"] }
+						{openValue}
 					/>
-      <Article 
+      <Article
 						id="role-csi"
 						title="Web development module writer"
 						subtitle="UP Center for Student Innovations (UP CSI)"
@@ -45,8 +48,9 @@
 						other="
 								Authored web dev learning modules for 50+ applicants using Typst; collaborated via Git."
 						techInvolved={ ["simple-icons:Typst", "simple-icons:Git"] }
+						{openValue}
 					/>
-      <Article 
+      <Article
 						id="role-cursor2"
 						title="Member Relations Head"
 						subtitle="UP CURSOR"
@@ -55,6 +59,7 @@
 						other="
 								Led a team of 6 managing engagement for 100+ members; produced CURSOR Cares and Humans of CURSOR publications."
 						techInvolved={ ["simple-icons:Notion"] }
+						{openValue}
 					/>
     </Accordion.Root>
     

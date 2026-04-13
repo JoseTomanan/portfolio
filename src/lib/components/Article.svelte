@@ -12,7 +12,8 @@
     subtitle,
     other = "",
     date = "AUG 2024 - AUG 2024",
-    techInvolved = [""],
+    techInvolved = [],
+    openValue = undefined,
   }: {
     id: string;
     href: string;
@@ -21,20 +22,10 @@
     other?: string;
     date?: string;
     techInvolved?: string[];
+    openValue?: string;
   } = $props();
 
-  let itemRef = $state<HTMLElement | null>(null);
-  let isOpen: boolean = $state(false);
-
-  $effect(() => {
-    if (!itemRef) return;
-    isOpen = itemRef.dataset.state === 'open';
-    const observer = new MutationObserver(() => {
-      isOpen = itemRef?.dataset.state === 'open';
-    });
-    observer.observe(itemRef, { attributes: true, attributeFilter: ['data-state'] });
-    return () => observer.disconnect();
-  });
+  const isOpen: boolean = $derived(openValue === id);
 </script>
 
 
@@ -46,7 +37,7 @@
                   : 'hover:ring hover:ring-border'
                 )}
           data-open={isOpen}>
-  <Accordion.Item bind:ref={itemRef} value={id} class="border-none">
+  <Accordion.Item value={id} class="border-none">
     <Accordion.Trigger class="w-full px-4 hover:no-underline flex-wrap">
       <div class="flex flex-row w-full justify-between gap-0.5
             md:w-auto md:basis-1/3 lg:basis-[24%] md:flex-col">
