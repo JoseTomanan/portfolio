@@ -16,6 +16,14 @@
   <link rel="manifest" href="/site.webmanifest">
 </svelte:head>
 
+<a href="#me"
+    class="sr-only focus:not-sr-only focus:fixed focus:z-[200]
+           focus:top-2 focus:left-1/2 focus:-translate-x-1/2
+           focus:px-4 focus:py-2 focus:rounded-full
+           focus:bg-card focus:text-foreground focus:ring focus:ring-border">
+  Skip to content
+</a>
+
 <div class="app bg-fixed">
   <Navbar />
   {@render children()}

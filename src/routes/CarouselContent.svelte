@@ -28,5 +28,5 @@
     </Carousel.Content>
   </Carousel.Root>
   <span class="absolute left-[86%] top-[86%] -translate-x-1/2 -translate-y-1/2 size-4
-                rounded-full bg-green-500 ring-[3px] ring-muted"></span>
+                rounded-full bg-online ring-[3px] ring-muted"></span>
 </div>

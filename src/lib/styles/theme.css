@@ -43,4 +43,6 @@
 
   --color-destructive:             #DC2626;
   --color-destructive-foreground:  #F9F9F9;
+
+  --color-online:                  #22c55e;   /* available/online status indicator */
 }

@@ -17,7 +17,8 @@
   import { activeSection } from "$lib/utils";
 
   let scrollY = $state(0);
-  const parallaxY: number = $derived(scrollY * 0.50);
+  let reducedMotion = $state(false);
+  const parallaxY: number = $derived(reducedMotion ? 0 : scrollY * 0.50);
 
   function updateActiveSection() {
     const threshold = window.innerHeight * 0.40;
@@ -30,9 +31,17 @@
   }
 
   onMount(() => {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    reducedMotion = mq.matches;
+    const onMotionChange = (e: MediaQueryListEvent) => reducedMotion = e.matches;
+    mq.addEventListener('change', onMotionChange);
+
     window.addEventListener('scroll', updateActiveSection, { passive: true });
     updateActiveSection();
-    return () => window.removeEventListener('scroll', updateActiveSection);
+    return () => {
+      mq.removeEventListener('change', onMotionChange);
+      window.removeEventListener('scroll', updateActiveSection);
+    };
   });
 </script>
 
@@ -43,7 +52,7 @@
 <main class="max-w-[960px] flex flex-col
               gap-y-6 px-2 w-full mx-auto">
   <span class="jumpable" id="top"></span>
-  <header class="page h-[92dvh] border-0 gap-0 overflow-visible"
+  <div class="page h-[92dvh] border-0 gap-0 overflow-visible"
           data-section="top"
           transition:fly={{ delay: 100, duration: 1000 }}>
     <section style="transform: translateY({parallaxY}px);"
@@ -80,7 +89,7 @@
 
       <CarouselContent/>
     </section>
-  </header>
+  </div>
 
   <span class="jumpable" id="me"></span>
   <div class="page gap-0 z-5"
@@ -126,7 +135,7 @@
       <IconPhone/> +63 947 301 3664
     </span>
   </div>
-  <div class="flex-[1.5] lg:flex-2
+  <div class="flex-[1.5] lg:flex-[2]
               flex flex-col sm:flex-row
             ">
     <a href="#top"

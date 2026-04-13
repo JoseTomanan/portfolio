@@ -59,32 +59,33 @@
   }
 }
 
+:root {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-muted);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-input);
+  }
+  ::-webkit-scrollbar-corner {
+    background: var(--color-background);
+  }
+}
+
 
 /* ------------------------- BASE ------------------------- */
 @layer base {
-	html {
-		scroll-behavior: smooth;
-    scrollbar-gutter: stable;
-    overflow-y: scroll !important;
-	}
-
-	::-webkit-scrollbar {
-		width: 8px;
-		height: 3px;
-	}
-	::-webkit-scrollbar-track {
-		background: var(--color-muted);
-	}
-	::-webkit-scrollbar-thumb {
-		background: var(--color-border);
-	}
-	::-webkit-scrollbar-thumb:hover {
-		background: var(--color-input);
-	}
-	::-webkit-scrollbar-corner {
-		background: var(--color-background);
-	}
-
 	* {
 		@apply border-border;
 	}
@@ -146,6 +147,10 @@
 		@apply text-foreground/80;
 	}
 
+	nav > a {
+		@apply text-base sm:text-lg;
+	}
+
 	p {
 		@apply text-lg;
 		font-family: var(--font-sans);
@@ -179,7 +184,7 @@
     /* box-shadow: 0 0 15px color-mix(in srgb, var(--color-muted-foreground) 80%, transparent); */
     box-shadow:
       0 0 12px 3px var(--color-muted-foreground),
-      0 0 12px 3px color-mix(in srgb, var(--color-muted-foreground) 20%, transparent);
+      0 0 6px 3px color-mix(in srgb, var(--color-muted-foreground) 20%, transparent);
   }
   
   section.section-body {
@@ -329,4 +334,14 @@
 	100% {
 		transform: translate(-15%, -20%);
 	}
+}
+
+
+/* ------------------------- REDUCED MOTION ------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
