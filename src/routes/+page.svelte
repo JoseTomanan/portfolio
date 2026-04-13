@@ -115,12 +115,10 @@
 
 <footer class="bg-muted/75 text-muted-foreground/75
               flex flex-row w-full justify-between items-end
-              gap-y-2 h-52 mx-auto px-8 py-4 mt-16
+              gap-y-2 h-64 mx-auto px-8 py-4 mt-16
             ">
-  <div class="flex-2 flex flex-col leading-none *:text-muted-foreground/75">
-    <h4 class="font-bold">
-      Jose Tomanan
-    </h4>
+  <div class="flex-1 flex flex-col leading-none *:text-muted-foreground/75">
+    <h4 class="font-bold">Jose Tomanan</h4>
     <span class="inline-flex gap-x-2 items-center">
       <IconEmail/> jdtomanan@up.edu.ph
     </span>
@@ -128,7 +126,9 @@
       <IconPhone/> +63 947 301 3664
     </span>
   </div>
-  <div class="flex-3 flex flex-col sm:flex-row">
+  <div class="flex-[1.5] lg:flex-2
+              flex flex-col sm:flex-row
+            ">
     <a href="#top"
         class="hoverable-link flex-1 w-full text-right sm:text-center">
       Back to top
