@@ -90,7 +90,7 @@
     </Accordion.Root>
     
     <h6 class="footnote">
-      // See my public repositories, in full detail, at 
+      See my repositories at 
       <a href={link.gh} target="_blank" rel="noopener noreferrer">GitHub</a>.
     </h6>
   </section>

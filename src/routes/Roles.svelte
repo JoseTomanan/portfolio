@@ -59,7 +59,7 @@
     </Accordion.Root>
     
     <h6 class="footnote">
-      // See more of what I've done at
+      See more of what I've done at
       <a href={defaultLink} target="_blank" rel="noopener noreferrer">LinkedIn</a>.
     </h6>
   </section>
