@@ -97,8 +97,8 @@
                   class="w-4 h-4 opacity-0 group-hover/whole:opacity-100 group-data-[open=true]/whole:opacity-100 hidden md:inline"/>
             </a>
           </h4>
-          <h4 class="leading-4 mt-0 font-normal
-                      text-foreground/50
+          <h4 class="leading-4 mt-0 font-light
+                      text-foreground/60
                       group-hover/whole:text-foreground/80
                       group-data-[open=true]/whole:text-foreground/80">
             {subtitle}
