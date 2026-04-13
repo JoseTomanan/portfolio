@@ -13,18 +13,18 @@
 <div style="top: {navTop}px;"
       class="fixed left-1/2 -translate-x-1/2 z-50
           flex flex-row items-center gap-x-0.5
-          text-base sm:text-lg
+          [&>nav]:w-fit
           [&>nav]:bg-card/50 [&>nav]:text-foreground [&>nav]:backdrop-blur-sm
           [&>nav]:ring [&>nav]:ring-border
           [&>nav]:shadow [&>nav]:shadow-border/50
-          [&>nav]:px-8 [&>nav]:w-fit
+          [&>nav]:px-8 [&>nav]:first:pr-6 [&>nav]:last:pl-6
+          [&>nav]:first:rounded-l-full [&>nav]:last:rounded-r-full
           [&>nav]:flex [&>nav]:flex-row [&>nav]:items-center [&>nav]:align-middle
           [&>nav>*]:py-1.5
         ">
   <nav aria-label="Main navigation"
         style="padding-block: {navVerticalPadding}px;"
-        class="justify-center gap-10 rounded-l-full
-              font-medium
+        class="justify-center gap-10
               *:hover:text-primary
               *:focus-visible:text-primary *:focus-visible:underline
             ">
@@ -36,15 +36,14 @@
 
   <nav aria-label="Resume navigation"
         style="padding-block: {navVerticalPadding}px;"
-        class="rounded-r-full font-bold">
+        class="justify-center
+                *:hover:text-secondary *:hover:underline
+                *:focus-visible:text-secondary *:focus-visible:underline
+              ">
     <a id="clickable-resume"
         href={link.cv}
         target="_blank"
-        rel="noopener noreferrer"
-        class="flex flex-row items-center gap-1 underline-offset-2
-              hover:text-secondary hover:underline
-              focus-visible:text-secondary focus-visible:underline
-            ">
+        rel="noopener noreferrer">
       <span>CV</span>
     </a>
   </nav>
