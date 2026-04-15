@@ -184,8 +184,8 @@ html {
     z-index: 1;
     /* box-shadow: 0 0 15px color-mix(in srgb, var(--color-muted-foreground) 80%, transparent); */
     box-shadow:
-      0 0 12px 3px var(--color-muted-foreground),
-      0 0 6px 3px color-mix(in srgb, var(--color-muted-foreground) 20%, transparent);
+      0 0 12px 3px var(--color-border),
+      0 0 6px 3px color-mix(in srgb, var(--color-border) 50%, transparent);
   }
   
   section.section-body {
@@ -245,8 +245,8 @@ html {
 }
 
 
-/* hoverable-link intentionally outside any @layer so it beats Tailwind utilities */
-.hoverable-link {
+/* ------------------------- UTILITIES ------------------------- */
+@utility hoverable-link {
   text-decoration-line: underline;
   text-underline-offset: 2px;
 
@@ -259,8 +259,6 @@ html {
   }
 }
 
-
-/* ------------------------- UTILITIES ------------------------- */
 @utility magic-text {
 	animation: background-pan 6s linear infinite;
 	background: linear-gradient(

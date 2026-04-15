@@ -45,4 +45,9 @@
   --color-destructive-foreground:  #F9F9F9;
 
   --color-online:                  #22c55e;   /* available/online status indicator */
+
+  /* ---- TEXT SHADOWS ---- */
+  --text-shadow-glow:
+    0 0 6px color-mix(in srgb, var(--color-foreground) 80%, transparent),
+    0 0 14px color-mix(in srgb, var(--color-foreground) 40%, transparent);
 }
