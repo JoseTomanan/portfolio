@@ -26,12 +26,12 @@
   <nav aria-label="Main navigation"
         style="padding-block: {navVerticalPadding}px;"
         class="justify-center gap-10
-              [&>a:not(.text-primary):hover]:text-foreground *:hover:text-shadow-glow
-              [&>a:not(.text-primary):focus-visible]:text-foreground *:focus-visible:text-shadow-glow *:focus-visible:underline
+              *:hover:text-foreground *:hover:text-shadow-glow
+              *:focus-visible:text-foreground *:focus-visible:text-shadow-glow *:focus-visible:underline
             ">
-    <a href="#me" class:text-primary={$activeSection === 'me'}>Me</a>
-    <a href="#projects" class:text-primary={$activeSection === 'projects'}>Projects</a>
-    <a href="#roles" class:text-primary={$activeSection === 'roles'}>Roles</a>
+    <a href="#me" class:text-foreground={$activeSection === 'me'} class:text-shadow-glow={$activeSection === 'me'}>Me</a>
+    <a href="#projects" class:text-foreground={$activeSection === 'projects'} class:text-shadow-glow={$activeSection === 'projects'}>Projects</a>
+    <a href="#roles" class:text-foreground={$activeSection === 'roles'} class:text-shadow-glow={$activeSection === 'roles'}>Roles</a>
     <!-- <a href="#contact">Contact</a> -->
   </nav>
 
