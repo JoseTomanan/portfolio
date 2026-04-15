@@ -1,5 +1,6 @@
 <script lang="ts">
   import { link } from "$lib";
+  import { activeSection } from "$lib/utils";
 
   let scrollY = $state(0);
 
@@ -25,19 +26,19 @@
   <nav aria-label="Main navigation"
         style="padding-block: {navVerticalPadding}px;"
         class="justify-center gap-10
-              *:hover:text-primary
-              *:focus-visible:text-primary *:focus-visible:underline
+              [&>a:not(.text-primary):hover]:text-foreground *:hover:text-shadow-glow
+              [&>a:not(.text-primary):focus-visible]:text-foreground *:focus-visible:text-shadow-glow *:focus-visible:underline
             ">
-    <a href="#me">Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#roles">Roles</a>
+    <a href="#me" class:text-primary={$activeSection === 'me'}>Me</a>
+    <a href="#projects" class:text-primary={$activeSection === 'projects'}>Projects</a>
+    <a href="#roles" class:text-primary={$activeSection === 'roles'}>Roles</a>
     <!-- <a href="#contact">Contact</a> -->
   </nav>
 
   <nav aria-label="Resume navigation"
         style="padding-block: {navVerticalPadding}px;"
         class="justify-center
-                *:hover:text-secondary *:hover:underline
+                *:hover:text-secondary
                 *:focus-visible:text-secondary *:focus-visible:underline
               ">
     <a id="clickable-resume"
