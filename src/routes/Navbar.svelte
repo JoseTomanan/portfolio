@@ -42,10 +42,10 @@
                 *:focus-visible:text-secondary *:focus-visible:underline
               ">
     <a id="clickable-resume"
-        href={link.cv}
+        href={link.resume}
         target="_blank"
         rel="noopener noreferrer">
-      <span>CV</span>
+      <span>Resume</span>
     </a>
   </nav>
 </div>
