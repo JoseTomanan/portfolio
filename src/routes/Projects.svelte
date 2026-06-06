@@ -28,6 +28,19 @@
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:FastAPI", "simple-icons:SQLite"] }
 						{openValue}
 					/>
+      <Article title="I/O MONEY (Personal Financial Tracker)"
+						id="proj-finances"
+						href="https://josetomanan.github.io/money-sheet-monorepo"
+						subtitle="Frontend interface for Google Sheets"
+						date="FEB 2023 - PRESENT"
+						other="
+								Built a frontend that integrates with Google Apps Script API to read and write to a personal finance spreadsheet.
+                Uses Google Sheets as a database and interface for data entry, and the frontend for visualization and mobile interaction.
+                Mobile-responsive, offline-friendly with caching and sync when online; exportable as a web app.
+                Ongoing project for personal use and learning.
+							"
+						techInvolved={ ["simple-icons:GoogleAppsScript", "simple-icons:Svelte"] }
+					/>
       <Article title="Svelte-based Pokédex"
 						id="proj-svelte-pokedex"
 						href="https://oaks-assistant.vercel.app"
@@ -37,17 +50,6 @@
 								Responsive Pokédex SPA in Svelte 5 + Tailwind v4; lazy-loads all 1025 Pokémon via PokéAPI.
                 Sorting, filtering, skeleton animations, and lazy hydration for full cross-device responsiveness."
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TypeScript", "simple-icons:TailwindCSS"] }
-						{openValue}
-					/>
-          <Article title="Potterdex"
-						id="proj-potterdex"
-						href="https://potterdex.vercel.app"
-						subtitle="React-based Harry Potter database UI"
-						date="DEC 2024 - JAN 2025"
-						other="
-								React + Tailwind frontend for the unofficial PotterDB API; Axios for fetching, React Router for slug-based routing.
-								Shadcn components, custom CSS animations, and JS for interactivity beyond library defaults."
-						techInvolved={ ["simple-icons:React", "simple-icons:Axios", "simple-icons:TailwindCSS"] }
 						{openValue}
 					/>
       <Article title="JoseTomanan.io"
@@ -60,6 +62,17 @@
                 Static SPA built with Svelte and Tailwind; designed for mobile-first responsiveness and accessibility.
                 Features scroll-based section highlighting."
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:PostCSS"] }
+						{openValue}
+					/>
+      <Article title="Potterdex"
+						id="proj-potterdex"
+						href="https://potterdex.vercel.app"
+						subtitle="React-based Harry Potter database UI"
+						date="DEC 2024 - JAN 2025"
+						other="
+								React + Tailwind frontend for the unofficial PotterDB API; Axios for fetching, React Router for slug-based routing.
+								Shadcn components, custom CSS animations, and JS for interactivity beyond library defaults."
+						techInvolved={ ["simple-icons:React", "simple-icons:Axios", "simple-icons:TailwindCSS"] }
 						{openValue}
 					/>
       <Article title="Shogimon"
@@ -82,19 +95,6 @@
 						techInvolved={ ["simple-icons:Python"] }
 						{openValue}
 					/>
-			<!-- <Article title="Finance Tracker Automator"
-						id="proj-finances"
-						href="https://github.com/JoseTomanan/finance-tracker-automator"
-						subtitle="Automation scripts for Google Sheets using AppsScript"
-						date="FEB 2023 - PRESENT"
-						other="
-								Built a custom Google Sheets automation script to manage daily income and expenses.
-								Automates entry logging, weekly segmentation, and monthly sheet creation via the Sheets API.
-								Written in TypeScript, transpiled to JavaScript using Clasp for deployment to Google Apps Script.
-								Structured using SOLID principles and design patterns for long-term maintainability.
-							"
-						techInvolved={ ["simple-icons:GoogleAppsScript", "simple-icons:TypeScript"] }
-					/> -->
     </Accordion.Root>
     
     <h6 class="footnote">
